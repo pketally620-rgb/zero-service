@@ -153,6 +153,7 @@
   .category-target { color: var(--text-muted); font-size: 15px; margin-bottom: 25px; padding-left: 20px; }
   .plan-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
   
+  /* 立體金屬卡片 */
   .card { 
     background: linear-gradient(145deg, #181a24, #12141c); 
     border: 1px solid var(--border-metal); 
@@ -167,6 +168,7 @@
   .card li { margin-bottom: 12px; font-size: 15px; color: #cbd5e1; display: flex; line-height: 1.5;}
   .card li.bullet::before { content: '❖'; color: var(--gold-solid); font-size: 12px; margin-right: 8px; margin-top: 3px;}
   
+  /* 美容價目表 */
   .menu-item { display: flex; justify-content: space-between; align-items: center; width: 100%; border-bottom: 1px dashed var(--border-metal); padding-bottom: 12px; margin-bottom: 12px; }
   .menu-item span { font-weight: bold; color: var(--gold-solid); font-size: 18px; font-family: 'Arial', sans-serif;}
   .list-header { color: var(--text-main); font-weight: bold; margin-top: 20px; margin-bottom: 15px; font-size: 15px; text-align: center; background: var(--border-metal); padding: 8px; border-radius: 6px; letter-spacing: 1px;}
@@ -187,19 +189,26 @@
     <div class="form-grid">
       <div class="form-group"><label>車主稱呼</label><input type="text" id="cust-name"></div>
       <div class="form-group"><label>車型級距</label><select id="car-class" onchange="checkAutoQuote()"><option value="medium">中型車款</option><option value="large">大型車款</option><option value="special">特殊車款</option><option value="commercial">商務車款</option><option value="pickup">皮卡車款</option></select></div>
-      <div class="form-group"><label>年份</label><input type="text" id="car-year" list="year-list" oninput="checkAutoQuote()"><datalist id="year-list"></datalist></div>
+      <div class="form-group"><label>出廠年份</label><input type="text" id="car-year" list="year-list" oninput="checkAutoQuote()"><datalist id="year-list"></datalist></div>
       <div class="form-group"><label>汽車廠牌</label><input type="text" id="car-brand" list="brand-list" oninput="updateModelOptions(); checkAutoQuote();"><datalist id="brand-list"></datalist></div>
       <div class="form-group"><label>車款型號</label><input type="text" id="car-model" list="model-list" oninput="checkAutoQuote()"><datalist id="model-list"></datalist></div>
     </div>
     <button type="button" class="btn-generate" onclick="generateQuote()">立即產生尊榮報價單</button>
   </div>
+
   <div class="admin-panel" id="admin-panel">
     <h3>⚙️ 專屬車款價格自訂後台</h3>
     <button type="button" onclick="exportData()" style="padding:10px; background:#475569; color:white; border:none; border-radius:4px;">備份報價資料</button>
   </div>
+
   <div class="quote-result" id="quote-area">
     <button type="button" class="btn-print" onclick="window.print()">🖨️ 列印 / 儲存 PDF</button>
-    <div class="quote-header"><h2 id="main-title" class="text-metallic">ZERO職人｜專屬報價一覽</h2><div class="car-info-display" id="display-car-info"></div><div class="price-status-tag" id="price-status"></div></div>
+    <div class="quote-header">
+      <h2 id="main-title" class="text-metallic">ZERO職人｜專屬報價一覽</h2>
+      <div class="car-info-display" id="display-car-info"></div>
+      <div class="price-status-tag" id="price-status"></div>
+    </div>
+
     <div class="plan-category" id="wrap-section">
       <div class="category-title">01 / 車體包膜方案</div>
       <div class="plan-cards">
@@ -209,18 +218,31 @@
         <div class="card"><div class="card-title">LUX PLUS 熱銷強化 <span class="price" id="v-b2"></span></div><ul><li class="bullet">8–8.5mil 抗衝擊層｜10年保固</li></ul></div>
       </div>
     </div>
-    <div class="plan-category" id="wash-section">
+
+    <div class="plan-category" id="wash-section" style="margin-top: 50px;">
       <div class="category-title" id="wash-title">02 / 洗車美容與玻璃防護</div>
       <div class="plan-cards">
-        <div class="card"><div class="card-title">常規保養服務</div><ul><li class="menu-item vip-item"><span>泡沫外觀清潔</span> <span id="v-w1"></span></li><li class="menu-item"><span>鍍膜養護</span> <span id="v-w3"></span></li></ul></div>
-        <div class="card"><div class="card-title">玻璃防護</div><ul><li class="menu-item"><span>前擋風玻璃</span> <span id="v-g1"></span></li><li class="menu-item"><span>全車玻璃</span> <span id="v-g2"></span></li></ul></div>
+        <div class="card">
+          <div class="card-title">常規保養服務</div>
+          <ul>
+            <li class="menu-item vip-item"><span>泡沫外觀清潔</span> <span id="v-w1"></span></li>
+            <li class="menu-item"><span>鍍膜養護</span> <span id="v-w3"></span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-title">玻璃防護</div>
+          <ul>
+            <li class="menu-item"><span>前擋風玻璃</span> <span id="v-g1"></span></li>
+            <li class="menu-item"><span>全車玻璃</span> <span id="v-g2"></span></li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 <script>
-  // 核心資料庫 (直接寫入)
+  // 核心資料庫
   const masterDatabase = {
     "2026|Tesla|MODEL Y":{"a1":150000,"a2":155000,"b1":105000,"b2":130000,"c1":90000,"c2":100000,"w1":800,"w2":1500,"w3":2100,"w4":2100,"w5":3600,"g1":4000,"g2":8000,"g3":10000,"g4":12000,"c_1":16500,"c_2":28000,"c_3":43000},
     "2026|Tesla|MODEL S":{"a1":166000,"a2":171000,"b1":121000,"b2":146000,"c1":106000,"c2":116000,"w1":800,"w2":1500,"w3":2100,"w4":2100,"w5":3600,"g1":4000,"g2":8000,"g3":10000,"g4":12000,"c_1":16500,"c_2":28000,"c_3":43000},
@@ -229,12 +251,12 @@
   };
 
   function toggleAdmin() {
-    const adminPassword = "0000"; // ★ 在此修改密碼 ★
+    const password = "0000"; // ★ 在此修改密碼 ★
     const input = prompt("請輸入管理員密碼：");
-    if (input === adminPassword) {
+    if (input === password) {
         const panel = document.getElementById('admin-panel');
-        panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
-    } else if (input !== null) { alert("密碼錯誤！"); }
+        panel.style.display = (panel.style.display === 'block' ? 'none' : 'block');
+    } else if (input !== null) { alert("密碼錯誤"); }
   }
 
   function generateQuote() {
