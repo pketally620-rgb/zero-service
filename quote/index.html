@@ -28,6 +28,7 @@
   .btn-admin-toggle { position: absolute; top: 35px; right: 35px; background: none; border: 1px solid var(--border-metal); color: var(--text-muted); padding: 8px 15px; border-radius: 6px; cursor: pointer; }
   .btn-generate { width: 100%; padding: 18px; background: var(--gold-gradient); color: #1a1500; border: none; border-radius: 8px; font-size: 18px; font-weight: 900; cursor: pointer; }
   .admin-panel { display: none; background: #0c0d12; border: 1px solid #991b1b; border-radius: 12px; padding: 25px; margin-bottom: 30px; }
+  .admin-subtitle { color: var(--gold-solid); font-size: 16px; margin-bottom: 10px; border-left: 4px solid var(--gold-solid); padding-left: 10px; margin-top: 25px; font-weight: bold;}
   .price-setting-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; background: #13151d; padding: 20px; border-radius: 8px; margin-bottom: 15px; border: 1px solid var(--border-metal); }
   .btn-save-price { background: #059669; color: white; border: none; padding: 15px; border-radius: 8px; width: 100%; cursor: pointer; }
   .quote-result { display: none; background: linear-gradient(145deg, var(--bg-card), #10121a); padding: 50px; border-radius: 16px; border: 1px solid var(--border-light); }
@@ -61,6 +62,14 @@
     <div class="admin-grid"><input type="text" id="adm-year" placeholder="年份"><input type="text" id="adm-brand" placeholder="廠牌"><input type="text" id="adm-model" placeholder="車款"></div>
     <div class="price-setting-grid">
         <div class="form-group"><label>A-LUX MAX</label><input type="number" id="p-a1"></div><div class="form-group"><label>A-LUX MATTE</label><input type="number" id="p-a2"></div><div class="form-group"><label>B-EXO ARMOR</label><input type="number" id="p-b1"></div><div class="form-group"><label>B-LUX PLUS</label><input type="number" id="p-b2"></div>
+        <div class="form-group"><label>C-PROTEX LITE</label><input type="number" id="p-c1"></div><div class="form-group"><label>C-LITE 消光</label><input type="number" id="p-c2"></div>
+    </div>
+    <div class="admin-subtitle">【2】洗車美容與玻璃</div>
+    <div class="price-setting-grid">
+        <div class="form-group"><label>泡沫外觀清潔</label><input type="number" id="p-w1"></div><div class="form-group"><label>全車精洗套餐</label><input type="number" id="p-w2"></div>
+        <div class="form-group"><label>鍍/包膜定期養護</label><input type="number" id="p-w3"></div><div class="form-group"><label>標準洗車＋打蠟</label><input type="number" id="p-w4"></div>
+        <div class="form-group"><label>深度漆面再生</label><input type="number" id="p-w5"></div><div class="form-group"><label>前擋風玻璃鍍膜</label><input type="number" id="p-g1"></div>
+        <div class="form-group"><label>全車玻璃(標準)</label><input type="number" id="p-g2"></div><div class="form-group"><label>全車玻璃(全景)</label><input type="number" id="p-g3"></div><div class="form-group"><label>特斯拉玻璃(全景)</label><input type="number" id="p-g4"></div>
     </div>
     <button type="button" class="btn-save-price" onclick="saveCustomPrice()">💾 儲存此車款專屬價格</button>
   </div>
@@ -71,8 +80,13 @@
 </div>
 <script>
   let customDatabase = JSON.parse(localStorage.getItem('zero_all_prices_v2')) || {};
-  
-  // 密碼鎖功能
+  const classPrices = {
+    medium: { w1: 700, w2: 1200, w3: 1800, w4: 1800, w5: 3000, g1: 4000, g2: 8000, g3: 10000, g4: 12000, c_1: 15000, c_2: 26000, c_3: 42000 },
+    large: { w1: 800, w2: 1500, w3: 2100, w4: 2100, w5: 3600, g1: 4000, g2: 8000, g3: 10000, g4: 12000, c_1: 16500, c_2: 28000, c_3: 43000 },
+    special: { w1: 1000, w2: 1800, w3: 2500, w4: 2500, w5: 4000, g1: 4000, g2: 8000, g3: 10000, g4: 12000, c_1: 18000, c_2: 30000, c_3: 45000 },
+    commercial: { w1: 1300, w2: 2000, w3: 3000, w4: 3000, w5: 5000, g1: 4000, g2: 8000, g3: 10000, g4: 12000, c_1: 21000, c_2: 33000, c_3: 48000 },
+    pickup: { w1: 1300, w2: 2000, w3: 5000, w4: 5000, w5: 8000, g1: 4000, g2: 8000, g3: 10000, g4: 12000, c_1: 25000, c_2: 37000, c_3: 53000 }
+  };
   function toggleAdmin() {
     const adminPassword = "0000"; // ★ 在這裡修改密碼 ★
     const input = prompt("請輸入管理員密碼：");
@@ -81,33 +95,26 @@
         panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
     } else if (input !== null) { alert("密碼錯誤！"); }
   }
-
-  // 備份功能
   function exportData() {
       const data = localStorage.getItem('zero_all_prices_v2');
       if (!data) return alert("沒有資料！");
-      const textarea = document.createElement("textarea");
-      textarea.value = data;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand("copy");
-      document.body.removeChild(textarea);
-      alert("資料已複製，請存入記事本！");
+      const textarea = document.createElement("textarea"); textarea.value = data; document.body.appendChild(textarea); textarea.select(); document.execCommand("copy"); document.body.removeChild(textarea); alert("已複製！");
   }
-
   function importData() {
       const data = prompt("貼上備份代碼:");
-      if (data) {
-          try { JSON.parse(data); localStorage.setItem('zero_all_prices_v2', data); location.reload(); }
-          catch (e) { alert("格式錯誤！"); }
-      }
+      if (data) { try { JSON.parse(data); localStorage.setItem('zero_all_prices_v2', data); location.reload(); } catch (e) { alert("格式錯誤！"); } }
   }
-
-  function saveCustomPrice() { /* 原有儲存邏輯 */ }
-  function generateQuote() { /* 原有產生報價邏輯 */ }
-  function checkAutoQuote() { /* 原有自動偵測邏輯 */ }
-  function updateModelOptions() { /* 原有選單邏輯 */ }
-  function initData() { /* 原有初始化 */ }
+  function saveCustomPrice() {
+    const y = document.getElementById('adm-year').value.trim(); const b = document.getElementById('adm-brand').value.trim(); const m = document.getElementById('adm-model').value.trim();
+    if(!y || !b || !m) return alert('請填寫完整資訊！');
+    const key = `${y}|${b}|${m}`; const data = {};
+    ['a1','a2','b1','b2','c1','c2','w1','w2','w3','w4','w5','g1','g2','g3','g4','c_1','c_2','c_3'].forEach(k => { data[k] = document.getElementById('p-' + k).value || null; });
+    customDatabase[key] = data; localStorage.setItem('zero_all_prices_v2', JSON.stringify(customDatabase)); alert('✅ 已儲存！');
+  }
+  function checkAutoQuote() { /* 此處可加入原本的自動偵測邏輯 */ }
+  function generateQuote() { /* 此處可加入原本的生成報價邏輯 */ }
+  function updateModelOptions() { /* 選單邏輯 */ }
+  function initData() { /* 初始化 */ }
   initData();
 </script>
 </body>
