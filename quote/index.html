@@ -117,6 +117,32 @@
   }
   .btn-generate:hover { filter: brightness(1.15); box-shadow: 0 10px 25px rgba(197, 155, 39, 0.4), inset 0 1px 1px rgba(255,255,255,0.9); transform: translateY(-1px); }
 
+  /* --- 客製化密碼彈出視窗 --- */
+  .modal-overlay { 
+    display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+    background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); 
+    z-index: 1000; justify-content: center; align-items: center; 
+  }
+  .modal-box { 
+    background: var(--bg-card); border: 1px solid #334155; border-radius: 12px; 
+    padding: 25px; width: 90%; max-width: 400px; 
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8); 
+  }
+  .modal-title { color: var(--text-main); font-size: 15px; margin-top: 0; margin-bottom: 15px; font-weight: normal; }
+  .modal-input { 
+    width: 100%; padding: 12px 15px; background: var(--bg-input); 
+    border: 1px solid var(--text-muted); color: var(--text-main); 
+    border-radius: 8px; font-size: 16px; box-sizing: border-box; 
+    margin-bottom: 25px; outline: none; transition: 0.3s;
+  }
+  .modal-input:focus { border-color: var(--gold-solid); box-shadow: 0 0 0 1px var(--gold-solid); }
+  .modal-buttons { display: flex; justify-content: flex-end; gap: 12px; }
+  .btn-modal { padding: 8px 22px; border-radius: 20px; border: none; cursor: pointer; font-size: 14px; transition: 0.2s; }
+  .btn-cancel { background: #334155; color: var(--text-main); }
+  .btn-cancel:hover { background: #475569; }
+  .btn-confirm { background: #cbd5e1; color: #0f1118; font-weight: bold; }
+  .btn-confirm:hover { background: #f1f5f9; }
+
   /* --- 後台管理區 --- */
   .admin-panel { display: none; background: #0c0d12; border: 1px solid #991b1b; border-radius: 12px; padding: 25px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); }
   .admin-panel h3 { margin-top: 0; color: #f87171; border-bottom: 1px solid var(--border-metal); padding-bottom: 15px; }
@@ -304,6 +330,17 @@
 </style>
 </head>
 <body>
+
+<div class="modal-overlay" id="password-modal">
+  <div class="modal-box">
+    <h3 class="modal-title">請輸入管理員密碼：</h3>
+    <input type="password" class="modal-input" id="admin-pwd-input" placeholder="請輸入密碼">
+    <div class="modal-buttons">
+      <button class="btn-modal btn-cancel" onclick="closePasswordModal()">取消</button>
+      <button class="btn-modal btn-confirm" onclick="verifyPassword()">確定</button>
+    </div>
+  </div>
+</div>
 
 <div class="container">
   
@@ -516,15 +553,48 @@
 </div>
 
 <script>
-  // --- 密碼鎖功能 ---
+  // --- 新增：客製化密碼鎖功能 ---
   function toggleAdmin() {
-    const adminPassword = "0000"; // ★ 請在此修改您的密碼 ★
-    const input = prompt("請輸入管理員密碼：");
-    if (input === adminPassword) {
-      const panel = document.getElementById('admin-panel');
-      if (panel.style.display === 'block') { panel.style.display = 'none'; } else { panel.style.display = 'block'; refreshAdminDropdown(); }
-    } else if (input !== null) { alert("密碼錯誤，拒絕進入！"); }
+    const panel = document.getElementById('admin-panel');
+    const modal = document.getElementById('password-modal');
+    
+    // 如果後台已經是開啟狀態，就直接關閉
+    if (panel.style.display === 'block') { 
+      panel.style.display = 'none'; 
+    } else { 
+      // 否則，跳出密碼輸入框
+      modal.style.display = 'flex'; 
+      document.getElementById('admin-pwd-input').value = '';
+      // 延遲一點點時間讓輸入框自動取得焦點
+      setTimeout(() => document.getElementById('admin-pwd-input').focus(), 100);
+    }
   }
+
+  function closePasswordModal() {
+    document.getElementById('password-modal').style.display = 'none';
+  }
+
+  function verifyPassword() {
+    const adminPassword = "0000"; // ★ 請在此修改您的密碼 ★
+    const input = document.getElementById('admin-pwd-input').value;
+    
+    if (input === adminPassword) {
+      closePasswordModal();
+      document.getElementById('admin-panel').style.display = 'block'; 
+      refreshAdminDropdown();
+    } else {
+      alert("密碼錯誤，拒絕進入！");
+      document.getElementById('admin-pwd-input').value = '';
+      document.getElementById('admin-pwd-input').focus();
+    }
+  }
+
+  // 讓使用者按下 Enter 鍵也能觸發密碼驗證
+  document.getElementById('admin-pwd-input').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+      verifyPassword();
+    }
+  });
 
   // --- 備份與還原功能 ---
   function exportData() {
