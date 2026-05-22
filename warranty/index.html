@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZERO職人鍍膜_XPEL竹北授權店 尊榮保固資訊卡</title>
+    <style>
+        /* 深色模式：品牌視覺設定 */
+        :root {
+            --primary-color: #ffcc00; /* XPEL 經典黃 */
+            --bg-color: #050505; /* 網頁最底層顏色 (極黑) */
+            --section-bg: #111111; /* 區塊背景色 (深黑灰) */
+            --box-bg: #1c1c1c; /* 內容小區塊背景 (稍淺的灰) */
+            --text-color: #cccccc; /* 內文文字 (淺灰) */
+            --text-white: #ffffff; /* 標題文字 (純白) */
+            --border-color: #333333; /* 分隔線顏色 */
+            --red-highlight: #ff4d4d; /* 針對深色背景優化的亮紅色 */
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 頂部 Header */
+        header {
+            background-color: #000000;
+            color: var(--text-white);
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            color: var(--primary-color); /* 極致防護改為黃色 */
+            margin-top: 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        /* 導覽列 */
+        nav {
+            background-color: #222222;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            font-weight: bold;
+            transition: all 0.3s;
+            flex: 1;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        nav a.active {
+            background-color: var(--primary-color);
+            color: #000000;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* 主要區塊 */
+        section {
+            background-color: var(--section-bg);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        /* 主標題 (同高峰的 車漆保護膜) */
+        h2 {
+            color: var(--text-white);
+            border-left: 5px solid var(--primary-color);
+            padding-left: 12px;
+            font-size: 1.6rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        /* 產品型號說明 */
+        .product-models {
+            font-size: 0.95rem;
+            color: var(--text-white);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        /* 黃色次標題 (同高峰的 保固年限與範圍) */
+        h3.sub-title {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-bottom: 1rem;
+        }
+
+        /* 列表樣式 */
+        ul { padding-left: 1.5rem; }
+        li { margin-bottom: 0.8rem; }
+        
+        /* 備註小字 */
+        .note-text {
+            display: block;
+            font-size: 0.85rem;
+            color: #888888;
+            margin-top: 4px;
+        }
+
+        /* 特殊高亮顏色 */
+        .highlight {
+            color: var(--red-highlight);
+            font-weight: bold;
+        }
+        .text-yellow {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        .text-white {
+            color: var(--text-white);
+            font-weight: bold;
+        }
+
+        /* 獨立說明框 (黃色左邊線) */
+        .callout-box {
+            border-left: 3px solid var(--primary-color);
+            padding-left: 15px;
+            margin: 1.5rem 0;
+            color: #aaaaaa;
+            font-size: 0.95rem;
+        }
+
+        /* 深灰色資訊框 (不在保固範圍之事項) */
+        .info-box {
+            background-color: var(--box-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .info-box ul { margin: 0; }
+        .info-box li { color: #bbbbbb; font-size: 0.95rem; }
+
+        /* FAQ 區塊 */
+        .faq-item {
+            margin-bottom: 1.5rem;
+            background: var(--box-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 3px solid #555555;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            color: var(--text-white);
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+        
+        .faq-answer { color: #aaaaaa; font-size: 0.95rem; }
+
+        /* 頁尾 */
+        .footer {
+            background-color: #000000;
+            color: var(--text-white);
+            text-align: center;
+            padding: 3rem 1rem;
+            border-top: 3px solid var(--border-color);
+        }
+
+        .footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            nav a { padding: 0.8rem 0.5rem; font-size: 0.9rem; }
+            section { padding: 1.5rem; }
+            h2 { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ZERO職人鍍膜_XPEL竹北授權店</h1>
+        <p>極致防護｜尊榮服務</p>
+    </header>
+
+    <nav>
+        <a href="#warranty" class="active">保固內容</a>
+        <a href="#faq">FAQ 問答集</a>
+        <a href="#maintenance">養護須知</a>
+        <a href="#booking">預約須知</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="warranty">
+            
+            <h2>車漆保護膜 (Limited Product Warranty)</h2>
+            <div class="product-models">
+                適用型號：<br>
+                LUX PLUS｜LUX MATTE｜LUX MAX｜LUX PLUS BLACK｜MPD｜EXO ARMOR (EX)｜COLOR PPF
+            </div>
+            
+            <h3 class="sub-title">保固年限與範圍</h3>
+            <ul>
+                <li><span class="text-white">原廠保固 10 年</span> (EXO ARMOR 為 7 年)。</li>
+                <li><span class="text-white">保固範圍：</span>不翹邊、不龜裂、不起泡。
+                    <span class="note-text">*LUX PLUS BLACK 為不變色；EXO ARMOR 為耐黃化。</span>
+                </li>
+                <li>需符合<span class="text-yellow">定期保養</span>規範方享有保固。</li>
+            </ul>
+
+            <div class="callout-box">
+                本服務僅適用於 <span class="text-white">XPEL TAIWAN</span> 進口及授權經銷商販售安裝之產品。來源不明產品不提供保固。
+            </div>
+
+            <h3 class="sub-title">不在保固服務範圍之事項</h3>
+            <div class="info-box">
+                <ul>
+                    <li><span class="highlight">未按時養護：</span>需每 3-6 個月回授權經銷商進行深層清潔 (白/淺色車需每 3 個月)。</li>
+                    <li><span class="highlight">洗車錯誤：</span>禁止高壓水柱沖洗邊緣或用力刷洗，導致脫落翹邊。</li>
+                    <li>使用非 XPEL 專屬產品 (如打蠟、鍍膜)。</li>
+                    <li>未儘速去除鳥糞、樹汁、鐵粉等，導致腐蝕斑駁。</li>
+                    <li>電子保固系統查無資料或無法提供保證書。</li>
+                    <li>車輛轉售：<span class="highlight">變更車主即不再享有保固服務</span>。</li>
+                    <li>天災、火災、事故、人為損傷、化學物品等外力因素。</li>
+                </ul>
+            </div>
+
+            <h2>汽車隔熱紙 (Limited Product Warranty)</h2>
+            <div class="product-models">
+                適用型號：<br>
+                PRIME SERIES (X5 PLUS, X2 PLUS, X BLACK, AP, PRIME XP)
+            </div>
+
+            <h3 class="sub-title">保固年限與範圍</h3>
+            <ul>
+                <li><span class="text-white">終生保固 (可隨車轉移)：</span>X5 PLUS, X2 PLUS, X BLACK, AP 系列。</li>
+                <li><span class="text-white">10 年保固 (不可轉移)：</span>PRIME XP 多層貴金屬隔熱紙。</li>
+                <li><span class="text-white">保固內容：</span>不起泡、不開裂、不分層、不剝離脫落、不褪色、不變色。</li>
+            </ul>
+
+            <h2>前檔防護膜 (Limited Product Warranty)</h2>
+            <h3 class="sub-title">保固年限與範圍</h3>
+            <ul>
+                <li>在符合日常維護準則下，提供 <span class="text-white">1 年保固</span>。</li>
+                <li><span class="text-white">保固範圍：</span>不翹邊、不起泡、不開裂。</li>
+                <li><span class="text-yellow">重要聲明：</span>本產品非防爆膜，無法保證前擋玻璃在外力撞擊下不會破損，事故破損及水漬不在保固範圍。</li>
+            </ul>
+
+        </section>
+
+        <section id="faq">
+            <h2>FAQ 常見問答集</h2>
+            
+            <h3 class="sub-title">車漆保護膜 (PPF)</h3>
+            <div class="faq-item">
+                <div class="faq-question">安裝 XPEL 車漆保護膜的車子能開進自動洗車機洗車嗎？</div>
+                <div class="faq-answer">由於自動洗車設備的高壓水柱強弱及毛刷狀況不一，可能產生深層刮痕或將保護膜掀起，此類外力損傷不在保固範圍內。<span class="highlight">剛貼好的一週內，請絕對不要使用自動洗車機</span>。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">安裝 XPEL 車漆保護膜的車子可以打蠟嗎？</div>
+                <div class="faq-answer">使用不適當的打蠟產品可能造成保護膜變質。建議使用 XPEL 專用封膜劑 (XPEL Flawless Finish Paint Protection Film Sealant) 來保養，以提升抗汙性及亮度。<span class="highlight">消光膜亦請避免使用含研磨成分的清潔或打蠟產品</span>。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">為何需要定期回經銷商進行保養？ 該多久保養一次？</div>
+                <div class="faq-answer">定期保養能讓保護膜維持光澤度及抗污效能，並保障您的保固權益。請於施工後每 <span class="text-yellow">3 至 6 個月</span> (<span class="text-yellow">白色及淺色車輛每 3 個月一次</span>) 至授權經銷商進行專業深層清潔保養。</div>
+            </div>
+
+            <h3 class="sub-title">汽車安全隔熱紙</h3>
+            <div class="faq-item">
+                <div class="faq-question">剛剛安裝了隔熱紙，為什麼看起來有點霧霧的朦朧感？</div>
+                <div class="faq-answer">隔熱紙安裝完成後，與玻璃之間殘留的水氣可能會導致外觀模糊或產生水泡。水氣會透過毛孔蒸發，<span class="text-yellow">經過太陽照射約 1~2 週乾燥後自然消失</span>。(PRIME XP 多層貴金屬隔熱紙乾燥期較長，約需 4~16 週)。小水泡請勿用手擠壓。</div>
+            </div>
+        </section>
+
+        <section id="maintenance">
+            <h2>產品養護須知</h2>
+            <div class="callout-box">請務必遵照以下須知，不當的養護方式可能造成產品受損，並影響保固權益。</div>
+            
+            <h3 class="sub-title">車漆保護膜 (PPF) 養護</h3>
+            <div class="info-box">
+                <ul>
+                    <li><span class="text-white">膠層黏合期：</span>剛施工完畢 <span class="highlight">48 小時內請勿進行任何洗車，禁止使用高壓水槍洗車</span>。</li>
+                    <li><span class="text-white">霧感消除：</span>安裝初期膜面有霧感為正常現象，約 10 天左右即會消失。</li>
+                    <li><span class="text-white">禁止殘留水漬：</span>洗車後請務必將膜面確實擦乾，<span class="highlight">水漬不在保固範圍之內</span>。</li>
+                    <li><span class="text-white">污染物：</span>若遇樹汁、鳥糞、昆蟲屍體等污染物，<span class="highlight">請儘速清洗車輛</span>。</li>
+                    <li><span class="text-white">自動修復：</span>輕微刮傷在室溫下約 20-30 分鐘自動修復。寒冷環境下可使用約 50°C 熱水淋在刮傷部位加速修復。</li>
+                </ul>
+            </div>
+
+            <h3 class="sub-title">汽車隔熱紙養護</h3>
+            <div class="info-box">
+                <ul>
+                    <li><span class="text-white">膠層黏合期：</span>安裝完畢 <span class="highlight">48 小時內請勿下降車窗</span>。</li>
+                    <li><span class="text-white">起泡處理：</span>如遇隔熱紙邊緣起泡，應於 <span class="highlight">24 小時內回原施工店家</span>，請勿自行處理。</li>
+                    <li><span class="text-white">物品禁用：</span>施工完畢 15 天內，請勿啟動除霧電熱絲，亦不可將帶有吸盤的物品吸附在隔熱紙上。</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="booking">
+            <h2>施工預約流程</h2>
+            <div class="callout-box">為維護施工品質，我們採完全預約制，每日僅服務限量車輛。</div>
+            
+            <div class="info-box">
+                <ul>
+                    <li><span class="text-white">詢價/預約方式：</span>請透過官方 Line 或電話詢價與預約。</li>
+                    <li><span class="text-white">施工時間參考：</span>
+                        <ul>
+                            <li>全車貼膜：約 5-6 個工作天</li>
+                            <li>迎風面/局部：約 3-4 個工作天</li>
+                            <li>隔熱紙：約 5-6 小時</li>
+                        </ul>
+                    </li>
+                    <li><span class="text-white">定金說明：</span>確認檔期後需預付總金額之 50% 作為定金。</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <h2 style="border: none; padding: 0; text-align: center; margin-bottom: 1.5rem;">ZERO職人鍍膜_XPEL竹北授權店</h2>
+        <p>📍 地址：新竹縣竹北市縣政二路360號</p>
+        <p>📞 預約專線：03-5586322</p>
+        <p>💬 Line 官方帳號：<a href="https://lin.ee/oh8YrSi" target="_blank">點我加入好友詢價</a></p>
+        <p style="margin-top: 2rem; font-size: 0.85rem; color: #666;">&copy; 2024 ZERO職人鍍膜_XPEL竹北授權店. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
