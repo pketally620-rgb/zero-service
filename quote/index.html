@@ -551,6 +551,25 @@
       }
   }
 
+  // --- 一鍵填入洗車/鍍膜基礎價 ---
+  function loadClassToAdmin() {
+    const cls = document.getElementById('adm-loader').value;
+    const prices = classPrices[cls];
+    if (prices) {
+      // 載入洗車美容、玻璃、頂級鍍膜 (w1-w5, g1-g4, c_1-c_3)
+      ['w1','w2','w3','w4','w5','g1','g2','g3','g4','c_1','c_2','c_3'].forEach(k => {
+        const input = document.getElementById('p-' + k);
+        if(input) input.value = prices[k];
+      });
+      // 針對包膜方案 (a1-c2) 清空，讓使用者自行輸入或保留「需現場評估」狀態
+      ['a1','a2','b1','b2','c1','c2'].forEach(k => {
+        const input = document.getElementById('p-' + k);
+        if(input) input.value = '';
+      });
+      alert('✅ 已成功載入【' + document.getElementById('adm-loader').options[document.getElementById('adm-loader').selectedIndex].text + '】的洗車與鍍膜基礎價！\n\n※ 包膜方案價格已重置為空，請依需求手動輸入。');
+    }
+  }
+
   // --- 資料與邏輯核心 ---
   const classPrices = {
     medium: { w1: 700, w2: 1200, w3: 1800, w4: 1800, w5: 3000, g1: 4000, g2: 8000, g3: 10000, g4: 12000, c_1: 15000, c_2: 26000, c_3: 42000 },
