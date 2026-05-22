@@ -425,11 +425,12 @@
     </div>
 
     <div class="admin-subtitle">【1】全車包膜方案</div>
+    <div style="font-size: 13px; color: #10b981; margin-bottom: 15px;">💡 提示：輸入 B-LUX PLUS 價格後，系統會自動填入其他包膜方案的建議價格。</div>
     <div class="price-setting-grid">
       <div class="form-group"><label>A-LUX MAX</label><input type="number" id="p-a1" placeholder="留空顯示: 需現場評估"></div>
       <div class="form-group"><label>A-LUX MATTE</label><input type="number" id="p-a2" placeholder="留空顯示: 需現場評估"></div>
       <div class="form-group"><label>B-EXO ARMOR</label><input type="number" id="p-b1" placeholder="留空顯示: 需現場評估"></div>
-      <div class="form-group"><label>B-LUX PLUS</label><input type="number" id="p-b2" placeholder="留空顯示: 需現場評估"></div>
+      <div class="form-group"><label style="color:#fff; text-shadow: 0 0 5px #d4af37;">B-LUX PLUS (基準價)</label><input type="number" id="p-b2" placeholder="請先輸入此格自動計算" oninput="calcWrapPrices()" style="border-color: #d4af37;"></div>
       <div class="form-group"><label>C-PROTEX LITE</label><input type="number" id="p-c1" placeholder="留空顯示: 需現場評估"></div>
       <div class="form-group"><label>C-LITE 消光</label><input type="number" id="p-c2" placeholder="留空顯示: 需現場評估"></div>
     </div>
@@ -553,6 +554,16 @@
 </div>
 
 <script>
+  // =========================================================================
+  // ★ 預設內建專屬車款資料庫 (Hardcoded) ★
+  // 未來要新增資料，請將你從「備份報價資料」複製出來的代碼，
+  // 直接取代下方大括號 { } 裡面的內容即可！
+  // =========================================================================
+  const hardcodedDatabase = {
+    "2026|Tesla|MODEL Y": {"a1":150000,"a2":155000,"b1":105000,"b2":130000,"c1":90000,"c2":100000,"w1":800,"w2":1500,"w3":2100,"w4":2100,"w5":3600,"g1":4000,"g2":8000,"g3":10000,"g4":12000,"c_1":null,"c_2":null,"c_3":null}
+  };
+
+
   // --- 新增：客製化密碼鎖功能 ---
   function toggleAdmin() {
     const panel = document.getElementById('admin-panel');
@@ -596,17 +607,33 @@
     }
   });
 
+  // --- 新增：B-LUX PLUS 自動連動計算 ---
+  function calcWrapPrices() {
+    const baseInput = document.getElementById('p-b2').value;
+    if (!baseInput) return; // 如果清空了，不自動計算
+
+    const basePrice = Number(baseInput);
+    
+    document.getElementById('p-a1').value = basePrice + 20000;
+    document.getElementById('p-a2').value = basePrice + 25000;
+    document.getElementById('p-b1').value = basePrice - 25000;
+    document.getElementById('p-c1').value = basePrice - 40000;
+    document.getElementById('p-c2').value = basePrice - 30000;
+  }
+
   // --- 備份與還原功能 ---
   function exportData() {
-      const data = localStorage.getItem('zero_all_prices_v2');
-      if (!data) return alert("目前沒有資料可以備份！");
+      // 匯出時，會包含你寫死在代碼裡的資料 + 本機新增的資料，方便你未來一起更新代碼
+      const data = JSON.stringify(customDatabase);
+      if (Object.keys(customDatabase).length === 0) return alert("目前沒有資料可以備份！");
+      
       const textarea = document.createElement("textarea");
       textarea.value = data;
       document.body.appendChild(textarea);
       textarea.select();
       document.execCommand("copy");
       document.body.removeChild(textarea);
-      alert("報價資料代碼已複製到剪貼簿，請貼到記事本存檔！");
+      alert("報價資料代碼已複製到剪貼簿，請將此代碼貼回原始檔的 const hardcodedDatabase = 區塊！");
   }
 
   function importData() {
@@ -649,7 +676,10 @@
     pickup: { w1: 1300, w2: 2000, w3: 5000, w4: 5000, w5: 8000, g1: 4000, g2: 8000, g3: 10000, g4: 12000, c_1: 25000, c_2: 37000, c_3: 53000 }
   };
   const carDatabase = { "Porsche": [], "Tesla": [], "BMW": [], "Mercedes-Benz": [], "Toyota": [], "Ford": [] };
-  let customDatabase = JSON.parse(localStorage.getItem('zero_all_prices_v2')) || {};
+  
+  // 核心改動：將本地暫存與代碼寫死的資料合併
+  let localDb = JSON.parse(localStorage.getItem('zero_all_prices_v2')) || {};
+  let customDatabase = { ...hardcodedDatabase, ...localDb };
 
   function initData() {
     const yearList = document.getElementById('year-list');
@@ -684,9 +714,10 @@
   function deleteSavedCar() {
     const key = document.getElementById('adm-edit-select').value;
     if(!key) return alert('請先從下拉選單選擇要刪除的車款！');
-    if(confirm(`確定要刪除 ${key.replace(/\|/g, ' ')} 的所有設定嗎？`)) {
+    if(confirm(`確定要刪除 ${key.replace(/\|/g, ' ')} 的所有設定嗎？\n\n注意：如果這是寫在代碼裡的資料，重新整理網頁後可能會恢復。`)) {
       delete customDatabase[key];
-      localStorage.setItem('zero_all_prices_v2', JSON.stringify(customDatabase));
+      delete localDb[key];
+      localStorage.setItem('zero_all_prices_v2', JSON.stringify(localDb));
       alert('已成功刪除！');
       refreshAdminDropdown(); updateModelOptions(); checkAutoQuote();
     }
@@ -717,9 +748,13 @@
       const val = document.getElementById('p-' + k).value;
       data[k] = val ? Number(val) : null; 
     });
+    
+    // 同時更新顯示資料庫與本機資料庫
     customDatabase[key] = data;
-    localStorage.setItem('zero_all_prices_v2', JSON.stringify(customDatabase));
-    alert(`✅ ${y} ${b} ${m} 的專屬報價已成功儲存！`);
+    localDb[key] = data;
+    localStorage.setItem('zero_all_prices_v2', JSON.stringify(localDb));
+    
+    alert(`✅ ${y} ${b} ${m} 的專屬報價已成功儲存！\n\n(提示：若要讓客戶端看見，請記得使用「備份報價資料」將代碼寫入原始檔)`);
     refreshAdminDropdown();
   }
 
