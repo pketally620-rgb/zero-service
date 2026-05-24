@@ -3,20 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ZERO職人鍍膜 | 電子保固查詢系統</title>
+<title>ZERO職人鍍膜_XPEL竹北授權店 | 尊榮入口大廳</title>
 <style>
   :root {
     --bg-base: #0a0b10;
     --bg-card: #151720;
-    --bg-input: #0f1118;
     --gold-gradient: linear-gradient(135deg, #c59b27 0%, #fcf6ba 40%, #c59b27 80%, #aa771c 100%);
     --gold-solid: #d4af37;
-    --gold-dim: rgba(212, 175, 55, 0.1);
     --text-main: #f1f5f9;
     --text-muted: #94a3b8;
     --border-metal: #2a2d3d;
-    --success: #10b981;
-    --danger: #ef4444;
   }
 
   body { 
@@ -24,600 +20,132 @@
     background: radial-gradient(ellipse at top, #1a1d2b 0%, var(--bg-base) 80%);
     color: var(--text-main); 
     margin: 0; 
-    padding: 30px 20px; 
+    padding: 0; 
     display: flex; 
     justify-content: center; 
+    align-items: center; 
     min-height: 100vh;
   }
-  .container { width: 100%; max-width: 800px; position: relative; }
 
-  .text-metallic {
+  .lobby-container {
+    width: 100%;
+    max-width: 550px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .lobby-card {
+    background: linear-gradient(145deg, var(--bg-card), #10121a);
+    padding: 45px 35px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.02);
+    text-align: center;
+  }
+
+  .brand-logo {
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 2px;
     background: var(--gold-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0px 2px 10px rgba(197, 155, 39, 0.2);
+    margin-bottom: 8px;
+    margin-top: 0;
   }
 
-  /* --- 頂部搜尋區 --- */
-  .search-section { 
-    background: linear-gradient(145deg, var(--bg-card), #10121a);
-    padding: 40px 30px; 
-    border-radius: 16px; 
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-    margin-bottom: 30px;
-    text-align: center;
-    position: relative;
+  .brand-subtitle {
+    font-size: 14px;
+    color: var(--text-muted);
+    letter-spacing: 4px;
+    margin-bottom: 40px;
   }
-  
-  .title-area { margin-bottom: 30px; }
-  .main-title { margin: 0; font-size: 26px; font-weight: 900; letter-spacing: 1px; }
-  .sub-title { display: block; font-size: 14px; color: var(--text-muted); margin-top: 8px; letter-spacing: 2px; }
 
-  .search-box {
+  .button-group {
     display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .btn-lobby {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 12px;
-    max-width: 480px;
-    margin: 0 auto;
-  }
-  .search-input {
-    flex: 1;
-    padding: 15px 20px;
-    background-color: var(--bg-input);
-    border: 1px solid var(--border-metal);
-    color: var(--text-main);
-    border-radius: 8px;
-    font-size: 16px;
-    outline: none;
-    transition: all 0.3s;
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.5);
-  }
-  .search-input:focus {
-    border-color: var(--gold-solid);
-    box-shadow: 0 0 0 1px var(--gold-solid), inset 0 2px 4px rgba(0,0,0,0.5);
-  }
-  .btn-search {
-    padding: 0 28px;
-    background: var(--gold-gradient);
-    color: #1a1500;
-    border: none;
+    padding: 16px;
     border-radius: 8px;
     font-size: 16px;
     font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-    box-shadow: 0 4px 12px rgba(197, 155, 39, 0.2);
-  }
-  .btn-search:hover { filter: brightness(1.15); transform: translateY(-1px); }
-
-  /* --- 管理員按鈕與彈出視窗 --- */
-  .btn-admin-toggle { 
-    position: absolute; top: 25px; right: 25px; background: none; 
-    border: 1px solid var(--border-metal); color: var(--text-muted); 
-    padding: 8px 15px; border-radius: 6px; cursor: pointer; font-size: 13px;
-    transition: 0.3s;
-  }
-  .btn-admin-toggle:hover { border-color: var(--gold-solid); color: var(--gold-solid); background: var(--gold-dim); }
-
-  .modal-overlay { 
-    display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
-    background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); 
-    z-index: 1000; justify-content: center; align-items: center; 
-  }
-  .modal-box { 
-    background: var(--bg-card); border: 1px solid #334155; border-radius: 12px; 
-    padding: 25px; width: 90%; max-width: 400px; 
-    box-shadow: 0 20px 50px rgba(0,0,0,0.8); 
-  }
-  .modal-title { color: var(--text-main); font-size: 15px; margin-top: 0; margin-bottom: 15px; font-weight: normal; }
-  .modal-input { 
-    width: 100%; padding: 12px 15px; background: var(--bg-input); 
-    border: 1px solid var(--text-muted); color: var(--text-main); 
-    border-radius: 8px; font-size: 16px; box-sizing: border-box; 
-    margin-bottom: 25px; outline: none; transition: 0.3s;
-  }
-  .modal-input:focus { border-color: var(--gold-solid); box-shadow: 0 0 0 1px var(--gold-solid); }
-  .modal-buttons { display: flex; justify-content: flex-end; gap: 12px; }
-  .btn-modal { padding: 8px 22px; border-radius: 20px; border: none; cursor: pointer; font-size: 14px; transition: 0.2s; }
-  .btn-cancel { background: #334155; color: var(--text-main); }
-  .btn-cancel:hover { background: #475569; }
-  .btn-confirm { background: #cbd5e1; color: #0f1118; font-weight: bold; }
-  .btn-confirm:hover { background: #f1f5f9; }
-
-  /* --- 後台管理區 --- */
-  .admin-panel { display: none; background: #0c0d12; border: 1px solid #991b1b; border-radius: 12px; padding: 25px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); }
-  .admin-panel h3 { margin-top: 0; color: #f87171; border-bottom: 1px solid var(--border-metal); padding-bottom: 15px; }
-  
-  .form-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-bottom: 20px; }
-  .form-group { display: flex; flex-direction: column; }
-  .form-group label { margin-bottom: 8px; font-size: 13px; color: var(--gold-solid); font-weight: bold; letter-spacing: 0.5px;}
-  .form-group input, .form-group select { 
-    padding: 12px; background-color: var(--bg-input); border: 1px solid var(--border-metal); 
-    color: var(--text-main); border-radius: 6px; font-size: 14px; outline: none; color-scheme: dark;
-  }
-  .form-group input:focus, .form-group select:focus { border-color: var(--gold-solid); }
-
-  .btn-save-record { background: #059669; color: white; border: none; padding: 15px; border-radius: 8px; font-weight: bold; font-size: 16px; cursor: pointer; width: 100%; margin-top: 10px; transition: 0.2s;}
-  .btn-save-record:hover { background: #047857; }
-
-  /* --- VIP 電子保固卡展示區 --- */
-  .warranty-card {
-    display: none;
-    background: linear-gradient(135deg, #161824 0%, #0b0c13 100%);
-    border: 1px solid var(--gold-solid);
-    border-radius: 16px;
-    padding: 35px;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.9), 0 0 30px rgba(212, 175, 55, 0.1);
-    position: relative;
-    overflow: hidden;
-  }
-  .warranty-card::before {
-    content: ''; position: absolute; top: 0; left: -50%; width: 200%; height: 100%;
-    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.03) 50%, rgba(255,255,255,0) 100%);
-    transform: rotate(30deg); pointer-events: none;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
   }
 
-  .card-header {
-    display: flex; justify-content: space-between; align-items: flex-start;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.2); padding-bottom: 20px; margin-bottom: 25px;
+  /* 智慧報價系統樣式 */
+  .btn-quote {
+    background: #1e293b;
+    color: var(--text-main);
+    border: 1px solid var(--border-metal);
   }
-  .card-logo { font-size: 20px; font-weight: 900; color: var(--text-main); letter-spacing: 1px; }
-  .card-logo span { color: var(--gold-solid); }
-  
-  .status-badge { padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: bold; letter-spacing: 1px; }
-  .status-active { background: rgba(16, 185, 129, 0.15); color: var(--success); border: 1px solid var(--success); }
-  .status-expired { background: rgba(239, 68, 68, 0.15); color: var(--danger); border: 1px solid var(--danger); }
-
-  .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 30px; }
-  .info-item { display: flex; flex-direction: column; }
-  .info-label { font-size: 12px; color: var(--text-muted); margin-bottom: 5px; letter-spacing: 1px; }
-  .info-value { font-size: 16px; font-weight: bold; color: var(--text-main); }
-  
-  .highlight-value { color: var(--gold-solid); font-family: 'Arial', sans-serif; letter-spacing: 0.5px; }
-  .reminder-item { grid-column: 1 / -1; background: rgba(212, 175, 55, 0.05); padding: 15px; border-radius: 8px; border: 1px dashed rgba(212, 175, 55, 0.3); margin-top: 5px; }
-  .reminder-value { color: #fb923c; font-size: 17px; font-weight: 800; }
-
-  .card-footer { margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--border-metal); display: flex; justify-content: space-between; font-size: 12px; color: var(--text-muted); }
-  .shop-phone { color: var(--gold-solid); font-weight: bold; }
-
-  .error-msg {
-    display: none; background: rgba(239, 68, 68, 0.1); border: 1px solid var(--danger);
-    color: #fca5a5; padding: 15px; border-radius: 8px; font-size: 14px; text-align: center;
+  .btn-quote:hover {
+    background: #334155;
+    border-color: var(--text-muted);
+    transform: translateY(-2px);
   }
-  .btn-back-lobby { display: inline-block; margin-top: 25px; color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.2s; }
-  .btn-back-lobby:hover { color: var(--gold-solid); }
 
-  @media (max-width: 768px) { .info-grid { grid-template-columns: 1fr; gap: 15px; } }
+  /* 電子保固查詢樣式 */
+  .btn-search {
+    background: var(--gold-gradient);
+    color: #10121a;
+    border: none;
+    box-shadow: 0 4px 15px rgba(197, 155, 39, 0.2);
+  }
+  .btn-search:hover {
+    filter: brightness(1.15);
+    box-shadow: 0 6px 20px rgba(197, 155, 39, 0.3);
+    transform: translateY(-2px);
+  }
+
+  /* 保固條款須知樣式 */
+  .btn-warranty {
+    background: transparent;
+    color: var(--text-muted);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+    padding: 12px;
+  }
+  .btn-warranty:hover {
+    color: var(--text-main);
+    border-color: var(--text-muted);
+    background: rgba(255, 255, 255, 0.02);
+  }
+
+  .footer-text {
+    margin-top: 35px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.2);
+    letter-spacing: 1px;
+  }
 </style>
 </head>
 <body>
 
-<div class="modal-overlay" id="password-modal">
-  <div class="modal-box">
-    <h3 class="modal-title">請輸入管理員密碼：</h3>
-    <input type="password" class="modal-input" id="admin-pwd-input" placeholder="請輸入密碼">
-    <div class="modal-buttons">
-      <button class="btn-modal btn-cancel" onclick="closePasswordModal()">取消</button>
-      <button class="btn-modal btn-confirm" onclick="verifyPassword()">確定</button>
+<div class="lobby-container">
+  <div class="lobby-card">
+    <h1 class="brand-logo">ZERO職人鍍膜_XPEL竹北授權店</h1>
+    <div class="brand-subtitle">全方位車體防護 尊榮入口大廳</div>
+    
+    <div class="button-group">
+      <a href="./quote/index.html" class="btn-lobby btn-quote">⚙️ 智慧報價系統</a>
+      
+      <a href="./search/index.html" class="btn-lobby btn-search">🔍 鍍膜保固查詢</a>
+      
+      <a href="./warranty/index.html" class="btn-lobby btn-warranty">📖 保固條款須知</a>
     </div>
+
+    <div class="footer-text">© ZERO PROFESSIONAL DETAILING CENTER</div>
   </div>
 </div>
 
-<div class="container">
-  <div class="search-section">
-    <button type="button" class="btn-admin-toggle" onclick="toggleAdmin()">⚙️ 後台保固登錄</button>
-    <div class="title-area">
-      <h1 class="main-title text-metallic">ZERO職人鍍膜_XPEL竹北授權店</h1>
-      <span class="sub-title">頂級聚矽氧烷鍍膜 線上電子保固查詢</span>
-    </div>
-    
-    <div class="search-box">
-      <input type="text" id="search-input" class="search-input" placeholder="請輸入車牌號碼 或 手機號碼">
-      <button type="button" class="btn-search" onclick="queryWarranty()">查詢</button>
-    </div>
-  </div>
-
-  <div class="admin-panel" id="admin-panel">
-    <h3>⚙️ 鍍膜保固資料 登錄後台</h3>
-    
-    <div style="background: #1e293b; padding: 20px; border-radius: 8px; margin-bottom: 25px; border: 1px solid var(--border-metal);">
-        <label style="color:var(--gold-solid); font-weight:bold; display:block; margin-bottom:12px; font-size: 15px;">💾 資料備份與還原工具：</label>
-        <div style="display: flex; gap: 10px;">
-            <button type="button" onclick="exportWarrantyData()" style="padding: 10px 15px; background: #334155; border: 1px solid var(--border-metal); border-radius: 6px; color: white; cursor: pointer; flex: 1;">備份保固資料</button>
-            <button type="button" onclick="importWarrantyData()" style="padding: 10px 15px; background: #059669; border: none; border-radius: 6px; color: white; cursor: pointer; flex: 1;">還原保固資料</button>
-        </div>
-    </div>
-
-    <div style="background: #1e293b; padding: 20px; border-radius: 8px; margin-bottom: 25px; border: 1px solid var(--border-metal);">
-      <label style="color:var(--gold-solid); font-weight:bold; display:block; margin-bottom:12px; font-size: 15px;">🔍 載入 / 刪除已建檔保固：</label>
-      <div style="display: flex; gap: 15px;">
-        <select id="adm-edit-select" onchange="loadSavedWarrantyToAdmin()" style="flex: 1; padding: 12px; border-radius: 6px; border: 1px solid var(--border-metal); background: var(--bg-base); color: white; font-size: 14px;">
-          <option value="">-- 選擇已儲存的車牌號碼 --</option>
-        </select>
-        <button type="button" onclick="deleteSavedWarranty()" style="background: #991b1b; padding: 12px 20px; border-radius: 6px; color: white; border: none; font-weight: bold; cursor: pointer; white-space: nowrap; transition: 0.2s;">🗑️ 刪除</button>
-      </div>
-    </div>
-
-    <div style="border-top: 1px dashed var(--border-metal); margin: 25px 0;"></div>
-
-    <div class="form-grid">
-      <div class="form-group">
-        <label>保固單號 (可自訂)</label>
-        <input type="text" id="adm-w-id" placeholder="例如：ZR-2024050101">
-      </div>
-      <div class="form-group">
-        <label>車主姓名 (建議隱藏中間字)</label>
-        <input type="text" id="adm-w-name" placeholder="例如：王*明">
-      </div>
-      <div class="form-group">
-        <label>車牌號碼 (⚠️必填/查詢用)</label>
-        <input type="text" id="adm-w-plate" placeholder="例如：EAJ-8525" style="border-color:var(--gold-solid);">
-      </div>
-      <div class="form-group">
-        <label>手機號碼 (⚠️必填/查詢用)</label>
-        <input type="text" id="adm-w-phone" placeholder="例如：0912345678" style="border-color:var(--gold-solid);">
-      </div>
-      
-      <div class="form-group">
-        <label>汽車廠牌 (下拉選擇/可手填)</label>
-        <input type="text" id="adm-w-brand" list="brand-list" placeholder="請選擇或輸入" oninput="updateModelOptions()">
-        <datalist id="brand-list"></datalist>
-      </div>
-      <div class="form-group">
-        <label>車款型號 (下拉選擇/可手填)</label>
-        <input type="text" id="adm-w-model" list="model-list" placeholder="請選擇或輸入">
-        <datalist id="model-list"></datalist>
-      </div>
-
-      <div class="form-group" style="grid-column: 1 / -1;">
-        <label>施作鍍膜方案 (下拉選擇)</label>
-        <select id="adm-w-type">
-          <option value="單層鍍膜 (車漆基礎防護)">單層鍍膜 (車漆基礎防護)</option>
-          <option value="單層鍍膜 (全方位防護) ｜ 車漆、玻璃、鋼圈、塑膠件">單層鍍膜 (全方位防護) ｜ 車漆、玻璃、鋼圈、塑膠件</option>
-          <option value="雙層鍍膜 (頂級極致防護) ｜ 車漆、玻璃、鋼圈、塑膠件">雙層鍍膜 (頂級極致防護) ｜ 車漆、玻璃、鋼圈、塑膠件</option>
-          <option value="全車玻璃鍍膜 (標準版)">全車玻璃鍍膜 (標準版)</option>
-          <option value="全車玻璃鍍膜 (全景天窗版)">全車玻璃鍍膜 (全景天窗版)</option>
-          <option value="前擋玻璃鍍膜">前擋玻璃鍍膜</option>
-          <option value="塑膠件專屬鍍膜">塑膠件專屬鍍膜</option>
-          <option value="專屬鋼圈鍍膜">專屬鋼圈鍍膜</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label>施工日期 (選擇後自動推算維護日)</label>
-        <input type="date" id="adm-w-date" onchange="autoCalcMaintenance()">
-      </div>
-      <div class="form-group">
-        <label>保固到期日</label>
-        <input type="date" id="adm-w-expiry">
-      </div>
-      <div class="form-group" style="grid-column: 1 / -1;">
-        <label>下次建議常規維護日 (預設+6個月)</label>
-        <input type="text" id="adm-w-reminder" placeholder="例如：2024-11-01 (每半年建議回廠例行保養)">
-      </div>
-    </div>
-    
-    <button type="button" class="btn-save-record" onclick="saveWarrantyRecord()">💾 儲存 / 更新保固資料</button>
-  </div>
-
-  <div class="error-msg" id="error-block">
-    ⚠️ 查無此保固資料。請確認車牌或手機輸入是否正確，或聯絡現場職人為您確認建檔狀態。
-  </div>
-
-  <div class="warranty-card" id="warranty-card-block">
-    <div class="card-header">
-      <div class="card-logo">ZERO<span>職人鍍膜</span></div>
-      <div id="w-status" class="status-badge status-active">保固中</div>
-    </div>
-    
-    <div class="info-grid">
-      <div class="info-item">
-        <span class="info-label">保固單號 WARRANTY ID</span>
-        <span class="info-value highlight-value" id="w-id">--</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">車主稱呼 OWNER</span>
-        <span class="info-value" id="w-name">--</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">車牌號碼 PLATE NUMBER</span>
-        <span class="info-value highlight-value" id="w-plate">--</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">車款型號 CAR MODEL</span>
-        <span class="info-value" id="w-model">--</span>
-      </div>
-      <div class="info-item" style="grid-column: 1 / -1;">
-        <span class="info-label">施作鍍膜項目 DETAILED SERVICE</span>
-        <span class="info-value" id="w-type" style="color:#fff;">--</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">施工日期 SERVICE DATE</span>
-        <span class="info-value" id="w-date">--</span>
-      </div>
-      <div class="info-item">
-        <span class="info-label">保固到期日 WARRANTY EXPIRY</span>
-        <span class="info-value" id="w-expiry">--</span>
-      </div>
-      
-      <div class="info-item reminder-item">
-        <span class="info-label" style="color:rgba(212, 175, 55, 0.8); font-weight:bold;">💡 下次建議常規鍍膜維護日 NEXT MAINTENANCE</span>
-        <span class="info-value reminder-value" id="w-reminder">--</span>
-      </div>
-    </div>
-    
-    <div class="card-footer">
-      <div>授權施工中心：ZERO職人鍍膜_XPEL竹北授權店</div>
-      <div>服務電話：<span class="shop-phone">03-5586322</span></div>
-    </div>
-  </div>
-
-  <div style="text-align: center;">
-    <a href="../index.html" class="btn-back-lobby">⬅️ 返回尊榮入口大廳</a>
-  </div>
-</div>
-
-<script>
-  // =========================================================================
-  // ★ 鍍膜客戶電子保固資料庫 (Hardcoded) ★
-  // 未來要寫死資料，請將備份出來的代碼取代下方 { } 內容
-  // =========================================================================
-  const hardcodedWarrantyDB = {};
-
-  // 內建報價系統的車廠資料，提供給下拉選單使用 (已移除橫槓的 Mercedes Benz)
-  const carDatabase = { "Porsche": ["Macan", "Cayenne", "911", "718", "Taycan", "Panamera"], "Tesla": ["MODEL 3", "MODEL Y", "MODEL X", "MODEL S"], "BMW": ["1 Series", "2 Series", "3 Series", "4 Series", "5 Series", "X1", "X3", "X5", "i4", "iX"], "Mercedes Benz": ["A-Class", "C-Class", "E-Class", "S-Class", "GLC", "GLE", "GLA"], "Toyota": [], "Ford": [], "Alfa Romeo": [], "Ferrari": [], "Hyundai": [], "Lexus": ["NX", "RX", "UX", "ES", "IS"], "MAZDA": ["CX-5", "CX-30", "CX-60"] };
-
-  // 載入本地暫存並合併
-  let localWarrantyDb = JSON.parse(localStorage.getItem('zero_warranty_db_v1')) || {};
-  let customWarrantyDb = { ...hardcodedWarrantyDB, ...localWarrantyDb };
-
-  // --- 初始化車廠下拉選單 ---
-  function initData() {
-    const brandList = document.getElementById('brand-list');
-    Object.keys(carDatabase).forEach(brand => {
-      brandList.innerHTML += `<option value="${brand}"></option>`;
-    });
-    refreshAdminDropdown();
-  }
-
-  function updateModelOptions() {
-    const brand = document.getElementById('adm-w-brand').value.trim();
-    const modelList = document.getElementById('model-list');
-    modelList.innerHTML = '';
-    if(!brand || !carDatabase[brand]) return;
-    carDatabase[brand].forEach(model => {
-      modelList.innerHTML += `<option value="${model}"></option>`;
-    });
-  }
-
-  // --- 密碼鎖功能 ---
-  function toggleAdmin() {
-    const panel = document.getElementById('admin-panel');
-    const modal = document.getElementById('password-modal');
-    if (panel.style.display === 'block') { 
-      panel.style.display = 'none'; 
-    } else { 
-      modal.style.display = 'flex'; 
-      document.getElementById('admin-pwd-input').value = '';
-      setTimeout(() => document.getElementById('admin-pwd-input').focus(), 100);
-    }
-  }
-  function closePasswordModal() { document.getElementById('password-modal').style.display = 'none'; }
-  function verifyPassword() {
-    const adminPassword = "0000"; // ★ 請在此修改您的密碼 ★
-    const input = document.getElementById('admin-pwd-input').value;
-    if (input === adminPassword) {
-      closePasswordModal();
-      document.getElementById('admin-panel').style.display = 'block'; 
-    } else {
-      alert("密碼錯誤，拒絕進入！");
-      document.getElementById('admin-pwd-input').value = '';
-      document.getElementById('admin-pwd-input').focus();
-    }
-  }
-  document.getElementById('admin-pwd-input').addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') verifyPassword();
-  });
-
-  // --- 自動推算維護日 (+6個月) ---
-  function autoCalcMaintenance() {
-    const dateInput = document.getElementById('adm-w-date').value;
-    if(!dateInput) return;
-    
-    let date = new Date(dateInput);
-    // 加 6 個月
-    date.setMonth(date.getMonth() + 6);
-    
-    const yyyy = date.getFullYear();
-    const mm = String(date.getMonth() + 1).padStart(2, '0');
-    const dd = String(date.getDate()).padStart(2, '0');
-    const formattedDate = `${yyyy}-${mm}-${dd}`;
-    
-    document.getElementById('adm-w-reminder').value = `${formattedDate} (每半年建議回廠做一次例行保養)`;
-  }
-
-  // --- 後台儲存、刪除與下拉更新 ---
-  function refreshAdminDropdown() {
-    const select = document.getElementById('adm-edit-select');
-    select.innerHTML = '<option value="">-- 選擇已儲存的車牌號碼 --</option>';
-    
-    // 過濾出唯一的紀錄 (因為我們同時存了車牌跟手機為Key，這裡只列出車牌當作選單)
-    let addedPlates = new Set();
-    Object.values(customWarrantyDb).forEach(data => {
-      if(!addedPlates.has(data.plate)) {
-        select.innerHTML += `<option value="${data.plate}">${data.plate} (${data.name})</option>`;
-        addedPlates.add(data.plate);
-      }
-    });
-  }
-
-  function saveWarrantyRecord() {
-    const id = document.getElementById('adm-w-id').value.trim() || 'ZR-' + new Date().getTime().toString().slice(-8);
-    const name = document.getElementById('adm-w-name').value.trim();
-    const plate = document.getElementById('adm-w-plate').value.trim();
-    const phone = document.getElementById('adm-w-phone').value.trim();
-    const brand = document.getElementById('adm-w-brand').value.trim();
-    const model = document.getElementById('adm-w-model').value.trim();
-    const type = document.getElementById('adm-w-type').value;
-    const date = document.getElementById('adm-w-date').value;
-    const expiry = document.getElementById('adm-w-expiry').value;
-    const reminder = document.getElementById('adm-w-reminder').value;
-
-    if(!plate || !phone) return alert("⚠️「車牌號碼」與「手機號碼」為必填欄位，這是客戶搜尋的關鍵字！");
-
-    // 清洗金鑰：全大寫、去除空格與橫槓
-    const cleanPlate = plate.toUpperCase().replace(/[\s-]/g, '');
-    const cleanPhone = phone.replace(/[\s-]/g, '');
-
-    const record = {
-      id: id, name: name, plate: plate, phone: phone, 
-      brand: brand, model: (brand + " " + model).trim(), 
-      type: type, date: date, expiry: expiry, reminder: reminder
-    };
-
-    // 雙重存檔：讓客戶搜車牌或手機都找得到同一筆！
-    customWarrantyDb[cleanPlate] = record;
-    customWarrantyDb[cleanPhone] = record;
-    localWarrantyDb[cleanPlate] = record;
-    localWarrantyDb[cleanPhone] = record;
-
-    localStorage.setItem('zero_warranty_db_v1', JSON.stringify(localWarrantyDb));
-    alert(`✅ 保固資料建檔成功！\n車牌 [${plate}] / 手機 [${phone}] 皆可查詢。`);
-    refreshAdminDropdown();
-  }
-
-  function loadSavedWarrantyToAdmin() {
-    const selPlate = document.getElementById('adm-edit-select').value;
-    if(!selPlate) return;
-    
-    const cleanPlate = selPlate.toUpperCase().replace(/[\s-]/g, '');
-    const data = customWarrantyDb[cleanPlate];
-    if(!data) return;
-
-    document.getElementById('adm-w-id').value = data.id || '';
-    document.getElementById('adm-w-name').value = data.name || '';
-    document.getElementById('adm-w-plate').value = data.plate || '';
-    document.getElementById('adm-w-phone').value = data.phone || '';
-    
-    // 簡單拆分 brand 與 model (如果之前存的是連在一起的)
-    let fullModel = data.model || '';
-    let b = data.brand || '';
-    let m = fullModel.replace(b, '').trim();
-    
-    document.getElementById('adm-w-brand').value = b;
-    document.getElementById('adm-w-model').value = m;
-    
-    document.getElementById('adm-w-type').value = data.type || '';
-    document.getElementById('adm-w-date').value = data.date || '';
-    document.getElementById('adm-w-expiry').value = data.expiry || '';
-    document.getElementById('adm-w-reminder').value = data.reminder || '';
-  }
-
-  function deleteSavedWarranty() {
-    const selPlate = document.getElementById('adm-edit-select').value;
-    if(!selPlate) return alert('請先從下拉選單選擇要刪除的資料！');
-    
-    if(confirm(`確定要刪除車牌 [${selPlate}] 的保固資料嗎？`)) {
-      const cleanPlate = selPlate.toUpperCase().replace(/[\s-]/g, '');
-      const data = customWarrantyDb[cleanPlate];
-      
-      if(data) {
-        const cleanPhone = (data.phone || '').replace(/[\s-]/g, '');
-        delete customWarrantyDb[cleanPlate];
-        delete customWarrantyDb[cleanPhone];
-        delete localWarrantyDb[cleanPlate];
-        delete localWarrantyDb[cleanPhone];
-        localStorage.setItem('zero_warranty_db_v1', JSON.stringify(localWarrantyDb));
-        alert('已成功刪除！');
-        refreshAdminDropdown();
-        
-        // 清空輸入框
-        ['id','name','plate','phone','brand','model','date','expiry','reminder'].forEach(k => {
-          document.getElementById('adm-w-' + k).value = '';
-        });
-      }
-    }
-  }
-
-  // --- 備份與還原 ---
-  function exportWarrantyData() {
-      const data = JSON.stringify(customWarrantyDb);
-      if (Object.keys(customWarrantyDb).length === 0) return alert("目前沒有資料可以備份！");
-      const textarea = document.createElement("textarea");
-      textarea.value = data;
-      document.body.appendChild(textarea);
-      textarea.select();
-      document.execCommand("copy");
-      document.body.removeChild(textarea);
-      alert("✅ 保固資料代碼已複製到剪貼簿！請將此代碼貼回原始檔的 const hardcodedWarrantyDB 區塊！");
-  }
-
-  function importWarrantyData() {
-      const data = prompt("請貼上您之前備份的保固代碼:");
-      if (data) {
-          try {
-              const parsed = JSON.parse(data);
-              localStorage.setItem('zero_warranty_db_v1', JSON.stringify(parsed));
-              alert("資料已還原，網頁將重新整理！");
-              location.reload();
-          } catch (e) { alert("代碼錯誤，請確認是否複製完整。"); }
-      }
-  }
-
-  // --- 前台客戶查詢邏輯 ---
-  function queryWarranty() {
-    const rawInput = document.getElementById('search-input').value.trim();
-    const errorBlock = document.getElementById('error-block');
-    const cardBlock = document.getElementById('warranty-card-block');
-    
-    if (!rawInput) {
-      alert("請輸入車牌號碼或手機號碼！");
-      return;
-    }
-
-    const cleanKey = rawInput.toUpperCase().replace(/[\s-]/g, '');
-    const data = customWarrantyDb[cleanKey];
-
-    if (data) {
-      errorBlock.style.display = 'none';
-      cardBlock.style.display = 'block';
-
-      document.getElementById('w-id').innerText = data.id || '--';
-      document.getElementById('w-name').innerText = data.name || '--';
-      document.getElementById('w-plate').innerText = data.plate || '--';
-      document.getElementById('w-model').innerText = data.model || '--';
-      document.getElementById('w-type').innerText = data.type || '--';
-      document.getElementById('w-date').innerText = data.date || '--';
-      document.getElementById('w-expiry').innerText = data.expiry || '--';
-      document.getElementById('w-reminder').innerText = data.reminder || '--';
-
-      // 動態判斷狀態
-      if(data.expiry) {
-        const expiryDate = new Date(data.expiry);
-        const today = new Date();
-        const statusBadge = document.getElementById('w-status');
-
-        if (today <= expiryDate) {
-          statusBadge.innerText = "✅ 保固中";
-          statusBadge.className = "status-badge status-active";
-        } else {
-          statusBadge.innerText = "❌ 已過期";
-          statusBadge.className = "status-badge status-expired";
-        }
-      }
-
-      cardBlock.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      cardBlock.style.display = 'none';
-      errorBlock.style.display = 'block';
-    }
-  }
-
-  document.getElementById('search-input').addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') queryWarranty();
-  });
-
-  initData();
-</script>
 </body>
 </html>
