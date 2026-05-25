@@ -38,7 +38,7 @@
     justify-content: center; 
     min-height: 100vh;
   }
-  .container { width: 100%; max-width: 1000px; }
+  .container { width: 100%; max-width: 1000px; position: relative; }
 
   /* --- 金屬文字特效 --- */
   .text-metallic {
@@ -218,17 +218,15 @@
   }
   .vip-note {
     display: block;
-    color: #fed7aa; /* 淺橘色文字 */
+    color: #fed7aa;
     font-size: 12px;
     font-weight: normal;
     margin-top: 4px;
     text-shadow: none;
   }
-  .vip-item span {
-    color: var(--vip-solid) !important; /* 價格與標題改為亮橘色 */
-  }
+  .vip-item span { color: var(--vip-solid) !important; }
 
-  /* ★ 修正：一般客開放之玻璃鍍膜橫幅樣式 ★ */
+  /* 一般客開放之玻璃鍍膜橫幅樣式 */
   .glass-header {
     background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #1e293b 100%) !important;
     color: var(--gold-solid) !important;
@@ -252,6 +250,11 @@
   }
   .btn-print:hover { background: #334155; border-color: var(--text-muted); }
 
+  .btn-back-lobby {
+    display: inline-block; margin-top: 25px; color: var(--text-muted); text-decoration: none; font-size: 14px; transition: 0.2s;
+  }
+  .btn-back-lobby:hover { color: var(--gold-solid); }
+
   @media (max-width: 768px) { .plan-cards { grid-template-columns: 1fr; } .admin-grid { grid-template-columns: 1fr; } .btn-print { position: static; float: right; margin-bottom: 20px;} }
   
   /* =========================================================
@@ -259,72 +262,38 @@
      ========================================================= */
   @media print {
     * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
-    
     @page { margin: 5mm; size: A4 portrait; }
-
-    body { 
-      background: #0a0b10 !important; 
-      background-image: radial-gradient(ellipse at top, #1a1d2b 0%, #0a0b10 80%) !important;
-      color: #f1f5f9 !important; 
-      padding: 0 !important;
-      font-size: 10px !important; 
-      height: 100% !important;
-      overflow: hidden !important; 
-    }
-    
-    .input-section, .admin-panel, .btn-print, .price-status-tag { display: none !important; }
-    
-    .quote-result { 
-      display: block !important; border: none !important; padding: 3mm !important; 
-      background: transparent !important; box-shadow: none !important; max-height: 100vh !important; 
-    }
-
+    body { background: #0a0b10 !important; background-image: radial-gradient(ellipse at top, #1a1d2b 0%, #0a0b10 80%) !important; color: #f1f5f9 !important; padding: 0 !important; font-size: 10px !important; height: 100% !important; overflow: hidden !important; }
+    .input-section, .admin-panel, .btn-print, .price-status-tag, .btn-back-lobby { display: none !important; }
+    .quote-result { display: block !important; border: none !important; padding: 3mm !important; background: transparent !important; box-shadow: none !important; max-height: 100vh !important; }
     .quote-header { margin-bottom: 8px !important; }
     .quote-header h2 { font-size: 20px !important; margin-bottom: 6px !important; padding:0 !important; }
     .car-info-display { font-size: 13px !important; padding: 4px 12px !important; margin: 0 !important; }
-
-    .text-metallic {
-      background: linear-gradient(135deg, #c59b27 0%, #fcf6ba 40%, #c59b27 80%, #aa771c 100%) !important;
-      -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important;
-    }
-
+    .text-metallic { background: linear-gradient(135deg, #c59b27 0%, #fcf6ba 40%, #c59b27 80%, #aa771c 100%) !important; -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important; }
     .plan-category { margin-bottom: 8px !important; break-inside: avoid !important; page-break-inside: avoid !important;}
     .category-title { font-size: 14px !important; margin-bottom: 2px !important; padding-left: 6px !important; border-left-width: 3px !important; }
     .category-target { display: none !important; } 
-
     #wrap-section .plan-cards { display: flex !important; flex-wrap: wrap !important; gap: 5px !important; }
     #wrap-section .card { width: calc(50% - 3px) !important; box-sizing: border-box !important; margin: 0 !important; }
-
     #quote-area { display: flex !important; flex-direction: row !important; flex-wrap: wrap !important; align-content: flex-start !important; }
     .quote-header, #wrap-section { width: 100% !important; flex: 0 0 100% !important; }
     #wash-section { width: 48% !important; flex: 0 0 48% !important; margin-top: 0 !important; margin-right: 4% !important; }
     #coating-section { width: 48% !important; flex: 0 0 48% !important; margin-top: 0 !important; }
-
     #wash-section .plan-cards, #coating-section .plan-cards { display: flex !important; flex-direction: column !important; gap: 5px !important; }
     #wash-section .card, #coating-section .card { width: 100% !important; box-sizing: border-box !important; }
-
-    .card { 
-      background: linear-gradient(145deg, #181a24, #12141c) !important; 
-      border: 1px solid #2a2d3d !important; padding: 6px 10px !important; 
-      border-radius: 6px !important; box-shadow: none !important;
-      break-inside: avoid !important; page-break-inside: avoid !important;
-    }
+    .card { background: linear-gradient(145deg, #181a24, #12141c) !important; border: 1px solid #2a2d3d !important; padding: 6px 10px !important; border-radius: 6px !important; box-shadow: none !important; break-inside: avoid !important; page-break-inside: avoid !important; }
     .card-title { font-size: 12px !important; color: #f1f5f9 !important; margin-bottom: 4px !important; padding-bottom: 3px !important; border-bottom: 1px solid #2a2d3d !important; }
     .price { font-size: 14px !important; color: #d4af37 !important; }
-    
     .card li { margin-bottom: 2px !important; font-size: 9px !important; color: #cbd5e1 !important; line-height: 1.1 !important;}
     .card li.bullet::before { color: #d4af37 !important; margin-right: 4px !important; margin-top: 1px !important;}
-    
     .list-header { margin-top: 4px !important; margin-bottom: 2px !important; font-size: 10px !important; padding: 2px !important; color: #f1f5f9 !important; background: #2a2d3d !important; border: none !important; }
     #wrap-section .list-header { background: none !important; color: #d4af37 !important; margin-top: 6px !important; font-size: 11px !important; width: 100% !important; }
     .menu-item { padding-bottom: 2px !important; margin-bottom: 2px !important; border-bottom: 1px dashed #2a2d3d !important; }
     .menu-item span { font-size: 10px !important; color: #d4af37 !important; }
-
     .vip-header { background: #ea580c !important; color: #fff !important; box-shadow: none !important; padding: 4px 8px !important; margin-bottom: 6px !important; border-radius: 4px !important; font-weight: 800 !important; text-align: center !important; }
     .glass-header { background: #1e293b !important; color: #d4af37 !important; border: 1px solid #d4af37 !important; padding: 4px 8px !important; margin-bottom: 6px !important; border-radius: 4px !important; font-weight: 800 !important; text-align: center !important; }
     .vip-note { display: none !important; } 
     .vip-item span { color: #f97316 !important; }
-
     .footer-notes { width: 100% !important; flex: 0 0 100% !important; margin-top: 8px !important; padding-top: 5px !important; font-size: 8px !important; color: #94a3b8 !important; border-top: 1px solid #2a2d3d !important; }
   }
 </style>
@@ -551,13 +520,15 @@
       📌 全省經銷統一價格，報價透明一致
     </div>
   </div>
+  
+  <div style="text-align: center; margin-top: 30px;">
+    <a href="../index.html" class="btn-back-lobby">⬅️ 返回尊榮入口大廳</a>
+  </div>
 </div>
 
 <script>
   // =========================================================================
   // ★ 預設內建專屬車款資料庫 (Hardcoded) ★
-  // 未來要新增資料，請將你從「備份報價資料」複製出來的代碼，
-  // 直接取代下方大括號 { } 裡面的內容即可！
   // =========================================================================
   const hardcodedDatabase = {
     "2026|Tesla|MODEL Y":{"a1":150000,"a2":155000,"b1":105000,"b2":130000,"c1":90000,"c2":100000,"w1":800,"w2":1500,"w3":2100,"w4":2100,"w5":3600,"g1":4000,"g2":8000,"g3":10000,"g4":12000,"c_1":16500,"c_2":28000,"c_3":43000},
@@ -692,20 +663,17 @@
     "2026|Mercedes Benz|V - Class":{"a1":194000,"a2":199000,"b1":149000,"b2":174000,"c1":134000,"c2":144000,"w1":700,"w2":1200,"w3":1800,"w4":1800,"w5":3000,"g1":4000,"g2":8000,"g3":10000,"g4":12000,"c_1":15000,"c_2":26000,"c_3":42000}
   };
 
-
-  // --- 新增：客製化密碼鎖功能 ---
+  // --- 密碼鎖功能 ---
   function toggleAdmin() {
+    const adminPassword = "0000"; // ★ 請在此修改您的密碼 ★
     const panel = document.getElementById('admin-panel');
     const modal = document.getElementById('password-modal');
     
-    // 如果後台已經是開啟狀態，就直接關閉
     if (panel.style.display === 'block') { 
       panel.style.display = 'none'; 
     } else { 
-      // 否則，跳出密碼輸入框
       modal.style.display = 'flex'; 
       document.getElementById('admin-pwd-input').value = '';
-      // 延遲一點點時間讓輸入框自動取得焦點
       setTimeout(() => document.getElementById('admin-pwd-input').focus(), 100);
     }
   }
@@ -715,7 +683,7 @@
   }
 
   function verifyPassword() {
-    const adminPassword = "0000"; // ★ 請在此修改您的密碼 ★
+    const adminPassword = "0000"; // ★ 驗證密碼
     const input = document.getElementById('admin-pwd-input').value;
     
     if (input === adminPassword) {
@@ -729,17 +697,33 @@
     }
   }
 
-  // 讓使用者按下 Enter 鍵也能觸發密碼驗證
   document.getElementById('admin-pwd-input').addEventListener('keypress', function (e) {
     if (e.key === 'Enter') {
       verifyPassword();
     }
   });
 
+  // --- 一鍵填入洗車/鍍膜基礎價 ---
+  function loadClassToAdmin() {
+    const cls = document.getElementById('adm-loader').value;
+    const prices = classPrices[cls];
+    if (prices) {
+      ['w1','w2','w3','w4','w5','g1','g2','g3','g4','c_1','c_2','c_3'].forEach(k => {
+        const input = document.getElementById('p-' + k);
+        if(input) input.value = prices[k];
+      });
+      ['a1','a2','b1','b2','c1','c2'].forEach(k => {
+        const input = document.getElementById('p-' + k);
+        if(input) input.value = '';
+      });
+      alert('✅ 已成功載入【' + document.getElementById('adm-loader').options[document.getElementById('adm-loader').selectedIndex].text + '】的洗車與鍍膜基礎價！\n\n※ 包膜方案價格已重置為空，請依需求手動輸入。');
+    }
+  }
+
   // --- 新增：B-LUX PLUS 自動連動計算 ---
   function calcWrapPrices() {
     const baseInput = document.getElementById('p-b2').value;
-    if (!baseInput) return; // 如果清空了，不自動計算
+    if (!baseInput) return;
 
     const basePrice = Number(baseInput);
     
@@ -752,7 +736,6 @@
 
   // --- 備份與還原功能 ---
   function exportData() {
-      // 匯出時，會包含你寫死在代碼裡的資料 + 本機新增的資料，方便你未來一起更新代碼
       const data = JSON.stringify(customDatabase);
       if (Object.keys(customDatabase).length === 0) return alert("目前沒有資料可以備份！");
       
@@ -777,25 +760,6 @@
       }
   }
 
-  // --- 一鍵填入洗車/鍍膜基礎價 ---
-  function loadClassToAdmin() {
-    const cls = document.getElementById('adm-loader').value;
-    const prices = classPrices[cls];
-    if (prices) {
-      // 載入洗車美容、玻璃、頂級鍍膜 (w1-w5, g1-g4, c_1-c_3)
-      ['w1','w2','w3','w4','w5','g1','g2','g3','g4','c_1','c_2','c_3'].forEach(k => {
-        const input = document.getElementById('p-' + k);
-        if(input) input.value = prices[k];
-      });
-      // 針對包膜方案 (a1-c2) 清空，讓使用者自行輸入或保留「需現場評估」狀態
-      ['a1','a2','b1','b2','c1','c2'].forEach(k => {
-        const input = document.getElementById('p-' + k);
-        if(input) input.value = '';
-      });
-      alert('✅ 已成功載入【' + document.getElementById('adm-loader').options[document.getElementById('adm-loader').selectedIndex].text + '】的洗車與鍍膜基礎價！\n\n※ 包膜方案價格已重置為空，請依需求手動輸入。');
-    }
-  }
-
   // --- 資料與邏輯核心 ---
   const classPrices = {
     medium: { w1: 700, w2: 1200, w3: 1800, w4: 1800, w5: 3000, g1: 4000, g2: 8000, g3: 10000, g4: 12000, c_1: 15000, c_2: 26000, c_3: 42000 },
@@ -804,10 +768,10 @@
     commercial: { w1: 1300, w2: 2000, w3: 3000, w4: 3000, w5: 5000, g1: 4000, g2: 8000, g3: 10000, g4: 12000, c_1: 21000, c_2: 33000, c_3: 48000 },
     pickup: { w1: 1300, w2: 2000, w3: 5000, w4: 5000, w5: 8000, g1: 4000, g2: 8000, g3: 10000, g4: 12000, c_1: 25000, c_2: 37000, c_3: 53000 }
   };
-  // ★ 修改點：將 Mercedes-Benz 改為 Mercedes Benz，並加上你提供資料裡的新廠牌
+  
+  // 修正下拉選單：統一使用無橫槓的 Mercedes Benz
   const carDatabase = { "Porsche": [], "Tesla": [], "BMW": [], "Mercedes Benz": [], "Toyota": [], "Ford": [], "Alfa Romeo": [], "Ferrari": [], "Hyundai": [], "Lexus": [], "MAZDA": [] };
   
-  // 核心改動：將本地暫存與代碼寫死的資料合併
   let localDb = JSON.parse(localStorage.getItem('zero_all_prices_v2')) || {};
   let customDatabase = { ...hardcodedDatabase, ...localDb };
 
@@ -879,7 +843,6 @@
       data[k] = val ? Number(val) : null; 
     });
     
-    // 同時更新顯示資料庫與本機資料庫
     customDatabase[key] = data;
     localDb[key] = data;
     localStorage.setItem('zero_all_prices_v2', JSON.stringify(localDb));
