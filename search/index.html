@@ -647,22 +647,133 @@
       textarea.select();
       document.execCommand("copy");
       document.body.removeChild(textarea);
-      alert("✅ 保固資料代碼已複製到剪貼簿！請將此代碼貼回原始檔的 const hardcodedWarrantyDB 區塊！");
-  }
+      
+<script>
+  // ★ 自動化雲端資料庫串接 ★
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwdjf1JAHrhINT3dy_v7-ylFjPY2evGHz9QuihPyb7uy8r12ZwI7WKu2QgqyPLqaTFl/exec";
 
-  function importWarrantyData() {
-      const data = prompt("請貼上您之前備份的保固代碼:");
-      if (data) {
-          try {
-              const parsed = JSON.parse(data);
-              localStorage.setItem('zero_warranty_db_v1', JSON.stringify(parsed));
-              alert("資料已還原，網頁將重新整理！");
-              location.reload();
-          } catch (e) { alert("代碼錯誤，請確認是否複製完整。"); }
+  let customWarrantyDb = {};
+
+  // 從雲端同步資料
+  async function fetchCloudData() {
+      try {
+          const response = await fetch(SCRIPT_URL);
+          const data = await response.json();
+          
+          // 將 Google Sheets 的保固資料轉換給網頁搜尋使用
+          data.Warranty_Records.forEach(row => {
+              // 確保車牌與手機格式乾淨，方便比對
+              const plate = (row.plate || "").toString().toUpperCase().replace(/[\s-]/g, '');
+              const phone = (row.phone || "").toString().replace(/[\s-]/g, '');
+              
+              if(plate) customWarrantyDb[plate] = row;
+              if(phone) customWarrantyDb[phone] = row;
+          });
+
+          console.log("✅ 雲端資料同步成功！");
+      } catch (e) {
+          console.error("同步失敗，請檢查網路或腳本部署狀況", e);
       }
   }
 
-  initData();
+  // 網頁一載入就主動去抓 Google Sheets 資料
+  fetchCloudData();
+
+  // =======================================================
+  // ★ 資料自動遮蔽演算法 (Privacy Masking) ★
+  // =======================================================
+  function maskName(name) {
+      if (!name) return '--';
+      return name.toString().charAt(0) + 'ＯＯ';
+  }
+
+  function maskPlate(plate) {
+      if (!plate) return '--';
+      let pStr = plate.toString();
+      if (pStr.length <= 3) return pStr; 
+      
+      let masked = '';
+      for (let i = 0; i < pStr.length; i++) {
+          if (i === 0 || i === pStr.length - 1 || i === pStr.length - 2 || pStr[i] === '-') {
+              masked += pStr[i];
+          } else {
+              masked += '*';
+          }
+      }
+      return masked;
+  }
+
+  // =======================================================
+  // ★ 前台客戶查詢邏輯 ★
+  // =======================================================
+  function queryWarranty() {
+    const rawInput = document.getElementById('search-input').value.trim();
+    const errorBlock = document.getElementById('error-block');
+    const cardBlock = document.getElementById('warranty-card-block');
+    
+    if (!rawInput) {
+      alert("請輸入車牌號碼或手機號碼！");
+      return;
+    }
+
+    const cleanKey = rawInput.toUpperCase().replace(/[\s-]/g, '');
+    const data = customWarrantyDb[cleanKey];
+
+    if (data) {
+      errorBlock.style.display = 'none';
+      cardBlock.style.display = 'block';
+
+      document.getElementById('w-id').innerText = data.id || '--';
+      
+      // 套用隱私遮蔽
+      document.getElementById('w-name').innerText = maskName(data.name);
+      document.getElementById('w-plate').innerText = maskPlate(data.plate);
+      
+      // 組合廠牌與車型
+      document.getElementById('w-model').innerText = `${data.brand || ''} ${data.model || ''}`.trim() || '--';
+      document.getElementById('w-type').innerText = data.type || '--';
+      
+      // 處理日期格式 (避免 Google Sheets 回傳的帶有時間後綴)
+      const dateStr = data.date ? data.date.toString().split('T')[0] : '--';
+      const expiryStr = data.expiry ? data.expiry.toString().split('T')[0] : '--';
+      
+      document.getElementById('w-date').innerText = dateStr;
+      document.getElementById('w-expiry').innerText = expiryStr;
+      document.getElementById('w-reminder').innerText = data.reminder || '--';
+
+      // 動態判斷保固狀態
+      if(data.expiry) {
+        const expiryDate = new Date(data.expiry);
+        const today = new Date();
+        const statusBadge = document.getElementById('w-status');
+
+        if (today <= expiryDate) {
+          statusBadge.innerText = "✅ 保固中";
+          statusBadge.className = "status-badge status-active";
+        } else {
+          statusBadge.innerText = "❌ 已過期";
+          statusBadge.className = "status-badge status-expired";
+        }
+      }
+
+      cardBlock.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      cardBlock.style.display = 'none';
+      errorBlock.style.display = 'block';
+    }
+  }
+
+  // 讓客戶按 Enter 鍵也可以直接發動搜尋
+  document.getElementById('search-input').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') queryWarranty();
+  });
+
+  // =======================================================
+  // ★ 後台按鈕升級提示 ★
+  // =======================================================
+  function toggleAdmin() {
+      alert("🚀 系統已全面升級！\n\n現在起，請直接前往「ZERO鍍膜資料庫 (Google Sheets)」新增或修改保固資料。\n只要在那邊打完字，網頁就會自動同步，不需再透過此舊版後台登錄囉！");
+  }
 </script>
 </body>
 </html>
