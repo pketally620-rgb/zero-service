@@ -427,16 +427,14 @@
           btnCoating.className = 'btn-mode';
           document.getElementById('lbl-w-type').innerText = "施作膜料項目 (XPEL)";
           
+          // ★ 這裡已經為你更新為專屬的 6 款膜料 ★
           const options = [
-              "LUX PLUS (頂級自體修復犀牛皮)",
-              "LUX MAX (加厚自體修復犀牛皮)",
-              "LUX MATTE (消光自體修復犀牛皮)",
-              "LUX PLUS BLACK (高光黑犀牛皮)",
-              "EXO ARMOR (EX 頂級防護)",
-              "MPD (改色膜系列)",
-              "HEADLIGHT (燈具保護膜)",
-              "ARES",
-              "局部包膜 (請於備註說明)"
+              "A-LUX MAX",
+              "A-LUX MATTE",
+              "B-EXO ARMOR",
+              "B-LUX PLUS",
+              "C-PROTEX LITE",
+              "C-LITE 消光"
           ];
           options.forEach(opt => selType.innerHTML += `<option value="${opt}">${opt}</option>`);
       }
