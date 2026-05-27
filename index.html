@@ -48,7 +48,7 @@
     display: block; width: 100%; padding: 18px; margin-bottom: 18px; 
     border-radius: 12px; text-decoration: none; font-size: 16px; font-weight: bold; 
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-sizing: border-box; 
-    letter-spacing: 1px;
+    letter-spacing: 1px; cursor: pointer; text-align: center;
   }
   
   .btn-quote { 
@@ -81,13 +81,49 @@
   
   .social-btn svg { width: 22px; height: 22px; fill: currentColor; }
   
-  /* 懸停品牌色特效 */
   .s-line:hover { background: #06C755; border-color: #06C755; transform: translateY(-4px); box-shadow: 0 10px 15px rgba(6, 199, 85, 0.3); }
   .s-fb:hover { background: #1877F2; border-color: #1877F2; transform: translateY(-4px); box-shadow: 0 10px 15px rgba(24, 119, 242, 0.3); }
   .s-ig:hover { background: #E4405F; border-color: #E4405F; transform: translateY(-4px); box-shadow: 0 10px 15px rgba(228, 64, 95, 0.3); }
   .s-map:hover { background: #EA4335; border-color: #EA4335; transform: translateY(-4px); box-shadow: 0 10px 15px rgba(234, 67, 53, 0.3); }
   
   .footer-text { margin-top: 35px; font-size: 11px; color: #475569; letter-spacing: 1px; }
+
+  /* --- 彈出式條款視窗樣式 --- */
+  .rules-modal-overlay { 
+    display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+    background: rgba(0,0,0,0.8); backdrop-filter: blur(8px); z-index: 1000; 
+    justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s ease;
+  }
+  .rules-modal-box { 
+    background: linear-gradient(145deg, #151720, #0f1118); border: 1px solid #334155; 
+    border-radius: 16px; width: 90%; max-width: 600px; max-height: 85vh; 
+    box-shadow: 0 20px 50px rgba(0,0,0,0.9); overflow-y: auto; position: relative;
+    transform: translateY(20px); transition: transform 0.3s ease;
+  }
+  
+  /* 捲軸美化 */
+  .rules-modal-box::-webkit-scrollbar { width: 8px; }
+  .rules-modal-box::-webkit-scrollbar-track { background: #0a0b10; border-radius: 0 16px 16px 0; }
+  .rules-modal-box::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
+  .rules-modal-box::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+  .rules-modal-header {
+    position: sticky; top: 0; background: rgba(21, 23, 32, 0.95); backdrop-filter: blur(5px);
+    padding: 20px 30px; border-bottom: 1px solid rgba(255,255,255,0.1); 
+    display: flex; justify-content: space-between; align-items: center; z-index: 2;
+  }
+  .rules-modal-title { margin: 0; font-size: 18px; color: #d4af37; font-weight: bold; letter-spacing: 1px; }
+  .btn-close { background: none; border: none; color: #94a3b8; font-size: 28px; cursor: pointer; transition: 0.2s; line-height: 1; }
+  .btn-close:hover { color: #ef4444; }
+
+  .rules-content { padding: 30px; color: #cbd5e1; font-size: 14px; line-height: 1.8; text-align: left; }
+  .rules-content h3 { color: #f1f5f9; border-left: 4px solid #d4af37; padding-left: 10px; margin-top: 30px; margin-bottom: 15px; font-size: 16px; }
+  .rules-content h3.blue-line { border-color: #38bdf8; }
+  .rules-content p { margin-top: 0; margin-bottom: 12px; }
+  .highlight-red { color: #ef4444; font-weight: bold; }
+  .highlight-gold { color: #d4af37; font-weight: bold; }
+  .highlight-blue { color: #38bdf8; font-weight: bold; }
+  .rules-divider { border: 0; height: 1px; background: rgba(255,255,255,0.1); margin: 40px 0; }
 </style>
 </head>
 <body>
@@ -98,7 +134,7 @@
     
     <a href="quote/index.html" class="btn-main btn-quote">⚙️ 智慧報價系統</a>
     <a href="search/index.html" class="btn-main btn-warranty">🛡️ 雙軌保固查詢 (鍍膜/貼膜)</a>
-    <a href="search/index.html" class="btn-main btn-rules">📖 保固條款須知</a>
+    <button type="button" class="btn-main btn-rules" onclick="openRules()">📖 保固條款須知</button>
     
     <div class="social-container">
       <a href="https://lin.ee/y8kjBXa" target="_blank" class="social-btn s-line" title="LINE 預約諮詢">
@@ -118,5 +154,70 @@
     <div class="footer-text">© ZERO PROFESSIONAL DETAILING CENTER</div>
   </div>
 
+  <div class="rules-modal-overlay" id="rulesOverlay" onclick="closeRules(event)">
+    <div class="rules-modal-box" id="rulesBox">
+      <div class="rules-modal-header">
+        <h2 class="rules-modal-title">📖 車體防護保固條款須知</h2>
+        <button class="btn-close" onclick="closeRulesBtn()">×</button>
+      </div>
+      
+      <div class="rules-content">
+        <h3 class="blue-line">🛡️ XPEL 原廠貼膜保固聲明</h3>
+        <p>保固範圍涵蓋膜料非人為因素之發黃、龜裂、起泡。人為刮傷、碰撞或不當使用高壓水槍沖洗邊緣導致之脫落，不在保固範圍內。</p>
+        <p>1. 剛貼完膜 <span class="highlight-red">7 天內</span> 請勿洗車，讓膜料完全服貼。</p>
+        <p>2. 洗車時高壓水槍請保持 <span class="highlight-blue">50 公分以上距離</span>，並避免直沖邊緣接縫處。</p>
+        <p>3. 鳥糞、樹汁具強烈腐蝕性，請盡速使用濕布擦拭，切勿用力乾擦。</p>
+
+        <hr class="rules-divider">
+
+        <h3>✨ 鍍膜保固條件（車主配合事項）</h3>
+        <p style="background: rgba(239, 68, 68, 0.1); border: 1px solid #ef4444; padding: 10px; border-radius: 6px; color: #fca5a5;">
+          ⚠️ 為維持鍍膜防護效能與保固資格，車主應至少每 6 個月回店完成一次例行保養。若逾期未回店，保固將暫停適用。
+        </p>
+        <p>1. 建議每 <span class="highlight-red">2 個月</span> 回店做一次例行性檢查/保養。</p>
+        <p>2. 洗車時請使用 <span class="highlight-gold">中性洗車精</span> 與乾淨的洗車工具，避免強酸、強鹼清潔劑。</p>
+        <p>3. 發現異常時，請於 <span class="highlight-red">7 日內</span> 主動與本店聯繫並回店檢測。</p>
+        <p>4. 本保固書僅限於登記之「車牌」與「車主」，不得轉讓他人。</p>
+        <p>5. 若車輛有板金、烤漆或更換鈑件，請於施工前主動告知，由本店重新評估保固範圍。</p>
+
+        <h3>✨ 非保固範圍（以下狀況恕無法保固）</h3>
+        <p>1. <span class="highlight-gold">外力與人為因素</span>：交通事故、刮撞、惡意破壞、自助洗車場不當刷具或髒抹布造成之深度刮痕、使用研磨劑、拋光機、砂紙等進行不當處理。</p>
+        <p>2. <span class="highlight-gold">環境與不可抗力因素</span>：強酸雨、工業落塵、柏油、油漬長期未清除造成之腐蝕，鳥糞、蟲屍、樹液長時間附著未即時清潔所產生之斑點或侵蝕，颱風、冰雹、洪水等天災及其他不可抗力因素。</p>
+        <p>3. <span class="highlight-gold">車漆本身瑕疵或後續修補</span>：施工前已有之氧化、縮孔、烤漆不良，日後板金重烤、改色或非本店所施工之膜類產品下方漆面問題。</p>
+        <p>4. <span class="highlight-gold">一般耗損與主觀認知差異</span>：隨時間與洗車產生之輕微細紋、洗車痕，對亮度、滑度之個人主觀感受差異。</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 控制彈出視窗的 JavaScript 魔法
+    const overlay = document.getElementById('rulesOverlay');
+    const box = document.getElementById('rulesBox');
+
+    function openRules() {
+      overlay.style.display = 'flex';
+      // 延遲一點點加上 opacity 產生漸現動畫
+      setTimeout(() => {
+        overlay.style.opacity = '1';
+        box.style.transform = 'translateY(0)';
+      }, 10);
+    }
+
+    function closeRulesBtn() {
+      overlay.style.opacity = '0';
+      box.style.transform = 'translateY(20px)';
+      // 動畫播完後隱藏
+      setTimeout(() => {
+        overlay.style.display = 'none';
+      }, 300);
+    }
+
+    function closeRules(event) {
+      // 點擊半透明黑底時也會關閉
+      if (event.target === overlay) {
+        closeRulesBtn();
+      }
+    }
+  </script>
 </body>
 </html>
