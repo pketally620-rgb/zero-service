@@ -109,13 +109,11 @@
   .card-coating { border-color: var(--gold-solid); box-shadow: 0 25px 50px rgba(0,0,0,0.9), 0 0 20px rgba(212, 175, 55, 0.1); }
   .card-coating .card-logo span { color: var(--gold-solid); }
   .card-coating .highlight-value { color: var(--gold-solid); font-family: 'Arial', sans-serif; letter-spacing: 0.5px; }
-  .card-coating .section-title { color: var(--gold-solid); border-left: 4px solid var(--gold-solid); padding-left: 10px; }
   
   /* 貼膜專屬顏色 */
   .card-film { border-color: var(--film-solid); box-shadow: 0 25px 50px rgba(0,0,0,0.9), 0 0 20px rgba(56, 189, 248, 0.1); }
   .card-film .card-logo span { color: var(--film-solid); }
   .card-film .highlight-value { color: var(--film-solid); font-family: 'Arial', sans-serif; letter-spacing: 0.5px; }
-  .card-film .section-title { color: var(--film-solid); border-left: 4px solid var(--film-solid); padding-left: 10px; }
 
   .card-header { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid rgba(255, 255, 255, 0.1); padding-bottom: 20px; margin-bottom: 25px; }
   .card-logo { font-size: 20px; font-weight: 900; color: var(--text-main); letter-spacing: 1px; }
@@ -133,19 +131,8 @@
   .reminder-item { grid-column: 1 / -1; background: rgba(255, 255, 255, 0.05); padding: 15px; border-radius: 8px; border: 1px dashed rgba(255, 255, 255, 0.2); margin-top: 5px; }
   .reminder-value { color: #fb923c; font-size: 17px; font-weight: 800; }
 
-  /* 條款與警告區塊 */
-  .alert-box { background: rgba(239, 68, 68, 0.1); border: 1px solid var(--danger); padding: 15px; border-radius: 8px; color: #fca5a5; font-weight: bold; font-size: 14px; line-height: 1.5; margin: 30px 0; text-align: justify; }
-  .section-title { margin: 30px 0 15px 0; font-size: 18px; }
-  .rules-box { font-size: 14px; line-height: 1.8; color: #cbd5e1; }
-  .rules-box p { margin-top: 0; margin-bottom: 10px; }
-  .rules-box p:last-child { margin-bottom: 0; }
-  .highlight-red { color: var(--danger); font-weight: bold; }
+  .alert-box { background: rgba(239, 68, 68, 0.1); border: 1px solid var(--danger); padding: 15px; border-radius: 8px; color: #fca5a5; font-weight: bold; font-size: 14px; line-height: 1.5; margin: 30px 0 0 0; text-align: justify; }
   
-  .card-coating .highlight-theme { color: var(--gold-solid); font-weight: bold; }
-  .card-film .highlight-theme { color: var(--film-solid); font-weight: bold; }
-  
-  .small-note { font-size: 12px; color: var(--text-muted); margin-bottom: 10px; display: block; }
-
   .card-footer { margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--border-metal); display: flex; justify-content: space-between; font-size: 12px; color: var(--text-muted); }
   .card-coating .shop-phone { color: var(--gold-solid); font-weight: bold; }
   .card-film .shop-phone { color: var(--film-solid); font-weight: bold; }
@@ -274,32 +261,12 @@
           <span class="info-value reminder-value" id="w-c-reminder">--</span>
         </div>
       </div>
-      <div class="alert-box">⚠️ 保固維持提醒<br>為維持鍍膜防護效能與保固資格，車主應至少每 6 個月回店完成一次例行保養。若逾期未回店，保固將暫停適用。</div>
+      <div class="alert-box">⚠️ 保固維持提醒<br>為維持鍍膜防護效能與保固資格，車主應至少每 6 個月回店完成一次例行保養。</div>
       
-      <h3 class="section-title">五、保固條件（車主配合事項）</h3>
-      <div class="rules-box">
-          <p>1. 建議每 <span class="highlight-red">2 個月</span> 回店做一次例行性檢查/保養。</p>
-          <p>2. 洗車時請使用 <span class="highlight-theme">中性洗車精</span> 與乾淨的洗車工具，避免強酸、強鹼清潔劑。</p>
-          <p>3. 發現異常時，請於 <span class="highlight-red">7 日內</span> 主動與本店聯繫並回店檢測。</p>
-          <p>4. 本保固書僅限於登記之「車牌」與「車主」，不得轉讓他人。</p>
-          <p>5. 若車輛有板金、烤漆或更換鈑件，請於施工前主動告知，由本店重新評估保固範圍。</p>
+      <div style="text-align: center; margin-top: 30px; font-size: 13px; color: var(--text-muted);">
+        ※ 完整保固規範與車主配合事項，請至「尊榮入口大廳」查閱 <a href="../index.html" style="color: var(--gold-solid); text-decoration: none; border-bottom: 1px solid var(--gold-solid);">車主專屬權益</a>。
       </div>
 
-      <h3 class="section-title">六、非保固範圍（以下狀況恕無法保固）</h3>
-      <span class="small-note">※ 本保固書為電子版與列印版通用，請車主妥善保存。</span>
-      <div class="rules-box">
-          <p>1. <span class="highlight-theme">外力與人為因素</span>：交通事故、刮撞、惡意破壞、自助洗車場不當刷具或髒抹布造成之 <span class="highlight-red">深度刮痕</span>、使用研磨劑、拋光機、砂紙等進行不當處理。</p>
-          <p>2. <span class="highlight-theme">環境與不可抗力因素</span>：強酸雨、工業落塵、柏油、油漬長期未清除造成之腐蝕，鳥糞、蟲屍、樹液長時間附著未即時清潔所產生之斑點或侵蝕，颱風、冰雹、洪水等天災及其他不可抗力因素。</p>
-          <p>3. <span class="highlight-theme">車漆本身瑕疵或後續修補</span>：施工前已有之氧化、縮孔、烤漆不良，日後板金重烤、改色或非本店所施工之膜類產品下方漆面問題。</p>
-          <p>4. <span class="highlight-theme">一般耗損與主觀認知差異</span>：隨時間與洗車產生之輕微細紋、洗車痕，對亮度、滑度之個人主觀感受差異。</p>
-      </div>
-
-      <h3 class="section-title">七、日常保養小叮嚀</h3>
-      <div class="rules-box">
-          <p>1. 建議一週清洗車輛 1～2 次，避免髒污長期附著。</p>
-          <p>2. 洗車時先以清水沖掉沙粒，再用乾淨海綿/洗車手套搭配 <span class="highlight-theme">中性洗車精</span>。</p>
-          <p>3. 如不慎沾附鳥糞、樹液、柏油等，請盡快以清水或濕毛巾處理；如無法清除，歡迎回店協助，<span class="highlight-red">避免自行用力硬擦造成刮痕</span>。</p>
-      </div>
       <div class="card-footer">
         <div>授權施工中心：ZERO職人鍍膜_XPEL竹北授權店</div><div>服務電話：<span class="shop-phone">03-5586322</span></div>
       </div>
@@ -323,15 +290,11 @@
           <span class="info-value reminder-value" style="color:#38bdf8;" id="w-f-reminder">--</span>
         </div>
       </div>
-      <div class="alert-box" style="border-color:#38bdf8; color:#bae6fd; background: rgba(56, 189, 248, 0.1);">
-        🛡️ 原廠貼膜保固聲明<br>保固範圍涵蓋膜料非人為因素之發黃、龜裂、起泡。人為刮傷、碰撞或不當使用高壓水槍沖洗邊緣導致之脫落，不在保固範圍內。
+      
+      <div style="text-align: center; margin-top: 30px; font-size: 13px; color: var(--text-muted);">
+        ※ 完整保固規範與產品養護須知，請至「尊榮入口大廳」查閱 <a href="../index.html" style="color: var(--film-solid); text-decoration: none; border-bottom: 1px solid var(--film-solid);">車主專屬權益</a>。
       </div>
-      <h3 class="section-title">貼膜保養小叮嚀</h3>
-      <div class="rules-box">
-          <p>1. 剛貼完膜 <span class="highlight-red">7 天內</span> 請勿洗車，讓膜料完全服貼。</p>
-          <p>2. 洗車時高壓水槍請保持 <span class="highlight-theme">50 公分以上距離</span>，並避免直沖邊緣接縫處。</p>
-          <p>3. 鳥糞、樹汁具強烈腐蝕性，請盡速使用濕布擦拭，切勿用力乾擦。</p>
-      </div>
+
       <div class="card-footer">
         <div>授權施工中心：ZERO職人鍍膜_XPEL竹北授權店</div><div>服務電話：<span class="shop-phone">03-5586322</span></div>
       </div>
@@ -346,14 +309,12 @@
   // ==========================================
   // ★ API 與全域變數 ★
   // ==========================================
-  // ★ 請確保這是你最新的 Google Apps Script 網址
   const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyankTsqzBW3MftY0a3podJmCEstdy5s_28rmA8PWVYr49MRRcPfQhYD4eR9X8QFz9z/exec";
   
-  let customWarrantyDb = {}; // 存鍍膜資料
-  let customFilmDb = {};     // 存貼膜資料
+  let customWarrantyDb = {}; 
+  let customFilmDb = {};     
   let carDatabase = {};
   
-  // 當前登錄模式 (預設為鍍膜)
   let adminMode = 'coating'; 
 
   // ==========================================
@@ -367,7 +328,6 @@
           customWarrantyDb = {}; 
           customFilmDb = {};
           
-          // 處理鍍膜紀錄
           if (data.Warranty_Records) {
               data.Warranty_Records.forEach(row => {
                   const plate = (row.plate || "").toString().toUpperCase().replace(/[\s-]/g, '');
@@ -377,7 +337,6 @@
               });
           }
 
-          // 處理貼膜紀錄
           if (data.Film_Records) {
               data.Film_Records.forEach(row => {
                   const plate = (row.plate || "").toString().toUpperCase().replace(/[\s-]/g, '');
@@ -387,7 +346,6 @@
               });
           }
 
-          // 處理車款選單
           if (data.Car_Database && data.Car_Database.length > 0) {
               data.Car_Database.forEach(row => {
                   if(!carDatabase[row.brand]) carDatabase[row.brand] = [];
@@ -399,7 +357,7 @@
 
           console.log("✅ 雲端資料同步成功！");
           initData(); 
-          switchAdminMode('coating'); // 初始化表單為鍍膜模式
+          switchAdminMode('coating'); 
       } catch (e) {
           console.error("同步失敗，請檢查網路", e);
       }
@@ -408,7 +366,7 @@
   fetchCloudData();
 
   // ==========================================
-  // ★ 後台模式切換邏輯 (鍍膜 vs 貼膜) ★
+  // ★ 後台模式切換邏輯 ★
   // ==========================================
   function switchAdminMode(mode) {
       adminMode = mode;
@@ -418,12 +376,11 @@
       const selType = document.getElementById('adm-w-type');
       const lblColor = mode === 'coating' ? 'var(--gold-solid)' : 'var(--film-solid)';
       
-      // 更新標籤顏色
       document.getElementById('lbl-edit-select').style.color = lblColor;
       document.getElementById('adm-w-plate').style.borderColor = lblColor;
       document.getElementById('adm-w-phone').style.borderColor = lblColor;
 
-      selType.innerHTML = ''; // 清空選項
+      selType.innerHTML = ''; 
 
       if (mode === 'coating') {
           btnCoating.className = 'btn-mode active-coating';
@@ -447,7 +404,6 @@
           btnCoating.className = 'btn-mode';
           document.getElementById('lbl-w-type').innerText = "施作膜料項目 (XPEL)";
           
-          // ★ 這裡已經為你更新為專屬的 6 款膜料 ★
           const options = [
               "A-LUX MAX",
               "A-LUX MATTE",
@@ -459,7 +415,7 @@
           options.forEach(opt => selType.innerHTML += `<option value="${opt}">${opt}</option>`);
       }
       
-      refreshAdminDropdown(); // 依照模式更新下拉選單的資料
+      refreshAdminDropdown(); 
   }
 
   // ==========================================
@@ -530,7 +486,6 @@
     }
   }
 
-  // 載入下拉選單 (根據當前模式)
   function refreshAdminDropdown() {
     const select = document.getElementById('adm-edit-select');
     select.innerHTML = '<option value="">-- 選擇已儲存的車牌號碼 (載入後可修改) --</option>';
@@ -586,7 +541,6 @@
     let inputId = document.getElementById('adm-w-id').value.trim();
     const dateVal = document.getElementById('adm-w-date').value;
 
-    // ★ 智慧輔助：依據模式產生專屬字首單號
     if (!inputId) {
        let datePrefix = dateVal ? dateVal.replace(/-/g, '') : new Date().toISOString().split('T')[0].replace(/-/g, '');
        let randomNum = Math.floor(Math.random() * 900) + 100;
@@ -597,8 +551,6 @@
 
     const brand = document.getElementById('adm-w-brand').value.trim();
     const model = document.getElementById('adm-w-model').value.trim();
-    
-    // 決定要寫入哪一個分頁
     const targetSheet = adminMode === 'coating' ? 'Warranty_Records' : 'Film_Records';
 
     const recordData = {
@@ -644,7 +596,7 @@
   }
 
   // ==========================================
-  // ★ 前台查詢邏輯 (雙卡合併顯示) ★
+  // ★ 前台查詢邏輯 ★
   // ==========================================
   function maskName(name) {
       if (!name) return '--';
@@ -708,11 +660,9 @@
 
     const cleanKey = rawInput.toUpperCase().replace(/[\s-]/g, '');
     
-    // 同時去撈鍍膜和貼膜資料
     const dataCoating = customWarrantyDb[cleanKey];
     const dataFilm = customFilmDb[cleanKey];
 
-    // 重置顯示狀態
     cardCoating.style.display = 'none';
     cardFilm.style.display = 'none';
     errorBlock.style.display = 'none';
