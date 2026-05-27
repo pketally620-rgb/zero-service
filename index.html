@@ -6,146 +6,117 @@
 <title>ZERO職人鍍膜_XPEL竹北授權店 | 尊榮入口大廳</title>
 <style>
   :root {
-    --bg-base: #0a0b10;
-    --bg-card: #151720;
     --gold-gradient: linear-gradient(135deg, #c59b27 0%, #fcf6ba 40%, #c59b27 80%, #aa771c 100%);
-    --gold-solid: #d4af37;
-    --text-main: #f1f5f9;
-    --text-muted: #94a3b8;
-    --border-metal: #2a2d3d;
+    --bg-base: #0a0b10;
   }
-
+  
   body { 
+    margin: 0; padding: 0; 
     font-family: 'Helvetica Neue', 'Segoe UI', Tahoma, Geneva, sans-serif; 
     background: radial-gradient(ellipse at top, #1a1d2b 0%, var(--bg-base) 80%);
-    color: var(--text-main); 
-    margin: 0; 
-    padding: 0; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    min-height: 100vh;
+    color: #fff; 
+    display: flex; align-items: center; justify-content: center; min-height: 100vh;
   }
 
-  .lobby-container {
-    width: 100%;
-    max-width: 550px;
-    padding: 20px;
-    box-sizing: border-box;
+  /* 毛玻璃質感卡片 */
+  .lobby-card { 
+    background: rgba(21, 23, 32, 0.6); 
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08); 
+    border-radius: 24px; 
+    padding: 50px 40px; 
+    text-align: center; 
+    max-width: 420px; 
+    width: 90%; 
+    box-shadow: 0 30px 60px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.05); 
   }
 
-  .lobby-card {
-    background: linear-gradient(145deg, var(--bg-card), #10121a);
-    padding: 45px 35px;
-    border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    box-shadow: 0 30px 60px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.02);
-    text-align: center;
+  .logo { 
+    font-size: 26px; font-weight: 900; 
+    background: var(--gold-gradient); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    margin-bottom: 8px; letter-spacing: 1px;
+    text-shadow: 0px 2px 10px rgba(197, 155, 39, 0.2);
   }
-
-  .brand-logo {
-    font-size: 26px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    background: var(--gold-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 8px;
-    margin-top: 0;
-  }
-
-  .brand-subtitle {
-    font-size: 14px;
-    color: var(--text-muted);
-    letter-spacing: 4px;
-    margin-bottom: 40px;
-  }
-
-  .button-group {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-  }
-
-  .btn-lobby {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    padding: 16px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-sizing: border-box;
-  }
-
-  /* 智慧報價系統樣式 */
-  .btn-quote {
-    background: #1e293b;
-    color: var(--text-main);
-    border: 1px solid var(--border-metal);
-  }
-  .btn-quote:hover {
-    background: #334155;
-    border-color: var(--text-muted);
-    transform: translateY(-2px);
-  }
-
-  /* 電子保固查詢樣式 */
-  .btn-search {
-    background: var(--gold-gradient);
-    color: #10121a;
-    border: none;
-    box-shadow: 0 4px 15px rgba(197, 155, 39, 0.2);
-  }
-  .btn-search:hover {
-    filter: brightness(1.15);
-    box-shadow: 0 6px 20px rgba(197, 155, 39, 0.3);
-    transform: translateY(-2px);
-  }
-
-  /* 保固條款須知樣式 */
-  .btn-warranty {
-    background: transparent;
-    color: var(--text-muted);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    font-size: 14px;
-    padding: 12px;
-  }
-  .btn-warranty:hover {
-    color: var(--text-main);
-    border-color: var(--text-muted);
-    background: rgba(255, 255, 255, 0.02);
-  }
-
-  .footer-text {
-    margin-top: 35px;
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.2);
+  
+  .subtitle { color: #94a3b8; font-size: 14px; letter-spacing: 3px; margin-bottom: 40px; }
+  
+  /* 主按鈕樣式 */
+  .btn-main { 
+    display: block; width: 100%; padding: 18px; margin-bottom: 18px; 
+    border-radius: 12px; text-decoration: none; font-size: 16px; font-weight: bold; 
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-sizing: border-box; 
     letter-spacing: 1px;
   }
+  
+  .btn-quote { 
+    background: linear-gradient(145deg, #1e293b, #0f172a); 
+    color: #f1f5f9; border: 1px solid #334155; 
+  }
+  .btn-quote:hover { border-color: #cbd5e1; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.4); }
+  
+  .btn-warranty { 
+    background: var(--gold-gradient); color: #1a1500; 
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.25); border: none;
+  }
+  .btn-warranty:hover { filter: brightness(1.15); transform: translateY(-2px); box-shadow: 0 12px 25px rgba(212, 175, 55, 0.4); }
+  
+  .btn-rules { background: transparent; color: #94a3b8; border: 1px dashed #334155; margin-bottom: 0; }
+  .btn-rules:hover { color: #fff; border-color: #94a3b8; background: rgba(255,255,255,0.02); }
+
+  /* 社群聯絡按鈕區 */
+  .social-container { 
+    display: flex; justify-content: center; gap: 20px; 
+    margin-top: 35px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px; 
+  }
+  
+  .social-btn { 
+    display: flex; align-items: center; justify-content: center; 
+    width: 48px; height: 48px; border-radius: 50%; 
+    background: #1e293b; color: #fff; text-decoration: none; 
+    transition: all 0.3s; border: 1px solid #334155;
+  }
+  
+  .social-btn svg { width: 22px; height: 22px; fill: currentColor; }
+  
+  /* 懸停品牌色特效 */
+  .s-line:hover { background: #06C755; border-color: #06C755; transform: translateY(-4px); box-shadow: 0 10px 15px rgba(6, 199, 85, 0.3); }
+  .s-fb:hover { background: #1877F2; border-color: #1877F2; transform: translateY(-4px); box-shadow: 0 10px 15px rgba(24, 119, 242, 0.3); }
+  .s-ig:hover { background: #E4405F; border-color: #E4405F; transform: translateY(-4px); box-shadow: 0 10px 15px rgba(228, 64, 95, 0.3); }
+  .s-map:hover { background: #EA4335; border-color: #EA4335; transform: translateY(-4px); box-shadow: 0 10px 15px rgba(234, 67, 53, 0.3); }
+  
+  .footer-text { margin-top: 35px; font-size: 11px; color: #475569; letter-spacing: 1px; }
 </style>
 </head>
 <body>
 
-<div class="lobby-container">
   <div class="lobby-card">
-    <h1 class="brand-logo">ZERO職人鍍膜_XPEL竹北授權店</h1>
-    <div class="brand-subtitle">全方位車體防護 尊榮入口大廳</div>
+    <div class="logo">ZERO職人鍍膜_XPEL竹北店</div>
+    <div class="subtitle">全方位車體防護 尊榮入口大廳</div>
     
-    <div class="button-group">
-      <a href="./quote/index.html" class="btn-lobby btn-quote">⚙️ 智慧報價系統</a>
-      
-      <a href="./search/index.html" class="btn-lobby btn-search">🔍 鍍膜保固查詢</a>
-      
-      <a href="./warranty/index.html" class="btn-lobby btn-warranty">📖 保固條款須知</a>
+    <a href="quote/index.html" class="btn-main btn-quote">⚙️ 智慧報價系統</a>
+    <a href="search/index.html" class="btn-main btn-warranty">🛡️ 雙軌保固查詢 (鍍膜/貼膜)</a>
+    <a href="search/index.html" class="btn-main btn-rules">📖 保固條款須知</a>
+    
+    <div class="social-container">
+      <a href="https://lin.ee/y8kjBXa" target="_blank" class="social-btn s-line" title="LINE 預約諮詢">
+        <svg viewBox="0 0 24 24"><path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.122.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967 1.739-1.907 2.572-3.843 2.572-5.992zM7.421 13.568H5.215a.558.558 0 0 1-.557-.557V7.126c0-.308.249-.557.557-.557.308 0 .557.249.557.557v5.328h1.649c.308 0 .557.249.557.557s-.249.557-.557.557zm2.348-.557a.558.558 0 0 1-.557.557.558.558 0 0 1-.557-.557V7.126c0-.308.249-.557.557-.557.308 0 .557.249.557.557v5.885zm6.541 0a.558.558 0 0 1-.557.557h-2.206a.558.558 0 0 1-.557-.557V7.126c0-.308.249-.557.557-.557.308 0 .557.249.557.557v5.885h1.649c.308 0 .557.249.557.557s-.249.557-.557.557zm2.716-4.103l-2.029 3.86a.558.558 0 0 1-.493.308c-.027 0-.055-.002-.083-.007a.558.558 0 0 1-.461-.55v-4.168c0-.308.249-.557.557-.557.308 0 .557.249.557.557v2.443l1.831-3.484a.558.558 0 0 1 .493-.308c.027 0 .055.002.083.007a.558.558 0 0 1 .461.55v4.168c0 .308-.249.557-.557.557s-.557-.249-.557-.557v-2.821z"/></svg>
+      </a>
+      <a href="https://reurl.cc/dpbZ6y" target="_blank" class="social-btn s-ig" title="Instagram 作品集">
+        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 1.77-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 1.77 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-1.771 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-1.778-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/LANDGTW" target="_blank" class="social-btn s-fb" title="Facebook 粉絲專頁">
+        <svg viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+      </a>
+      <a href="https://maps.app.goo.gl/7R4MEFphwXHfXgYY6?g_st=il" target="_blank" class="social-btn s-map" title="Google Maps 導航">
+        <svg viewBox="0 0 24 24"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>
+      </a>
     </div>
-
+    
     <div class="footer-text">© ZERO PROFESSIONAL DETAILING CENTER</div>
   </div>
-</div>
 
 </body>
 </html>
