@@ -51,20 +51,17 @@
     letter-spacing: 1px; cursor: pointer; text-align: center;
   }
   
-  .btn-quote { 
-    background: linear-gradient(145deg, #1e293b, #0f172a); 
-    color: #f1f5f9; border: 1px solid #334155; 
-  }
+  .btn-quote { background: linear-gradient(145deg, #1e293b, #0f172a); color: #f1f5f9; border: 1px solid #334155; }
   .btn-quote:hover { border-color: #cbd5e1; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.4); }
   
-  .btn-warranty { 
-    background: var(--gold-gradient); color: #1a1500; 
-    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.25); border: none;
-  }
+  .btn-warranty { background: var(--gold-gradient); color: #1a1500; box-shadow: 0 8px 20px rgba(212, 175, 55, 0.25); border: none; }
   .btn-warranty:hover { filter: brightness(1.15); transform: translateY(-2px); box-shadow: 0 12px 25px rgba(212, 175, 55, 0.4); }
   
-  .btn-rules { background: transparent; color: #94a3b8; border: 1px dashed #334155; margin-bottom: 0; }
-  .btn-rules:hover { color: #fff; border-color: #94a3b8; background: rgba(255,255,255,0.02); }
+  .btn-rules { background: transparent; color: #94a3b8; border: 1px dashed #334155; margin-bottom: 12px; }
+  .btn-rules:hover { color: #d4af37; border-color: #d4af37; background: rgba(212, 175, 55, 0.05); }
+  
+  .btn-rules-film { background: transparent; color: #94a3b8; border: 1px dashed #334155; margin-bottom: 0; }
+  .btn-rules-film:hover { color: #38bdf8; border-color: #38bdf8; background: rgba(56, 189, 248, 0.05); }
 
   /* 社群聯絡按鈕區 */
   .social-container { 
@@ -96,12 +93,11 @@
   }
   .rules-modal-box { 
     background: linear-gradient(145deg, #151720, #0f1118); border: 1px solid #334155; 
-    border-radius: 16px; width: 90%; max-width: 600px; max-height: 85vh; 
+    border-radius: 16px; width: 90%; max-width: 650px; max-height: 85vh; 
     box-shadow: 0 20px 50px rgba(0,0,0,0.9); overflow-y: auto; position: relative;
     transform: translateY(20px); transition: transform 0.3s ease;
   }
   
-  /* 捲軸美化 */
   .rules-modal-box::-webkit-scrollbar { width: 8px; }
   .rules-modal-box::-webkit-scrollbar-track { background: #0a0b10; border-radius: 0 16px 16px 0; }
   .rules-modal-box::-webkit-scrollbar-thumb { background: #334155; border-radius: 10px; }
@@ -112,18 +108,27 @@
     padding: 20px 30px; border-bottom: 1px solid rgba(255,255,255,0.1); 
     display: flex; justify-content: space-between; align-items: center; z-index: 2;
   }
-  .rules-modal-title { margin: 0; font-size: 18px; color: #d4af37; font-weight: bold; letter-spacing: 1px; }
+  .rules-modal-title { margin: 0; font-size: 18px; font-weight: bold; letter-spacing: 1px; }
   .btn-close { background: none; border: none; color: #94a3b8; font-size: 28px; cursor: pointer; transition: 0.2s; line-height: 1; }
   .btn-close:hover { color: #ef4444; }
 
   .rules-content { padding: 30px; color: #cbd5e1; font-size: 14px; line-height: 1.8; text-align: left; }
-  .rules-content h3 { color: #f1f5f9; border-left: 4px solid #d4af37; padding-left: 10px; margin-top: 30px; margin-bottom: 15px; font-size: 16px; }
-  .rules-content h3.blue-line { border-color: #38bdf8; }
-  .rules-content p { margin-top: 0; margin-bottom: 12px; }
+  .rules-content h3 { color: #f1f5f9; border-left: 4px solid #d4af37; padding-left: 10px; margin-top: 35px; margin-bottom: 15px; font-size: 16px; }
+  .rules-content h3.blue-line { border-left-color: #38bdf8; }
+  .rules-content p, .rules-content ul { margin-top: 0; margin-bottom: 12px; }
+  .rules-content ul { padding-left: 20px; }
+  .rules-content li { margin-bottom: 8px; }
+  
   .highlight-red { color: #ef4444; font-weight: bold; }
   .highlight-gold { color: #d4af37; font-weight: bold; }
   .highlight-blue { color: #38bdf8; font-weight: bold; }
-  .rules-divider { border: 0; height: 1px; background: rgba(255,255,255,0.1); margin: 40px 0; }
+  
+  .info-box { background: rgba(255,255,255,0.03); border: 1px solid #334155; padding: 15px; border-radius: 8px; margin-bottom: 15px; }
+  .callout-box { border-left: 3px solid #d4af37; padding-left: 15px; margin: 20px 0; color: #94a3b8; }
+  .callout-box-blue { border-left-color: #38bdf8; }
+  
+  .faq-q { color: #f1f5f9; font-weight: bold; margin-bottom: 5px; }
+  .faq-a { color: #94a3b8; margin-bottom: 20px; }
 </style>
 </head>
 <body>
@@ -134,7 +139,9 @@
     
     <a href="quote/index.html" class="btn-main btn-quote">⚙️ 智慧報價系統</a>
     <a href="search/index.html" class="btn-main btn-warranty">🛡️ 雙軌保固查詢 (鍍膜/貼膜)</a>
-    <button type="button" class="btn-main btn-rules" onclick="openRules()">📖 保固條款須知</button>
+    
+    <button type="button" class="btn-main btn-rules" onclick="openRules('coating')">✨ 鍍膜車主專屬權益</button>
+    <button type="button" class="btn-main btn-rules-film" onclick="openRules('film')">🛡️ XPEL 貼膜車主權益</button>
     
     <div class="social-container">
       <a href="https://lin.ee/y8kjBXa" target="_blank" class="social-btn s-line" title="LINE 預約諮詢">
@@ -157,46 +164,119 @@
   <div class="rules-modal-overlay" id="rulesOverlay" onclick="closeRules(event)">
     <div class="rules-modal-box" id="rulesBox">
       <div class="rules-modal-header">
-        <h2 class="rules-modal-title">📖 車體防護保固條款須知</h2>
+        <h2 class="rules-modal-title" id="modalTitle">車主專屬權益</h2>
         <button class="btn-close" onclick="closeRulesBtn()">×</button>
       </div>
       
       <div class="rules-content">
-        <h3 class="blue-line">🛡️ XPEL 原廠貼膜保固聲明</h3>
-        <p>保固範圍涵蓋膜料非人為因素之發黃、龜裂、起泡。人為刮傷、碰撞或不當使用高壓水槍沖洗邊緣導致之脫落，不在保固範圍內。</p>
-        <p>1. 剛貼完膜 <span class="highlight-red">7 天內</span> 請勿洗車，讓膜料完全服貼。</p>
-        <p>2. 洗車時高壓水槍請保持 <span class="highlight-blue">50 公分以上距離</span>，並避免直沖邊緣接縫處。</p>
-        <p>3. 鳥糞、樹汁具強烈腐蝕性，請盡速使用濕布擦拭，切勿用力乾擦。</p>
+        
+        <div id="content-coating" style="display: none;">
+          <h3>✨ 鍍膜保固條件（車主配合事項）</h3>
+          <div class="info-box" style="border-color: #ef4444;">
+            <span class="highlight-red">⚠️ 保固維持提醒：</span><br>為維持鍍膜防護效能與保固資格，車主應至少每 6 個月回店完成一次例行保養。若逾期未回店，保固將暫停適用。
+          </div>
+          <ul>
+            <li>建議每 <span class="highlight-red">2 個月</span> 回店做一次例行性檢查/保養。</li>
+            <li>洗車時請使用 <span class="highlight-gold">中性洗車精</span> 與乾淨的洗車工具，避免強酸、強鹼清潔劑。</li>
+            <li>發現異常時，請於 <span class="highlight-red">7 日內</span> 主動與本店聯繫並回店檢測。</li>
+            <li>本保固書僅限於登記之「車牌」與「車主」，不得轉讓他人。</li>
+            <li>若車輛有板金、烤漆或更換鈑件，請於施工前主動告知，由本店重新評估保固範圍。</li>
+          </ul>
 
-        <hr class="rules-divider">
+          <h3>✨ 非保固範圍（以下狀況恕無法保固）</h3>
+          <ul>
+            <li><span class="highlight-gold">外力與人為因素</span>：交通事故、刮撞、惡意破壞、自助洗車場不當刷具或髒抹布造成之深度刮痕、使用研磨劑、拋光機、砂紙等進行不當處理。</li>
+            <li><span class="highlight-gold">環境與不可抗力因素</span>：強酸雨、工業落塵、柏油、油漬長期未清除造成之腐蝕，鳥糞、蟲屍、樹液長時間附著未即時清潔所產生之斑點或侵蝕，颱風、冰雹、洪水等天災及其他不可抗力因素。</li>
+            <li><span class="highlight-gold">車漆本身瑕疵或後續修補</span>：施工前已有之氧化、縮孔、烤漆不良，日後板金重烤、改色或非本店所施工之膜類產品下方漆面問題。</li>
+            <li><span class="highlight-gold">一般耗損與主觀認知差異</span>：隨時間與洗車產生之輕微細紋、洗車痕，對亮度、滑度之個人主觀感受差異。</li>
+          </ul>
+          
+          <h3>✨ 日常保養小叮嚀</h3>
+          <ul>
+            <li>建議一週清洗車輛 1～2 次，避免髒污長期附著。</li>
+            <li>洗車時先以清水沖掉沙粒，再用乾淨海綿/洗車手套搭配 <span class="highlight-gold">中性洗車精</span>。</li>
+            <li>如不慎沾附鳥糞、樹液、柏油等，請盡快以清水或濕毛巾處理；如無法清除，歡迎回店協助，<span class="highlight-red">避免自行用力硬擦造成刮痕</span>。</li>
+          </ul>
+        </div>
 
-        <h3>✨ 鍍膜保固條件（車主配合事項）</h3>
-        <p style="background: rgba(239, 68, 68, 0.1); border: 1px solid #ef4444; padding: 10px; border-radius: 6px; color: #fca5a5;">
-          ⚠️ 為維持鍍膜防護效能與保固資格，車主應至少每 6 個月回店完成一次例行保養。若逾期未回店，保固將暫停適用。
-        </p>
-        <p>1. 建議每 <span class="highlight-red">2 個月</span> 回店做一次例行性檢查/保養。</p>
-        <p>2. 洗車時請使用 <span class="highlight-gold">中性洗車精</span> 與乾淨的洗車工具，避免強酸、強鹼清潔劑。</p>
-        <p>3. 發現異常時，請於 <span class="highlight-red">7 日內</span> 主動與本店聯繫並回店檢測。</p>
-        <p>4. 本保固書僅限於登記之「車牌」與「車主」，不得轉讓他人。</p>
-        <p>5. 若車輛有板金、烤漆或更換鈑件，請於施工前主動告知，由本店重新評估保固範圍。</p>
+        <div id="content-film" style="display: none;">
+          <h3 class="blue-line">🛡️ 車漆保護膜 (Limited Product Warranty)</h3>
+          <p>適用型號：LUX PLUS｜LUX MATTE｜LUX MAX｜LUX PLUS BLACK｜MPD｜EXO ARMOR (EX)｜COLOR PPF</p>
+          <div class="callout-box callout-box-blue">
+            本服務僅適用於 <span style="color:#f1f5f9; font-weight:bold;">XPEL TAIWAN</span> 進口及授權經銷商販售安裝之產品。來源不明產品不提供保固。
+          </div>
+          
+          <h3 class="blue-line">🛡️ 保固年限與範圍</h3>
+          <ul>
+            <li>原廠保固 <span class="highlight-blue">10 年</span> (EXO ARMOR 為 7 年)。</li>
+            <li>保固範圍：不翹邊、不龜裂、不起泡。<br><span style="font-size: 12px; color: #94a3b8;">*LUX PLUS BLACK 為不變色；EXO ARMOR 為耐黃化。</span></li>
+            <li>需符合<span class="highlight-blue">定期保養</span>規範方享有保固。</li>
+          </ul>
 
-        <h3>✨ 非保固範圍（以下狀況恕無法保固）</h3>
-        <p>1. <span class="highlight-gold">外力與人為因素</span>：交通事故、刮撞、惡意破壞、自助洗車場不當刷具或髒抹布造成之深度刮痕、使用研磨劑、拋光機、砂紙等進行不當處理。</p>
-        <p>2. <span class="highlight-gold">環境與不可抗力因素</span>：強酸雨、工業落塵、柏油、油漬長期未清除造成之腐蝕，鳥糞、蟲屍、樹液長時間附著未即時清潔所產生之斑點或侵蝕，颱風、冰雹、洪水等天災及其他不可抗力因素。</p>
-        <p>3. <span class="highlight-gold">車漆本身瑕疵或後續修補</span>：施工前已有之氧化、縮孔、烤漆不良，日後板金重烤、改色或非本店所施工之膜類產品下方漆面問題。</p>
-        <p>4. <span class="highlight-gold">一般耗損與主觀認知差異</span>：隨時間與洗車產生之輕微細紋、洗車痕，對亮度、滑度之個人主觀感受差異。</p>
+          <h3 class="blue-line">🛡️ 不在保固服務範圍之事項</h3>
+          <div class="info-box">
+            <ul>
+              <li><span class="highlight-red">未按時養護：</span>需每 3-6 個月回授權經銷商進行深層清潔 (白/淺色車需每 3 個月)。</li>
+              <li><span class="highlight-red">洗車錯誤：</span>禁止高壓水柱沖洗邊緣或用力刷洗，導致脫落翹邊。</li>
+              <li>使用非 XPEL 專屬產品 (如打蠟、鍍膜)。</li>
+              <li>未儘速去除鳥糞、樹汁、鐵粉等，導致腐蝕斑駁。</li>
+              <li>電子保固系統查無資料或無法提供保證書。</li>
+              <li>車輛轉售：<span class="highlight-red">變更車主即不再享有保固服務</span>。</li>
+              <li>天災、火災、事故、人為損傷、化學物品等外力因素。</li>
+            </ul>
+          </div>
+
+          <h3 class="blue-line">🛡️ 汽車隔熱紙與前檔防護膜</h3>
+          <ul>
+            <li><span class="highlight-blue">隔熱紙終生保固 (可隨車轉移)：</span>X5 PLUS, X2 PLUS, X BLACK, AP 系列。保證不起泡、不開裂、不脫落、不褪色。</li>
+            <li><span class="highlight-blue">前檔防護膜 1 年保固：</span>不翹邊、不起泡、不開裂。<br><span style="font-size:12px; color:#94a3b8;">*非防爆膜，事故破損及水漬不在保固範圍。</span></li>
+          </ul>
+
+          <h3 class="blue-line">🛡️ 產品養護須知</h3>
+          <div class="info-box">
+            <ul>
+              <li><span style="color:#f1f5f9; font-weight:bold;">膠層黏合期：</span>剛施工完畢 <span class="highlight-red">48 小時內請勿進行任何洗車，禁止使用高壓水槍洗車</span>。</li>
+              <li><span style="color:#f1f5f9; font-weight:bold;">霧感消除：</span>安裝初期膜面有霧感為正常現象，約 10 天左右即會消失。</li>
+              <li><span style="color:#f1f5f9; font-weight:bold;">禁止殘留水漬：</span>洗車後請務必將膜面確實擦乾，<span class="highlight-red">水漬不在保固範圍之內</span>。</li>
+              <li><span style="color:#f1f5f9; font-weight:bold;">自動修復：</span>輕微刮傷在室溫下約 20-30 分鐘自動修復。寒冷環境下可使用約 50°C 熱水淋在刮傷部位加速修復。</li>
+            </ul>
+          </div>
+
+          <h3 class="blue-line">🛡️ FAQ 常見問答集</h3>
+          <div class="faq-q">Q：能開進自動洗車機洗車嗎？</div>
+          <div class="faq-a">A：由於自動機高壓水柱強弱不一，可能將保護膜掀起或產生深層刮痕，此類外力損傷不在保固範圍。<span class="highlight-red">剛貼好的一週內，請絕對不要使用自動洗車機</span>。</div>
+          <div class="faq-q">Q：可以打蠟嗎？</div>
+          <div class="faq-a">A：不當打蠟可能造成變質。建議使用 XPEL 專用封膜劑保養。<span class="highlight-red">消光膜請絕對避免使用含研磨成分的產品</span>。</div>
+          <div class="faq-q">Q：剛貼完隔熱紙為什麼霧霧的？</div>
+          <div class="faq-a">A：殘留水氣所致。<span class="highlight-blue">經過太陽照射約 1~2 週乾燥後自然消失</span>。(金屬膜約 4~16 週)。小水泡請勿用手擠壓。</div>
+        </div>
+        
       </div>
     </div>
   </div>
 
   <script>
-    // 控制彈出視窗的 JavaScript 魔法
     const overlay = document.getElementById('rulesOverlay');
     const box = document.getElementById('rulesBox');
+    const title = document.getElementById('modalTitle');
+    const cCoating = document.getElementById('content-coating');
+    const cFilm = document.getElementById('content-film');
 
-    function openRules() {
+    function openRules(type) {
+      // 根據點擊的按鈕，切換標題顏色與內容
+      if (type === 'coating') {
+        title.innerText = '✨ 鍍膜車主專屬權益';
+        title.style.color = '#d4af37';
+        cCoating.style.display = 'block';
+        cFilm.style.display = 'none';
+      } else {
+        title.innerText = '🛡️ XPEL 貼膜車主權益';
+        title.style.color = '#38bdf8';
+        cCoating.style.display = 'none';
+        cFilm.style.display = 'block';
+      }
+      
       overlay.style.display = 'flex';
-      // 延遲一點點加上 opacity 產生漸現動畫
       setTimeout(() => {
         overlay.style.opacity = '1';
         box.style.transform = 'translateY(0)';
@@ -206,17 +286,11 @@
     function closeRulesBtn() {
       overlay.style.opacity = '0';
       box.style.transform = 'translateY(20px)';
-      // 動畫播完後隱藏
-      setTimeout(() => {
-        overlay.style.display = 'none';
-      }, 300);
+      setTimeout(() => { overlay.style.display = 'none'; }, 300);
     }
 
     function closeRules(event) {
-      // 點擊半透明黑底時也會關閉
-      if (event.target === overlay) {
-        closeRulesBtn();
-      }
+      if (event.target === overlay) closeRulesBtn();
     }
   </script>
 </body>
