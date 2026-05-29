@@ -395,7 +395,7 @@ const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzLNMTZgoc7E8i6F4SQ8
   function closePasswordModal() { document.getElementById('password-modal').style.display = 'none'; }
   
   async function verifyPassword() {
-    const adminPassword = "0000"; 
+    const adminPassword = "0207"; 
     const input = document.getElementById('admin-pwd-input').value;
     if (input === adminPassword) {
       closePasswordModal();
@@ -549,7 +549,7 @@ const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzLNMTZgoc7E8i6F4SQ8
       alert(`✅ ${typeStr}保固建檔成功！\n資料已同步至 Google Sheets。`);
       
       // 重新以管理員身分同步最新的後台資料
-      const adminPassword = "0000";
+      const adminPassword = "0207";
       const response = await fetch(`${SCRIPT_URL}?action=admin&password=${encodeURIComponent(adminPassword)}`);
       const updatedData = await response.json();
       if (updatedData.Warranty_Records) { updatedData.Warranty_Records.forEach(row => { const p = (row.plate || "").toString().toUpperCase().replace(/[\s-]/g, ''); if(p) customWarrantyDb[p] = row; }); }
