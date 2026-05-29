@@ -85,7 +85,6 @@
   .admin-panel { display: none; background: #0c0d12; border: 1px solid #059669; border-radius: 12px; padding: 25px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); }
   .admin-panel h3 { margin-top: 0; color: #34d399; border-bottom: 1px solid var(--border-metal); padding-bottom: 15px; }
   
-  /* 後台模式切換按鈕 */
   .mode-toggle-box { display: flex; gap: 10px; margin-bottom: 20px; }
   .btn-mode { flex: 1; padding: 12px; border-radius: 8px; border: 1px solid var(--border-metal); background: var(--bg-input); color: var(--text-muted); font-weight: bold; cursor: pointer; transition: 0.3s; }
   .btn-mode.active-coating { background: var(--gold-dim); border-color: var(--gold-solid); color: var(--gold-solid); }
@@ -105,12 +104,10 @@
   .warranty-card { background: linear-gradient(135deg, #161824 0%, #0b0c13 100%); border: 1px solid var(--border-metal); border-radius: 16px; padding: 35px; box-shadow: 0 25px 50px rgba(0,0,0,0.9); position: relative; overflow: hidden; }
   .warranty-card::before { content: ''; position: absolute; top: 0; left: -50%; width: 200%; height: 100%; background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.03) 50%, rgba(255,255,255,0) 100%); transform: rotate(30deg); pointer-events: none; }
   
-  /* 鍍膜專屬顏色 */
   .card-coating { border-color: var(--gold-solid); box-shadow: 0 25px 50px rgba(0,0,0,0.9), 0 0 20px rgba(212, 175, 55, 0.1); }
   .card-coating .card-logo span { color: var(--gold-solid); }
   .card-coating .highlight-value { color: var(--gold-solid); font-family: 'Arial', sans-serif; letter-spacing: 0.5px; }
   
-  /* 貼膜專屬顏色 */
   .card-film { border-color: var(--film-solid); box-shadow: 0 25px 50px rgba(0,0,0,0.9), 0 0 20px rgba(56, 189, 248, 0.1); }
   .card-film .card-logo span { color: var(--film-solid); }
   .card-film .highlight-value { color: var(--film-solid); font-family: 'Arial', sans-serif; letter-spacing: 0.5px; }
@@ -300,16 +297,18 @@
       </div>
     </div>
 
-  </div> <div style="text-align: center;">
+  </div> 
+  <div style="text-align: center;">
     <a href="../index.html" class="btn-back-lobby">⬅️ 返回尊榮入口大廳</a>
   </div>
 </div>
 
 <script>
   // ==========================================
-  // ★ API 與全域變數 ★
+  // ★ 雲端連線設定 ★
   // ==========================================
-  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyankTsqzBW3MftY0a3podJmCEstdy5s_28rmA8PWVYr49MRRcPfQhYD4eR9X8QFz9z/exec";
+  // ⚠️ 這裡請填入你剛剛在「步驟一」部署後取得的最新網址：
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzLNMTZgoc7E8i6F4SQ8gesr6SASGVASuis8TMo5hoFjQWxz8IY7H0c3OXJAN-Tp8YJ/exec";
   
   let customWarrantyDb = {}; 
   let customFilmDb = {};     
@@ -318,33 +317,14 @@
   let adminMode = 'coating'; 
 
   // ==========================================
-  // ★ 啟動與雲端資料同步 ★
+  // ★ 啟動與雲端資料同步 (安全公共資料模式) ★
   // ==========================================
   async function fetchCloudData() {
       try {
           const response = await fetch(SCRIPT_URL);
           const data = await response.json();
           
-          customWarrantyDb = {}; 
-          customFilmDb = {};
-          
-          if (data.Warranty_Records) {
-              data.Warranty_Records.forEach(row => {
-                  const plate = (row.plate || "").toString().toUpperCase().replace(/[\s-]/g, '');
-                  const phone = (row.phone || "").toString().replace(/[\s-]/g, '');
-                  if(plate) customWarrantyDb[plate] = row;
-                  if(phone) customWarrantyDb[phone] = row;
-              });
-          }
-
-          if (data.Film_Records) {
-              data.Film_Records.forEach(row => {
-                  const plate = (row.plate || "").toString().toUpperCase().replace(/[\s-]/g, '');
-                  const phone = (row.phone || "").toString().replace(/[\s-]/g, '');
-                  if(plate) customFilmDb[plate] = row;
-                  if(phone) customFilmDb[phone] = row;
-              });
-          }
+          carDatabase = {};
 
           if (data.Car_Database && data.Car_Database.length > 0) {
               data.Car_Database.forEach(row => {
@@ -355,7 +335,7 @@
               carDatabase = { "Porsche": ["Macan", "Cayenne", "911", "718", "Taycan"], "Tesla": ["MODEL 3", "MODEL Y", "MODEL X", "MODEL S"], "BMW": ["1 Series", "3 Series", "5 Series", "X5"], "Mercedes Benz": ["C-Class", "E-Class", "GLC"] };
           }
 
-          console.log("✅ 雲端資料同步成功！");
+          console.log("✅ 雲端基礎選單同步成功！(個資已安全隔離)");
           initData(); 
           switchAdminMode('coating'); 
       } catch (e) {
@@ -370,7 +350,6 @@
   // ==========================================
   function switchAdminMode(mode) {
       adminMode = mode;
-      
       const btnCoating = document.getElementById('btn-mode-coating');
       const btnFilm = document.getElementById('btn-mode-film');
       const selType = document.getElementById('adm-w-type');
@@ -386,40 +365,20 @@
           btnCoating.className = 'btn-mode active-coating';
           btnFilm.className = 'btn-mode';
           document.getElementById('lbl-w-type').innerText = "施作鍍膜方案";
-          
-          const options = [
-              "單層鍍膜 (車漆基礎防護)",
-              "單層鍍膜 (全方位防護) ｜ 車漆、玻璃、鋼圈、塑膠件",
-              "雙層鍍膜 (頂級極致防護) ｜ 車漆、玻璃、鋼圈、塑膠件",
-              "全車玻璃鍍膜 (標準版)",
-              "全車玻璃鍍膜 (全景天窗版)",
-              "前擋玻璃鍍膜",
-              "塑膠件專屬鍍膜",
-              "專屬鋼圈鍍膜"
-          ];
+          const options = ["單層鍍膜 (車漆基礎防護)", "單層鍍膜 (全方位防護) ｜ 車漆、玻璃、鋼圈、塑膠件", "雙層鍍膜 (頂級極致防護) ｜ 車漆、玻璃、鋼圈、塑膠件", "全車玻璃鍍膜 (標準版)", "全車玻璃鍍膜 (全景天窗版)", "前擋玻璃鍍膜", "塑膠件專屬鍍膜", "專屬鋼圈鍍膜"];
           options.forEach(opt => selType.innerHTML += `<option value="${opt}">${opt}</option>`);
-          
       } else {
           btnFilm.className = 'btn-mode active-film';
           btnCoating.className = 'btn-mode';
           document.getElementById('lbl-w-type').innerText = "施作膜料項目 (XPEL)";
-          
-          const options = [
-              "A-LUX MAX",
-              "A-LUX MATTE",
-              "B-EXO ARMOR",
-              "B-LUX PLUS",
-              "C-PROTEX LITE",
-              "C-LITE 消光"
-          ];
+          const options = ["A-LUX MAX", "A-LUX MATTE", "B-EXO ARMOR", "B-LUX PLUS", "C-PROTEX LITE", "C-LITE 消光"];
           options.forEach(opt => selType.innerHTML += `<option value="${opt}">${opt}</option>`);
       }
-      
       refreshAdminDropdown(); 
   }
 
   // ==========================================
-  // ★ 後台介面互動邏輯 ★
+  // ★ 後台管理安全調閱驗證 ★
   // ==========================================
   function toggleAdmin() {
     const panel = document.getElementById('admin-panel');
@@ -435,12 +394,46 @@
   
   function closePasswordModal() { document.getElementById('password-modal').style.display = 'none'; }
   
-  function verifyPassword() {
+  async function verifyPassword() {
     const adminPassword = "0000"; 
     const input = document.getElementById('admin-pwd-input').value;
     if (input === adminPassword) {
       closePasswordModal();
-      document.getElementById('admin-panel').style.display = 'block'; 
+      
+      const btn = document.getElementById('btn-save');
+      const originalText = btn.innerText;
+      btn.disabled = true;
+      btn.innerText = "⏳ 正在安全調閱雲端名冊...";
+      
+      try {
+        // 帶密碼敲門，向雲端調閱完整名冊來產生修改下拉選單
+        const response = await fetch(`${SCRIPT_URL}?action=admin&password=${encodeURIComponent(adminPassword)}`);
+        const data = await response.json();
+        
+        customWarrantyDb = {};
+        customFilmDb = {};
+        
+        if (data.Warranty_Records) {
+            data.Warranty_Records.forEach(row => {
+                const plate = (row.plate || "").toString().toUpperCase().replace(/[\s-]/g, '');
+                if(plate) customWarrantyDb[plate] = row;
+            });
+        }
+        if (data.Film_Records) {
+            data.Film_Records.forEach(row => {
+                const plate = (row.plate || "").toString().toUpperCase().replace(/[\s-]/g, '');
+                if(plate) customFilmDb[plate] = row;
+            });
+        }
+        
+        document.getElementById('admin-panel').style.display = 'block'; 
+        refreshAdminDropdown();
+      } catch(e) {
+        alert("資安調閱失敗，請確認網路連線！");
+      } finally {
+        btn.disabled = false;
+        btn.innerText = originalText;
+      }
     } else {
       alert("密碼錯誤！");
     }
@@ -453,9 +446,7 @@
   function initData() {
     const brandList = document.getElementById('brand-list');
     brandList.innerHTML = '';
-    Object.keys(carDatabase).forEach(brand => {
-      brandList.innerHTML += `<option value="${brand}"></option>`;
-    });
+    Object.keys(carDatabase).forEach(brand => { brandList.innerHTML += `<option value="${brand}"></option>`; });
   }
 
   function updateModelOptions() {
@@ -463,18 +454,14 @@
     const modelList = document.getElementById('model-list');
     modelList.innerHTML = '';
     if(!brand || !carDatabase[brand]) return;
-    carDatabase[brand].forEach(model => {
-      modelList.innerHTML += `<option value="${model}"></option>`;
-    });
+    carDatabase[brand].forEach(model => { modelList.innerHTML += `<option value="${model}"></option>`; });
   }
 
   function autoCalcMaintenance() {
     const dateInput = document.getElementById('adm-w-date').value;
     if(!dateInput) return;
-    
     let date = new Date(dateInput);
     date.setMonth(date.getMonth() + 2);
-    
     const yyyy = date.getFullYear();
     const mm = String(date.getMonth() + 1).padStart(2, '0');
     const dd = String(date.getDate()).padStart(2, '0');
@@ -490,9 +477,7 @@
     const select = document.getElementById('adm-edit-select');
     select.innerHTML = '<option value="">-- 選擇已儲存的車牌號碼 (載入後可修改) --</option>';
     let addedPlates = new Set();
-    
     const targetDb = adminMode === 'coating' ? customWarrantyDb : customFilmDb;
-    
     Object.values(targetDb).forEach(data => {
       if(!addedPlates.has(data.plate) && data.plate) {
         select.innerHTML += `<option value="${data.plate}">${data.plate} (${data.name})</option>`;
@@ -504,7 +489,6 @@
   function loadSavedWarrantyToAdmin() {
     const selPlate = document.getElementById('adm-edit-select').value;
     if(!selPlate) return;
-    
     const cleanPlate = selPlate.toUpperCase().replace(/[\s-]/g, '');
     const data = adminMode === 'coating' ? customWarrantyDb[cleanPlate] : customFilmDb[cleanPlate];
     if(!data) return;
@@ -521,18 +505,13 @@
     
     document.getElementById('adm-w-model').value = m;
     document.getElementById('adm-w-type').value = data.type || '';
-    
     const dateStr = data.date ? data.date.toString().split('T')[0] : '';
     const expiryStr = data.expiry ? data.expiry.toString().split('T')[0] : '';
-    
     document.getElementById('adm-w-date').value = dateStr;
     document.getElementById('adm-w-expiry').value = expiryStr;
     document.getElementById('adm-w-reminder').value = data.reminder || '';
   }
 
-  // ==========================================
-  // ★ 核心發射器：寫入 Google Sheets ★
-  // ==========================================
   async function saveWarrantyRecord() {
     const plate = document.getElementById('adm-w-plate').value.trim();
     const phone = document.getElementById('adm-w-phone').value.trim();
@@ -554,16 +533,9 @@
     const targetSheet = adminMode === 'coating' ? 'Warranty_Records' : 'Film_Records';
 
     const recordData = {
-      sheetName: targetSheet,
-      id: inputId,
-      name: document.getElementById('adm-w-name').value.trim(),
-      plate: plate,
-      phone: phone, 
-      brand: brand,
-      model: (brand + " " + model).trim(), 
-      type: document.getElementById('adm-w-type').value,
-      date: dateVal,
-      expiry: document.getElementById('adm-w-expiry').value,
+      sheetName: targetSheet, id: inputId, name: document.getElementById('adm-w-name').value.trim(),
+      plate: plate, phone: phone, brand: brand, model: (brand + " " + model).trim(), 
+      type: document.getElementById('adm-w-type').value, date: dateVal, expiry: document.getElementById('adm-w-expiry').value,
       reminder: document.getElementById('adm-w-reminder').value
     };
 
@@ -572,21 +544,19 @@
     btn.disabled = true;
 
     try {
-      await fetch(SCRIPT_URL, {
-        method: "POST",
-        mode: "no-cors",
-        headers: { "Content-Type": "text/plain;charset=utf-8" },
-        body: JSON.stringify(recordData)
-      });
-      
+      await fetch(SCRIPT_URL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(recordData) });
       const typeStr = adminMode === 'coating' ? '鍍膜' : '貼膜';
       alert(`✅ ${typeStr}保固建檔成功！\n資料已同步至 Google Sheets。`);
       
-      await fetchCloudData();
+      // 重新以管理員身分同步最新的後台資料
+      const adminPassword = "0000";
+      const response = await fetch(`${SCRIPT_URL}?action=admin&password=${encodeURIComponent(adminPassword)}`);
+      const updatedData = await response.json();
+      if (updatedData.Warranty_Records) { updatedData.Warranty_Records.forEach(row => { const p = (row.plate || "").toString().toUpperCase().replace(/[\s-]/g, ''); if(p) customWarrantyDb[p] = row; }); }
+      if (updatedData.Film_Records) { updatedData.Film_Records.forEach(row => { const p = (row.plate || "").toString().toUpperCase().replace(/[\s-]/g, ''); if(p) customFilmDb[p] = row; }); }
       
-      ['id','name','plate','phone','brand','model','date','expiry','reminder'].forEach(k => {
-        document.getElementById('adm-w-' + k).value = '';
-      });
+      ['id','name','plate','phone','brand','model','date','expiry','reminder'].forEach(k => { document.getElementById('adm-w-' + k).value = ''; });
+      refreshAdminDropdown();
     } catch (e) {
       alert("儲存發生錯誤，請檢查網路連線！");
     } finally {
@@ -596,24 +566,16 @@
   }
 
   // ==========================================
-  // ★ 前台查詢邏輯 ★
+  // ★ 前台查詢邏輯 (改為安全精準調閱) ★
   // ==========================================
-  function maskName(name) {
-      if (!name) return '--';
-      return name.toString().charAt(0) + 'ＯＯ';
-  }
-
+  function maskName(name) { if (!name) return '--'; return name.toString().charAt(0) + 'ＯＯ'; }
   function maskPlate(plate) {
       if (!plate) return '--';
       let pStr = plate.toString();
       if (pStr.length <= 3) return pStr; 
       let masked = '';
       for (let i = 0; i < pStr.length; i++) {
-          if (i === 0 || i === pStr.length - 1 || i === pStr.length - 2 || pStr[i] === '-') {
-              masked += pStr[i];
-          } else {
-              masked += '*';
-          }
+          if (i === 0 || i === pStr.length - 1 || i === pStr.length - 2 || pStr[i] === '-') { masked += pStr[i]; } else { masked += '*'; }
       }
       return masked;
   }
@@ -638,18 +600,12 @@
         const expiryDate = new Date(data.expiry);
         const today = new Date();
         const statusBadge = document.getElementById(prefix + 'status');
-
-        if (today <= expiryDate) {
-          statusBadge.innerText = "✅ 保固中";
-          statusBadge.className = "status-badge status-active";
-        } else {
-          statusBadge.innerText = "❌ 已過期";
-          statusBadge.className = "status-badge status-expired";
-        }
+        if (today <= expiryDate) { statusBadge.innerText = "✅ 保固中"; statusBadge.className = "status-badge status-active"; } 
+        else { statusBadge.innerText = "❌ 已過期"; statusBadge.className = "status-badge status-expired"; }
       }
   }
 
-  function queryWarranty() {
+  async function queryWarranty() {
     const rawInput = document.getElementById('search-input').value.trim();
     const errorBlock = document.getElementById('error-block');
     const container = document.getElementById('card-container');
@@ -657,38 +613,45 @@
     const cardFilm = document.getElementById('card-film');
     
     if (!rawInput) return alert("請輸入車牌號碼或手機號碼！");
-
     const cleanKey = rawInput.toUpperCase().replace(/[\s-]/g, '');
     
-    const dataCoating = customWarrantyDb[cleanKey];
-    const dataFilm = customFilmDb[cleanKey];
-
     cardCoating.style.display = 'none';
     cardFilm.style.display = 'none';
     errorBlock.style.display = 'none';
     container.style.display = 'none';
 
-    if (!dataCoating && !dataFilm) {
-      errorBlock.style.display = 'block';
-    } else {
-      container.style.display = 'flex';
+    const btn = document.querySelector('.btn-search');
+    const originalText = btn.innerText;
+    btn.innerText = "⏳ 查詢中...";
+    btn.disabled = true;
+
+    try {
+      // 【核心安全機制變更】不再讀取本地名冊，而是將車牌發給雲端，精準調閱該車個資
+      const response = await fetch(`${SCRIPT_URL}?action=search&key=${encodeURIComponent(cleanKey)}`);
+      const data = await response.json();
       
-      if (dataCoating) {
-        populateCard(dataCoating, 'coating');
-        cardCoating.style.display = 'block';
+      // 守門員只會回傳這一個車牌的相符歷史紀錄 (最後一筆為最新)
+      const dataCoating = data.Warranty_Records && data.Warranty_Records[data.Warranty_Records.length - 1];
+      const dataFilm = data.Film_Records && data.Film_Records[data.Film_Records.length - 1];
+
+      if (!dataCoating && !dataFilm) {
+        errorBlock.style.display = 'block';
+      } else {
+        container.style.display = 'flex';
+        if (dataCoating) { populateCard(dataCoating, 'coating'); cardCoating.style.display = 'block'; }
+        if (dataFilm) { populateCard(dataFilm, 'film'); cardFilm.style.display = 'block'; }
+        container.scrollIntoView({ behavior: 'smooth' });
       }
-      if (dataFilm) {
-        populateCard(dataFilm, 'film');
-        cardFilm.style.display = 'block';
-      }
-      
-      container.scrollIntoView({ behavior: 'smooth' });
+    } catch(e) {
+      alert("安全連線伺服器發生錯誤，請稍後再試！");
+      console.error(e);
+    } finally {
+      btn.disabled = false;
+      btn.innerText = originalText;
     }
   }
 
-  document.getElementById('search-input').addEventListener('keypress', function (e) {
-    if (e.key === 'Enter') queryWarranty();
-  });
+  document.getElementById('search-input').addEventListener('keypress', function (e) { if (e.key === 'Enter') queryWarranty(); });
 </script>
 </body>
 </html>
