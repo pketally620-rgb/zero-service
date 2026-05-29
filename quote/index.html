@@ -385,7 +385,7 @@
   // ★ 3. 後台互動邏輯 ★
   // ==========================================
   function toggleAdmin() {
-    const adminPassword = "0000"; 
+    const adminPassword = "0207"; 
     const panel = document.getElementById('admin-panel');
     const modal = document.getElementById('password-modal');
     
@@ -401,7 +401,7 @@
   function closePasswordModal() { document.getElementById('password-modal').style.display = 'none'; }
 
   function verifyPassword() {
-    const adminPassword = "0000";
+    const adminPassword = "0207";
     if (document.getElementById('admin-pwd-input').value === adminPassword) {
       closePasswordModal();
       document.getElementById('admin-panel').style.display = 'block'; 
