@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZERO 智慧 POS 系統 | 店務營運中心</title>
+<style>
+  :root {
+    --bg-base: #0a0b10;
+    --bg-panel: #151720;
+    --bg-input: #0f1118;
+    --gold-solid: #d4af37;
+    --text-main: #f1f5f9;
+    --text-muted: #94a3b8;
+    --border-metal: #2a2d3d;
+    --danger: #ef4444;
+    --success: #10b981;
+  }
+  body { margin: 0; font-family: 'Helvetica Neue', sans-serif; background-color: var(--bg-base); color: var(--text-main); display: flex; height: 100vh; overflow: hidden; }
+  
+  /* --- 登入遮罩 --- */
+  .login-overlay { position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(10,11,16,0.95); z-index: 9999; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+  .login-box { background: var(--bg-panel); padding: 40px; border-radius: 12px; border: 1px solid var(--gold-solid); text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.8); }
+  .login-box h2 { color: var(--gold-solid); margin-top: 0; }
+  .login-input { padding: 12px; border-radius: 8px; border: 1px solid var(--border-metal); background: var(--bg-input); color: #fff; font-size: 16px; margin-bottom: 20px; outline: none; text-align: center;}
+  .login-btn { padding: 12px 30px; background: var(--gold-solid); color: #000; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 16px; }
+
+  /* --- 左右佈局 --- */
+  .left-panel { width: 400px; background: var(--bg-panel); border-right: 1px solid var(--border-metal); padding: 25px; overflow-y: auto; display: flex; flex-direction: column; gap: 20px; box-shadow: 5px 0 20px rgba(0,0,0,0.5); z-index: 10; }
+  .right-panel { flex: 1; padding: 25px; overflow-y: auto; display: flex; flex-direction: column; }
+
+  h2 { margin: 0 0 15px 0; font-size: 20px; color: var(--gold-solid); border-bottom: 1px solid var(--border-metal); padding-bottom: 10px; }
+
+  /* --- 表單區 --- */
+  .form-group { display: flex; flex-direction: column; gap: 8px; margin-bottom: 15px; }
+  .form-group label { font-size: 13px; color: var(--text-muted); font-weight: bold; }
+  .form-group input, .form-group select { padding: 12px; background: var(--bg-input); border: 1px solid var(--border-metal); color: #fff; border-radius: 8px; outline: none; font-size: 15px; color-scheme: dark; }
+  .form-group input:focus, .form-group select:focus { border-color: var(--gold-solid); }
+  
+  .search-row { display: flex; gap: 10px; }
+  .search-row input { flex: 1; }
+  .btn-search { background: #334155; color: #fff; border: none; border-radius: 8px; padding: 0 15px; cursor: pointer; font-weight: bold; transition: 0.2s; }
+  .btn-search:hover { background: #475569; }
+
+  .price-display { background: rgba(212, 175, 55, 0.1); border: 1px solid var(--gold-solid); padding: 20px; border-radius: 8px; text-align: center; margin-top: 10px; }
+  .price-title { font-size: 14px; color: var(--text-muted); margin-bottom: 5px; }
+  .price-amount { font-size: 32px; font-weight: 900; color: var(--gold-solid); }
+  .fee-note { font-size: 12px; color: var(--danger); margin-top: 5px; font-weight: bold; height: 15px;}
+
+  .btn-submit { background: var(--gold-solid); color: #1a1500; border: none; padding: 18px; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; transition: 0.2s; margin-top: 10px; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3); }
+  .btn-submit:hover { filter: brightness(1.15); transform: translateY(-2px); }
+
+  /* --- 右側儀表板 --- */
+  .dashboard-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+  .stat-cards { display: flex; gap: 15px; margin-bottom: 25px; }
+  .stat-card { flex: 1; background: var(--bg-panel); border: 1px solid var(--border-metal); padding: 20px; border-radius: 12px; text-align: center; }
+  .stat-title { font-size: 13px; color: var(--text-muted); margin-bottom: 10px; }
+  .stat-value { font-size: 24px; font-weight: bold; color: #fff; }
+
+  .record-table { width: 100%; border-collapse: collapse; background: var(--bg-panel); border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+  .record-table th, .record-table td { padding: 15px; text-align: left; border-bottom: 1px solid var(--border-metal); font-size: 14px; }
+  .record-table th { background: #1e2433; color: var(--gold-solid); font-weight: bold; }
+  .record-table tr:hover { background: rgba(255,255,255,0.02); }
+  .record-table td.amount-col { font-weight: bold; color: var(--success); }
+  .badge { padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: bold; }
+  .badge-jko { background: rgba(239, 68, 68, 0.15); color: var(--danger); border: 1px solid var(--danger); }
+  .badge-cash { background: rgba(16, 185, 129, 0.15); color: var(--success); border: 1px solid var(--success); }
+  .badge-transfer { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid #38bdf8; }
+
+</style>
+</head>
+<body>
+
+<!-- 登入遮罩 -->
+<div class="login-overlay" id="login-overlay">
+  <div class="login-box">
+    <h2>ZERO POS 店務系統</h2>
+    <input type="password" id="sys-pwd" class="login-input" placeholder="請輸入管理密碼">
+    <br>
+    <button class="login-btn" onclick="systemLogin()">進入系統</button>
+  </div>
+</div>
+
+<!-- 左側：快速開單區 -->
+<div class="left-panel">
+  <h2>⚡ 快速開單派工</h2>
+  
+  <div class="form-group">
+    <label>車牌號碼 (輸入後點擊帶入)</label>
+    <div class="search-row">
+      <input type="text" id="pos-plate" placeholder="例如: ABC-1234" style="text-transform: uppercase;">
+      <button type="button" class="btn-search" onclick="autoFillCustomer()">帶入舊客</button>
+    </div>
+  </div>
+
+  <div style="display:flex; gap:10px;">
+    <div class="form-group" style="flex:1;">
+      <label>客戶稱呼</label>
+      <input type="text" id="pos-name" placeholder="例如: 陳先生">
+    </div>
+    <div class="form-group" style="flex:1;">
+      <label>手機號碼</label>
+      <input type="text" id="pos-phone" placeholder="09...">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>服務項目</label>
+    <input type="text" id="pos-service" placeholder="例如: 精緻洗車(中型車) + 內裝加價">
+  </div>
+
+  <div style="display:flex; gap:10px;">
+    <div class="form-group" style="flex:1;">
+      <label>負責技師 (可快速擴充)</label>
+      <select id="pos-tech"></select>
+    </div>
+    <div class="form-group" style="flex:1;">
+      <label>付款方式</label>
+      <select id="pos-payment" onchange="calcTotal()">
+        <option value="現金">💵 現金</option>
+        <option value="轉帳">📱 銀行轉帳</option>
+        <option value="街口刷卡支付">💳 街口刷卡支付</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>原始輸入金額 (NT$)</label>
+    <input type="number" id="pos-base-price" placeholder="輸入牌價金額" oninput="calcTotal()">
+  </div>
+
+  <div class="price-display">
+    <div class="price-title">系統精算應收總計</div>
+    <div class="price-amount" id="display-final-price">NT$ 0</div>
+    <div class="fee-note" id="display-fee-note"></div>
+  </div>
+
+  <div class="form-group">
+    <label>備註事項</label>
+    <input type="text" id="pos-note" placeholder="可留空">
+  </div>
+
+  <button class="btn-submit" id="btn-submit" onclick="submitOrder()">結帳並開單</button>
+</div>
+
+<!-- 右側：今日營業看板 -->
+<div class="right-panel">
+  <div class="dashboard-header">
+    <h2 style="border:none; margin:0;">📊 今日營業看板</h2>
+    <div id="current-date" style="color:var(--text-muted); font-weight:bold;">載入中...</div>
+  </div>
+
+  <!-- 數據統計區 -->
+  <div class="stat-cards">
+    <div class="stat-card">
+      <div class="stat-title">今日總台數</div>
+      <div class="stat-value" id="stat-count">0</div>
+    </div>
+    <div class="stat-card" style="border-color:var(--success);">
+      <div class="stat-title">現金總收</div>
+      <div class="stat-value" id="stat-cash" style="color:var(--success);">NT$ 0</div>
+    </div>
+    <div class="stat-card" style="border-color:#38bdf8;">
+      <div class="stat-title">轉帳總收</div>
+      <div class="stat-value" id="stat-transfer" style="color:#38bdf8;">NT$ 0</div>
+    </div>
+    <div class="stat-card" style="border-color:var(--gold-solid);">
+      <div class="stat-title">今日總營收</div>
+      <div class="stat-value" id="stat-total" style="color:var(--gold-solid);">NT$ 0</div>
+    </div>
+  </div>
+
+  <!-- 明細列表 -->
+  <table class="record-table">
+    <thead>
+      <tr>
+        <th>時間</th>
+        <th>車牌號碼</th>
+        <th>服務項目</th>
+        <th>技師</th>
+        <th>付款方式</th>
+        <th>實收金額</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+      <tr><td colspan="6" style="text-align:center; color:#94a3b8; padding:30px;">尚無訂單資料</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<script>
+  // ==========================================
+  // ★ 系統設定區 (自由擴充) ★
+  // ==========================================
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxiPl9AqSpYyC7ZfHonxzuzMdvTxSuNqyhwJ6aFAMeoQamN8CRfI8LQ1h8kM2ZTRLKrqA/exec";
+  const ADMIN_PWD = "0000"; // ⚠️ 若改過密碼請同步修改
+  
+  // 💡 【巧思二】未來有新員工，直接在這裡加上名字即可！
+  const TECHNICIANS = ["明智", "羅立", "豪豪", "宏宏"];
+  
+  // 初始化下拉選單
+  const techSelect = document.getElementById('pos-tech');
+  TECHNICIANS.forEach(t => techSelect.innerHTML += `<option value="${t}">${t}</option>`);
+
+  // ==========================================
+  // ★ 資料變數 ★
+  // ==========================================
+  let globalCustomers = {}; // 用來存舊客資料 (車牌為Key)
+  let todayOrders = [];
+
+  // ==========================================
+  // ★ 登入與資料載入 ★
+  // ==========================================
+  async function systemLogin() {
+    const inputPwd = document.getElementById('sys-pwd').value;
+    if(inputPwd !== ADMIN_PWD) return alert("密碼錯誤！");
+    
+    document.getElementById('sys-pwd').value = "驗證中...";
+    document.getElementById('sys-pwd').disabled = true;
+
+    try {
+      // 帶著密碼去跟雲端要資料 (包含客戶名單與今日POS紀錄)
+      const res = await fetch(`${SCRIPT_URL}?action=admin&password=${encodeURIComponent(ADMIN_PWD)}`);
+      const data = await res.json();
+      
+      // 建立舊客字典，方便快速帶入
+      if(data.Warranty_Records) data.Warranty_Records.forEach(r => globalCustomers[r.plate] = r);
+      if(data.Film_Records) data.Film_Records.forEach(r => globalCustomers[r.plate] = r); // 貼膜覆蓋(若有重複以貼膜為準)
+      
+      // 篩選出「今天」的訂單
+      const todayStr = new Date().toLocaleDateString('zh-TW'); // EX: 2026/7/13
+      document.getElementById('current-date').innerText = todayStr;
+      
+      todayOrders = [];
+      if(data.POS_Records) {
+         data.POS_Records.forEach(record => {
+             if(record.date && record.date.includes(todayStr)) {
+                 todayOrders.push(record);
+             }
+         });
+      }
+      
+      document.getElementById('login-overlay').style.display = 'none';
+      renderDashboard();
+
+    } catch(e) {
+      alert("連線失敗，請檢查網路。");
+      document.getElementById('sys-pwd').disabled = false;
+      document.getElementById('sys-pwd').value = "";
+    }
+  }
+
+  // ==========================================
+  // ★ 介面邏輯 ★
+  // ==========================================
+  
+  // 帶入舊客資料
+  function autoFillCustomer() {
+      let plate = document.getElementById('pos-plate').value.trim().toUpperCase();
+      if(!plate) return alert("請先輸入車牌號碼");
+      
+      // 統一格式去除符號
+      let cleanPlate = plate.replace(/[\s-]/g, '');
+      
+      // 在字典中尋找相似車牌
+      let found = null;
+      Object.keys(globalCustomers).forEach(k => {
+          if(k.replace(/[\s-]/g, '') === cleanPlate) found = globalCustomers[k];
+      });
+
+      if(found) {
+          document.getElementById('pos-name').value = found.name || "";
+          document.getElementById('pos-phone').value = found.phone || "";
+          document.getElementById('pos-plate').value = found.plate || plate; // 修正回正確格式
+      } else {
+          alert("查無此舊客，請直接手動輸入建檔！");
+      }
+  }
+
+  // 💡 【巧思一】智慧手續費計算
+  function calcTotal() {
+      let base = Number(document.getElementById('pos-base-price').value) || 0;
+      let method = document.getElementById('pos-payment').value;
+      let finalPrice = base;
+      let note = "";
+
+      if(method === "街口刷卡支付" && base > 0) {
+          finalPrice = Math.round(base * 1.025);
+          note = "(已自動加計 2.5% 平台手續費)";
+      }
+
+      document.getElementById('display-final-price').innerText = `NT$ ${finalPrice.toLocaleString()}`;
+      document.getElementById('display-fee-note').innerText = note;
+      return finalPrice; // 回傳給送出表單用
+  }
+
+  // 渲染右側儀表板
+  function renderDashboard() {
+      const tbody = document.getElementById('table-body');
+      tbody.innerHTML = '';
+      
+      let tCount = 0, tCash = 0, tTransfer = 0, tTotal = 0;
+
+      if(todayOrders.length === 0) {
+          tbody.innerHTML = '<tr><td colspan="6" style="text-align:center; color:#94a3b8; padding:30px;">今日尚無訂單，準備開張！</td></tr>';
+      } else {
+          todayOrders.forEach(order => {
+              tCount++;
+              let amt = Number(order.amount) || 0;
+              tTotal += amt;
+              
+              let badgeClass = "badge-cash";
+              if(order.payment === "街口刷卡支付") { badgeClass = "badge-jko"; }
+              else if (order.payment === "轉帳") { badgeClass = "badge-transfer"; tTransfer += amt; }
+              else { tCash += amt; }
+
+              let timeStr = order.date ? order.date.split(' ')[1] || "" : "";
+
+              tbody.innerHTML += `
+                <tr>
+                  <td style="color:var(--text-muted);">${timeStr}</td>
+                  <td style="font-weight:bold;">${order.plate}</td>
+                  <td>${order.service}</td>
+                  <td>${order.technician}</td>
+                  <td><span class="badge ${badgeClass}">${order.payment}</span></td>
+                  <td class="amount-col">NT$ ${amt.toLocaleString()}</td>
+                </tr>
+              `;
+          });
+      }
+
+      document.getElementById('stat-count').innerText = tCount;
+      document.getElementById('stat-cash').innerText = `NT$ ${tCash.toLocaleString()}`;
+      document.getElementById('stat-transfer').innerText = `NT$ ${tTransfer.toLocaleString()}`;
+      document.getElementById('stat-total').innerText = `NT$ ${tTotal.toLocaleString()}`;
+  }
+
+  // ==========================================
+  // ★ 送出訂單至 Google Sheets ★
+  // ==========================================
+  async function submitOrder() {
+      let plate = document.getElementById('pos-plate').value.trim().toUpperCase();
+      let name = document.getElementById('pos-name').value.trim();
+      let service = document.getElementById('pos-service').value.trim();
+      let basePrice = document.getElementById('pos-base-price').value;
+      
+      if(!plate || !service || !basePrice) return alert("⚠️ 車牌、服務項目、原始金額為必填！");
+      
+      const btn = document.getElementById('btn-submit');
+      btn.innerText = "⏳ 結帳上傳中...";
+      btn.disabled = true;
+
+      // 取得現在時間作為 ID 與日期
+      let now = new Date();
+      let dateStr = now.toLocaleDateString('zh-TW') + " " + now.toLocaleTimeString('zh-TW', {hour12:false});
+      let finalAmt = calcTotal();
+
+      let orderData = {
+          sheetName: "POS_Records",
+          id: "ORD-" + now.getTime(),
+          date: dateStr,
+          plate: plate,
+          name: name,
+          phone: document.getElementById('pos-phone').value.trim(),
+          service: service,
+          technician: document.getElementById('pos-tech').value,
+          payment: document.getElementById('pos-payment').value,
+          amount: finalAmt,
+          note: document.getElementById('pos-note').value.trim()
+      };
+
+      try {
+          await fetch(SCRIPT_URL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(orderData) });
+          
+          // 更新本地畫面
+          todayOrders.unshift(orderData); // 加到最前面
+          renderDashboard();
+          
+          alert("✅ 結帳成功！");
+          
+          // 清空左側輸入框，準備下一單
+          document.getElementById('pos-plate').value = "";
+          document.getElementById('pos-name').value = "";
+          document.getElementById('pos-phone').value = "";
+          document.getElementById('pos-service').value = "";
+          document.getElementById('pos-base-price').value = "";
+          document.getElementById('pos-note').value = "";
+          calcTotal();
+
+      } catch (e) {
+          alert("連線失敗，請確認網路！");
+      } finally {
+          btn.innerText = "結帳並開單";
+          btn.disabled = false;
+      }
+  }
+
+  // 支援 Enter 鍵登入
+  document.getElementById('sys-pwd').addEventListener('keypress', function(e) { if(e.key === 'Enter') systemLogin(); });
+</script>
+</body>
+</html>
