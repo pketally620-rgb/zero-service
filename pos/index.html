@@ -71,7 +71,6 @@
 </head>
 <body>
 
-<!-- 登入遮罩 -->
 <div class="login-overlay" id="login-overlay">
   <div class="login-box">
     <h2>ZERO POS 店務系統</h2>
@@ -81,7 +80,6 @@
   </div>
 </div>
 
-<!-- 左側：快速開單區 -->
 <div class="left-panel">
   <h2>⚡ 快速開單派工</h2>
   
@@ -106,7 +104,34 @@
 
   <div class="form-group">
     <label>服務項目</label>
-    <input type="text" id="pos-service" placeholder="例如: 精緻洗車(中型車) + 內裝加價">
+    <input type="text" id="pos-service" list="service-list" placeholder="點擊選取或輸入關鍵字搜尋...">
+    <datalist id="service-list">
+      <option value="精緻洗車(中型車)">
+      <option value="精緻洗車(大型車)">
+      <option value="精緻洗車(特殊車)">
+      <option value="精緻洗車(商務車款)">
+      <option value="品檢外觀洗車">
+      <option value="內裝加價">
+      <option value="皮革保養">
+      <option value="除臭噴霧">
+      <option value="全車精洗套餐(中型車)">
+      <option value="全車精洗套餐(大轎車款)">
+      <option value="全車精洗套餐(特殊車款)">
+      <option value="全車精洗套餐(商務車)">
+      <option value="鍍膜維護(中型車)">
+      <option value="鍍膜維護(大型車)">
+      <option value="鍍膜維護(特殊車款)">
+      <option value="鍍膜維護(商務車款)">
+      <option value="A-套餐(中型車)">
+      <option value="A-套餐(大型車)">
+      <option value="A-套餐(特殊車款)">
+      <option value="A-套餐(商務車款)">
+      <option value="A-套餐(皮卡及特殊規格)">
+      <option value="B-套餐(中型車)">
+      <option value="B-套餐(大型車)">
+      <option value="B-套餐(特殊車款)">
+      <option value="B-套餐(商務車款)">
+    </datalist>
   </div>
 
   <div style="display:flex; gap:10px;">
@@ -143,14 +168,12 @@
   <button class="btn-submit" id="btn-submit" onclick="submitOrder()">結帳並開單</button>
 </div>
 
-<!-- 右側：今日營業看板 -->
 <div class="right-panel">
   <div class="dashboard-header">
     <h2 style="border:none; margin:0;">📊 今日營業看板</h2>
     <div id="current-date" style="color:var(--text-muted); font-weight:bold;">載入中...</div>
   </div>
 
-  <!-- 數據統計區 -->
   <div class="stat-cards">
     <div class="stat-card">
       <div class="stat-title">今日總台數</div>
@@ -170,7 +193,6 @@
     </div>
   </div>
 
-  <!-- 明細列表 -->
   <table class="record-table">
     <thead>
       <tr>
@@ -223,9 +245,17 @@
       const res = await fetch(`${SCRIPT_URL}?action=admin&password=${encodeURIComponent(ADMIN_PWD)}`);
       const data = await res.json();
       
-      // 建立舊客字典，方便快速帶入
-      if(data.Warranty_Records) data.Warranty_Records.forEach(r => globalCustomers[r.plate] = r);
-      if(data.Film_Records) data.Film_Records.forEach(r => globalCustomers[r.plate] = r); // 貼膜覆蓋(若有重複以貼膜為準)
+      // 建立舊客字典，排除空白列並轉換大寫以利模糊搜尋
+      if(data.Warranty_Records) {
+        data.Warranty_Records.forEach(r => {
+          if (r.plate) globalCustomers[r.plate.toString().trim().toUpperCase()] = r;
+        });
+      }
+      if(data.Film_Records) {
+        data.Film_Records.forEach(r => {
+          if (r.plate) globalCustomers[r.plate.toString().trim().toUpperCase()] = r;
+        });
+      }
       
       // 篩選出「今天」的訂單
       const todayStr = new Date().toLocaleDateString('zh-TW'); // EX: 2026/7/13
@@ -254,24 +284,41 @@
   // ★ 介面邏輯 ★
   // ==========================================
   
-  // 帶入舊客資料
+  // 💡 【優化二】模糊搜尋比對邏輯 (無視空格、符號，支援部分輸入，防範多重同車牌預警)
   function autoFillCustomer() {
-      let plate = document.getElementById('pos-plate').value.trim().toUpperCase();
-      if(!plate) return alert("請先輸入車牌號碼");
+      let plateInput = document.getElementById('pos-plate').value.trim().toUpperCase();
+      if(!plateInput) return alert("請先輸入車牌號碼");
       
-      // 統一格式去除符號
-      let cleanPlate = plate.replace(/[\s-]/g, '');
+      // 統一過濾去除所有空格、破折號，讓比對最靈活
+      let cleanInput = plateInput.replace(/[^A-Z0-9]/g, '');
+      if(!cleanInput) return alert("請輸入有效的英文或數字進行查詢！");
       
-      // 在字典中尋找相似車牌
-      let found = null;
+      let matches = [];
       Object.keys(globalCustomers).forEach(k => {
-          if(k.replace(/[\s-]/g, '') === cleanPlate) found = globalCustomers[k];
+          let cleanKey = k.replace(/[^A-Z0-9]/g, '');
+          if (cleanKey.includes(cleanInput)) {
+              matches.push(globalCustomers[k]);
+          }
       });
 
-      if(found) {
+      if (matches.length === 1) {
+          // 剛好匹配到一筆：直接完美帶入
+          let found = matches[0];
           document.getElementById('pos-name').value = found.name || "";
-          document.getElementById('pos-phone').value = found.phone || "";
-          document.getElementById('pos-plate').value = found.plate || plate; // 修正回正確格式
+          
+          // 💡 【優化三】過濾手機帶入時的多餘符號（如轉移時 CSV 的單引號）
+          let rawPhone = found.phone || "";
+          rawPhone = rawPhone.toString().replace(/'/g, '');
+          document.getElementById('pos-phone').value = rawPhone;
+          
+          document.getElementById('pos-plate').value = found.plate || plateInput;
+          alert(`✅ 已成功自動帶入舊客資料！\n車牌：${found.plate}\n姓名：${found.name || "未填"}`);
+      } else if (matches.length > 1) {
+          // 匹配到多筆：跳出名單提示，讓店家在輸入框補齊更精準的字元
+          let matchInfo = matches.slice(0, 5).map(m => `${m.plate} (${m.name || '無名'})`).join("\n");
+          let alertMsg = `🔍 找到多筆相似的車牌，請在輸入框輸入更完整的車牌號碼：\n\n${matchInfo}`;
+          if (matches.length > 5) alertMsg += `\n...等共 ${matches.length} 筆資料`;
+          alert(alertMsg);
       } else {
           alert("查無此舊客，請直接手動輸入建檔！");
       }
