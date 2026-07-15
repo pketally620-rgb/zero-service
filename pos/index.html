@@ -25,9 +25,26 @@
   .login-input { padding: 12px; border-radius: 8px; border: 1px solid var(--border-metal); background: var(--bg-input); color: #fff; font-size: 16px; margin-bottom: 20px; outline: none; text-align: center;}
   .login-btn { padding: 12px 30px; background: var(--gold-solid); color: #000; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; font-size: 16px; }
 
-  /* --- 左右佈局 --- */
+  /* --- 側邊導航列 (新加入) --- */
+  .sidebar { width: 80px; background: var(--bg-input); border-right: 1px solid var(--border-metal); display: flex; flex-direction: column; align-items: center; padding-top: 30px; gap: 20px; z-index: 50; }
+  .sidebar-btn { width: 50px; height: 50px; border-radius: 12px; background: transparent; border: none; color: var(--text-muted); cursor: pointer; transition: 0.2s; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 12px; gap: 4px; font-weight: bold;}
+  .sidebar-btn span { font-size: 20px; }
+  .sidebar-btn:hover, .sidebar-btn.active { background: var(--gold-solid); color: #000; }
+
+  /* --- 主內容區切換 --- */
+  .main-content { flex: 1; display: flex; height: 100%; overflow: hidden; background: var(--bg-base); }
+  .page-container { display: none; width: 100%; height: 100%; }
+  
+  /* --- 頁面 1: POS 左右佈局 --- */
+  #page-pos.active { display: flex; }
   .left-panel { width: 400px; background: var(--bg-panel); border-right: 1px solid var(--border-metal); padding: 25px; overflow-y: auto; display: flex; flex-direction: column; gap: 20px; box-shadow: 5px 0 20px rgba(0,0,0,0.5); z-index: 10; }
   .right-panel { flex: 1; padding: 25px; overflow-y: auto; display: flex; flex-direction: column; }
+
+  /* --- 頁面 2: CRM 客戶檔案室佈局 --- */
+  #page-crm.active { display: flex; flex-direction: column; padding: 30px; overflow-y: auto;}
+  .crm-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 20px; border-bottom: 1px solid var(--border-metal); padding-bottom: 15px;}
+  .crm-search-box { display: flex; gap: 10px; width: 400px; }
+  .crm-search-box input { flex: 1; padding: 15px; border-radius: 8px; border: 1px solid var(--gold-solid); background: var(--bg-input); color: #fff; font-size: 16px; outline: none; }
 
   h2 { margin: 0 0 15px 0; font-size: 20px; color: var(--gold-solid); border-bottom: 1px solid var(--border-metal); padding-bottom: 10px; }
 
@@ -50,7 +67,7 @@
   .btn-submit { background: var(--gold-solid); color: #1a1500; border: none; padding: 18px; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; transition: 0.2s; margin-top: 10px; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3); }
   .btn-submit:hover { filter: brightness(1.15); transform: translateY(-2px); }
 
-  /* --- 右側儀表板 --- */
+  /* --- 儀表板與表格通用 --- */
   .dashboard-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
   .stat-cards { display: flex; gap: 15px; margin-bottom: 25px; }
   .stat-card { flex: 1; background: var(--bg-panel); border: 1px solid var(--border-metal); padding: 20px; border-radius: 12px; text-align: center; }
@@ -80,155 +97,202 @@
   </div>
 </div>
 
-<div class="left-panel">
-  <h2>⚡ 快速開單派工</h2>
-  
-  <div class="form-group">
-    <label>車牌號碼 (輸入後點擊帶入)</label>
-    <div class="search-row">
-      <input type="text" id="pos-plate" placeholder="例如: ABC-1234" style="text-transform: uppercase;">
-      <button type="button" class="btn-search" onclick="autoFillCustomer()">帶入舊客</button>
-    </div>
-  </div>
-
-  <div style="display:flex; gap:10px;">
-    <div class="form-group" style="flex:1;">
-      <label>客戶稱呼</label>
-      <input type="text" id="pos-name" placeholder="例如: 陳先生">
-    </div>
-    <div class="form-group" style="flex:1;">
-      <label>手機號碼</label>
-      <input type="text" id="pos-phone" placeholder="09...">
-    </div>
-  </div>
-
-  <div class="form-group">
-    <label>服務項目</label>
-    <input type="text" id="pos-service" list="service-list" placeholder="點擊選取或輸入關鍵字搜尋...">
-    <datalist id="service-list">
-      <option value="精緻洗車(中型車)">
-      <option value="精緻洗車(大型車)">
-      <option value="精緻洗車(特殊車)">
-      <option value="精緻洗車(商務車款)">
-      <option value="品檢外觀洗車">
-      <option value="內裝加價">
-      <option value="皮革保養">
-      <option value="除臭噴霧">
-      <option value="全車精洗套餐(中型車)">
-      <option value="全車精洗套餐(大轎車款)">
-      <option value="全車精洗套餐(特殊車款)">
-      <option value="全車精洗套餐(商務車)">
-      <option value="鍍膜維護(中型車)">
-      <option value="鍍膜維護(大型車)">
-      <option value="鍍膜維護(特殊車款)">
-      <option value="鍍膜維護(商務車款)">
-      <option value="A-套餐(中型車)">
-      <option value="A-套餐(大型車)">
-      <option value="A-套餐(特殊車款)">
-      <option value="A-套餐(商務車款)">
-      <option value="A-套餐(皮卡及特殊規格)">
-      <option value="B-套餐(中型車)">
-      <option value="B-套餐(大型車)">
-      <option value="B-套餐(特殊車款)">
-      <option value="B-套餐(商務車款)">
-    </datalist>
-  </div>
-
-  <div style="display:flex; gap:10px;">
-    <div class="form-group" style="flex:1;">
-      <label>負責技師 (可快速擴充)</label>
-      <select id="pos-tech"></select>
-    </div>
-    <div class="form-group" style="flex:1;">
-      <label>付款方式</label>
-      <select id="pos-payment" onchange="calcTotal()">
-        <option value="現金">💵 現金</option>
-        <option value="轉帳">📱 銀行轉帳</option>
-        <option value="街口刷卡支付">💳 街口刷卡支付</option>
-      </select>
-    </div>
-  </div>
-
-  <div class="form-group">
-    <label>原始輸入金額 (NT$)</label>
-    <input type="number" id="pos-base-price" placeholder="輸入牌價金額" oninput="calcTotal()">
-  </div>
-
-  <div class="price-display">
-    <div class="price-title">系統精算應收總計</div>
-    <div class="price-amount" id="display-final-price">NT$ 0</div>
-    <div class="fee-note" id="display-fee-note"></div>
-  </div>
-
-  <div class="form-group">
-    <label>備註事項</label>
-    <input type="text" id="pos-note" placeholder="可留空">
-  </div>
-
-  <button class="btn-submit" id="btn-submit" onclick="submitOrder()">結帳並開單</button>
+<div class="sidebar">
+  <button class="sidebar-btn active" id="btn-pos" onclick="switchPage('pos')">
+    <span>⚡</span>開單
+  </button>
+  <button class="sidebar-btn" id="btn-crm" onclick="switchPage('crm')">
+    <span>👥</span>客戶
+  </button>
 </div>
 
-<div class="right-panel">
-  <div class="dashboard-header">
-    <h2 style="border:none; margin:0;">📊 今日營業看板</h2>
-    <div id="current-date" style="color:var(--text-muted); font-weight:bold;">載入中...</div>
-  </div>
+<div class="main-content">
 
-  <div class="stat-cards">
-    <div class="stat-card">
-      <div class="stat-title">今日總台數</div>
-      <div class="stat-value" id="stat-count">0</div>
-    </div>
-    <div class="stat-card" style="border-color:var(--success);">
-      <div class="stat-title">現金總收</div>
-      <div class="stat-value" id="stat-cash" style="color:var(--success);">NT$ 0</div>
-    </div>
-    <div class="stat-card" style="border-color:#38bdf8;">
-      <div class="stat-title">轉帳總收</div>
-      <div class="stat-value" id="stat-transfer" style="color:#38bdf8;">NT$ 0</div>
-    </div>
-    <div class="stat-card" style="border-color:var(--gold-solid);">
-      <div class="stat-title">今日總營收</div>
-      <div class="stat-value" id="stat-total" style="color:var(--gold-solid);">NT$ 0</div>
-    </div>
-  </div>
+  <div id="page-pos" class="page-container active">
+    <div class="left-panel">
+      <h2>⚡ 快速開單派工</h2>
+      
+      <div class="form-group">
+        <label>車牌號碼 (支援模糊搜尋)</label>
+        <div class="search-row">
+          <input type="text" id="pos-plate" placeholder="例如: 1234" style="text-transform: uppercase;">
+          <button type="button" class="btn-search" onclick="autoFillCustomer()">帶入舊客</button>
+        </div>
+      </div>
 
-  <table class="record-table">
-    <thead>
-      <tr>
-        <th>時間</th>
-        <th>車牌號碼</th>
-        <th>服務項目</th>
-        <th>技師</th>
-        <th>付款方式</th>
-        <th>實收金額</th>
-      </tr>
-    </thead>
-    <tbody id="table-body">
-      <tr><td colspan="6" style="text-align:center; color:#94a3b8; padding:30px;">尚無訂單資料</td></tr>
-    </tbody>
-  </table>
-</div>
+      <div style="display:flex; gap:10px;">
+        <div class="form-group" style="flex:1;">
+          <label>客戶稱呼</label>
+          <input type="text" id="pos-name" placeholder="例如: 陳先生">
+        </div>
+        <div class="form-group" style="flex:1;">
+          <label>手機號碼</label>
+          <input type="text" id="pos-phone" placeholder="09...">
+        </div>
+      </div>
 
-<script>
+      <div class="form-group">
+        <label>服務項目</label>
+        <input type="text" id="pos-service" list="service-list" placeholder="點擊選取或輸入關鍵字搜尋...">
+        <datalist id="service-list">
+          <option value="精緻洗車(中型車)">
+          <option value="精緻洗車(大型車)">
+          <option value="精緻洗車(特殊車)">
+          <option value="精緻洗車(商務車款)">
+          <option value="品檢外觀洗車">
+          <option value="內裝加價">
+          <option value="皮革保養">
+          <option value="除臭噴霧">
+          <option value="全車精洗套餐(中型車)">
+          <option value="全車精洗套餐(大轎車款)">
+          <option value="全車精洗套餐(特殊車款)">
+          <option value="全車精洗套餐(商務車)">
+          <option value="鍍膜維護(中型車)">
+          <option value="鍍膜維護(大型車)">
+          <option value="鍍膜維護(特殊車款)">
+          <option value="鍍膜維護(商務車款)">
+          <option value="A-套餐(中型車)">
+          <option value="A-套餐(大型車)">
+          <option value="A-套餐(特殊車款)">
+          <option value="A-套餐(商務車款)">
+          <option value="B-套餐(中型車)">
+          <option value="B-套餐(大型車)">
+        </datalist>
+      </div>
+
+      <div style="display:flex; gap:10px;">
+        <div class="form-group" style="flex:1;">
+          <label>負責技師 (可快速擴充)</label>
+          <select id="pos-tech"></select>
+        </div>
+        <div class="form-group" style="flex:1;">
+          <label>付款方式</label>
+          <select id="pos-payment" onchange="calcTotal()">
+            <option value="現金">💵 現金</option>
+            <option value="轉帳">📱 銀行轉帳</option>
+            <option value="街口刷卡支付">💳 街口刷卡支付</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>原始輸入金額 (NT$)</label>
+        <input type="number" id="pos-base-price" placeholder="輸入牌價金額" oninput="calcTotal()">
+      </div>
+
+      <div class="price-display">
+        <div class="price-title">系統精算應收總計</div>
+        <div class="price-amount" id="display-final-price">NT$ 0</div>
+        <div class="fee-note" id="display-fee-note"></div>
+      </div>
+
+      <div class="form-group">
+        <label>備註事項</label>
+        <input type="text" id="pos-note" placeholder="可留空">
+      </div>
+
+      <button class="btn-submit" id="btn-submit" onclick="submitOrder()">結帳並開單</button>
+    </div>
+
+    <div class="right-panel">
+      <div class="dashboard-header">
+        <h2 style="border:none; margin:0;">📊 今日營業看板</h2>
+        <div id="current-date" style="color:var(--text-muted); font-weight:bold;">載入中...</div>
+      </div>
+
+      <div class="stat-cards">
+        <div class="stat-card">
+          <div class="stat-title">今日總台數</div>
+          <div class="stat-value" id="stat-count">0</div>
+        </div>
+        <div class="stat-card" style="border-color:var(--success);">
+          <div class="stat-title">現金總收</div>
+          <div class="stat-value" id="stat-cash" style="color:var(--success);">NT$ 0</div>
+        </div>
+        <div class="stat-card" style="border-color:#38bdf8;">
+          <div class="stat-title">轉帳總收</div>
+          <div class="stat-value" id="stat-transfer" style="color:#38bdf8;">NT$ 0</div>
+        </div>
+        <div class="stat-card" style="border-color:var(--gold-solid);">
+          <div class="stat-title">今日總營收</div>
+          <div class="stat-value" id="stat-total" style="color:var(--gold-solid);">NT$ 0</div>
+        </div>
+      </div>
+
+      <table class="record-table">
+        <thead>
+          <tr>
+            <th>時間</th>
+            <th>車牌號碼</th>
+            <th>服務項目</th>
+            <th>技師</th>
+            <th>付款方式</th>
+            <th>實收金額</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <tr><td colspan="6" style="text-align:center; color:#94a3b8; padding:30px;">尚無訂單資料</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div> <div id="page-crm" class="page-container">
+    <div class="crm-header">
+      <h2 style="border:none; margin:0; font-size:24px;">👥 職人客戶檔案室</h2>
+      <div class="crm-search-box">
+        <input type="text" id="crm-search-input" placeholder="輸入車牌、姓名或電話即時搜尋..." onkeyup="renderCRMTable()">
+      </div>
+    </div>
+    
+    <div style="color:var(--text-muted); margin-bottom:15px; font-size:14px;" id="crm-count">載入資料中...</div>
+    
+    <table class="record-table">
+      <thead>
+        <tr>
+          <th>車牌號碼</th>
+          <th>客戶姓名</th>
+          <th>聯絡電話</th>
+          <th>車款/備註</th>
+          <th>最後消費日</th>
+        </tr>
+      </thead>
+      <tbody id="crm-table-body">
+        <tr><td colspan="5" style="text-align:center; color:#94a3b8; padding:30px;">尚無客戶資料</td></tr>
+      </tbody>
+    </table>
+  </div> </div> <script>
   // ==========================================
-  // ★ 系統設定區 (自由擴充) ★
+  // ★ 系統設定區 ★
   // ==========================================
   const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyAb-p4UyLyxyl9_knqWa8iuQvIkG_xrij2eTgH2JhQqtwQsDMCWZza70OREJDtADt4/exec";
-  const ADMIN_PWD = "0000"; // ⚠️ 若改過密碼請同步修改
-  
-  // 💡 【巧思二】未來有新員工，直接在這裡加上名字即可！
+  const ADMIN_PWD = "0000"; 
   const TECHNICIANS = ["明智", "羅立", "豪豪", "宏宏"];
   
-  // 初始化下拉選單
   const techSelect = document.getElementById('pos-tech');
   TECHNICIANS.forEach(t => techSelect.innerHTML += `<option value="${t}">${t}</option>`);
 
-  // ==========================================
-  // ★ 資料變數 ★
-  // ==========================================
-  let globalCustomers = {}; // 用來存舊客資料 (車牌為Key)
+  let globalCustomers = {}; 
   let todayOrders = [];
+
+  // ==========================================
+  // ★ 頁面切換邏輯 (任意門) ★
+  // ==========================================
+  function switchPage(page) {
+    // 隱藏所有頁面
+    document.getElementById('page-pos').classList.remove('active');
+    document.getElementById('page-crm').classList.remove('active');
+    // 取消按鈕發光
+    document.getElementById('btn-pos').classList.remove('active');
+    document.getElementById('btn-crm').classList.remove('active');
+    
+    // 顯示指定頁面
+    document.getElementById('page-' + page).classList.add('active');
+    document.getElementById('btn-' + page).classList.add('active');
+
+    // 如果切換到客戶頁，自動渲染名單
+    if(page === 'crm') {
+      renderCRMTable();
+    }
+  }
 
   // ==========================================
   // ★ 登入與資料載入 ★
@@ -241,11 +305,9 @@
     document.getElementById('sys-pwd').disabled = true;
 
     try {
-      // 帶著密碼去跟雲端要資料 (包含客戶名單與今日POS紀錄)
       const res = await fetch(`${SCRIPT_URL}?action=admin&password=${encodeURIComponent(ADMIN_PWD)}`);
       const data = await res.json();
       
-      // 建立舊客字典，排除空白列並轉換大寫以利模糊搜尋
       if(data.Warranty_Records) {
         data.Warranty_Records.forEach(r => {
           if (r.plate) globalCustomers[r.plate.toString().trim().toUpperCase()] = r;
@@ -257,8 +319,7 @@
         });
       }
       
-      // 篩選出「今天」的訂單
-      const todayStr = new Date().toLocaleDateString('zh-TW'); // EX: 2026/7/13
+      const todayStr = new Date().toLocaleDateString('zh-TW');
       document.getElementById('current-date').innerText = todayStr;
       
       todayOrders = [];
@@ -281,15 +342,56 @@
   }
 
   // ==========================================
-  // ★ 介面邏輯 ★
+  // ★ CRM 檔案室邏輯 ★
   // ==========================================
-  
-  // 💡 【優化二】模糊搜尋比對邏輯 (無視空格、符號，支援部分輸入，防範多重同車牌預警)
+  function renderCRMTable() {
+    const keyword = document.getElementById('crm-search-input').value.trim().toUpperCase();
+    const tbody = document.getElementById('crm-table-body');
+    tbody.innerHTML = '';
+    
+    let allKeys = Object.keys(globalCustomers);
+    let matchedCustomers = [];
+
+    // 搜尋過濾
+    allKeys.forEach(k => {
+      let c = globalCustomers[k];
+      let searchString = `${c.plate || ''} ${c.name || ''} ${c.phone || ''}`.toUpperCase();
+      if (searchString.includes(keyword)) {
+        matchedCustomers.push(c);
+      }
+    });
+
+    document.getElementById('crm-count').innerText = `共找到 ${matchedCustomers.length} 筆客戶資料`;
+
+    if(matchedCustomers.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="5" style="text-align:center; color:#94a3b8; padding:30px;">找不到符合的客戶</td></tr>';
+      return;
+    }
+
+    // 只顯示前 100 筆避免網頁卡頓
+    let displayLimit = Math.min(matchedCustomers.length, 100);
+    for(let i = 0; i < displayLimit; i++) {
+      let c = matchedCustomers[i];
+      let rawPhone = (c.phone || "").toString().replace(/'/g, ''); // 過濾單引號
+      tbody.innerHTML += `
+        <tr>
+          <td style="font-weight:bold; color:var(--gold-solid);">${c.plate || '-'}</td>
+          <td>${c.name || '-'}</td>
+          <td>${rawPhone || '-'}</td>
+          <td style="color:var(--text-muted);">${c.note1 || '-'}</td>
+          <td>${c.last_service || '-'}</td>
+        </tr>
+      `;
+    }
+  }
+
+  // ==========================================
+  // ★ POS 開單區邏輯 ★
+  // ==========================================
   function autoFillCustomer() {
       let plateInput = document.getElementById('pos-plate').value.trim().toUpperCase();
       if(!plateInput) return alert("請先輸入車牌號碼");
       
-      // 統一過濾去除所有空格、破折號，讓比對最靈活
       let cleanInput = plateInput.replace(/[^A-Z0-9]/g, '');
       if(!cleanInput) return alert("請輸入有效的英文或數字進行查詢！");
       
@@ -302,21 +404,16 @@
       });
 
       if (matches.length === 1) {
-          // 剛好匹配到一筆：直接完美帶入
           let found = matches[0];
           document.getElementById('pos-name').value = found.name || "";
-          
-          // 💡 【優化三】過濾手機帶入時的多餘符號（如轉移時 CSV 的單引號）
           let rawPhone = found.phone || "";
           rawPhone = rawPhone.toString().replace(/'/g, '');
           document.getElementById('pos-phone').value = rawPhone;
-          
           document.getElementById('pos-plate').value = found.plate || plateInput;
-          alert(`✅ 已成功自動帶入舊客資料！\n車牌：${found.plate}\n姓名：${found.name || "未填"}`);
+          alert(`✅ 已成功帶入資料！\n車牌：${found.plate}\n姓名：${found.name || "未填"}`);
       } else if (matches.length > 1) {
-          // 匹配到多筆：跳出名單提示，讓店家在輸入框補齊更精準的字元
           let matchInfo = matches.slice(0, 5).map(m => `${m.plate} (${m.name || '無名'})`).join("\n");
-          let alertMsg = `🔍 找到多筆相似的車牌，請在輸入框輸入更完整的車牌號碼：\n\n${matchInfo}`;
+          let alertMsg = `🔍 找到多筆相似車牌，請輸入更完整的號碼：\n\n${matchInfo}`;
           if (matches.length > 5) alertMsg += `\n...等共 ${matches.length} 筆資料`;
           alert(alertMsg);
       } else {
@@ -324,24 +421,20 @@
       }
   }
 
-  // 💡 【巧思一】智慧手續費計算
   function calcTotal() {
       let base = Number(document.getElementById('pos-base-price').value) || 0;
       let method = document.getElementById('pos-payment').value;
       let finalPrice = base;
       let note = "";
-
       if(method === "街口刷卡支付" && base > 0) {
           finalPrice = Math.round(base * 1.025);
           note = "(已自動加計 2.5% 平台手續費)";
       }
-
       document.getElementById('display-final-price').innerText = `NT$ ${finalPrice.toLocaleString()}`;
       document.getElementById('display-fee-note').innerText = note;
-      return finalPrice; // 回傳給送出表單用
+      return finalPrice;
   }
 
-  // 渲染右側儀表板
   function renderDashboard() {
       const tbody = document.getElementById('table-body');
       tbody.innerHTML = '';
@@ -382,9 +475,6 @@
       document.getElementById('stat-total').innerText = `NT$ ${tTotal.toLocaleString()}`;
   }
 
-  // ==========================================
-  // ★ 送出訂單至 Google Sheets ★
-  // ==========================================
   async function submitOrder() {
       let plate = document.getElementById('pos-plate').value.trim().toUpperCase();
       let name = document.getElementById('pos-name').value.trim();
@@ -397,7 +487,6 @@
       btn.innerText = "⏳ 結帳上傳中...";
       btn.disabled = true;
 
-      // 取得現在時間作為 ID 與日期
       let now = new Date();
       let dateStr = now.toLocaleDateString('zh-TW') + " " + now.toLocaleTimeString('zh-TW', {hour12:false});
       let finalAmt = calcTotal();
@@ -419,13 +508,11 @@
       try {
           await fetch(SCRIPT_URL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(orderData) });
           
-          // 更新本地畫面
-          todayOrders.unshift(orderData); // 加到最前面
+          todayOrders.unshift(orderData); 
           renderDashboard();
           
           alert("✅ 結帳成功！");
           
-          // 清空左側輸入框，準備下一單
           document.getElementById('pos-plate').value = "";
           document.getElementById('pos-name').value = "";
           document.getElementById('pos-phone').value = "";
@@ -442,7 +529,6 @@
       }
   }
 
-  // 支援 Enter 鍵登入
   document.getElementById('sys-pwd').addEventListener('keypress', function(e) { if(e.key === 'Enter') systemLogin(); });
 </script>
 </body>
