@@ -1,0 +1,1 @@
+const frame=document.querySelector('iframe');for(const name of ['desktop','mobile'])document.getElementById(name).onclick=()=>{frame.classList.toggle('mobile',name==='mobile');for(const id of ['desktop','mobile'])document.getElementById(id).setAttribute('aria-pressed',String(id===name));};

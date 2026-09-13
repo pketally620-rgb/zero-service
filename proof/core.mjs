@@ -41,34 +41,41 @@ export class BookingStore {
     const slot = this.#slot(slotId);
     if (slot.status !== 'OPEN') throw new Error('slot not open');
     const bookingId = `PB-${String(this.sequence++).padStart(3, '0')}`;
-    const booking = { id: bookingId, slotId, status: 'PENDING', ...payload };
+    const booking = { ...structuredClone(payload), id: bookingId, slotId, status: 'PENDING', history: ['OPEN → PENDING'] };
     this.bookings.set(bookingId, booking);
     slot.status = 'PENDING'; slot.bookingId = bookingId;
     return booking;
   }
   confirm(bookingId) {
     const booking = this.#booking(bookingId);
+    if (booking.status !== 'PENDING') throw new Error('only pending booking can confirm');
     const slot = this.#slot(booking.slotId);
     if (slot.bookingId !== bookingId) throw new Error('slot ownership mismatch');
     const conflicting = [...this.bookings.values()].find((b) => b.id !== bookingId && b.slotId === booking.slotId && b.status === 'CONFIRMED');
     if (conflicting) throw new Error('double confirmed booking blocked');
     booking.status = 'CONFIRMED'; slot.status = 'CONFIRMED';
+    booking.history.push('PENDING → CONFIRMED');
     return booking;
   }
   change(bookingId, newSlotId) {
     const booking = this.#booking(bookingId);
+    if (!['PENDING', 'CONFIRMED'].includes(booking.status)) throw new Error('inactive booking');
     const oldSlot = this.#slot(booking.slotId);
+    if (oldSlot.bookingId !== bookingId) throw new Error('slot ownership mismatch');
     const newSlot = this.#slot(newSlotId);
     if (newSlot.status !== 'OPEN') throw new Error('new slot not open');
     oldSlot.status = 'OPEN'; oldSlot.bookingId = null;
     booking.slotId = newSlotId; booking.status = 'PENDING';
+    booking.history.push(`CHANGE → ${newSlotId} → PENDING (reconfirmation required)`);
     newSlot.status = 'PENDING'; newSlot.bookingId = bookingId;
     return booking;
   }
   cancel(bookingId) {
     const booking = this.#booking(bookingId);
+    if (!['PENDING', 'CONFIRMED'].includes(booking.status)) throw new Error('inactive booking');
     const slot = this.#slot(booking.slotId);
     booking.status = 'CANCELLED';
+    booking.history.push('CANCEL → CANCELLED');
     if (slot.bookingId === bookingId) { slot.status = 'OPEN'; slot.bookingId = null; }
     return booking;
   }
