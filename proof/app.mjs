@@ -39,7 +39,7 @@ function summaryText(b){const slot=catalog.slots.find(s=>s.id===b.slotId);return
 function renderBooking(){const b=currentBooking,copyText=bookingWording(b),box=$('#summary');box.innerHTML='<h3>你的預約摘要</h3>';const status=document.createElement('span');status.className='status';status.textContent=copyText.status;const ta=document.createElement('textarea');ta.rows=9;ta.readOnly=true;ta.setAttribute('aria-label','LINE 預約摘要');ta.value=summaryText(b);const detail=document.createElement('p');detail.className='small muted';detail.textContent=copyText.detail;box.append(status,detail,ta);const note=document.createElement('p');note.className='small muted';note.textContent=b.status==='CANCELLED'?'如需安排其他時間，請重新選擇時段。':'金額保留送出時的基準價。'+copyText.lineNote;box.append(note);
 if(b.status!=='CANCELLED'){
   const actions=document.createElement('div');actions.className='actions';
-  const line=document.createElement('a');line.id='lineHandoff';line.className='btn primary';line.href=lineHandoffUrl(ta.value);line.target='_blank';line.rel='noopener noreferrer';line.textContent='前往 LINE 完成確認';actions.append(line);box.append(actions);
+  const line=document.createElement('a');line.id='lineHandoff';line.className='btn primary';line.href=lineHandoffUrl(ta.value);line.target='_blank';line.rel='noopener noreferrer';line.textContent=copyText.lineAction;actions.append(line);box.append(actions);
   const guide=document.createElement('p');guide.className='small muted';guide.textContent='此為示範操作，請勿實際送出訊息。';box.append(guide);
   const fallback=document.createElement('details');const heading=document.createElement('summary');heading.textContent='LINE 沒有自動帶入預約資料？';fallback.append(heading);
   const help=document.createElement('p');help.className='small muted';help.textContent='若 LINE 對話框沒有預約資料，請按下方按鈕，再於 ZERO 官方 LINE 貼上資料，確認後送出。';fallback.append(help);
@@ -51,7 +51,7 @@ if(b.status!=='CANCELLED'){
       const next=window.open(LINE_PROFILE_URL,'_blank');if(next)next.opener=null;
       feedback.textContent='預約內容已複製。請在 ZERO 官方 LINE 對話框貼上，確認後送出。示範資料請勿實際送出。';
       if(!next){const reopen=document.createElement('a');reopen.className='btn';reopen.href=LINE_PROFILE_URL;reopen.target='_blank';reopen.rel='noopener noreferrer';reopen.textContent='LINE 未開啟？按此繼續';feedback.append(reopen);}
-    }catch(error){feedback.textContent='尚未成功複製預約資料，請重試，或使用「前往 LINE 完成確認」。';}
+    }catch(error){feedback.textContent=`尚未成功複製預約資料，請重試，或使用「${copyText.lineAction}」。`;}
   };
   fallback.append(copy,feedback);box.append(fallback);
 }
