@@ -1,0 +1,121 @@
+{
+  "checkedAt": "2026-09-14T07:31:20.012Z",
+  "results": [
+    {
+      "url": "https://www.facebook.com/LANDGTW",
+      "chain": [
+        {
+          "url": "https://www.facebook.com/LANDGTW",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "Zero職人鍍膜/包膜/洗車-XPEL 新竹-竹北授權店 | Zhubei ",
+      "verified": false,
+      "note": "HTTP evidence only; identity/content requires review"
+    },
+    {
+      "url": "https://www.instagram.com/xpel_hsinchu_zhubei/",
+      "chain": [
+        {
+          "url": "https://www.instagram.com/xpel_hsinchu_zhubei/",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "Zero職人鍍膜_包膜_XPEL 新竹_竹北授權店 (&#064;xpel_hsinchu_zhubei) • Instagram photos and videos",
+      "verified": false,
+      "note": "HTTP evidence only; identity/content requires review"
+    },
+    {
+      "url": "https://maps.app.goo.gl/7R4MEFphwXHfXgYY6",
+      "chain": [
+        {
+          "url": "https://maps.app.goo.gl/7R4MEFphwXHfXgYY6",
+          "status": 302,
+          "location": "https://maps.google.com?q=302%E6%96%B0%E7%AB%B9%E7%B8%A3%E7%AB%B9%E5%8C%97%E5%B8%82%E7%B8%A3%E6%94%BF%E4%BA%8C%E8%B7%AF360%E8%99%9FZERO%E8%81%B7%E4%BA%BA%E3%81%AE%E9%8D%8D%E8%86%9C&ftid=0x346836edd6d6bad1:0x7cb7301330f59f23&hl=zh-Hant-US&gl=us&entry=gps&g_ep=CAISBjYuNDkuNBgAINeCA0ICVFc%3D"
+        },
+        {
+          "url": "https://maps.google.com/?q=302%E6%96%B0%E7%AB%B9%E7%B8%A3%E7%AB%B9%E5%8C%97%E5%B8%82%E7%B8%A3%E6%94%BF%E4%BA%8C%E8%B7%AF360%E8%99%9FZERO%E8%81%B7%E4%BA%BA%E3%81%AE%E9%8D%8D%E8%86%9C&ftid=0x346836edd6d6bad1:0x7cb7301330f59f23&hl=zh-Hant-US&gl=us&entry=gps&g_ep=CAISBjYuNDkuNBgAINeCA0ICVFc%3D",
+          "status": 302,
+          "location": "https://maps.google.com/maps?q=302%E6%96%B0%E7%AB%B9%E7%B8%A3%E7%AB%B9%E5%8C%97%E5%B8%82%E7%B8%A3%E6%94%BF%E4%BA%8C%E8%B7%AF360%E8%99%9FZERO%E8%81%B7%E4%BA%BA%E3%81%AE%E9%8D%8D%E8%86%9C&ftid=0x346836edd6d6bad1:0x7cb7301330f59f23&hl=zh-Hant-US&gl=us&entry=gps&g_ep=CAISBjYuNDkuNBgAINeCA0ICVFc%3D"
+        },
+        {
+          "url": "https://maps.google.com/maps?q=302%E6%96%B0%E7%AB%B9%E7%B8%A3%E7%AB%B9%E5%8C%97%E5%B8%82%E7%B8%A3%E6%94%BF%E4%BA%8C%E8%B7%AF360%E8%99%9FZERO%E8%81%B7%E4%BA%BA%E3%81%AE%E9%8D%8D%E8%86%9C&ftid=0x346836edd6d6bad1:0x7cb7301330f59f23&hl=zh-Hant-US&gl=us&entry=gps&g_ep=CAISBjYuNDkuNBgAINeCA0ICVFc%3D",
+          "status": 302,
+          "location": "https://www.google.com/maps?q=302%E6%96%B0%E7%AB%B9%E7%B8%A3%E7%AB%B9%E5%8C%97%E5%B8%82%E7%B8%A3%E6%94%BF%E4%BA%8C%E8%B7%AF360%E8%99%9FZERO%E8%81%B7%E4%BA%BA%E3%81%AE%E9%8D%8D%E8%86%9C&ftid=0x346836edd6d6bad1:0x7cb7301330f59f23&hl=zh-Hant-US&gl=us&entry=gps&g_ep=CAISBjYuNDkuNBgAINeCA0ICVFc%3D"
+        },
+        {
+          "url": "https://www.google.com/maps?q=302%E6%96%B0%E7%AB%B9%E7%B8%A3%E7%AB%B9%E5%8C%97%E5%B8%82%E7%B8%A3%E6%94%BF%E4%BA%8C%E8%B7%AF360%E8%99%9FZERO%E8%81%B7%E4%BA%BA%E3%81%AE%E9%8D%8D%E8%86%9C&ftid=0x346836edd6d6bad1:0x7cb7301330f59f23&hl=zh-Hant-US&gl=us&entry=gps&g_ep=CAISBjYuNDkuNBgAINeCA0ICVFc%3D",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": " Google 地圖 ",
+      "verified": false,
+      "note": "HTTP evidence only; identity/content requires review"
+    },
+    {
+      "url": "https://lin.ee/y8kjBXa",
+      "chain": [
+        {
+          "url": "https://lin.ee/y8kjBXa",
+          "status": 301,
+          "location": "https://line.me/R/ti/p/@udu6260e?oat_content=url&ts=05101514"
+        },
+        {
+          "url": "https://line.me/R/ti/p/@udu6260e?oat_content=url&ts=05101514",
+          "status": 302,
+          "location": "https://page.line.me/udu6260e?oat_content=url&openQrModal=true"
+        },
+        {
+          "url": "https://page.line.me/udu6260e?oat_content=url&openQrModal=true",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "XPEL-新竹竹北Zero職人 | LINE Official Account",
+      "verified": false,
+      "note": "HTTP evidence only; identity/content requires review"
+    },
+    {
+      "url": "https://reurl.cc/eVMlvm",
+      "chain": [
+        {
+          "url": "https://reurl.cc/eVMlvm",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "XPEL 新竹_竹北授權店-職人車漆鍍膜_竹北貼膜_新竹包膜_汽車美容 on Instagram: &#34;【在光與塵埃交織的舞台上，他們用雙手寫下無聲的詩】 ​ \n​\n當聚光燈點亮賽場的剎那，那些被水漬浸...",
+      "verified": false,
+      "note": "HTTP evidence only; identity/content requires review"
+    },
+    {
+      "url": "https://reurl.cc/EbD1yR",
+      "chain": [
+        {
+          "url": "https://reurl.cc/EbD1yR",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "XPEL 新竹_竹北授權店-職人車漆鍍膜_竹北貼膜_新竹包膜_汽車美容 on Instagram: &#34;消光膜真的不是每個人都敢貼。\n但貼對了，真的會回不去。\n​\n這台 Tesla 煥新 Model Y...",
+      "verified": false,
+      "note": "HTTP evidence only; identity/content requires review"
+    },
+    {
+      "url": "https://reurl.cc/6bGKeV",
+      "chain": [
+        {
+          "url": "https://reurl.cc/6bGKeV",
+          "status": 200,
+          "location": null
+        }
+      ],
+      "title": "XPEL 新竹_竹北授權店-職人車漆鍍膜_竹北貼膜_新竹包膜_汽車美容 on Instagram: &#34;感謝您把我們納入您考量的店家之一～我先給您一個好比較的方向\n\n因為每台車的車況、停車環境跟習慣不同...",
+      "verified": false,
+      "note": "HTTP evidence only; identity/content requires review"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "mission": "GitHub Issue #4",
+  "baseline": "8e479263024c7e31e47609d02d158e96701ccc6b",
+  "branch": "production/website-v1-candidate",
+  "runtime": "Node.js 24.19.0",
+  "automated": {"command": "node --test website/tests/candidate.test.mjs proof/r2-tests.mjs proof/r21-tests.mjs", "tests": 4, "passed": 4, "failed": 0},
+  "browser": {"desktop": "1440x1000", "mobile": "390x844", "adminMobile": "390x844", "priceExamples": ["Tesla Model Y -> large -> 2100", "Toyota Corolla Cross -> mid -> 1800"], "booking": "request -> Owner confirmation -> customer cancellation; second request withdrawn", "content": "permanent URLs saved; featured disabled, public hidden, then restored", "externalMessagesSent": false},
+  "restoreDrill": {"integrity": "ok", "schema": 1, "syntheticBookings": 2, "sessionsAfterRevocation": 0, "liveDatabaseOverwritten": false},
+  "externalLinks": "HTTP chains and permanent Instagram metadata checked; native device playback/prefill not certified",
+  "scope": "controlled local candidate only; synthetic data; no public promotion"
+}
+

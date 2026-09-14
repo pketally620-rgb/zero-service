@@ -1,0 +1,14 @@
+{
+  "name": "zero-website-v1-candidate",
+  "version": "1.0.0-candidate.1",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24.19.0 <25" },
+  "scripts": {
+    "setup": "node setup.mjs",
+    "start": "node server.mjs",
+    "test": "node --test tests/candidate.test.mjs",
+    "backup": "node ops.mjs backup"
+  }
+}
+

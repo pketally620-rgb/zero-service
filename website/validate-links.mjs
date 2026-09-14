@@ -1,0 +1,5 @@
+import {writeFile} from 'node:fs/promises';
+const urls=['https://www.facebook.com/LANDGTW','https://www.instagram.com/xpel_hsinchu_zhubei/','https://maps.app.goo.gl/7R4MEFphwXHfXgYY6','https://lin.ee/y8kjBXa','https://reurl.cc/eVMlvm','https://reurl.cc/EbD1yR','https://reurl.cc/6bGKeV'];
+const results=await Promise.all(urls.map(async url=>{const chain=[];let next=url;try{for(let i=0;i<8;i++){const r=await fetch(next,{redirect:'manual',signal:AbortSignal.timeout(15000)});const location=r.headers.get('location');chain.push({url:next,status:r.status,location});if(location&&r.status>=300&&r.status<400){next=new URL(location,next).href;continue;}const html=(await r.text()).slice(0,150000);return {url,chain,title:html.match(/<title[^>]*>([^<]*)<\/title>/i)?.[1]||null,verified:false,note:'HTTP evidence only; identity/content requires review'};}return {url,chain,error:'Too many redirects'};}catch(e){return {url,chain,error:e.message};}}));
+await writeFile(new URL('evidence/external-links.json',import.meta.url),JSON.stringify({checkedAt:new Date().toISOString(),results},null,2));console.log(JSON.stringify(results,null,2));
+
