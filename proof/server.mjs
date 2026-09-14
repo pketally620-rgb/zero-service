@@ -76,7 +76,7 @@ export function createProofServer() {
         if(!v || !Number.isInteger(body.lengthMm) || body.lengthMm<2000 || body.lengthMm>8000 || !['passenger','mpv','van'].includes(body.kind) || (body.override && !Object.hasOwn(tierLabels,body.override))) fail(400,'INVALID_VEHICLE');
         Object.assign(v,{lengthMm:body.lengthMm,kind:body.kind,ownerOverrideTier:body.override || undefined}); return send(200,{ok:true});
       }
-      const publicFiles = {'/assets/zero-workshop.jpg':'assets/zero-workshop.jpg','/assets/zero-surface.jpg':'assets/zero-surface.jpg','/':'index.html','/index.html':'index.html','/app.mjs':'app.mjs','/ux.mjs':'ux.mjs','/style.css':'style.css','/review.html':'review.html','/review.mjs':'review.mjs','/review.css':'review.css'};
+      const publicFiles = {'/assets/approved-hero.jpg':'assets/approved-hero.jpg','/assets/approved-craft.jpg':'assets/approved-craft.jpg','/assets/approved-edge.jpg':'assets/approved-edge.jpg','/assets/zero-workshop.jpg':'assets/zero-workshop.jpg','/assets/zero-surface.jpg':'assets/zero-surface.jpg','/':'index.html','/index.html':'index.html','/app.mjs':'app.mjs','/ux.mjs':'ux.mjs','/style.css':'style.css','/review.html':'review.html','/review.mjs':'review.mjs','/review.css':'review.css'};
       if(req.method === 'GET' && Object.hasOwn(publicFiles,path)) {
         const name=publicFiles[path], content=await readFile(new URL(name,import.meta.url));
         res.writeHead(200,{'Content-Type':name.endsWith('.jpg')?'image/jpeg':name.endsWith('.mjs')?'text/javascript; charset=utf-8':name.endsWith('.css')?'text/css; charset=utf-8':'text/html; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Content-Security-Policy':"default-src 'self'; style-src 'self'; script-src 'self'; img-src 'self'; connect-src 'self'; frame-ancestors 'self'; base-uri 'none'; form-action 'self'"}); return res.end(content);
@@ -88,3 +88,4 @@ export function createProofServer() {
 if(process.argv[1] === fileURLToPath(import.meta.url)) {
   const server=createProofServer(); server.listen(4173,'127.0.0.1',()=>console.log('ZERO Proof: http://127.0.0.1:4173 — synthetic, resets on restart'));
 }
+
