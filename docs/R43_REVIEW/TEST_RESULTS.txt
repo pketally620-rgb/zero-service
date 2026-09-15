@@ -1,0 +1,14 @@
+✔ controlled candidate: auth, isolation, persistence, operations and recovery (895.3148ms)
+✔ launch seed, retention boundaries, pending preservation and credential revocation (104.2806ms)
+✔ rotation rejects obsolete login/session; launch catalog exposes only opened slots; actual end retention anchor (523.8757ms)
+✔ service lifecycle: authorization, modes, disabled stale requests, immutable booking and persistence (562.342ms)
+✔ source-supported master: unique provenance, exact grouping, thresholds, overrides and unknown (2.8019ms)
+✔ controlled preparation preserves override and business data, refuses fixture DB (91.8074ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 968.0145

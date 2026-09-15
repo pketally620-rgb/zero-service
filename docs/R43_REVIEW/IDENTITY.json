@@ -1,0 +1,37 @@
+{
+  "parentEvidenceCommit": "ed01e1e5e4005ab68582ef2c694985e8632ea8ec",
+  "parentOverlay": "7a6ec2ad81c7e8dbd705349326bd233eef053deec55d6c882ac0ae5d00bf18ce",
+  "changedFiles": [
+    "website/service-management.mjs",
+    "website/server.mjs",
+    "website/public/admin.mjs",
+    "website/public/admin.html",
+    "website/public/app.mjs",
+    "website/tests/service-management.test.mjs"
+  ],
+  "files": {
+    "website/service-management.mjs": "4a8bc4dae02a07db55f7affbc7c40c39e1a0ea2da236c6436b5bfad22c55d84d",
+    "website/server.mjs": "dab166724c3c4e659a77bf94409c22e1552d0798bd34243e4ef41ef82bd4504e",
+    "website/public/admin.mjs": "61b100fb5dbb8b33d71c20cd087df4ac82276aa14dbe2fbd13bb6b830a2ae4be",
+    "website/public/admin.html": "9b63d7a44b0dbcc53aa87303812a33e5500344f1c34e9cd6baa7b3508c81f5a1",
+    "website/public/app.mjs": "d7028e49b1576ac77cc7530099137b93f3dfa54fea2dfba7f145e7b42be3ea54",
+    "website/tests/service-management.test.mjs": "72486f6168e41b88a723af0432c1535c0128fba29ae77c8bb99d0a0fa622fd92",
+    "website/domain.mjs": "fec8d92624eccd9412f33958c87929d600e30520149bb21cb94710172d89566b",
+    "website/store.mjs": "59d65701afc4e5e24017060915a590733d102e458ea77c1401776b37a5b2bb7a",
+    "website/policy.mjs": "d6f0cdfffc5707907fdf00e4258bdd662454eb2031393fbee1a8dceeee8eabab",
+    "website/validation.mjs": "4b12a90c1b889f3bf7148975e8d4f77fd52f773007c391a6b582ac120897c3b2",
+    "website/vehicle-master.mjs": "bcfb17678f5fbb8ede8cd1cd46220dc86c61b14fa9cbcbd6ac84e8a0a1ddb7c2",
+    "website/data/vehicle-master-r42.json": "cdd87eb8b4ee46658b93e0c59aec03ead17a4599a6107086fd666f61ef548234",
+    "website/tests/candidate.test.mjs": "34f2ec1c2b7b121173b309dac697365107632a958b8c842e62d85e20e3f8458b",
+    "website/tests/policy.test.mjs": "2f81d7b4994369f8fef80f5f16c7709f2181f0d1482df168de2515cc789e6962",
+    "website/tests/vehicle-master.test.mjs": "8dfba50d52393055e09a957cb74cd0294c1bb097c8706fcb1fdcbcd46c14e675",
+    "website/public/ux.mjs": "f7e529683de35308cd951b42b0bf581f6be29a1f2cf393dd8f3dec43d97cc0e4",
+    "website/public/style.css": "f9b941c699d14852919d3b8d765929fea20d8668773d136edf3436cee40a3bdc",
+    "website/public/admin.css": "5cbe4a7a6d576467ade35aa2a4ca8fcba3d16240f0cb5ba18c3eada3ef37a2ae",
+    "website/public/index.html": "043d68bc1abc81546b42e6ca12d9c24489dbfd6aa64fcee659cb5972d5f65db5",
+    "website/public/review.html": "12edd3e2a938f8043d2b69ecb646e76b7aaeb6d43789444937f29949cc5588ec",
+    "website/public/review.mjs": "4e514aa238d8c85b858d4cc168605ba8b09224de480faab10661b97e46cdd3e3",
+    "website/public/review.css": "5e61ae6ffe07a427ab2248f3e71a363d6728c415fd18de7846de3fb25ca569fc"
+  },
+  "overlaySha256": "3df5c15eee6c8e7d8d68efe3d9016d7d8509e9f75b66b52a2662731060b495d1"
+}
