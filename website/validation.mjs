@@ -17,4 +17,3 @@ export function validateContent(c){
     facebook:safeURL(c.links.facebook,['www.facebook.com','facebook.com']),instagram:safeURL(c.links.instagram,['www.instagram.com','instagram.com']),
     maps:safeURL(c.links.maps,['maps.app.goo.gl','www.google.com','maps.google.com']),line:safeURL(c.links.line,['lin.ee','line.me']),lineAccount:c.links.lineAccount}};
 }
-

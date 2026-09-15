@@ -2,7 +2,7 @@ import test from 'node:test';import assert from 'node:assert/strict';import {mkd
 import {createCandidate,passwordHash} from '../server.mjs';import {openStore} from '../store.mjs';
 const origin='http://127.0.0.1:4191';
 test('controlled candidate: auth, isolation, persistence, operations and recovery',async()=>{
- const dir=await mkdtemp(join(tmpdir(),'zero-v1-test-')),file=join(dir,'db.sqlite');let app=createCandidate({database:file,origin});
+ const dir=await mkdtemp(join(tmpdir(),'zero-v1-test-')),file=join(dir,'db.sqlite');let app=createCandidate({database:file,origin,fixtures:true});
  app.store.db.prepare('INSERT INTO settings VALUES(?,?)').run('admin-password',await passwordHash('Test-only-long-password-983!'));
  async function start(){await new Promise(r=>app.server.listen(4191,'127.0.0.1',r));return 'http://127.0.0.1:'+app.server.address().port;}let base=await start();
  const client=()=>({cookie:'',csrf:''});const a=client(),b=client(),owner=client(),anon=client();
@@ -42,4 +42,3 @@ test('controlled candidate: auth, isolation, persistence, operations and recover
   for(let i=0;i<7;i++)await request(anon,'/api/admin/login',{password:'wrong'});assert.equal((await request(anon,'/api/admin/login',{password:'wrong'})).status,429);
  }finally{if(app.server.listening)await new Promise(r=>app.server.close(r));assert.equal(dirname(resolve(dir)),resolve(tmpdir()));assert.ok(basename(dir).startsWith('zero-v1-test-'));await rm(dir,{recursive:true,force:true});}
 });
-

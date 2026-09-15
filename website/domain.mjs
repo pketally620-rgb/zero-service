@@ -89,4 +89,3 @@ export class BookingStore {
   #booking(id) { const booking = this.bookings.get(id); if (!booking) throw new Error('booking not found'); return booking; }
 }
 
-

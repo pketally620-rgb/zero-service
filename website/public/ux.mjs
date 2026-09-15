@@ -10,6 +10,7 @@ export function lineHandoffUrl(summary, account = LINE_ACCOUNT_ID) {
 
 // Presentation only: no transition or booking mutation.
 export function bookingWording(booking) {
+  if (booking.endedAt) return {status:'服務已結束',detail:'如有後續問題，請聯繫 ZERO。',change:null,cancel:null,lineAction:'前往 LINE 聯繫 ZERO',lineNote:'可透過官方 LINE 聯繫 ZERO。'};
   if (booking.status === 'CONFIRMED') return {
     status:'預約已確認', detail:'ZERO 人員已確認此預約。',
     change:'申請改期', cancel:'申請取消預約', slotLabel:'希望改至的時段',
@@ -21,10 +22,9 @@ export function bookingWording(booking) {
     detail:'此筆需求已結束，原時段已釋出。', change:null, cancel:null, lineAction:null
   };
   return {
-    status:'預約需求已送出', detail:'等待 ZERO 人員確認，尚未成立正式預約。',
+    status:'預約需求已送出', detail:'等待 ZERO 人員透過官方 LINE 確認，尚未成立正式預約。下一營業日結束仍未確認，將由人員撤回並釋出時段。',
     change:'更改申請時段', cancel:'撤回預約需求', slotLabel:'希望申請的時段',
     actionNote:'更改後仍需 ZERO 人員確認；撤回後會釋出時段。',
     lineAction:'前往 LINE 完成確認', lineNote:'前往 LINE 後，確認已帶入的預約資料再送出，等待 ZERO 人員確認。'
   };
 }
-
