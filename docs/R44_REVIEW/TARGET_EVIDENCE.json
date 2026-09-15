@@ -1,0 +1,110 @@
+{
+  "os": "\"Ubuntu 24.04.4 LTS\"",
+  "runtime": "v24.19.0",
+  "documents": {
+    "PREPARATION": {
+      "release": "bcd5057b02d44510b0c7efac47701c3668c2d5cd",
+      "overlay": "872efafbb2f7b3286e61cfdc8ef9e2b9c805a6d9c3c9da58e4314e6891fc7f14",
+      "node": "v24.19.0",
+      "schema": 1,
+      "dataClass": "APPROVED_LAUNCH_PREPARATION",
+      "vehicles": 422,
+      "slots": 0,
+      "bookings": 0,
+      "r41ApprovedContentAndServicesPreserved": true,
+      "credentialHashInherited": true,
+      "obsoleteSessions": 0,
+      "integrity": "ok",
+      "targetTests": "6 PASS",
+      "launchStateHash": "b3c5c8b0e5fd4ce31e187d29ac2a4c422f1c1d5edded87f230bd18ef7f3840db"
+    },
+    "SMOKE": {
+      "status": "PASS",
+      "vehicles": 422,
+      "representativePrices": 5,
+      "unknownRejected": true,
+      "ownerOverride": true,
+      "serviceLifecycle": true,
+      "concurrentSlotWinner": 1,
+      "customerIsolation": true,
+      "historicalSnapshot": true,
+      "bookingConfirmChangeCancel": true,
+      "productionCredentialLogin": true,
+      "stateHash": "688accde8c7f84d78d9503b4ba5bb0b1dfa3ce8f2c47372af959d70732d81588",
+      "schema": 1,
+      "integrity": "ok"
+    },
+    "RESTART": {
+      "disconnectSurvival": true,
+      "restart": "PASS",
+      "launch": {
+        "stateHash": "b3c5c8b0e5fd4ce31e187d29ac2a4c422f1c1d5edded87f230bd18ef7f3840db",
+        "schema": 1,
+        "vehicles": 422,
+        "bookings": 0,
+        "mode": "600"
+      },
+      "smoke": {
+        "stateHash": "688accde8c7f84d78d9503b4ba5bb0b1dfa3ce8f2c47372af959d70732d81588",
+        "schema": 1,
+        "vehicles": 422,
+        "bookings": 1,
+        "mode": "600"
+      }
+    },
+    "BACKUP": {
+      "result": "PASS",
+      "key": "validation/r44-bfc7a905143ac9e8.r2b",
+      "bytes": 275458,
+      "packageHash": "e9ccd9bd2d0674e4d87256d4e906bd9052f33fccf914e5e8a969d052c2833cbc",
+      "release": "bcd5057b02d44510b0c7efac47701c3668c2d5cd",
+      "schema": 1,
+      "revision": 15,
+      "stateHash": "688accde8c7f84d78d9503b4ba5bb0b1dfa3ce8f2c47372af959d70732d81588",
+      "created": "2026-09-15T11:10:44.191Z",
+      "source": "isolated synthetic smoke DB",
+      "productionScheduleUnchanged": true
+    },
+    "RECOVERY": {
+      "result": "PASS",
+      "release": "bcd5057b02d44510b0c7efac47701c3668c2d5cd",
+      "schema": 1,
+      "dbHash": "27407fdb2fae648c2aeb6df17cec4943b22fc9424b0d1ef6234a1e7d1c809432",
+      "stateHash": "688accde8c7f84d78d9503b4ba5bb0b1dfa3ce8f2c47372af959d70732d81588",
+      "vehicles": 422,
+      "historicalBookingsPreserved": 1,
+      "obsoleteSessionsRevoked": 2,
+      "syntheticReplayDenied": true,
+      "currentCredentialHashPreserved": true,
+      "integrity": "ok",
+      "restartHttp": 200,
+      "restoredStatePreserved": true,
+      "sourceDbNotOverwritten": true,
+      "restoreListenerStopped": true
+    },
+    "FINAL": {
+      "result": "PASS",
+      "release": "bcd5057b02d44510b0c7efac47701c3668c2d5cd",
+      "sourceHashesMatch": true,
+      "sourceFiles": 22,
+      "launchStateHash": "b3c5c8b0e5fd4ce31e187d29ac2a4c422f1c1d5edded87f230bd18ef7f3840db",
+      "launch": {
+        "vehicles": 422,
+        "bookings": 0,
+        "slots": 0,
+        "sessions": 0,
+        "schema": 1,
+        "dataClass": "APPROVED_LAUNCH_PREPARATION"
+      },
+      "privateDirectoryMode": "700",
+      "dbMode": "600",
+      "integrity": "ok",
+      "servicesStopped": true,
+      "r2CodeAndScheduleUnchanged": true,
+      "r2ValidationObjectRemoved": true,
+      "scheduledSource": "existing R1 synthetic database; NOT switched to R4.4",
+      "activationRequiredBeforeFutureServing": true
+    }
+  },
+  "tests": "✔ controlled candidate: auth, isolation, persistence, operations and recovery (1869.978644ms)\n✔ launch seed, retention boundaries, pending preservation and credential revocation (170.254131ms)\n✔ rotation rejects obsolete login/session; launch catalog exposes only opened slots; actual end retention anchor (1315.981578ms)\n✔ service lifecycle: authorization, modes, disabled stale requests, immutable booking and persistence (749.118364ms)\n✔ source-supported master: unique provenance, exact grouping, thresholds, overrides and unknown (11.21542ms)\n✔ controlled preparation preserves override and business data, refuses fixture DB (121.88375ms)\nℹ tests 6\nℹ suites 0\nℹ pass 6\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 4939.427542\n"
+}
