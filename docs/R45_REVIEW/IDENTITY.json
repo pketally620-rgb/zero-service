@@ -1,0 +1,27 @@
+{
+  "parent": "40a13a392ebc11dac10e28465a8bea12eade652d",
+  "branch": "production/website-v1-candidate",
+  "sourceFiles": [
+    {
+      "path": "website/booking-entry.mjs",
+      "sha256": "ddf80ba910e51979f1601bcba10459bcb7e576c34fd58833bd89370edaeb28e4"
+    },
+    {
+      "path": "website/server.mjs",
+      "sha256": "df63c07490476b64e3c6b86abbc95da8a987f5e4c0f16f6deb8c769d806a801e"
+    },
+    {
+      "path": "website/public/admin.mjs",
+      "sha256": "4ec0e75c2a4eef8e7920fe16327f51f260a3567a4353454b239deff0b02d721d"
+    },
+    {
+      "path": "website/public/admin.html",
+      "sha256": "a301f1d8b90fa3f1dcfaeda52c79de4967619a645401d7d81e166521c6986328"
+    },
+    {
+      "path": "website/tests/manual-booking.test.mjs",
+      "sha256": "361f8017d459db5f075d0b2cb2e7f7e8cd75439bacd3ab13f17108788571eb1d"
+    }
+  ],
+  "vehicleMasterSha256": "cdd87eb8b4ee46658b93e0c59aec03ead17a4599a6107086fd666f61ef548234"
+}

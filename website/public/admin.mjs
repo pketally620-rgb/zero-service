@@ -1,6 +1,6 @@
 const $=s=>document.querySelector(s);let csrf,data,draft;
 const names={OPEN:'可申請',PENDING:'等待確認',CONFIRMED:'已確認',CANCELLED:'已結束',CLOSED:'暫停開放'},tiers={mid:'中型車',large:'大型車',special:'特殊型車',business:'商務型車'};
-async function api(path,body){const r=await fetch(path,body===undefined?{}:{method:'POST',headers:{'Content-Type':'application/json','X-CSRF-Token':csrf||''},body:JSON.stringify(body)});const d=await r.json();if(!r.ok){if(r.status===401){$('#workspace').hidden=true;$('#login').hidden=false;data=null;draft=null;for(const id of ['bookingRows','slotRows','newService','serviceRows','vehicleRows','caseRows','linkFields'])$('#'+id).replaceChildren();}throw Error(d.error);}return d;}
+async function api(path,body){const r=await fetch(path,body===undefined?{}:{method:'POST',headers:{'Content-Type':'application/json','X-CSRF-Token':csrf||''},body:JSON.stringify(body)});const d=await r.json();if(!r.ok){if(r.status===401){$('#workspace').hidden=true;$('#login').hidden=false;data=null;draft=null;for(const id of ['bookingRows','manualBooking','slotRows','newService','serviceRows','vehicleRows','caseRows','linkFields'])$('#'+id).replaceChildren();}throw Error(d.error);}return d;}
 const act=fn=>async e=>{e?.preventDefault();try{await fn(e);}catch(err){$('#message').textContent=err.message;}};
 const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text)n.textContent=text;if(cls)n.className=cls;return n;};
 function field(parent,label,value,{type='text',options,max=300}={}){const l=el('label',label),n=el(options?'select':'input');if(options)for(const [v,t] of options)n.append(new Option(t,v));else{n.type=type;n.maxLength=max;}if(type==='checkbox')n.checked=!!value;else n.value=value??'';l.append(n);parent.append(l);return n;}
@@ -8,8 +8,10 @@ function button(parent,label,fn,cls='btn'){const b=el('button',label,cls);b.type
 async function save(path,body){await api(path,body);await load();$('#message').textContent='已儲存。';}
 async function load(){data=await api('/api/manage');draft=structuredClone(data.content);$('#login').hidden=true;$('#workspace').hidden=false;render();}
 function render(){
+ renderManualBooking();
  const bookings=$('#bookingRows');bookings.replaceChildren();if(!data.bookings.length)bookings.textContent='目前沒有預約需求。';
  for(const b of [...data.bookings].reverse()){const row=el('div',null,'panel');const slot=data.slots.find(x=>x.id===b.slotId);row.append(el('h3',`${b.id} · ${names[b.status]}`),el('p',`${b.vehicleName}／${b.serviceName}`),el('p',`${slot.date} ${slot.time} · ${b.quote.type==='amount'?'NT$ '+b.quote.amount:'現場評估'}`));
+  if(b.assisted)row.append(el('p',({line:'LINE',phone:'電話',onsite:'現場'}[b.assisted.channel]||'人工')+' · '+b.assisted.reference));
   if(b.status==='PENDING')row.append(el('p','請於下一營業日結束前完成確認；仍未確認請取消並釋出時段。例假日由人員調整。'+(b.pendingReviewAt?' 一般截止：'+new Date(b.pendingReviewAt).toLocaleString('zh-TW',{timeZone:'Asia/Taipei'}):'')));
   if(b.status==='PENDING')button(row,'確認 '+b.id,()=>save('/api/manage/bookings/'+b.id+'/confirm',{}),'btn primary');
   if(b.endedAt)row.append(el('p','服務已結束；資料於結束後保留 90 天。'));
@@ -47,3 +49,17 @@ $('#newSlot').onsubmit=act(e=>save('/api/manage/slot',{date:e.target.elements.da
 $('#login').onsubmit=act(async e=>{csrf=(await api('/api/admin/login',{password:e.target.elements.password.value})).csrf;e.target.reset();await load();$('#message').textContent='已登入。';});
 $('#reload').onclick=act(load);$('#logout').onclick=act(async()=>{await api('/api/admin/logout',{});location.reload();});
 try{csrf=(await api('/api/admin/session')).csrf;await load();}catch{}
+
+function renderManualBooking(){
+ const host=$('#manualBooking');host.replaceChildren();const form=el('form');host.append(form);
+ form.append(el('p','建立後先等待確認，立即占用同一份預約看板的時段；確認完成後請使用看板的確認按鈕。'));
+ const channel=field(form,'客人來源','line',{options:[['line','LINE'],['phone','電話'],['onsite','現場']]}),reference=field(form,'辨識稱呼（僅管理人員可見）','',{max:80});reference.required=true;
+ form.append(el('p','填寫足以對應對話的稱呼即可，請勿填寫敏感個資。找不到或不確定車款時，先確認車款資料，不套用猜測價格。'));
+ const brand=field(form,'品牌','',{options:[['','請選擇品牌'],...[...new Set(data.vehicles.map(v=>v.brand))].map(b=>[b,b])]}),vehicle=field(form,'車款','',{options:[['','請先選品牌']]}),scope=el('p');form.append(scope);
+ const service=field(form,'服務','',{options:[['','請選擇服務'],...data.services.filter(s=>s.enabled!==false).map(s=>[s.id,s.name])]}),slot=field(form,'開放時段','',{options:[['','請選擇時段'],...data.slots.filter(s=>s.status==='OPEN'&&!s.bookingId&&Date.parse(s.date+'T'+s.time+':00+08:00')>Date.now()).map(s=>[s.id,s.date+' '+s.time])]}),quote=el('p');quote.setAttribute('role','status');form.append(quote);
+ for(const input of [brand,vehicle,service,slot])input.required=true;
+ const submit=el('button','建立待確認需求','btn primary');submit.type='submit';submit.disabled=true;form.append(submit);let version=0;
+ async function update(){const current=++version;submit.disabled=true;const selected=data.vehicles.find(v=>v.id===vehicle.value);scope.textContent=selected?.applicability?.replace(/^\d{4}-\d{2}-\d{2} 查證規格；/,'')||'';if(selected?.sourceVariants?.length)scope.textContent+=' 適用：'+selected.sourceVariants.join('／');if(!vehicle.value||!service.value){quote.textContent='選擇車款與服務後顯示基準價格。';return;}try{const q=await api('/api/manage/quote',{vehicleId:vehicle.value,serviceId:service.value});if(version!==current)return;quote.textContent=(tiers[q.tier]||'')+' · '+(q.type==='amount'?'NT$ '+q.amount:'現場評估')+' · '+q.note;submit.disabled=!slot.value;}catch(e){if(version===current)quote.textContent=e.message;}}
+ brand.onchange=()=>{vehicle.replaceChildren(new Option('請選擇車款',''),...data.vehicles.filter(v=>v.brand===brand.value).map(v=>new Option(v.model,v.id)));vehicle.disabled=!brand.value;update();};vehicle.disabled=true;vehicle.onchange=update;service.onchange=update;slot.onchange=update;update();
+ form.onsubmit=act(async()=>{submit.disabled=true;try{const result=await api('/api/manage/bookings',{channel:channel.value,reference:reference.value,vehicleId:vehicle.value,serviceId:service.value,slotId:slot.value});await load();$('#message').textContent='已建立 '+result.id+'，等待確認；時段已同步保留。';}finally{if(form.isConnected)await update();}});
+}
