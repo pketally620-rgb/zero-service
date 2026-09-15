@@ -1,0 +1,24 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "GLB electric",
+  "sourceId": "7255",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/GLB%20electric/7255/spec",
+  "retrievedAt": "2026-09-15T09:50:47.220Z",
+  "pageSha256": "3f97211b2bec6fb2ecc22351e3943a154e63d7c53f7bd27b8270102c31501868",
+  "entries": [
+    {
+      "variant": "GLB 200 electric 5座",
+      "lengthText": "4732 mm",
+      "lengthMm": 4732,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GLB 250+ electric AMG Line 7座",
+      "lengthText": "4728 mm",
+      "lengthMm": 4728,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

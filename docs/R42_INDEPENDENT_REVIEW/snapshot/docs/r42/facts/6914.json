@@ -1,0 +1,24 @@
+{
+  "brand": "Audi",
+  "model": "Q4 e-tron",
+  "sourceId": "6914",
+  "url": "https://newcar.u-car.com.tw/Audi/Q4%20e-tron/6914/spec",
+  "retrievedAt": "2026-09-15T09:49:56.266Z",
+  "pageSha256": "ed31cd19154624aa9aff38dfce762e317cd7640db98cdbb4db9421ad25e389ee",
+  "entries": [
+    {
+      "variant": "45 Advanced進化版",
+      "lengthText": "4588 mm",
+      "lengthMm": 4588,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "55 quattro S line運動板",
+      "lengthText": "4588 mm",
+      "lengthMm": 4588,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

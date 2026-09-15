@@ -1,0 +1,284 @@
+{
+  "indexedModels": 381,
+  "indexedBrands": 47,
+  "supportedModels": 356,
+  "rows": 422,
+  "supportedBrands": 46,
+  "sourceVariants": 855,
+  "exceptionVariants": 72,
+  "byBrand": {
+    "Alfa Romeo": {
+      "indexed": 4,
+      "supportedModels": 4,
+      "rows": 5
+    },
+    "Aston Martin": {
+      "indexed": 6,
+      "supportedModels": 6,
+      "rows": 6
+    },
+    "Audi": {
+      "indexed": 26,
+      "supportedModels": 26,
+      "rows": 28
+    },
+    "Bentley": {
+      "indexed": 5,
+      "supportedModels": 5,
+      "rows": 5
+    },
+    "BMW": {
+      "indexed": 36,
+      "supportedModels": 36,
+      "rows": 41
+    },
+    "Caterham": {
+      "indexed": 1,
+      "supportedModels": 1,
+      "rows": 1
+    },
+    "Citroën": {
+      "indexed": 4,
+      "supportedModels": 3,
+      "rows": 3
+    },
+    "CMC": {
+      "indexed": 8,
+      "supportedModels": 2,
+      "rows": 2
+    },
+    "DFSK": {
+      "indexed": 3,
+      "supportedModels": 0,
+      "rows": 0
+    },
+    "Ferrari": {
+      "indexed": 10,
+      "supportedModels": 10,
+      "rows": 10
+    },
+    "Ford": {
+      "indexed": 5,
+      "supportedModels": 4,
+      "rows": 5
+    },
+    "Foxtron": {
+      "indexed": 2,
+      "supportedModels": 2,
+      "rows": 2
+    },
+    "Honda": {
+      "indexed": 5,
+      "supportedModels": 5,
+      "rows": 6
+    },
+    "Hyundai": {
+      "indexed": 12,
+      "supportedModels": 11,
+      "rows": 11
+    },
+    "Ineos Grenadier": {
+      "indexed": 2,
+      "supportedModels": 1,
+      "rows": 1
+    },
+    "Infiniti": {
+      "indexed": 3,
+      "supportedModels": 3,
+      "rows": 3
+    },
+    "Jaguar": {
+      "indexed": 4,
+      "supportedModels": 4,
+      "rows": 5
+    },
+    "Jeep": {
+      "indexed": 1,
+      "supportedModels": 1,
+      "rows": 1
+    },
+    "Kia": {
+      "indexed": 9,
+      "supportedModels": 8,
+      "rows": 9
+    },
+    "Lamborghini": {
+      "indexed": 3,
+      "supportedModels": 3,
+      "rows": 3
+    },
+    "Land Rover": {
+      "indexed": 8,
+      "supportedModels": 8,
+      "rows": 13
+    },
+    "Lexus": {
+      "indexed": 12,
+      "supportedModels": 12,
+      "rows": 13
+    },
+    "Lotus": {
+      "indexed": 1,
+      "supportedModels": 1,
+      "rows": 1
+    },
+    "Luxgen": {
+      "indexed": 3,
+      "supportedModels": 3,
+      "rows": 3
+    },
+    "Mahindra": {
+      "indexed": 2,
+      "supportedModels": 1,
+      "rows": 1
+    },
+    "Maserati": {
+      "indexed": 8,
+      "supportedModels": 8,
+      "rows": 12
+    },
+    "Mazda": {
+      "indexed": 10,
+      "supportedModels": 10,
+      "rows": 10
+    },
+    "McLaren": {
+      "indexed": 5,
+      "supportedModels": 5,
+      "rows": 5
+    },
+    "Mercedes-Benz": {
+      "indexed": 52,
+      "supportedModels": 51,
+      "rows": 65
+    },
+    "MG": {
+      "indexed": 4,
+      "supportedModels": 4,
+      "rows": 4
+    },
+    "Mini": {
+      "indexed": 5,
+      "supportedModels": 5,
+      "rows": 6
+    },
+    "Mitsubishi": {
+      "indexed": 5,
+      "supportedModels": 4,
+      "rows": 4
+    },
+    "Morgan": {
+      "indexed": 2,
+      "supportedModels": 2,
+      "rows": 2
+    },
+    "Nissan": {
+      "indexed": 4,
+      "supportedModels": 4,
+      "rows": 5
+    },
+    "Opel": {
+      "indexed": 5,
+      "supportedModels": 5,
+      "rows": 5
+    },
+    "Pagani": {
+      "indexed": 1,
+      "supportedModels": 1,
+      "rows": 1
+    },
+    "Peugeot": {
+      "indexed": 5,
+      "supportedModels": 5,
+      "rows": 5
+    },
+    "Porsche": {
+      "indexed": 17,
+      "supportedModels": 17,
+      "rows": 30
+    },
+    "Rolls-Royce": {
+      "indexed": 4,
+      "supportedModels": 4,
+      "rows": 6
+    },
+    "Škoda": {
+      "indexed": 11,
+      "supportedModels": 11,
+      "rows": 14
+    },
+    "Subaru": {
+      "indexed": 7,
+      "supportedModels": 7,
+      "rows": 7
+    },
+    "Suzuki": {
+      "indexed": 6,
+      "supportedModels": 5,
+      "rows": 5
+    },
+    "Tesla": {
+      "indexed": 4,
+      "supportedModels": 4,
+      "rows": 6
+    },
+    "Toyota": {
+      "indexed": 22,
+      "supportedModels": 20,
+      "rows": 25
+    },
+    "Volkswagen": {
+      "indexed": 12,
+      "supportedModels": 12,
+      "rows": 14
+    },
+    "Volkswagen Commercial Vehicles": {
+      "indexed": 9,
+      "supportedModels": 4,
+      "rows": 5
+    },
+    "Volvo": {
+      "indexed": 8,
+      "supportedModels": 8,
+      "rows": 8
+    }
+  },
+  "corrections": [
+    {
+      "sourceId": "6844",
+      "variant": "PHEV",
+      "was": 5010,
+      "now": 5000,
+      "url": "https://www.toyota.com.tw/showroom/ALPHARD/fullsepc.aspx"
+    },
+    {
+      "sourceId": "7184",
+      "variant": "Turbo-Hybrid Trendy",
+      "was": null,
+      "now": 4685,
+      "url": "https://www.kia.com/tw/showroom/sportage/specification.html"
+    },
+    {
+      "sourceId": "7184",
+      "variant": "Turbo-Hybrid Apex",
+      "was": null,
+      "now": 4685,
+      "url": "https://www.kia.com/tw/showroom/sportage/specification.html"
+    },
+    {
+      "sourceId": "7184",
+      "variant": "Turbo-Hybrid Signature",
+      "was": null,
+      "now": 4685,
+      "url": "https://www.kia.com/tw/showroom/sportage/specification.html"
+    },
+    {
+      "sourceId": "7184",
+      "variant": "X-Line 4WD",
+      "was": null,
+      "now": 4685,
+      "url": "https://www.kia.com/tw/showroom/sportage/specification.html"
+    }
+  ],
+  "sha256": "cdd87eb8b4ee46658b93e0c59aec03ead17a4599a6107086fd666f61ef548234"
+}

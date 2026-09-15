@@ -1,0 +1,17 @@
+{
+  "brand": "Honda",
+  "model": "Civic",
+  "sourceId": "6910",
+  "url": "https://newcar.u-car.com.tw/Honda/Civic/6910/spec",
+  "retrievedAt": "2026-09-15T09:50:18.637Z",
+  "pageSha256": "9889008ee9180ea8809c118b3d7127b4b58dd0cf45ae689ef85fd88fc5108753",
+  "entries": [
+    {
+      "variant": "Civic e:HEV",
+      "lengthText": "4555 mm",
+      "lengthMm": 4555,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

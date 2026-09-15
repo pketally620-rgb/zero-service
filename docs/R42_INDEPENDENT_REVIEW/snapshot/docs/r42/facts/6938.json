@@ -1,0 +1,31 @@
+{
+  "brand": "Maserati",
+  "model": "Grecale",
+  "sourceId": "6938",
+  "url": "https://newcar.u-car.com.tw/Maserati/Grecale/6938/spec",
+  "retrievedAt": "2026-09-15T09:50:36.301Z",
+  "pageSha256": "e652506d2fde826ffe7e79737e58624a02f2d6bbac2d8c9f397a56081d0cde8c",
+  "entries": [
+    {
+      "variant": "Grecale",
+      "lengthText": "4846 mm",
+      "lengthMm": 4846,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Grecale Modena",
+      "lengthText": "4847 mm",
+      "lengthMm": 4847,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Grecale Trofeo",
+      "lengthText": "4859 mm",
+      "lengthMm": 4859,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Rolls-Royce",
+  "model": "Spectre",
+  "sourceId": "6530",
+  "url": "https://newcar.u-car.com.tw/Rolls-Royce/Spectre/6530/spec",
+  "retrievedAt": "2026-09-15T09:51:07.081Z",
+  "pageSha256": "c011551e346dc9e32773cc19c7a2e3e26bda7c21fe46691bfaf2fca4f5541e6a",
+  "entries": [
+    {
+      "variant": "Spectre",
+      "lengthText": "5453 mm",
+      "lengthMm": 5453,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    }
+  ]
+}

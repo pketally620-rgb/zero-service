@@ -1,0 +1,31 @@
+{
+  "brand": "Škoda",
+  "model": "Superb Combi",
+  "sourceId": "7109",
+  "url": "https://newcar.u-car.com.tw/%C5%A0koda/Superb%20Combi/7109/spec",
+  "retrievedAt": "2026-09-15T09:51:10.003Z",
+  "pageSha256": "44177bbab01b8bbb9c7f201cf137389c3cd601325ada8afd2f1e402532d7c19a",
+  "entries": [
+    {
+      "variant": "1.5 TSI e-TEC",
+      "lengthText": "4902 mm",
+      "lengthMm": 4902,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "2.0 TSI Sportline",
+      "lengthText": "4902 mm",
+      "lengthMm": 4902,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "2.0 TSI 4&#215;4 Sportplus",
+      "lengthText": "4902 mm",
+      "lengthMm": 4902,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

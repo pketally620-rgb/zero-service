@@ -1,0 +1,24 @@
+{
+  "brand": "Toyota",
+  "model": "Sienna",
+  "sourceId": "7241",
+  "url": "https://newcar.u-car.com.tw/Toyota/Sienna/7241/spec",
+  "retrievedAt": "2026-09-15T09:51:17.868Z",
+  "pageSha256": "02c2b91339aec1864fbeb19b5bd3454ce269013c81a01cb525b12eeda38cda5f",
+  "entries": [
+    {
+      "variant": "旗艦",
+      "lengthText": "5175 mm",
+      "lengthMm": 5175,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "鉑金",
+      "lengthText": "5175 mm",
+      "lengthMm": 5175,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

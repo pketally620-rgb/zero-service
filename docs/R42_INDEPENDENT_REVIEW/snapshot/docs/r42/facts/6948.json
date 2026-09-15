@@ -1,0 +1,38 @@
+{
+  "brand": "Tesla",
+  "model": "Model X",
+  "sourceId": "6948",
+  "url": "https://newcar.u-car.com.tw/Tesla/Model%20X/6948/spec",
+  "retrievedAt": "2026-09-15T09:51:13.795Z",
+  "pageSha256": "74c2be591cb311c07387bf0172facb202003b9e261dc7bd14c3b9b0a8dc1aa1e",
+  "entries": [
+    {
+      "variant": "Model X 5人座",
+      "lengthText": "5057 mm",
+      "lengthMm": 5057,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Model X 7人座",
+      "lengthText": "5057 mm",
+      "lengthMm": 5057,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Model X Plaid 6人座",
+      "lengthText": "5057 mm",
+      "lengthMm": 5057,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Model X 6人座",
+      "lengthText": "5057 mm",
+      "lengthMm": 5057,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

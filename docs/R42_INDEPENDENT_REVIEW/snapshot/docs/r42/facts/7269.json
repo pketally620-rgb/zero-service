@@ -1,0 +1,24 @@
+{
+  "brand": "Honda",
+  "model": "Prelude",
+  "sourceId": "7269",
+  "url": "https://newcar.u-car.com.tw/Honda/Prelude/7269/spec",
+  "retrievedAt": "2026-09-15T09:50:19.647Z",
+  "pageSha256": "deaeff7f9558b9eecb148b76967c568b67086b460582010f4c990c5f1cd7a770",
+  "entries": [
+    {
+      "variant": "Prelude",
+      "lengthText": "4520 mm",
+      "lengthMm": 4520,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    },
+    {
+      "variant": "Special Edition",
+      "lengthText": "4520 mm",
+      "lengthMm": 4520,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

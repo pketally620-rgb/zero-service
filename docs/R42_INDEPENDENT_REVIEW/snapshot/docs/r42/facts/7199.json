@@ -1,0 +1,17 @@
+{
+  "brand": "Mazda",
+  "model": "Mazda2",
+  "sourceId": "7199",
+  "url": "https://newcar.u-car.com.tw/Mazda/Mazda2/7199/spec",
+  "retrievedAt": "2026-09-15T09:50:38.726Z",
+  "pageSha256": "029f7504d73d851510cdf1dac4ad48bb5c51296bd561cbc34b5321184c168087",
+  "entries": [
+    {
+      "variant": "淬鍊版",
+      "lengthText": "4,080 mm",
+      "lengthMm": null,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

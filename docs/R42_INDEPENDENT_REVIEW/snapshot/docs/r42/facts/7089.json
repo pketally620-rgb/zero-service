@@ -1,0 +1,31 @@
+{
+  "brand": "Tesla",
+  "model": "Model Y",
+  "sourceId": "7089",
+  "url": "https://newcar.u-car.com.tw/Tesla/Model%20Y/7089/spec",
+  "retrievedAt": "2026-09-15T09:51:13.950Z",
+  "pageSha256": "4310729a4fef9e0bc06ecef31b9eb230ccb76b9b7b14f5bb8a5b441dbb5d2b8e",
+  "entries": [
+    {
+      "variant": "RWD後輪驅動",
+      "lengthText": "4790 mm",
+      "lengthMm": 4790,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Long Range AWD全輪驅動",
+      "lengthText": "4790 mm",
+      "lengthMm": 4790,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Performance全輪驅動",
+      "lengthText": "4796 mm",
+      "lengthMm": 4796,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

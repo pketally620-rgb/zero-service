@@ -1,0 +1,52 @@
+{
+  "brand": "Mitsubishi",
+  "model": "Delica貨車",
+  "sourceId": "6823",
+  "url": "https://newcar.u-car.com.tw/Mitsubishi/Delica%E8%B2%A8%E8%BB%8A/6823/spec",
+  "retrievedAt": "2026-09-15T09:50:56.522Z",
+  "pageSha256": "1cd0fa4ef61e4560da36dc7f57666680ec4bd5a234171c765e7dabfc10e86e55",
+  "entries": [
+    {
+      "variant": "底盤車 手排車型 TQ14T",
+      "lengthText": "4765 mm",
+      "lengthMm": 4765,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "標準貨床車 手排車型 TQ16W",
+      "lengthText": "4960 mm",
+      "lengthMm": 4960,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "底盤車 自排車型 TQ34T",
+      "lengthText": "4765 mm",
+      "lengthMm": 4765,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "標準貨床車 手排車型 TQ18W",
+      "lengthText": "4960 mm",
+      "lengthMm": 4960,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "標準貨床車 自排車型 TQ36W",
+      "lengthText": "4960 mm",
+      "lengthMm": 4960,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "標準貨床車 自排車型 TQ38W",
+      "lengthText": "4960 mm",
+      "lengthMm": 4960,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    }
+  ]
+}

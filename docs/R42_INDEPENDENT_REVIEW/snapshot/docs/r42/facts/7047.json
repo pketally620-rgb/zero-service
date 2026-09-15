@@ -1,0 +1,31 @@
+{
+  "brand": "Audi",
+  "model": "A3 Sportback",
+  "sourceId": "7047",
+  "url": "https://newcar.u-car.com.tw/Audi/A3%20Sportback/7047/spec",
+  "retrievedAt": "2026-09-15T09:49:53.373Z",
+  "pageSha256": "797e14abe86bdeb5fb158f10e5a8202637b3c05385156a9a2a68e3b4699b4d5c",
+  "entries": [
+    {
+      "variant": "30 TFSI享馭版",
+      "lengthText": "4352 mm",
+      "lengthMm": 4352,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "35 TFSI advanced進化版",
+      "lengthText": "4352 mm",
+      "lengthMm": 4352,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "35 TFSI S line運動版",
+      "lengthText": "4352 mm",
+      "lengthMm": 4352,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

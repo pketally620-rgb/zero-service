@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Mercedes-AMG CLE Coupé",
+  "sourceId": "7164",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Mercedes-AMG%20CLE%20Coup%C3%A9/7164/spec",
+  "retrievedAt": "2026-09-15T09:52:10.062Z",
+  "pageSha256": "f7de8318badb3321a0d1552ce953426aa915eda8d86cd61085defb0640e1be9f",
+  "entries": [
+    {
+      "variant": "CLE 53 4Matic+",
+      "lengthText": "4853 mm",
+      "lengthMm": 4853,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    }
+  ]
+}

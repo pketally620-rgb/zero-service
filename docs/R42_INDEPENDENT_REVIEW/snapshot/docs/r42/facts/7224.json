@@ -1,0 +1,80 @@
+{
+  "brand": "Porsche",
+  "model": "Taycan",
+  "sourceId": "7224",
+  "url": "https://newcar.u-car.com.tw/Porsche/Taycan/7224/spec",
+  "retrievedAt": "2026-09-15T09:51:05.789Z",
+  "pageSha256": "1ff3bedebd85653bd773944b2304a5dc2ac83aca49f8881c900148df4d6d32a5",
+  "entries": [
+    {
+      "variant": "Taycan",
+      "lengthText": "4963 mm",
+      "lengthMm": 4963,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "4",
+      "lengthText": "4963 mm",
+      "lengthMm": 4963,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Taycan Black Edition",
+      "lengthText": "4963 mm",
+      "lengthMm": 4963,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "4 Black Edition",
+      "lengthText": "4963 mm",
+      "lengthMm": 4963,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "4S",
+      "lengthText": "4963 mm",
+      "lengthMm": 4963,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "GTS",
+      "lengthText": "4963 mm",
+      "lengthMm": 4963,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Turbo",
+      "lengthText": "4963 mm",
+      "lengthMm": 4963,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Turbo S",
+      "lengthText": "4962 mm",
+      "lengthMm": 4962,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Turbo GT",
+      "lengthText": "4968 mm",
+      "lengthMm": 4968,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Turbo GT with Weissach Package",
+      "lengthText": "5014 mm",
+      "lengthMm": 5014,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

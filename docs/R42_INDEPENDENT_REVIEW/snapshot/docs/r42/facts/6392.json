@@ -1,0 +1,17 @@
+{
+  "brand": "Lexus",
+  "model": "LC Convertible",
+  "sourceId": "6392",
+  "url": "https://newcar.u-car.com.tw/Lexus/LC%20Convertible/6392/spec",
+  "retrievedAt": "2026-09-15T09:50:31.632Z",
+  "pageSha256": "5859d952c068e34dfcf9826acdcaeba2ffcbc6d72d8286be16e6c53e5c0195c5",
+  "entries": [
+    {
+      "variant": "LC 500 Convertible",
+      "lengthText": "4770 mm",
+      "lengthMm": 4770,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "brand": "BMW",
+  "model": "X5",
+  "sourceId": "7170",
+  "url": "https://newcar.u-car.com.tw/BMW/X5/7170/spec",
+  "retrievedAt": "2026-09-15T09:50:08.139Z",
+  "pageSha256": "988c42fafab99d34b5568316d554e90fd598f45a0fa6aff17ec04529db50d495",
+  "entries": [
+    {
+      "variant": "xDrive30d M Sport鉑金版",
+      "lengthText": "4935 mm",
+      "lengthMm": 4935,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "xDrive40i M Sport鉑金版",
+      "lengthText": "4935 mm",
+      "lengthMm": 4935,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

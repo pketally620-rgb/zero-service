@@ -1,0 +1,38 @@
+{
+  "brand": "Mazda",
+  "model": "CX-5",
+  "sourceId": "7264",
+  "url": "https://newcar.u-car.com.tw/Mazda/CX-5/7264/spec",
+  "retrievedAt": "2026-09-15T09:50:37.893Z",
+  "pageSha256": "eba47f1c87f451144f29337f429664c892ed53dbfe0d166d1363acfb65d978b9",
+  "entries": [
+    {
+      "variant": "25S AWD Elite",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "25S AWD Exclusive",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "25S AWD Premium",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "25S AWD Premium Plus",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

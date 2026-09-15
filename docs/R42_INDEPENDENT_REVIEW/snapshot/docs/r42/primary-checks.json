@@ -1,0 +1,16 @@
+{
+  "checkedAt": "2026-09-15",
+  "checks": [
+    {"sourceId":"7183","url":"https://www.toyota.com.tw/showroom/COROLLA_CROSS/fullsepc.aspx","fact":"Non-GR full length 4460 mm","result":"MATCH"},
+    {"sourceId":"7182","url":"https://www.toyota.com.tw/showroom/ALTIS_GR/fullsepc.aspx","fact":"GR SPORT and HYBRID GR SPORT full length 4635 mm","result":"MATCH"},
+    {"sourceId":"7143","url":"https://www.toyota.com.tw/showroom/RAV4_GR/fullsepc.aspx","fact":"GR SPORT 4WD full length 4645 mm","result":"MATCH"},
+    {"sourceId":"6844","url":"https://www.toyota.com.tw/showroom/ALPHARD/fullsepc.aspx","fact":"HYBRID 5010 mm; PHEV 5000 mm","result":"CORRECT_PHEV_LENGTH","variant":"PHEV","lengthMm":5000},
+    {"sourceId":"7089","url":"https://www.tesla.com/ownersmanual/modely/en_tw/GUID-1E76B638-7B12-4D9A-8767-94B7F1E92A0E.html","fact":"Model Y Premium 5-seater 4790 mm; Performance 4796 mm, excluding license plate bracket","result":"MATCH"},
+    {"sourceId":"7119","url":"https://finder.porsche.com/tw/zh-TW/details/porsche-cayenne-W3L73M?condition=new&page=1","fact":"2026 Cayenne gasoline SUV 4930 mm","result":"MATCH_BASE_VARIANT"},
+    {"sourceId":"7184","url":"https://www.kia.com/tw/showroom/sportage/specification.html","fact":"X-line 4WD / Turbo-Hybrid Trendy / Apex / Signature full length 4685 mm","result":"FILL_MISSING_LENGTH","lengthMm":4685},
+    {"sourceId":"7137","url":"https://new.nissan.com.tw/nissan/cars/spec/sentra","fact":"Sentra 尊爵版 / 尊爵智駕版 / 尊爵BOSE版 4648 mm. Not matched to publisher 初綻/盛綻/極綻 variant names.","result":"SEPARATE_OFFICIAL_VARIANT_SET","lengthMm":4648,"variants":["尊爵版","尊爵智駕版","尊爵BOSE版"]},
+    {"brand":"Volkswagen","model":"Touran","url":"https://www.volkswagen.com.tw/zh/models/touran.html/__layer/layers/vx/__267504235/Polo14/master.layer","fact":"Manufacturer identifies Touran as MPV","result":"BODY_RESOLVED","kind":"mpv"},
+    {"brand":"Subaru","model":"Solterra","url":"https://www.subaru.asia/tw/zh/solterra-xt/","fact":"Taiwan Solterra XT identified as SUV","result":"BODY_RESOLVED","kind":"passenger"},
+    {"brand":"Mercedes-Benz","model":"EQE SUV","url":"https://www.mercedes-benz.com.tw/passengercars/models/suv/eqe/overview.html?abtest-new_extint=control","fact":"Taiwan EQE identified as SUV","result":"BODY_RESOLVED","kind":"passenger"}
+  ]
+}

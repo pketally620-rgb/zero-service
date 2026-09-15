@@ -1,0 +1,59 @@
+{
+  "brand": "Toyota",
+  "model": "Corolla Cross",
+  "sourceId": "7183",
+  "url": "https://newcar.u-car.com.tw/Toyota/Corolla%20Cross/7183/spec",
+  "retrievedAt": "2026-09-15T09:51:15.119Z",
+  "pageSha256": "9022905b4b0191973dbfc23660ead6fe82ba0cd2877368769e8167e57233ae7b",
+  "entries": [
+    {
+      "variant": "豪華",
+      "lengthText": "4460 mm",
+      "lengthMm": 4460,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Hybrid豪華",
+      "lengthText": "4460 mm",
+      "lengthMm": 4460,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "The 60th",
+      "lengthText": "4460 mm",
+      "lengthMm": 4460,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GR Sport",
+      "lengthText": "4455 mm",
+      "lengthMm": 4455,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Hybrid The 60th",
+      "lengthText": "4460 mm",
+      "lengthMm": 4460,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Hybrid GR Sport",
+      "lengthText": "4455 mm",
+      "lengthMm": 4455,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Hybrid旗艦",
+      "lengthText": "4460 mm",
+      "lengthMm": 4460,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

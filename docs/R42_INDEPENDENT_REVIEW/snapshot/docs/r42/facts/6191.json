@@ -1,0 +1,17 @@
+{
+  "brand": "Suzuki",
+  "model": "Carry",
+  "sourceId": "6191",
+  "url": "https://newcar.u-car.com.tw/Suzuki/Carry/6191/spec",
+  "retrievedAt": "2026-09-15T09:51:11.953Z",
+  "pageSha256": "8d566d01148cbbacb5ead8b9b3659bdec509d8d47e46bc83b9a461e11334dca9",
+  "entries": [
+    {
+      "variant": "Carry",
+      "lengthText": "4195 mm",
+      "lengthMm": 4195,
+      "bodyText": "",
+      "seatText": null
+    }
+  ]
+}

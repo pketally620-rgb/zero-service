@@ -1,0 +1,31 @@
+{
+  "brand": "BMW",
+  "model": "iX",
+  "sourceId": "6960",
+  "url": "https://newcar.u-car.com.tw/BMW/iX/6960/spec",
+  "retrievedAt": "2026-09-15T09:50:04.705Z",
+  "pageSha256": "88ba01f76e5118c74ff54a962d12909ad442ea558fa9f8acff09aa034730a1a9",
+  "entries": [
+    {
+      "variant": "xDrive45 Excellence",
+      "lengthText": "4965 mm",
+      "lengthMm": 4965,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "xDrive45 M Sport",
+      "lengthText": "4965 mm",
+      "lengthMm": 4965,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "xDrive60 M Sport",
+      "lengthText": "4965 mm",
+      "lengthMm": 4965,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "brand": "Toyota",
+  "model": "Crown",
+  "sourceId": "6640",
+  "url": "https://newcar.u-car.com.tw/Toyota/Crown/6640/spec",
+  "retrievedAt": "2026-09-15T09:51:15.593Z",
+  "pageSha256": "beed0ba83960759b6417f0367299b9a3ba093c876dcefdcdf7c852f605d918da",
+  "entries": [
+    {
+      "variant": "2.5 Hybrid貴族版",
+      "lengthText": "4980 mm",
+      "lengthMm": 4980,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "2.4 Turbo Hybrid皇家版",
+      "lengthText": "4980 mm",
+      "lengthMm": 4980,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

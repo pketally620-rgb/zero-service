@@ -1,0 +1,17 @@
+{
+  "brand": "Mazda",
+  "model": "CX-3",
+  "sourceId": "7021",
+  "url": "https://newcar.u-car.com.tw/Mazda/CX-3/7021/spec",
+  "retrievedAt": "2026-09-15T09:50:37.400Z",
+  "pageSha256": "f43d685423dac3671e8bbbd94977d4e997884ef4201a2c1adb3d02ea77ac5f63",
+  "entries": [
+    {
+      "variant": "20S Signature",
+      "lengthText": "4275 mm",
+      "lengthMm": 4275,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

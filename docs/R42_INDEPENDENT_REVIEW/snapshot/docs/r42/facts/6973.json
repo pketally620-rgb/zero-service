@@ -1,0 +1,31 @@
+{
+  "brand": "Volvo",
+  "model": "EX30",
+  "sourceId": "6973",
+  "url": "https://newcar.u-car.com.tw/Volvo/EX30/6973/spec",
+  "retrievedAt": "2026-09-15T09:51:25.012Z",
+  "pageSha256": "906f5e8773bb305491a981081a219752724c520dad6eb729f3584afd75386607",
+  "entries": [
+    {
+      "variant": "Single Extended Range Core",
+      "lengthText": "4233 mm",
+      "lengthMm": 4233,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Single Extended Range Plus",
+      "lengthText": "4233 mm",
+      "lengthMm": 4233,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Twin Motor Performance Ultra",
+      "lengthText": "4233 mm",
+      "lengthMm": 4233,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

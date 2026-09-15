@@ -1,0 +1,45 @@
+{
+  "brand": "Lexus",
+  "model": "LS",
+  "sourceId": "6313",
+  "url": "https://newcar.u-car.com.tw/Lexus/LS/6313/spec",
+  "retrievedAt": "2026-09-15T09:50:32.071Z",
+  "pageSha256": "6cbcac0f0029a882cb08b6cfc3020c76176b24f13aef904f1dd2766015a83cd7",
+  "entries": [
+    {
+      "variant": "LS 500h F Sport版",
+      "lengthText": "5235 mm",
+      "lengthMm": 5235,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "LS 500h 頂級版",
+      "lengthText": "5235 mm",
+      "lengthMm": 5235,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "LS 500h 旗艦版",
+      "lengthText": "5235 mm",
+      "lengthMm": 5235,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "LS 500h 旗艦版 Kiriko+御匠摺紋飾板",
+      "lengthText": "5235 mm",
+      "lengthMm": 5235,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "LS 500h 旗艦版 銀光箔藝+西陣織板",
+      "lengthText": "5235 mm",
+      "lengthMm": 5235,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

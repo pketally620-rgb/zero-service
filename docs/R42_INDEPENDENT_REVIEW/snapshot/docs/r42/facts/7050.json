@@ -1,0 +1,45 @@
+{
+  "brand": "Porsche",
+  "model": "Macan Electric",
+  "sourceId": "7050",
+  "url": "https://newcar.u-car.com.tw/Porsche/Macan%20Electric/7050/spec",
+  "retrievedAt": "2026-09-15T09:51:05.304Z",
+  "pageSha256": "e991f18df76f7e681d1992a97a275e3764ed44749f3cb925cec2a8226c3c16ea",
+  "entries": [
+    {
+      "variant": "Macan Electric",
+      "lengthText": "4784 mm",
+      "lengthMm": 4784,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Macan 4 Electric",
+      "lengthText": "4784 mm",
+      "lengthMm": 4784,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Macan 4S Electric",
+      "lengthText": "4784 mm",
+      "lengthMm": 4784,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Macan GTS Electric",
+      "lengthText": "4784 mm",
+      "lengthMm": 4784,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Macan Turbo Electric",
+      "lengthText": "4784 mm",
+      "lengthMm": 4784,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

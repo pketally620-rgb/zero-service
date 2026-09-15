@@ -1,0 +1,31 @@
+{
+  "brand": "Foxtron",
+  "model": "Bria",
+  "sourceId": "7079",
+  "url": "https://newcar.u-car.com.tw/Foxtron/Bria/7079/spec",
+  "retrievedAt": "2026-09-15T09:50:18.116Z",
+  "pageSha256": "c94777fc55b480b97bc4c5ff4af80e9396cd7d3e6121a8fad95366d2a8f6d0cf",
+  "entries": [
+    {
+      "variant": "Elegant",
+      "lengthText": "4315 mm",
+      "lengthMm": 4315,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "Emerge",
+      "lengthText": "4315 mm",
+      "lengthMm": 4315,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "Pioneer",
+      "lengthText": "4315 mm",
+      "lengthMm": 4315,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

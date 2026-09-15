@@ -1,0 +1,24 @@
+{
+  "brand": "Subaru",
+  "model": "WRX",
+  "sourceId": "6368",
+  "url": "https://newcar.u-car.com.tw/Subaru/WRX/6368/spec",
+  "retrievedAt": "2026-09-15T09:51:11.373Z",
+  "pageSha256": "6aee24e56e8e3ff2fe16d9aea049aded94952379bcbce1684f6b7d80b0270400",
+  "entries": [
+    {
+      "variant": "High 4D 2.4 EyeSight",
+      "lengthText": "4,670 mm",
+      "lengthMm": null,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "tS 4D 2.4 EyeSight",
+      "lengthText": "4,670 mm",
+      "lengthMm": null,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

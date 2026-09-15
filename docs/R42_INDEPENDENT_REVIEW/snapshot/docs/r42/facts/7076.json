@@ -1,0 +1,24 @@
+{
+  "brand": "Jeep",
+  "model": "Wrangler",
+  "sourceId": "7076",
+  "url": "https://newcar.u-car.com.tw/Jeep/Wrangler/7076/spec",
+  "retrievedAt": "2026-09-15T09:50:25.123Z",
+  "pageSha256": "b24765fc9183f26732da1ac119ab191deefad1088655af4ed4c8c6b6e5f2e18f",
+  "entries": [
+    {
+      "variant": "Sahara",
+      "lengthText": "4,882 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Rubicon",
+      "lengthText": "4,882 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

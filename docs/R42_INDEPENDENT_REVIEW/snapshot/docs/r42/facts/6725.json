@@ -1,0 +1,24 @@
+{
+  "brand": "Volkswagen",
+  "model": "ID.4",
+  "sourceId": "6725",
+  "url": "https://newcar.u-car.com.tw/Volkswagen/ID.4/6725/spec",
+  "retrievedAt": "2026-09-15T09:51:20.199Z",
+  "pageSha256": "b26bd6f03a90fe5d6f73c1bd46938662c60532612f74eaeab2c0227131b91250",
+  "entries": [
+    {
+      "variant": "Pro S",
+      "lengthText": "4584 mm",
+      "lengthMm": 4584,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GTX",
+      "lengthText": "4582 mm",
+      "lengthMm": 4582,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

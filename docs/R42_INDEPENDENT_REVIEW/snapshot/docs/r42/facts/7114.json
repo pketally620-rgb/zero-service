@@ -1,0 +1,17 @@
+{
+  "brand": "Mazda",
+  "model": "MX-5 RF",
+  "sourceId": "7114",
+  "url": "https://newcar.u-car.com.tw/Mazda/MX-5%20RF/7114/spec",
+  "retrievedAt": "2026-09-15T09:50:39.775Z",
+  "pageSha256": "8e59969f532ce4ecd2bfe0c8245715c8c72e0de4d283e1f1845737d5281f3fa3",
+  "entries": [
+    {
+      "variant": "MX-5 RF",
+      "lengthText": "3915 mm",
+      "lengthMm": 3915,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

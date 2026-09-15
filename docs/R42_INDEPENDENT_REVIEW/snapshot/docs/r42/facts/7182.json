@@ -1,0 +1,66 @@
+{
+  "brand": "Toyota",
+  "model": "Corolla Altis",
+  "sourceId": "7182",
+  "url": "https://newcar.u-car.com.tw/Toyota/Corolla%20Altis/7182/spec",
+  "retrievedAt": "2026-09-15T09:51:14.947Z",
+  "pageSha256": "3e0a42bb774d7477f96618fc426d3268111305e8a617d85787a3be7101878b04",
+  "entries": [
+    {
+      "variant": "經典",
+      "lengthText": "4630 mm",
+      "lengthMm": 4630,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "豪華",
+      "lengthText": "4630 mm",
+      "lengthMm": 4630,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "The 60th",
+      "lengthText": "4630 mm",
+      "lengthMm": 4630,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Hybrid豪華",
+      "lengthText": "4630 mm",
+      "lengthMm": 4630,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Hybrid尊爵",
+      "lengthText": "4630 mm",
+      "lengthMm": 4630,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Hybrid The 60th",
+      "lengthText": "4630 mm",
+      "lengthMm": 4630,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "GR Sport",
+      "lengthText": "4635 mm",
+      "lengthMm": 4635,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Hybrid GR Sport",
+      "lengthText": "4635 mm",
+      "lengthMm": 4635,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

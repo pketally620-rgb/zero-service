@@ -1,0 +1,1911 @@
+{
+  "url": "https://newcar.u-car.com.tw/newcar/search",
+  "retrievedAt": "2026-09-15T09:52:06.747Z",
+  "models": [
+    {
+      "brand": "Alfa Romeo",
+      "model": "Giulia",
+      "sourceId": "7006"
+    },
+    {
+      "brand": "Alfa Romeo",
+      "model": "Junior Elettrica",
+      "sourceId": "7201"
+    },
+    {
+      "brand": "Alfa Romeo",
+      "model": "Junior Ibrida",
+      "sourceId": "7200"
+    },
+    {
+      "brand": "Alfa Romeo",
+      "model": "Stelvio",
+      "sourceId": "7007"
+    },
+    {
+      "brand": "Aston Martin",
+      "model": "DB12",
+      "sourceId": "7092"
+    },
+    {
+      "brand": "Aston Martin",
+      "model": "DBX",
+      "sourceId": "7094"
+    },
+    {
+      "brand": "Aston Martin",
+      "model": "Vanquish",
+      "sourceId": "7095"
+    },
+    {
+      "brand": "Aston Martin",
+      "model": "Vanquish Volante",
+      "sourceId": "7096"
+    },
+    {
+      "brand": "Aston Martin",
+      "model": "Vantage",
+      "sourceId": "7075"
+    },
+    {
+      "brand": "Aston Martin",
+      "model": "Vantage Roadster",
+      "sourceId": "7099"
+    },
+    {
+      "brand": "Audi",
+      "model": "A1 Sportback",
+      "sourceId": "7027"
+    },
+    {
+      "brand": "Audi",
+      "model": "A3 Sportback",
+      "sourceId": "7047"
+    },
+    {
+      "brand": "Audi",
+      "model": "A5",
+      "sourceId": "7242"
+    },
+    {
+      "brand": "Audi",
+      "model": "A5 Avant",
+      "sourceId": "7243"
+    },
+    {
+      "brand": "Audi",
+      "model": "A6",
+      "sourceId": "7020"
+    },
+    {
+      "brand": "Audi",
+      "model": "A6 Avant",
+      "sourceId": "7026"
+    },
+    {
+      "brand": "Audi",
+      "model": "A6 Avant e-tron",
+      "sourceId": "7245"
+    },
+    {
+      "brand": "Audi",
+      "model": "A6 Sportback e-tron",
+      "sourceId": "7244"
+    },
+    {
+      "brand": "Audi",
+      "model": "A7 Sportback",
+      "sourceId": "6519"
+    },
+    {
+      "brand": "Audi",
+      "model": "A8",
+      "sourceId": "7246"
+    },
+    {
+      "brand": "Audi",
+      "model": "Q2",
+      "sourceId": "7132"
+    },
+    {
+      "brand": "Audi",
+      "model": "Q3",
+      "sourceId": "7185"
+    },
+    {
+      "brand": "Audi",
+      "model": "Q3 Sportback",
+      "sourceId": "7186"
+    },
+    {
+      "brand": "Audi",
+      "model": "Q4 e-tron",
+      "sourceId": "6914"
+    },
+    {
+      "brand": "Audi",
+      "model": "Q4 Sportback e-tron",
+      "sourceId": "6915"
+    },
+    {
+      "brand": "Audi",
+      "model": "Q5",
+      "sourceId": "7249"
+    },
+    {
+      "brand": "Audi",
+      "model": "Q5 Sportback",
+      "sourceId": "7250"
+    },
+    {
+      "brand": "Audi",
+      "model": "Q6 e-tron",
+      "sourceId": "7247"
+    },
+    {
+      "brand": "Audi",
+      "model": "Q6 Sportback e-tron",
+      "sourceId": "7248"
+    },
+    {
+      "brand": "Audi",
+      "model": "Q7",
+      "sourceId": "7055"
+    },
+    {
+      "brand": "Audi",
+      "model": "Q8",
+      "sourceId": "7056"
+    },
+    {
+      "brand": "Audi",
+      "model": "RS 3 Sedan",
+      "sourceId": "6980"
+    },
+    {
+      "brand": "Audi",
+      "model": "RS 3 Sportback",
+      "sourceId": "6979"
+    },
+    {
+      "brand": "Audi",
+      "model": "RS Q3",
+      "sourceId": "6522"
+    },
+    {
+      "brand": "Audi",
+      "model": "RS Q3 Sportback",
+      "sourceId": "6523"
+    },
+    {
+      "brand": "Audi",
+      "model": "RS Q8",
+      "sourceId": "7279"
+    },
+    {
+      "brand": "Bentley",
+      "model": "Bentayga",
+      "sourceId": "7067"
+    },
+    {
+      "brand": "Bentley",
+      "model": "Bentayga EWB",
+      "sourceId": "7068"
+    },
+    {
+      "brand": "Bentley",
+      "model": "Continental GT",
+      "sourceId": "7064"
+    },
+    {
+      "brand": "Bentley",
+      "model": "Continental GTC",
+      "sourceId": "7065"
+    },
+    {
+      "brand": "Bentley",
+      "model": "Flying Spur",
+      "sourceId": "7066"
+    },
+    {
+      "brand": "BMW",
+      "model": "1 Series",
+      "sourceId": "6976"
+    },
+    {
+      "brand": "BMW",
+      "model": "2 Series Active Tourer",
+      "sourceId": "6630"
+    },
+    {
+      "brand": "BMW",
+      "model": "2 Series Coupé",
+      "sourceId": "7285"
+    },
+    {
+      "brand": "BMW",
+      "model": "2 Series Gran Coupé",
+      "sourceId": "7139"
+    },
+    {
+      "brand": "BMW",
+      "model": "3 Series",
+      "sourceId": "6816"
+    },
+    {
+      "brand": "BMW",
+      "model": "3 Series Touring",
+      "sourceId": "7267"
+    },
+    {
+      "brand": "BMW",
+      "model": "4 Series Convertible",
+      "sourceId": "7148"
+    },
+    {
+      "brand": "BMW",
+      "model": "4 Series Coupé",
+      "sourceId": "7146"
+    },
+    {
+      "brand": "BMW",
+      "model": "4 Series Gran Coupé",
+      "sourceId": "7147"
+    },
+    {
+      "brand": "BMW",
+      "model": "5 Series",
+      "sourceId": "7073"
+    },
+    {
+      "brand": "BMW",
+      "model": "5 Series Touring",
+      "sourceId": "7074"
+    },
+    {
+      "brand": "BMW",
+      "model": "7 Series",
+      "sourceId": "6498"
+    },
+    {
+      "brand": "BMW",
+      "model": "i4",
+      "sourceId": "7059"
+    },
+    {
+      "brand": "BMW",
+      "model": "i5",
+      "sourceId": "6967"
+    },
+    {
+      "brand": "BMW",
+      "model": "i5 Touring",
+      "sourceId": "6968"
+    },
+    {
+      "brand": "BMW",
+      "model": "i7",
+      "sourceId": "6645"
+    },
+    {
+      "brand": "BMW",
+      "model": "iX",
+      "sourceId": "6960"
+    },
+    {
+      "brand": "BMW",
+      "model": "iX1",
+      "sourceId": "7256"
+    },
+    {
+      "brand": "BMW",
+      "model": "iX2",
+      "sourceId": "7257"
+    },
+    {
+      "brand": "BMW",
+      "model": "iX3",
+      "sourceId": "7254"
+    },
+    {
+      "brand": "BMW",
+      "model": "M2",
+      "sourceId": "6850"
+    },
+    {
+      "brand": "BMW",
+      "model": "M3",
+      "sourceId": "6735"
+    },
+    {
+      "brand": "BMW",
+      "model": "M3 Touring",
+      "sourceId": "6736"
+    },
+    {
+      "brand": "BMW",
+      "model": "M4 Convertible",
+      "sourceId": "6665"
+    },
+    {
+      "brand": "BMW",
+      "model": "M4 Coupé",
+      "sourceId": "6664"
+    },
+    {
+      "brand": "BMW",
+      "model": "M5",
+      "sourceId": "6924"
+    },
+    {
+      "brand": "BMW",
+      "model": "M5 Touring",
+      "sourceId": "6922"
+    },
+    {
+      "brand": "BMW",
+      "model": "X1",
+      "sourceId": "7049"
+    },
+    {
+      "brand": "BMW",
+      "model": "X2",
+      "sourceId": "7060"
+    },
+    {
+      "brand": "BMW",
+      "model": "X3",
+      "sourceId": "7115"
+    },
+    {
+      "brand": "BMW",
+      "model": "X5",
+      "sourceId": "7170"
+    },
+    {
+      "brand": "BMW",
+      "model": "X6",
+      "sourceId": "7171"
+    },
+    {
+      "brand": "BMW",
+      "model": "X6 M",
+      "sourceId": "6436"
+    },
+    {
+      "brand": "BMW",
+      "model": "X7",
+      "sourceId": "6493"
+    },
+    {
+      "brand": "BMW",
+      "model": "XM",
+      "sourceId": "6395"
+    },
+    {
+      "brand": "BMW",
+      "model": "Z4",
+      "sourceId": "7078"
+    },
+    {
+      "brand": "Caterham",
+      "model": "Caterham 7",
+      "sourceId": "6543"
+    },
+    {
+      "brand": "Citroën",
+      "model": "Berlingo",
+      "sourceId": "6788"
+    },
+    {
+      "brand": "Citroën",
+      "model": "Berlingo Van",
+      "sourceId": "6789"
+    },
+    {
+      "brand": "Citroën",
+      "model": "Berlingo短軸",
+      "sourceId": "6787"
+    },
+    {
+      "brand": "Citroën",
+      "model": "C5 Aircross",
+      "sourceId": "7187"
+    },
+    {
+      "brand": "CMC",
+      "model": "E300",
+      "sourceId": "6358"
+    },
+    {
+      "brand": "CMC",
+      "model": "ET35",
+      "sourceId": "7030"
+    },
+    {
+      "brand": "CMC",
+      "model": "J Space貨車",
+      "sourceId": "7211"
+    },
+    {
+      "brand": "CMC",
+      "model": "J Space廂型車",
+      "sourceId": "7208"
+    },
+    {
+      "brand": "CMC",
+      "model": "P350 Hybrid",
+      "sourceId": "6820"
+    },
+    {
+      "brand": "CMC",
+      "model": "Veryca A190貨車",
+      "sourceId": "6802"
+    },
+    {
+      "brand": "CMC",
+      "model": "Zinger",
+      "sourceId": "7168"
+    },
+    {
+      "brand": "CMC",
+      "model": "Zinger Pick Up",
+      "sourceId": "6821"
+    },
+    {
+      "brand": "DFSK",
+      "model": "A380 WINMAX",
+      "sourceId": "6706"
+    },
+    {
+      "brand": "DFSK",
+      "model": "大穩發",
+      "sourceId": "6248"
+    },
+    {
+      "brand": "DFSK",
+      "model": "金穩發",
+      "sourceId": "6210"
+    },
+    {
+      "brand": "Ferrari",
+      "model": "12Cilindri",
+      "sourceId": "6761"
+    },
+    {
+      "brand": "Ferrari",
+      "model": "12Cilindri Spider",
+      "sourceId": "7090"
+    },
+    {
+      "brand": "Ferrari",
+      "model": "296 GTB",
+      "sourceId": "6218"
+    },
+    {
+      "brand": "Ferrari",
+      "model": "296 GTS",
+      "sourceId": "6299"
+    },
+    {
+      "brand": "Ferrari",
+      "model": "296 Speciale",
+      "sourceId": "6988"
+    },
+    {
+      "brand": "Ferrari",
+      "model": "849 Testarossa",
+      "sourceId": "7193"
+    },
+    {
+      "brand": "Ferrari",
+      "model": "Amalfi",
+      "sourceId": "7100"
+    },
+    {
+      "brand": "Ferrari",
+      "model": "Amalfi Spider",
+      "sourceId": "7227"
+    },
+    {
+      "brand": "Ferrari",
+      "model": "Luce",
+      "sourceId": "7270"
+    },
+    {
+      "brand": "Ferrari",
+      "model": "Purosangue",
+      "sourceId": "6356"
+    },
+    {
+      "brand": "Ford",
+      "model": "Mustang",
+      "sourceId": "7232"
+    },
+    {
+      "brand": "Ford",
+      "model": "Ranger",
+      "sourceId": "6925"
+    },
+    {
+      "brand": "Ford",
+      "model": "Territory",
+      "sourceId": "7063"
+    },
+    {
+      "brand": "Ford",
+      "model": "Tourneo Connect",
+      "sourceId": "6869"
+    },
+    {
+      "brand": "Ford",
+      "model": "Tourneo Custom",
+      "sourceId": "6928"
+    },
+    {
+      "brand": "Foxtron",
+      "model": "Bria",
+      "sourceId": "7079"
+    },
+    {
+      "brand": "Foxtron",
+      "model": "Cavira",
+      "sourceId": "7220"
+    },
+    {
+      "brand": "Honda",
+      "model": "Civic",
+      "sourceId": "6910"
+    },
+    {
+      "brand": "Honda",
+      "model": "CR-V",
+      "sourceId": "7214"
+    },
+    {
+      "brand": "Honda",
+      "model": "Fit",
+      "sourceId": "6307"
+    },
+    {
+      "brand": "Honda",
+      "model": "HR-V",
+      "sourceId": "6946"
+    },
+    {
+      "brand": "Honda",
+      "model": "Prelude",
+      "sourceId": "7269"
+    },
+    {
+      "brand": "Hyundai",
+      "model": "Custin",
+      "sourceId": "7236"
+    },
+    {
+      "brand": "Hyundai",
+      "model": "Inster",
+      "sourceId": "7048"
+    },
+    {
+      "brand": "Hyundai",
+      "model": "Ioniq 5",
+      "sourceId": "6917"
+    },
+    {
+      "brand": "Hyundai",
+      "model": "Ioniq 5 N",
+      "sourceId": "6834"
+    },
+    {
+      "brand": "Hyundai",
+      "model": "Mufasa",
+      "sourceId": "7091"
+    },
+    {
+      "brand": "Hyundai",
+      "model": "Palisade",
+      "sourceId": "7272"
+    },
+    {
+      "brand": "Hyundai",
+      "model": "Porter II",
+      "sourceId": "6831"
+    },
+    {
+      "brand": "Hyundai",
+      "model": "Santa Fe",
+      "sourceId": "7181"
+    },
+    {
+      "brand": "Hyundai",
+      "model": "Staria",
+      "sourceId": "6859"
+    },
+    {
+      "brand": "Hyundai",
+      "model": "Staria Van",
+      "sourceId": "7008"
+    },
+    {
+      "brand": "Hyundai",
+      "model": "Tucson L",
+      "sourceId": "7206"
+    },
+    {
+      "brand": "Hyundai",
+      "model": "Venue",
+      "sourceId": "6662"
+    },
+    {
+      "brand": "Ineos Grenadier",
+      "model": "Grenadier",
+      "sourceId": "7221"
+    },
+    {
+      "brand": "Ineos Grenadier",
+      "model": "Grenadier Quartermaster",
+      "sourceId": "7222"
+    },
+    {
+      "brand": "Infiniti",
+      "model": "QX50",
+      "sourceId": "6396"
+    },
+    {
+      "brand": "Infiniti",
+      "model": "QX55",
+      "sourceId": "6315"
+    },
+    {
+      "brand": "Infiniti",
+      "model": "QX60",
+      "sourceId": "7127"
+    },
+    {
+      "brand": "Jaguar",
+      "model": "E-Pace",
+      "sourceId": "6550"
+    },
+    {
+      "brand": "Jaguar",
+      "model": "F-Pace",
+      "sourceId": "6251"
+    },
+    {
+      "brand": "Jaguar",
+      "model": "F-Type",
+      "sourceId": "6514"
+    },
+    {
+      "brand": "Jaguar",
+      "model": "I-Pace",
+      "sourceId": "6500"
+    },
+    {
+      "brand": "Jeep",
+      "model": "Wrangler",
+      "sourceId": "7076"
+    },
+    {
+      "brand": "Kia",
+      "model": "Carnival",
+      "sourceId": "7015"
+    },
+    {
+      "brand": "Kia",
+      "model": "Ceed Sportswagon",
+      "sourceId": "7037"
+    },
+    {
+      "brand": "Kia",
+      "model": "EV6",
+      "sourceId": "6933"
+    },
+    {
+      "brand": "Kia",
+      "model": "EV9",
+      "sourceId": "6670"
+    },
+    {
+      "brand": "Kia",
+      "model": "K2500",
+      "sourceId": "6684"
+    },
+    {
+      "brand": "Kia",
+      "model": "Picanto",
+      "sourceId": "6893"
+    },
+    {
+      "brand": "Kia",
+      "model": "Sorento",
+      "sourceId": "7207"
+    },
+    {
+      "brand": "Kia",
+      "model": "Sportage",
+      "sourceId": "7184"
+    },
+    {
+      "brand": "Kia",
+      "model": "Stonic",
+      "sourceId": "7142"
+    },
+    {
+      "brand": "Lamborghini",
+      "model": "Revuelto",
+      "sourceId": "6393"
+    },
+    {
+      "brand": "Lamborghini",
+      "model": "Temerario",
+      "sourceId": "6837"
+    },
+    {
+      "brand": "Lamborghini",
+      "model": "Urus",
+      "sourceId": "7118"
+    },
+    {
+      "brand": "Land Rover",
+      "model": "Defender 110",
+      "sourceId": "7110"
+    },
+    {
+      "brand": "Land Rover",
+      "model": "Defender 90",
+      "sourceId": "7111"
+    },
+    {
+      "brand": "Land Rover",
+      "model": "Discovery",
+      "sourceId": "7180"
+    },
+    {
+      "brand": "Land Rover",
+      "model": "Discovery Sport",
+      "sourceId": "7229"
+    },
+    {
+      "brand": "Land Rover",
+      "model": "Range Rover",
+      "sourceId": "7135"
+    },
+    {
+      "brand": "Land Rover",
+      "model": "Range Rover Evoque",
+      "sourceId": "7215"
+    },
+    {
+      "brand": "Land Rover",
+      "model": "Range Rover Sport",
+      "sourceId": "7134"
+    },
+    {
+      "brand": "Land Rover",
+      "model": "Range Rover Velar",
+      "sourceId": "7216"
+    },
+    {
+      "brand": "Lexus",
+      "model": "ES",
+      "sourceId": "7178"
+    },
+    {
+      "brand": "Lexus",
+      "model": "ES Electric",
+      "sourceId": "7179"
+    },
+    {
+      "brand": "Lexus",
+      "model": "IS",
+      "sourceId": "7084"
+    },
+    {
+      "brand": "Lexus",
+      "model": "LBX",
+      "sourceId": "6982"
+    },
+    {
+      "brand": "Lexus",
+      "model": "LC",
+      "sourceId": "6391"
+    },
+    {
+      "brand": "Lexus",
+      "model": "LC Convertible",
+      "sourceId": "6392"
+    },
+    {
+      "brand": "Lexus",
+      "model": "LM",
+      "sourceId": "6983"
+    },
+    {
+      "brand": "Lexus",
+      "model": "LS",
+      "sourceId": "6313"
+    },
+    {
+      "brand": "Lexus",
+      "model": "NX",
+      "sourceId": "6984"
+    },
+    {
+      "brand": "Lexus",
+      "model": "RX",
+      "sourceId": "6764"
+    },
+    {
+      "brand": "Lexus",
+      "model": "RZ",
+      "sourceId": "7071"
+    },
+    {
+      "brand": "Lexus",
+      "model": "UX",
+      "sourceId": "7128"
+    },
+    {
+      "brand": "Lotus",
+      "model": "Emira",
+      "sourceId": "7277"
+    },
+    {
+      "brand": "Luxgen",
+      "model": "n⁷",
+      "sourceId": "6734"
+    },
+    {
+      "brand": "Luxgen",
+      "model": "U6 Neo",
+      "sourceId": "6908"
+    },
+    {
+      "brand": "Luxgen",
+      "model": "URX Neo",
+      "sourceId": "6909"
+    },
+    {
+      "brand": "Mahindra",
+      "model": "KUV100",
+      "sourceId": "6187"
+    },
+    {
+      "brand": "Mahindra",
+      "model": "Pikup",
+      "sourceId": "6180"
+    },
+    {
+      "brand": "Maserati",
+      "model": "GranCabrio",
+      "sourceId": "6730"
+    },
+    {
+      "brand": "Maserati",
+      "model": "GranCabrio Folgore",
+      "sourceId": "6987"
+    },
+    {
+      "brand": "Maserati",
+      "model": "GranTurismo",
+      "sourceId": "6458"
+    },
+    {
+      "brand": "Maserati",
+      "model": "GranTurismo Folgore",
+      "sourceId": "6659"
+    },
+    {
+      "brand": "Maserati",
+      "model": "Grecale",
+      "sourceId": "6938"
+    },
+    {
+      "brand": "Maserati",
+      "model": "Grecale Folgore",
+      "sourceId": "6658"
+    },
+    {
+      "brand": "Maserati",
+      "model": "MC20",
+      "sourceId": "6217"
+    },
+    {
+      "brand": "Maserati",
+      "model": "MC20 Cielo",
+      "sourceId": "6540"
+    },
+    {
+      "brand": "Mazda",
+      "model": "CX-3",
+      "sourceId": "7021"
+    },
+    {
+      "brand": "Mazda",
+      "model": "CX-30",
+      "sourceId": "7286"
+    },
+    {
+      "brand": "Mazda",
+      "model": "CX-5",
+      "sourceId": "7264"
+    },
+    {
+      "brand": "Mazda",
+      "model": "CX-60",
+      "sourceId": "6959"
+    },
+    {
+      "brand": "Mazda",
+      "model": "CX-90",
+      "sourceId": "7280"
+    },
+    {
+      "brand": "Mazda",
+      "model": "Mazda2",
+      "sourceId": "7199"
+    },
+    {
+      "brand": "Mazda",
+      "model": "Mazda3 五門",
+      "sourceId": "7125"
+    },
+    {
+      "brand": "Mazda",
+      "model": "Mazda3 四門",
+      "sourceId": "7126"
+    },
+    {
+      "brand": "Mazda",
+      "model": "MX-5",
+      "sourceId": "7113"
+    },
+    {
+      "brand": "Mazda",
+      "model": "MX-5 RF",
+      "sourceId": "7114"
+    },
+    {
+      "brand": "McLaren",
+      "model": "750S Coupe",
+      "sourceId": "6996"
+    },
+    {
+      "brand": "McLaren",
+      "model": "750S Spider",
+      "sourceId": "6997"
+    },
+    {
+      "brand": "McLaren",
+      "model": "Artura Coupe",
+      "sourceId": "6998"
+    },
+    {
+      "brand": "McLaren",
+      "model": "Artura Spider",
+      "sourceId": "6999"
+    },
+    {
+      "brand": "McLaren",
+      "model": "GTS",
+      "sourceId": "7000"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "A-Class",
+      "sourceId": "7188"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "A-Class Sedan",
+      "sourceId": "6937"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "B-Class",
+      "sourceId": "6939"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "C-Class",
+      "sourceId": "7151"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "C-Class Estate",
+      "sourceId": "7153"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "CLA",
+      "sourceId": "7144"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "CLA Shooting Brake",
+      "sourceId": "7203"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "CLA Shooting Brake with EQ technology",
+      "sourceId": "7202"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "CLA with EQ Technology",
+      "sourceId": "7145"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "CLE Cabriolet",
+      "sourceId": "7165"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "CLE Coupé",
+      "sourceId": "7163"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "E-Class",
+      "sourceId": "7172"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "E-Class Estate",
+      "sourceId": "7173"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Electric G-Class",
+      "sourceId": "7162"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "EQA",
+      "sourceId": "6944"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "EQB",
+      "sourceId": "6945"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "EQE",
+      "sourceId": "7230"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "EQE SUV",
+      "sourceId": "7231"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "EQS",
+      "sourceId": "6627"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "EQS SUV",
+      "sourceId": "6628"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "G-Class",
+      "sourceId": "7161"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "GLA",
+      "sourceId": "7191"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "GLB",
+      "sourceId": "7258"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "GLB",
+      "sourceId": "6990"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "GLB electric",
+      "sourceId": "7255"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "GLC",
+      "sourceId": "7282"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "GLC Coupé",
+      "sourceId": "7283"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "GLE",
+      "sourceId": "7237"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "GLE Coupé",
+      "sourceId": "7239"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "GLS",
+      "sourceId": "6479"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-AMG A-Class",
+      "sourceId": "7190"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-AMG C-Class",
+      "sourceId": "7152"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-AMG C-Class Estate",
+      "sourceId": "7154"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-AMG CLE Cabriolet",
+      "sourceId": "7166"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-AMG CLE Coupé",
+      "sourceId": "7164"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-AMG E-Class",
+      "sourceId": "7174"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-AMG G-Class",
+      "sourceId": "7226"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-AMG GLA",
+      "sourceId": "7192"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-AMG GLB",
+      "sourceId": "6991"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-AMG GLC",
+      "sourceId": "7156"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-AMG GLC Coupé",
+      "sourceId": "7158"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-AMG GLE",
+      "sourceId": "7238"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-AMG GLE Coupé",
+      "sourceId": "7240"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-AMG GT",
+      "sourceId": "7252"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-AMG GT 4-Door Coupé",
+      "sourceId": "6341"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-AMG SL",
+      "sourceId": "7251"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-Maybach EQS SUV",
+      "sourceId": "6661"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-Maybach GLS",
+      "sourceId": "6480"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-Maybach S-Class",
+      "sourceId": "7278"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "Mercedes-Maybach SL",
+      "sourceId": "7019"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "S-Class",
+      "sourceId": "7218"
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "model": "V-Class",
+      "sourceId": "7253"
+    },
+    {
+      "brand": "MG",
+      "model": "G50 Plus",
+      "sourceId": "6981"
+    },
+    {
+      "brand": "MG",
+      "model": "HS",
+      "sourceId": "6829"
+    },
+    {
+      "brand": "MG",
+      "model": "MG4",
+      "sourceId": "6668"
+    },
+    {
+      "brand": "MG",
+      "model": "ZS",
+      "sourceId": "7265"
+    },
+    {
+      "brand": "Mini",
+      "model": "Countryman",
+      "sourceId": "6613"
+    },
+    {
+      "brand": "Mini",
+      "model": "Countryman Electric",
+      "sourceId": "7070"
+    },
+    {
+      "brand": "Mini",
+      "model": "Mini Cabrio",
+      "sourceId": "7217"
+    },
+    {
+      "brand": "Mini",
+      "model": "Mini Cooper 3-Door",
+      "sourceId": "6897"
+    },
+    {
+      "brand": "Mini",
+      "model": "Mini Cooper 5-Door",
+      "sourceId": "6748"
+    },
+    {
+      "brand": "Mitsubishi",
+      "model": "Colt Plus",
+      "sourceId": "6768"
+    },
+    {
+      "brand": "Mitsubishi",
+      "model": "Delica貨車",
+      "sourceId": "6823"
+    },
+    {
+      "brand": "Mitsubishi",
+      "model": "Delica廂車",
+      "sourceId": "6822"
+    },
+    {
+      "brand": "Mitsubishi",
+      "model": "Outlander",
+      "sourceId": "6825"
+    },
+    {
+      "brand": "Mitsubishi",
+      "model": "XForce",
+      "sourceId": "7082"
+    },
+    {
+      "brand": "Morgan",
+      "model": "Plus Four",
+      "sourceId": "6198"
+    },
+    {
+      "brand": "Morgan",
+      "model": "Plus Six",
+      "sourceId": "6205"
+    },
+    {
+      "brand": "Nissan",
+      "model": "Ariya",
+      "sourceId": "6692"
+    },
+    {
+      "brand": "Nissan",
+      "model": "Kicks",
+      "sourceId": "7263"
+    },
+    {
+      "brand": "Nissan",
+      "model": "Sentra",
+      "sourceId": "7137"
+    },
+    {
+      "brand": "Nissan",
+      "model": "X-Trail",
+      "sourceId": "7233"
+    },
+    {
+      "brand": "Opel",
+      "model": "Astra",
+      "sourceId": "6380"
+    },
+    {
+      "brand": "Opel",
+      "model": "Combo",
+      "sourceId": "6961"
+    },
+    {
+      "brand": "Opel",
+      "model": "Grandland",
+      "sourceId": "6357"
+    },
+    {
+      "brand": "Opel",
+      "model": "Mokka",
+      "sourceId": "6293"
+    },
+    {
+      "brand": "Opel",
+      "model": "Mokka Electric",
+      "sourceId": "6294"
+    },
+    {
+      "brand": "Pagani",
+      "model": "Huayra",
+      "sourceId": "6183"
+    },
+    {
+      "brand": "Peugeot",
+      "model": "2008",
+      "sourceId": "6575"
+    },
+    {
+      "brand": "Peugeot",
+      "model": "208",
+      "sourceId": "7259"
+    },
+    {
+      "brand": "Peugeot",
+      "model": "3008",
+      "sourceId": "6962"
+    },
+    {
+      "brand": "Peugeot",
+      "model": "408",
+      "sourceId": "6843"
+    },
+    {
+      "brand": "Peugeot",
+      "model": "5008",
+      "sourceId": "6963"
+    },
+    {
+      "brand": "Porsche",
+      "model": "718 Boxster",
+      "sourceId": "6857"
+    },
+    {
+      "brand": "Porsche",
+      "model": "718 Cayman",
+      "sourceId": "6416"
+    },
+    {
+      "brand": "Porsche",
+      "model": "911",
+      "sourceId": "6902"
+    },
+    {
+      "brand": "Porsche",
+      "model": "911 Cabriolet",
+      "sourceId": "6903"
+    },
+    {
+      "brand": "Porsche",
+      "model": "911 GT3",
+      "sourceId": "6905"
+    },
+    {
+      "brand": "Porsche",
+      "model": "911 Targa",
+      "sourceId": "6904"
+    },
+    {
+      "brand": "Porsche",
+      "model": "911 Turbo",
+      "sourceId": "6420"
+    },
+    {
+      "brand": "Porsche",
+      "model": "911 Turbo Cabriolet",
+      "sourceId": "6419"
+    },
+    {
+      "brand": "Porsche",
+      "model": "Cayenne",
+      "sourceId": "7119"
+    },
+    {
+      "brand": "Porsche",
+      "model": "Cayenne Coupé",
+      "sourceId": "7120"
+    },
+    {
+      "brand": "Porsche",
+      "model": "Cayenne Coupé Electric",
+      "sourceId": "7189"
+    },
+    {
+      "brand": "Porsche",
+      "model": "Cayenne Electric",
+      "sourceId": "7133"
+    },
+    {
+      "brand": "Porsche",
+      "model": "Macan",
+      "sourceId": "6626"
+    },
+    {
+      "brand": "Porsche",
+      "model": "Macan Electric",
+      "sourceId": "7050"
+    },
+    {
+      "brand": "Porsche",
+      "model": "Panamera",
+      "sourceId": "6693"
+    },
+    {
+      "brand": "Porsche",
+      "model": "Taycan",
+      "sourceId": "7224"
+    },
+    {
+      "brand": "Porsche",
+      "model": "Taycan Cross Turismo",
+      "sourceId": "7225"
+    },
+    {
+      "brand": "Rolls-Royce",
+      "model": "Cullinan Series II",
+      "sourceId": "6832"
+    },
+    {
+      "brand": "Rolls-Royce",
+      "model": "Ghost Series II",
+      "sourceId": "6911"
+    },
+    {
+      "brand": "Rolls-Royce",
+      "model": "Phantom Series II",
+      "sourceId": "5515"
+    },
+    {
+      "brand": "Rolls-Royce",
+      "model": "Spectre",
+      "sourceId": "6530"
+    },
+    {
+      "brand": "Škoda",
+      "model": "Enyaq",
+      "sourceId": "6694"
+    },
+    {
+      "brand": "Škoda",
+      "model": "Enyaq Coupé",
+      "sourceId": "6695"
+    },
+    {
+      "brand": "Škoda",
+      "model": "Fabia",
+      "sourceId": "7273"
+    },
+    {
+      "brand": "Škoda",
+      "model": "Kamiq",
+      "sourceId": "7274"
+    },
+    {
+      "brand": "Škoda",
+      "model": "Karoq",
+      "sourceId": "7276"
+    },
+    {
+      "brand": "Škoda",
+      "model": "Kodiaq",
+      "sourceId": "7104"
+    },
+    {
+      "brand": "Škoda",
+      "model": "Octavia",
+      "sourceId": "7105"
+    },
+    {
+      "brand": "Škoda",
+      "model": "Octavia Combi",
+      "sourceId": "7106"
+    },
+    {
+      "brand": "Škoda",
+      "model": "Scala",
+      "sourceId": "7275"
+    },
+    {
+      "brand": "Škoda",
+      "model": "Superb",
+      "sourceId": "7108"
+    },
+    {
+      "brand": "Škoda",
+      "model": "Superb Combi",
+      "sourceId": "7109"
+    },
+    {
+      "brand": "Subaru",
+      "model": "BRZ",
+      "sourceId": "6260"
+    },
+    {
+      "brand": "Subaru",
+      "model": "Crosstrek",
+      "sourceId": "6366"
+    },
+    {
+      "brand": "Subaru",
+      "model": "Forester",
+      "sourceId": "6970"
+    },
+    {
+      "brand": "Subaru",
+      "model": "Outback",
+      "sourceId": "6204"
+    },
+    {
+      "brand": "Subaru",
+      "model": "Solterra",
+      "sourceId": "7176"
+    },
+    {
+      "brand": "Subaru",
+      "model": "WRX",
+      "sourceId": "6368"
+    },
+    {
+      "brand": "Subaru",
+      "model": "WRX Wagon",
+      "sourceId": "6369"
+    },
+    {
+      "brand": "Suzuki",
+      "model": "Carry",
+      "sourceId": "6191"
+    },
+    {
+      "brand": "Suzuki",
+      "model": "e Vitara",
+      "sourceId": "7081"
+    },
+    {
+      "brand": "Suzuki",
+      "model": "Jimny",
+      "sourceId": "7234"
+    },
+    {
+      "brand": "Suzuki",
+      "model": "Swift",
+      "sourceId": "6683"
+    },
+    {
+      "brand": "Suzuki",
+      "model": "SX4 S-Cross",
+      "sourceId": "7260"
+    },
+    {
+      "brand": "Suzuki",
+      "model": "Vitara",
+      "sourceId": "7261"
+    },
+    {
+      "brand": "Tesla",
+      "model": "Model 3",
+      "sourceId": "7036"
+    },
+    {
+      "brand": "Tesla",
+      "model": "Model S",
+      "sourceId": "6947"
+    },
+    {
+      "brand": "Tesla",
+      "model": "Model X",
+      "sourceId": "6948"
+    },
+    {
+      "brand": "Tesla",
+      "model": "Model Y",
+      "sourceId": "7089"
+    },
+    {
+      "brand": "Toyota",
+      "model": "Alphard",
+      "sourceId": "6844"
+    },
+    {
+      "brand": "Toyota",
+      "model": "bZ4X",
+      "sourceId": "7034"
+    },
+    {
+      "brand": "Toyota",
+      "model": "Camry",
+      "sourceId": "7268"
+    },
+    {
+      "brand": "Toyota",
+      "model": "Corolla Altis",
+      "sourceId": "7182"
+    },
+    {
+      "brand": "Toyota",
+      "model": "Corolla Cross",
+      "sourceId": "7183"
+    },
+    {
+      "brand": "Toyota",
+      "model": "Corolla Sport",
+      "sourceId": "7262"
+    },
+    {
+      "brand": "Toyota",
+      "model": "Crown",
+      "sourceId": "6640"
+    },
+    {
+      "brand": "Toyota",
+      "model": "GR 86",
+      "sourceId": "7271"
+    },
+    {
+      "brand": "Toyota",
+      "model": "GR Supra",
+      "sourceId": "6932"
+    },
+    {
+      "brand": "Toyota",
+      "model": "GR Yaris",
+      "sourceId": "7223"
+    },
+    {
+      "brand": "Toyota",
+      "model": "Granvia",
+      "sourceId": "7197"
+    },
+    {
+      "brand": "Toyota",
+      "model": "Hiace",
+      "sourceId": "7196"
+    },
+    {
+      "brand": "Toyota",
+      "model": "Hilux",
+      "sourceId": "7228"
+    },
+    {
+      "brand": "Toyota",
+      "model": "Land Cruiser",
+      "sourceId": "7167"
+    },
+    {
+      "brand": "Toyota",
+      "model": "Prius PHEV",
+      "sourceId": "6986"
+    },
+    {
+      "brand": "Toyota",
+      "model": "RAV4",
+      "sourceId": "7143"
+    },
+    {
+      "brand": "Toyota",
+      "model": "Sienna",
+      "sourceId": "7241"
+    },
+    {
+      "brand": "Toyota",
+      "model": "Town Ace",
+      "sourceId": "6271"
+    },
+    {
+      "brand": "Toyota",
+      "model": "Town Ace Van",
+      "sourceId": "6927"
+    },
+    {
+      "brand": "Toyota",
+      "model": "Urban Cruiser",
+      "sourceId": "7083"
+    },
+    {
+      "brand": "Toyota",
+      "model": "Vios",
+      "sourceId": "6696"
+    },
+    {
+      "brand": "Toyota",
+      "model": "Yaris Cross",
+      "sourceId": "6741"
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Golf",
+      "sourceId": "7209"
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Golf R",
+      "sourceId": "7210"
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Golf R Variant",
+      "sourceId": "6921"
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Golf Variant",
+      "sourceId": "6919"
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "ID.4",
+      "sourceId": "6725"
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "ID.5",
+      "sourceId": "6726"
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Passat Variant",
+      "sourceId": "7086"
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Polo",
+      "sourceId": "7062"
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "T-Cross",
+      "sourceId": "6956"
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Tiguan",
+      "sourceId": "7087"
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "Touran",
+      "sourceId": "6809"
+    },
+    {
+      "brand": "Volkswagen",
+      "model": "T-Roc",
+      "sourceId": "7266"
+    },
+    {
+      "brand": "Volkswagen Commercial Vehicles",
+      "model": "Amarok",
+      "sourceId": "7053"
+    },
+    {
+      "brand": "Volkswagen Commercial Vehicles",
+      "model": "Caddy Cargo",
+      "sourceId": "7029"
+    },
+    {
+      "brand": "Volkswagen Commercial Vehicles",
+      "model": "Caddy Maxi",
+      "sourceId": "7169"
+    },
+    {
+      "brand": "Volkswagen Commercial Vehicles",
+      "model": "California",
+      "sourceId": "6571"
+    },
+    {
+      "brand": "Volkswagen Commercial Vehicles",
+      "model": "Caravelle",
+      "sourceId": "7138"
+    },
+    {
+      "brand": "Volkswagen Commercial Vehicles",
+      "model": "Crafter",
+      "sourceId": "7052"
+    },
+    {
+      "brand": "Volkswagen Commercial Vehicles",
+      "model": "Grand California",
+      "sourceId": "6686"
+    },
+    {
+      "brand": "Volkswagen Commercial Vehicles",
+      "model": "ID.Buzz LWB",
+      "sourceId": "7054"
+    },
+    {
+      "brand": "Volkswagen Commercial Vehicles",
+      "model": "Multivan",
+      "sourceId": "7069"
+    },
+    {
+      "brand": "Volvo",
+      "model": "EC40",
+      "sourceId": "7130"
+    },
+    {
+      "brand": "Volvo",
+      "model": "EX30",
+      "sourceId": "6973"
+    },
+    {
+      "brand": "Volvo",
+      "model": "EX40",
+      "sourceId": "7129"
+    },
+    {
+      "brand": "Volvo",
+      "model": "EX90",
+      "sourceId": "7219"
+    },
+    {
+      "brand": "Volvo",
+      "model": "V60",
+      "sourceId": "7098"
+    },
+    {
+      "brand": "Volvo",
+      "model": "XC40",
+      "sourceId": "7131"
+    },
+    {
+      "brand": "Volvo",
+      "model": "XC60",
+      "sourceId": "7177"
+    },
+    {
+      "brand": "Volvo",
+      "model": "XC90",
+      "sourceId": "6995"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "brand": "Land Rover",
+  "model": "Discovery Sport",
+  "sourceId": "7229",
+  "url": "https://newcar.u-car.com.tw/Land%20Rover/Discovery%20Sport/7229/spec",
+  "retrievedAt": "2026-09-15T09:50:29.078Z",
+  "pageSha256": "63f20b2fe2a8be592fbab81e25d28064052ce94a91845b018a73cf7b7bf8edb8",
+  "entries": [
+    {
+      "variant": "P250 Dynamic S",
+      "lengthText": "4,597 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "P250 Landmark",
+      "lengthText": "4,597 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

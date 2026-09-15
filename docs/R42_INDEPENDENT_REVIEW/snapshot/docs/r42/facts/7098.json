@@ -1,0 +1,38 @@
+{
+  "brand": "Volvo",
+  "model": "V60",
+  "sourceId": "7098",
+  "url": "https://newcar.u-car.com.tw/Volvo/V60/7098/spec",
+  "retrievedAt": "2026-09-15T09:51:25.597Z",
+  "pageSha256": "7ee7b3a7bd6ca56ad549a21d3d09990a7eff0ae85b451c6245c0a64174a04af4",
+  "entries": [
+    {
+      "variant": "Plus B4",
+      "lengthText": "4761 mm",
+      "lengthMm": 4761,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "Ultra B4",
+      "lengthText": "4761 mm",
+      "lengthMm": 4761,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "Plus T8 AWD plug-in hybrid",
+      "lengthText": "4761 mm",
+      "lengthMm": 4761,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "Ultra T8 AWD plug-in hybrid",
+      "lengthText": "4761 mm",
+      "lengthMm": 4761,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "brand": "Mazda",
+  "model": "CX-60",
+  "sourceId": "6959",
+  "url": "https://newcar.u-car.com.tw/Mazda/CX-60/6959/spec",
+  "retrievedAt": "2026-09-15T09:50:38.203Z",
+  "pageSha256": "149be5fc0be8de3511d005c50463f1b27220d6583c7a70644b1fd5a1e233cfdd",
+  "entries": [
+    {
+      "variant": "25S Elite",
+      "lengthText": "4740 mm",
+      "lengthMm": 4740,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "25S Elite Plus",
+      "lengthText": "4740 mm",
+      "lengthMm": 4740,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "25S AWD Exclusive",
+      "lengthText": "4740 mm",
+      "lengthMm": 4740,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "33T AWD Exclusive Sport",
+      "lengthText": "4740 mm",
+      "lengthMm": 4740,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "33T AWD Premium Sport",
+      "lengthText": "4740 mm",
+      "lengthMm": 4740,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "33T AWD Premium Modern",
+      "lengthText": "4740 mm",
+      "lengthMm": 4740,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

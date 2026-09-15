@@ -1,0 +1,31 @@
+{
+  "brand": "Škoda",
+  "model": "Octavia",
+  "sourceId": "7105",
+  "url": "https://newcar.u-car.com.tw/%C5%A0koda/Octavia/7105/spec",
+  "retrievedAt": "2026-09-15T09:51:08.855Z",
+  "pageSha256": "7934b87a1e65e5b1fef66d5e291514bd87080c56ed551d43a542a599078509b7",
+  "entries": [
+    {
+      "variant": "Joy",
+      "lengthText": "4698 mm",
+      "lengthMm": 4698,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "1.5 TSI e-TEC",
+      "lengthText": "4698 mm",
+      "lengthMm": 4698,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "RS",
+      "lengthText": "4709 mm",
+      "lengthMm": 4709,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

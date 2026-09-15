@@ -1,0 +1,17 @@
+{
+  "brand": "Toyota",
+  "model": "Hilux",
+  "sourceId": "7228",
+  "url": "https://newcar.u-car.com.tw/Toyota/Hilux/7228/spec",
+  "retrievedAt": "2026-09-15T09:51:16.939Z",
+  "pageSha256": "816f5b08c6c0195263114f536378351ee1b27a3549ef30f70ae1195ae7096971",
+  "entries": [
+    {
+      "variant": "Hilux",
+      "lengthText": "5320 mm",
+      "lengthMm": 5320,
+      "bodyText": "貨卡/pick-up truck",
+      "seatText": null
+    }
+  ]
+}

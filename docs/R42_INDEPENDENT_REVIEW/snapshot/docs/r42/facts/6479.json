@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "GLS",
+  "sourceId": "6479",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/GLS/6479/spec",
+  "retrievedAt": "2026-09-15T09:50:48.275Z",
+  "pageSha256": "c7e199bad5f460eda0f5a06c63bb2441506d19ace90b828d4e646ae2d05e4e01",
+  "entries": [
+    {
+      "variant": "GLS 450 4Matic",
+      "lengthText": "5215 mm",
+      "lengthMm": 5215,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

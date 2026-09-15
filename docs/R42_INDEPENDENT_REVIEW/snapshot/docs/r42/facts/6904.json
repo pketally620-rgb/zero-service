@@ -1,0 +1,17 @@
+{
+  "brand": "Porsche",
+  "model": "911 Targa",
+  "sourceId": "6904",
+  "url": "https://newcar.u-car.com.tw/Porsche/911%20Targa/6904/spec",
+  "retrievedAt": "2026-09-15T09:51:03.029Z",
+  "pageSha256": "eae6fc734fb4e3a2a1b1d30626d514bfd84fd6d9388de0794070c3798a0ff8a8",
+  "entries": [
+    {
+      "variant": "Targa 4 GTS",
+      "lengthText": "4553 mm",
+      "lengthMm": 4553,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "brand": "Volkswagen",
+  "model": "Passat Variant",
+  "sourceId": "7086",
+  "url": "https://newcar.u-car.com.tw/Volkswagen/Passat%20Variant/7086/spec",
+  "retrievedAt": "2026-09-15T09:51:20.646Z",
+  "pageSha256": "9ec5f37083913b34ed94ad78a8949966a52b6ac81f277864ee6f36f1623682fd",
+  "entries": [
+    {
+      "variant": "330 TSI Elegance",
+      "lengthText": "4917 mm",
+      "lengthMm": 4917,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "330 TSI R-Line",
+      "lengthText": "4917 mm",
+      "lengthMm": 4917,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "430 TSI R-Line Performance",
+      "lengthText": "4917 mm",
+      "lengthMm": 4917,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

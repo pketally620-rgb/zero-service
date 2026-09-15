@@ -1,0 +1,650 @@
+[
+  {
+    "brand": "Mahindra",
+    "model": "Pikup",
+    "variant": "單廂2WD",
+    "lengthText": "5175 mm",
+    "bodyText": "貨卡/pick-up truck",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Mahindra/Pikup/6180/spec"
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Pikup",
+    "variant": "單廂4WD",
+    "lengthText": "5175 mm",
+    "bodyText": "貨卡/pick-up truck",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Mahindra/Pikup/6180/spec"
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Pikup",
+    "variant": "雙廂2WD",
+    "lengthText": "5175 mm",
+    "bodyText": "貨卡/pick-up truck",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Mahindra/Pikup/6180/spec"
+  },
+  {
+    "brand": "Mahindra",
+    "model": "Pikup",
+    "variant": "雙廂4WD",
+    "lengthText": "5175 mm",
+    "bodyText": "貨卡/pick-up truck",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Mahindra/Pikup/6180/spec"
+  },
+  {
+    "brand": "Suzuki",
+    "model": "Carry",
+    "variant": "Carry",
+    "lengthText": "4195 mm",
+    "bodyText": "",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Suzuki/Carry/6191/spec"
+  },
+  {
+    "brand": "DFSK",
+    "model": "金穩發",
+    "variant": "金穩發 S2.5t",
+    "lengthText": "4740 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/DFSK/%E9%87%91%E7%A9%A9%E7%99%BC/6210/spec"
+  },
+  {
+    "brand": "DFSK",
+    "model": "大穩發",
+    "variant": "大穩發S2.5t",
+    "lengthText": "4740 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/DFSK/%E5%A4%A7%E7%A9%A9%E7%99%BC/6248/spec"
+  },
+  {
+    "brand": "Toyota",
+    "model": "Town Ace",
+    "variant": "鐵床手排",
+    "lengthText": "4275 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Toyota/Town%20Ace/6271/spec"
+  },
+  {
+    "brand": "Toyota",
+    "model": "Town Ace",
+    "variant": "木床手排",
+    "lengthText": "4310 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Toyota/Town%20Ace/6271/spec"
+  },
+  {
+    "brand": "Toyota",
+    "model": "Town Ace",
+    "variant": "木床自排",
+    "lengthText": "4310 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Toyota/Town%20Ace/6271/spec"
+  },
+  {
+    "brand": "Toyota",
+    "model": "Town Ace",
+    "variant": "木床自排TSS",
+    "lengthText": "4310 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Toyota/Town%20Ace/6271/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "E300",
+    "variant": "CME3W木床貨車",
+    "lengthText": "4200 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/E300/6358/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "E300",
+    "variant": "CME31封窗貨車",
+    "lengthText": "4155 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/E300/6358/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "E300",
+    "variant": "CME33非封窗貨車",
+    "lengthText": "4155 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/E300/6358/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "E300",
+    "variant": "CME35/CMEB5廂型客車",
+    "lengthText": "4155 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/E300/6358/spec"
+  },
+  {
+    "brand": "Infiniti",
+    "model": "QX50",
+    "variant": "豪華領航",
+    "lengthText": "",
+    "bodyText": "運動休旅車/SUV",
+    "reason": "UNVERIFIED_LENGTH",
+    "url": "https://newcar.u-car.com.tw/Infiniti/QX50/6396/spec"
+  },
+  {
+    "brand": "Kia",
+    "model": "K2500",
+    "variant": "2WD單廂手排",
+    "lengthText": "5125 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Kia/K2500/6684/spec"
+  },
+  {
+    "brand": "Kia",
+    "model": "K2500",
+    "variant": "2WD大單廂手排",
+    "lengthText": "5125 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Kia/K2500/6684/spec"
+  },
+  {
+    "brand": "Kia",
+    "model": "K2500",
+    "variant": "2WD單廂自排",
+    "lengthText": "5125 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Kia/K2500/6684/spec"
+  },
+  {
+    "brand": "Kia",
+    "model": "K2500",
+    "variant": "2WD大單廂自排",
+    "lengthText": "5125 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Kia/K2500/6684/spec"
+  },
+  {
+    "brand": "Kia",
+    "model": "K2500",
+    "variant": "4WD單廂手排",
+    "lengthText": "5125 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Kia/K2500/6684/spec"
+  },
+  {
+    "brand": "Kia",
+    "model": "K2500",
+    "variant": "2WD雙廂手排",
+    "lengthText": "5125 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Kia/K2500/6684/spec"
+  },
+  {
+    "brand": "Kia",
+    "model": "K2500",
+    "variant": "2WD雙廂自排",
+    "lengthText": "5125 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Kia/K2500/6684/spec"
+  },
+  {
+    "brand": "Kia",
+    "model": "K2500",
+    "variant": "4WD雙廂手排",
+    "lengthText": "5125 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Kia/K2500/6684/spec"
+  },
+  {
+    "brand": "Volkswagen Commercial Vehicles",
+    "model": "Grand California",
+    "variant": "Grand California 680",
+    "lengthText": "6836 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Volkswagen%20Commercial%20Vehicles/Grand%20California/6686/spec"
+  },
+  {
+    "brand": "DFSK",
+    "model": "A380 WINMAX",
+    "variant": "A380 WINMAX",
+    "lengthText": "4610 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/DFSK/A380%20WINMAX/6706/spec"
+  },
+  {
+    "brand": "Citroën",
+    "model": "Berlingo Van",
+    "variant": "Van XL 科技版",
+    "lengthText": "4,753 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Citro%C3%ABn/Berlingo%20Van/6789/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "Veryca A190貨車",
+    "variant": "C421R鐵床(5MT)",
+    "lengthText": "4190 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/Veryca%20A190%E8%B2%A8%E8%BB%8A/6802/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "Veryca A190貨車",
+    "variant": "C421F鐵板(5MT)",
+    "lengthText": "4160 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/Veryca%20A190%E8%B2%A8%E8%BB%8A/6802/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "Veryca A190貨車",
+    "variant": "C421W木床(5MT)",
+    "lengthText": "4190 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/Veryca%20A190%E8%B2%A8%E8%BB%8A/6802/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "Veryca A190貨車",
+    "variant": "4WD C442W木床(5MT)",
+    "lengthText": "4190 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/Veryca%20A190%E8%B2%A8%E8%BB%8A/6802/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "P350 Hybrid",
+    "variant": "底盤車(UK22T)",
+    "lengthText": "5097 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/P350%20Hybrid/6820/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "P350 Hybrid",
+    "variant": "標準貨床車(UK22W)",
+    "lengthText": "5225 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/P350%20Hybrid/6820/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "Zinger Pick Up",
+    "variant": "三開型",
+    "lengthText": "4749 mm",
+    "bodyText": "貨卡/pick-up truck",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/Zinger%20Pick%20Up/6821/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "Zinger Pick Up",
+    "variant": "晶鑽型",
+    "lengthText": "4660 mm",
+    "bodyText": "貨卡/pick-up truck",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/Zinger%20Pick%20Up/6821/spec"
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "Delica貨車",
+    "variant": "底盤車 手排車型 TQ14T",
+    "lengthText": "4765 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Mitsubishi/Delica%E8%B2%A8%E8%BB%8A/6823/spec"
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "Delica貨車",
+    "variant": "標準貨床車 手排車型 TQ16W",
+    "lengthText": "4960 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Mitsubishi/Delica%E8%B2%A8%E8%BB%8A/6823/spec"
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "Delica貨車",
+    "variant": "底盤車 自排車型 TQ34T",
+    "lengthText": "4765 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Mitsubishi/Delica%E8%B2%A8%E8%BB%8A/6823/spec"
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "Delica貨車",
+    "variant": "標準貨床車 手排車型 TQ18W",
+    "lengthText": "4960 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Mitsubishi/Delica%E8%B2%A8%E8%BB%8A/6823/spec"
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "Delica貨車",
+    "variant": "標準貨床車 自排車型 TQ36W",
+    "lengthText": "4960 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Mitsubishi/Delica%E8%B2%A8%E8%BB%8A/6823/spec"
+  },
+  {
+    "brand": "Mitsubishi",
+    "model": "Delica貨車",
+    "variant": "標準貨床車 自排車型 TQ38W",
+    "lengthText": "4960 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Mitsubishi/Delica%E8%B2%A8%E8%BB%8A/6823/spec"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Porter II",
+    "variant": "標準鐵床 6速手排",
+    "lengthText": "5170 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Hyundai/Porter%20II/6831/spec"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Porter II",
+    "variant": "標準鐵床 5速手自排",
+    "lengthText": "5170 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Hyundai/Porter%20II/6831/spec"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Porter II",
+    "variant": "豪華鐵床 5速手自排",
+    "lengthText": "5170 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Hyundai/Porter%20II/6831/spec"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Porter II",
+    "variant": "雙廂鐵床 6速手排",
+    "lengthText": "5135 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Hyundai/Porter%20II/6831/spec"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Porter II",
+    "variant": "雙廂鐵床 5速手自排",
+    "lengthText": "5135 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Hyundai/Porter%20II/6831/spec"
+  },
+  {
+    "brand": "Ford",
+    "model": "Ranger",
+    "variant": "Wildtrak FRS Edition",
+    "lengthText": "5370 mm",
+    "bodyText": "貨卡/pick-up truck",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Ford/Ranger/6925/spec"
+  },
+  {
+    "brand": "Ford",
+    "model": "Ranger",
+    "variant": "Raptor",
+    "lengthText": "5381 mm",
+    "bodyText": "貨卡/pick-up truck",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Ford/Ranger/6925/spec"
+  },
+  {
+    "brand": "Volkswagen Commercial Vehicles",
+    "model": "Caddy Cargo",
+    "variant": "短軸自排",
+    "lengthText": "4500 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Volkswagen%20Commercial%20Vehicles/Caddy%20Cargo/7029/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "ET35",
+    "variant": "底盤車VR34T",
+    "lengthText": "5155 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/ET35/7030/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "ET35",
+    "variant": "底盤車VR38T",
+    "lengthText": "5155 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/ET35/7030/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "ET35",
+    "variant": "木床車VR34W",
+    "lengthText": "5275 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/ET35/7030/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "ET35",
+    "variant": "木床車VR38W",
+    "lengthText": "5275 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/ET35/7030/spec"
+  },
+  {
+    "brand": "Volkswagen Commercial Vehicles",
+    "model": "Crafter",
+    "variant": "Crafter Van長軸高頂9座客車",
+    "lengthText": "6836 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Volkswagen%20Commercial%20Vehicles/Crafter/7052/spec"
+  },
+  {
+    "brand": "Volkswagen Commercial Vehicles",
+    "model": "Amarok",
+    "variant": "Style",
+    "lengthText": "5,362 mm",
+    "bodyText": "貨卡/pick-up truck",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Volkswagen%20Commercial%20Vehicles/Amarok/7053/spec"
+  },
+  {
+    "brand": "Volkswagen Commercial Vehicles",
+    "model": "Amarok",
+    "variant": "PanAmericana",
+    "lengthText": "5,362 mm",
+    "bodyText": "貨卡/pick-up truck",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Volkswagen%20Commercial%20Vehicles/Amarok/7053/spec"
+  },
+  {
+    "brand": "Nissan",
+    "model": "Sentra",
+    "variant": "初綻版",
+    "lengthText": "",
+    "bodyText": "轎車/Sedan",
+    "reason": "UNVERIFIED_LENGTH",
+    "url": "https://newcar.u-car.com.tw/Nissan/Sentra/7137/spec"
+  },
+  {
+    "brand": "Nissan",
+    "model": "Sentra",
+    "variant": "盛綻版",
+    "lengthText": "",
+    "bodyText": "轎車/Sedan",
+    "reason": "UNVERIFIED_LENGTH",
+    "url": "https://newcar.u-car.com.tw/Nissan/Sentra/7137/spec"
+  },
+  {
+    "brand": "Nissan",
+    "model": "Sentra",
+    "variant": "極綻版",
+    "lengthText": "",
+    "bodyText": "轎車/Sedan",
+    "reason": "UNVERIFIED_LENGTH",
+    "url": "https://newcar.u-car.com.tw/Nissan/Sentra/7137/spec"
+  },
+  {
+    "brand": "Mercedes-Benz",
+    "model": "G-Class",
+    "variant": "G 450d",
+    "lengthText": "",
+    "bodyText": "運動休旅車/SUV",
+    "reason": "UNVERIFIED_LENGTH",
+    "url": "https://newcar.u-car.com.tw/Mercedes-Benz/G-Class/7161/spec"
+  },
+  {
+    "brand": "Volkswagen Commercial Vehicles",
+    "model": "Caddy Maxi",
+    "variant": "EsayLife",
+    "lengthText": "4853 mm",
+    "bodyText": "休旅車/RV",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Volkswagen%20Commercial%20Vehicles/Caddy%20Maxi/7169/spec"
+  },
+  {
+    "brand": "Volkswagen Commercial Vehicles",
+    "model": "Caddy Maxi",
+    "variant": "Life",
+    "lengthText": "4853 mm",
+    "bodyText": "休旅車/RV",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Volkswagen%20Commercial%20Vehicles/Caddy%20Maxi/7169/spec"
+  },
+  {
+    "brand": "Volkswagen Commercial Vehicles",
+    "model": "Caddy Maxi",
+    "variant": "Style",
+    "lengthText": "4853 mm",
+    "bodyText": "休旅車/RV",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Volkswagen%20Commercial%20Vehicles/Caddy%20Maxi/7169/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "J Space貨車",
+    "variant": "木床CQ21W",
+    "lengthText": "",
+    "bodyText": "Commercial/商用車",
+    "reason": "UNVERIFIED_LENGTH",
+    "url": "https://newcar.u-car.com.tw/CMC/J%20Space%E8%B2%A8%E8%BB%8A/7211/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "J Space貨車",
+    "variant": "木床CQ23W",
+    "lengthText": "4285 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/J%20Space%E8%B2%A8%E8%BB%8A/7211/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "J Space貨車",
+    "variant": "底盤CQ33T(訂作車)",
+    "lengthText": "4250 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/J%20Space%E8%B2%A8%E8%BB%8A/7211/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "J Space貨車",
+    "variant": "木床CQ33W",
+    "lengthText": "4285 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/J%20Space%E8%B2%A8%E8%BB%8A/7211/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "J Space貨車",
+    "variant": "木床CQ35W",
+    "lengthText": "4285 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/J%20Space%E8%B2%A8%E8%BB%8A/7211/spec"
+  },
+  {
+    "brand": "CMC",
+    "model": "J Space貨車",
+    "variant": "木床CQ43W",
+    "lengthText": "4285 mm",
+    "bodyText": "Commercial/商用車",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/CMC/J%20Space%E8%B2%A8%E8%BB%8A/7211/spec"
+  },
+  {
+    "brand": "Ineos Grenadier",
+    "model": "Grenadier Quartermaster",
+    "variant": "Grenadier Quartermaster柴油車型",
+    "lengthText": "5440 mm",
+    "bodyText": "貨卡/pick-up truck",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Ineos%20Grenadier/Grenadier%20Quartermaster/7222/spec"
+  },
+  {
+    "brand": "Ineos Grenadier",
+    "model": "Grenadier Quartermaster",
+    "variant": "Grenadier Quartermaster汽油車型",
+    "lengthText": "5440 mm",
+    "bodyText": "貨卡/pick-up truck",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Ineos%20Grenadier/Grenadier%20Quartermaster/7222/spec"
+  },
+  {
+    "brand": "Toyota",
+    "model": "Hilux",
+    "variant": "Hilux",
+    "lengthText": "5320 mm",
+    "bodyText": "貨卡/pick-up truck",
+    "reason": "BODY_REQUIRES_CONFIRMATION",
+    "url": "https://newcar.u-car.com.tw/Toyota/Hilux/7228/spec"
+  }
+]

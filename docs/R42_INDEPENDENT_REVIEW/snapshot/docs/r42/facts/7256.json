@@ -1,0 +1,24 @@
+{
+  "brand": "BMW",
+  "model": "iX1",
+  "sourceId": "7256",
+  "url": "https://newcar.u-car.com.tw/BMW/iX1/7256/spec",
+  "retrievedAt": "2026-09-15T09:50:04.985Z",
+  "pageSha256": "2c0e81868ff8204078546d2aadaaa0f03284975a5643973cdff20180c8b6aa0e",
+  "entries": [
+    {
+      "variant": "eDrive20 xLine",
+      "lengthText": "4500 mm",
+      "lengthMm": 4500,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "xDrive30 xLine",
+      "lengthText": "4500 mm",
+      "lengthMm": 4500,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

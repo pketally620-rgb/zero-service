@@ -1,0 +1,31 @@
+{
+  "brand": "Volkswagen",
+  "model": "T-Cross",
+  "sourceId": "6956",
+  "url": "https://newcar.u-car.com.tw/Volkswagen/T-Cross/6956/spec",
+  "retrievedAt": "2026-09-15T09:51:21.074Z",
+  "pageSha256": "895142b01e595b2147981d01ec4d882e10def7e731eaacc50985331cbc6089ad",
+  "entries": [
+    {
+      "variant": "230 TSI Life",
+      "lengthText": "4135 mm",
+      "lengthMm": 4135,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "230 TSI Tech",
+      "lengthText": "4135 mm",
+      "lengthMm": 4135,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "230 TSI Style Design",
+      "lengthText": "4135 mm",
+      "lengthMm": 4135,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

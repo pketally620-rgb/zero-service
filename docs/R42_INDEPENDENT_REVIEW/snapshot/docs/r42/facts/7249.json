@@ -1,0 +1,38 @@
+{
+  "brand": "Audi",
+  "model": "Q5",
+  "sourceId": "7249",
+  "url": "https://newcar.u-car.com.tw/Audi/Q5/7249/spec",
+  "retrievedAt": "2026-09-15T09:49:56.713Z",
+  "pageSha256": "d6cb71af20be094f1567d6513a051215439a857cc2ec2b40d157c4c5c53c0ce4",
+  "entries": [
+    {
+      "variant": "TFSI 150 kW advanced進化版",
+      "lengthText": "4717 mm",
+      "lengthMm": 4717,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "TFSI quattro 150 kW advanced進化版",
+      "lengthText": "4717 mm",
+      "lengthMm": 4717,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "TFSI quattro 150 kW S line運動版",
+      "lengthText": "4717 mm",
+      "lengthMm": 4717,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "SQ5",
+      "lengthText": "4717 mm",
+      "lengthMm": 4717,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

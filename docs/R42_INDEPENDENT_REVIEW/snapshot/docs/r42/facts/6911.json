@@ -1,0 +1,31 @@
+{
+  "brand": "Rolls-Royce",
+  "model": "Ghost Series II",
+  "sourceId": "6911",
+  "url": "https://newcar.u-car.com.tw/Rolls-Royce/Ghost%20Series%20II/6911/spec",
+  "retrievedAt": "2026-09-15T09:51:06.607Z",
+  "pageSha256": "617b0e3ce5c8f440a47edb6515796adeeaea23fc15d3cb3152b9e1aeddae4dd5",
+  "entries": [
+    {
+      "variant": "Ghost Series II",
+      "lengthText": "5546 mm",
+      "lengthMm": 5546,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Ghost Extended Series II",
+      "lengthText": "5716 mm",
+      "lengthMm": 5716,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Black Badge Ghost Series II",
+      "lengthText": "5546 mm",
+      "lengthMm": 5546,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

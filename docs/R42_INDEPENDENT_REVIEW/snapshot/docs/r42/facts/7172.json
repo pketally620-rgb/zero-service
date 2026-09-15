@@ -1,0 +1,31 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "E-Class",
+  "sourceId": "7172",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/E-Class/7172/spec",
+  "retrievedAt": "2026-09-15T09:50:43.887Z",
+  "pageSha256": "bf9f5e988c16b5b89dcc377abbfb45dae4b06b21c40de675482d1f532f4ebe01",
+  "entries": [
+    {
+      "variant": "E 200 星耀版",
+      "lengthText": "4949 mm",
+      "lengthMm": 4949,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "E 300 星耀版",
+      "lengthText": "4950 mm",
+      "lengthMm": 4950,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "E 300 Exclusive",
+      "lengthText": "4950 mm",
+      "lengthMm": 4950,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "brand": "Mini",
+  "model": "Countryman Electric",
+  "sourceId": "7070",
+  "url": "https://newcar.u-car.com.tw/Mini/Countryman%20Electric/7070/spec",
+  "retrievedAt": "2026-09-15T09:50:55.444Z",
+  "pageSha256": "d499359f5167b7cce53dfa2d31264f4d6fcc2ef7bd70a81b59e46e7c4881f0e1",
+  "entries": [
+    {
+      "variant": "Countryman E",
+      "lengthText": "4445 mm",
+      "lengthMm": 4445,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Countryman SE ALL4",
+      "lengthText": "4445 mm",
+      "lengthMm": 4445,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

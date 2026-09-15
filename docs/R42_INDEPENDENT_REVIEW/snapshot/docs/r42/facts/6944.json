@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "EQA",
+  "sourceId": "6944",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/EQA/6944/spec",
+  "retrievedAt": "2026-09-15T09:50:44.802Z",
+  "pageSha256": "b39026c57fe60444cc5e38b63d02121598e34c1259e15f853c2e410bef650031",
+  "entries": [
+    {
+      "variant": "EQA 250+",
+      "lengthText": "4465 mm",
+      "lengthMm": 4465,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

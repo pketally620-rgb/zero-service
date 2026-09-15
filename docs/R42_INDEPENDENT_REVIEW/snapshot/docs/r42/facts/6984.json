@@ -1,0 +1,73 @@
+{
+  "brand": "Lexus",
+  "model": "NX",
+  "sourceId": "6984",
+  "url": "https://newcar.u-car.com.tw/Lexus/NX/6984/spec",
+  "retrievedAt": "2026-09-15T09:50:32.326Z",
+  "pageSha256": "2d791c8f6aad73f25be4b06c1180f7762b4882d957468eeab46b452bfb3b87de",
+  "entries": [
+    {
+      "variant": "NX 200 菁英版",
+      "lengthText": "4660 mm",
+      "lengthMm": 4660,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "NX 200 豪華版",
+      "lengthText": "4660 mm",
+      "lengthMm": 4660,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "NX 350h 豪華版",
+      "lengthText": "4660 mm",
+      "lengthMm": 4660,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "NX 350h 頂級版",
+      "lengthText": "4660 mm",
+      "lengthMm": 4660,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "NX 350 Overtrail版",
+      "lengthText": "4660 mm",
+      "lengthMm": 4660,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "NX 450h+ 豪華版",
+      "lengthText": "4660 mm",
+      "lengthMm": 4660,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "NX 350h 旗艦版",
+      "lengthText": "4660 mm",
+      "lengthMm": 4660,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "NX 350 F Sport",
+      "lengthText": "4660 mm",
+      "lengthMm": 4660,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "NX 450h+ F Sport",
+      "lengthText": "4660 mm",
+      "lengthMm": 4660,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

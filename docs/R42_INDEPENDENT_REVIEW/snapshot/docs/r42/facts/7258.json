@@ -1,0 +1,24 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "GLB",
+  "sourceId": "7258",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/GLB/7258/spec",
+  "retrievedAt": "2026-09-15T09:50:46.759Z",
+  "pageSha256": "340574bf96c5be55de3cdfe427c67799aab9e64cdaa50c6cde421f936bbefd8f",
+  "entries": [
+    {
+      "variant": "GLB 200 5座",
+      "lengthText": "4732 mm",
+      "lengthMm": 4732,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GLB 200 AMG Line 7座",
+      "lengthText": "4728 mm",
+      "lengthMm": 4728,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

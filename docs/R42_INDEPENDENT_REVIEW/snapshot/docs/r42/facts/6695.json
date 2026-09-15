@@ -1,0 +1,24 @@
+{
+  "brand": "Škoda",
+  "model": "Enyaq Coupé",
+  "sourceId": "6695",
+  "url": "https://newcar.u-car.com.tw/%C5%A0koda/Enyaq%20Coup%C3%A9/6695/spec",
+  "retrievedAt": "2026-09-15T09:52:11.638Z",
+  "pageSha256": "386722c3e14fc093ee1ec159b9239d3231a8708de5e2a6069d15cbb5eb13c95c",
+  "entries": [
+    {
+      "variant": "85",
+      "lengthText": "4653 mm",
+      "lengthMm": 4653,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "RS",
+      "lengthText": "4653 mm",
+      "lengthMm": 4653,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "brand": "BMW",
+  "model": "X7",
+  "sourceId": "6493",
+  "url": "https://newcar.u-car.com.tw/BMW/X7/6493/spec",
+  "retrievedAt": "2026-09-15T09:50:08.971Z",
+  "pageSha256": "4a48accefd23e87c0de3ce10186e7ffb1ad200d12f6f113d590180610562e675",
+  "entries": [
+    {
+      "variant": "xDrive40i",
+      "lengthText": "5181 mm",
+      "lengthMm": 5181,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "M60i xDrive",
+      "lengthText": "5181 mm",
+      "lengthMm": 5181,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

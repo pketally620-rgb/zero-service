@@ -1,0 +1,17 @@
+{
+  "brand": "Land Rover",
+  "model": "Range Rover Velar",
+  "sourceId": "7216",
+  "url": "https://newcar.u-car.com.tw/Land%20Rover/Range%20Rover%20Velar/7216/spec",
+  "retrievedAt": "2026-09-15T09:50:30.112Z",
+  "pageSha256": "0bdf4ef1f3df0dc48990ce5472c06f19ad06f5b267a5ef9379ecd85402c28c3f",
+  "entries": [
+    {
+      "variant": "P250 Belgravia Edition",
+      "lengthText": "4,797 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

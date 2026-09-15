@@ -1,0 +1,52 @@
+{
+  "brand": "CMC",
+  "model": "Zinger",
+  "sourceId": "7168",
+  "url": "https://newcar.u-car.com.tw/CMC/Zinger/7168/spec",
+  "retrievedAt": "2026-09-15T09:50:12.590Z",
+  "pageSha256": "a7a4883e16c72fb410f45128e311c32c440e7a33bdd7e326557e92b70b95979d",
+  "entries": [
+    {
+      "variant": "5人座標緻型",
+      "lengthText": "4665 mm",
+      "lengthMm": 4665,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "5人座精選型",
+      "lengthText": "4665 mm",
+      "lengthMm": 4665,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "5人座尊榮型",
+      "lengthText": "4665 mm",
+      "lengthMm": 4665,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "5人座旗艦型",
+      "lengthText": "4665 mm",
+      "lengthMm": 4665,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "7人座豪華型",
+      "lengthText": "4665 mm",
+      "lengthMm": 4665,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "7人座旗艦型",
+      "lengthText": "4665 mm",
+      "lengthMm": 4665,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

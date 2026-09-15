@@ -1,0 +1,31 @@
+{
+  "brand": "Volkswagen Commercial Vehicles",
+  "model": "Caddy Maxi",
+  "sourceId": "7169",
+  "url": "https://newcar.u-car.com.tw/Volkswagen%20Commercial%20Vehicles/Caddy%20Maxi/7169/spec",
+  "retrievedAt": "2026-09-15T09:51:22.752Z",
+  "pageSha256": "8954ecd95cb007232f14e34f5c7b165f35a154a0243911bb993b7450113579a7",
+  "entries": [
+    {
+      "variant": "EsayLife",
+      "lengthText": "4853 mm",
+      "lengthMm": 4853,
+      "bodyText": "休旅車/RV",
+      "seatText": null
+    },
+    {
+      "variant": "Life",
+      "lengthText": "4853 mm",
+      "lengthMm": 4853,
+      "bodyText": "休旅車/RV",
+      "seatText": null
+    },
+    {
+      "variant": "Style",
+      "lengthText": "4853 mm",
+      "lengthMm": 4853,
+      "bodyText": "休旅車/RV",
+      "seatText": null
+    }
+  ]
+}

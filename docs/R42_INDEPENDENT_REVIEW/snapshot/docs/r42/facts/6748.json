@@ -1,0 +1,24 @@
+{
+  "brand": "Mini",
+  "model": "Mini Cooper 5-Door",
+  "sourceId": "6748",
+  "url": "https://newcar.u-car.com.tw/Mini/Mini%20Cooper%205-Door/6748/spec",
+  "retrievedAt": "2026-09-15T09:50:56.068Z",
+  "pageSha256": "8284482410cc9322b6c6616fb591edd472c102d84fc662d168835e54f3cdd5d9",
+  "entries": [
+    {
+      "variant": "Cooper C",
+      "lengthText": "4036 mm",
+      "lengthMm": 4036,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "Cooper S",
+      "lengthText": "4036 mm",
+      "lengthMm": 4036,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

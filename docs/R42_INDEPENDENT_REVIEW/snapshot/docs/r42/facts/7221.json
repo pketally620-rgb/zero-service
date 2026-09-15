@@ -1,0 +1,24 @@
+{
+  "brand": "Ineos Grenadier",
+  "model": "Grenadier",
+  "sourceId": "7221",
+  "url": "https://newcar.u-car.com.tw/Ineos%20Grenadier/Grenadier/7221/spec",
+  "retrievedAt": "2026-09-15T09:50:22.776Z",
+  "pageSha256": "32a5e335a99c7861e149ffd82b366fbc71a0932eeca37c38dc90676ea3f8479d",
+  "entries": [
+    {
+      "variant": "Grenadier汽油車型",
+      "lengthText": "4895 mm",
+      "lengthMm": 4895,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Grenadier柴油車型",
+      "lengthText": "4895 mm",
+      "lengthMm": 4895,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

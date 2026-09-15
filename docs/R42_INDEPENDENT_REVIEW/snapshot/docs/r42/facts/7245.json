@@ -1,0 +1,31 @@
+{
+  "brand": "Audi",
+  "model": "A6 Avant e-tron",
+  "sourceId": "7245",
+  "url": "https://newcar.u-car.com.tw/Audi/A6%20Avant%20e-tron/7245/spec",
+  "retrievedAt": "2026-09-15T09:49:54.698Z",
+  "pageSha256": "c2ec0a3714111fb5680909c8834d669095a248a7ad39915da4ac05e03fa85627",
+  "entries": [
+    {
+      "variant": "Avant e-tron",
+      "lengthText": "4928 mm",
+      "lengthMm": 4928,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "Avant e-tron performance",
+      "lengthText": "4928 mm",
+      "lengthMm": 4928,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "S6 Avant e-tron",
+      "lengthText": "4928 mm",
+      "lengthMm": 4928,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

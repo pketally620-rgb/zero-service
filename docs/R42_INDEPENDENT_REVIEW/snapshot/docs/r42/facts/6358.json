@@ -1,0 +1,38 @@
+{
+  "brand": "CMC",
+  "model": "E300",
+  "sourceId": "6358",
+  "url": "https://newcar.u-car.com.tw/CMC/E300/6358/spec",
+  "retrievedAt": "2026-09-15T09:50:11.071Z",
+  "pageSha256": "3d4f0c47a40231e19968b31acc6129200c1110ddb9eb83687e2d5997b882ba43",
+  "entries": [
+    {
+      "variant": "CME3W木床貨車",
+      "lengthText": "4200 mm",
+      "lengthMm": 4200,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "CME31封窗貨車",
+      "lengthText": "4155 mm",
+      "lengthMm": 4155,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "CME33非封窗貨車",
+      "lengthText": "4155 mm",
+      "lengthMm": 4155,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "CME35/CMEB5廂型客車",
+      "lengthText": "4155 mm",
+      "lengthMm": 4155,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    }
+  ]
+}

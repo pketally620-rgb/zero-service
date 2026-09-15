@@ -1,0 +1,31 @@
+{
+  "brand": "Volvo",
+  "model": "XC60",
+  "sourceId": "7177",
+  "url": "https://newcar.u-car.com.tw/Volvo/XC60/7177/spec",
+  "retrievedAt": "2026-09-15T09:51:26.034Z",
+  "pageSha256": "20278037bde3b679cedbc98d2ea35c17865974a821534577bd6c7786505bc75f",
+  "entries": [
+    {
+      "variant": "Plus B5 AWD",
+      "lengthText": "4708 mm",
+      "lengthMm": 4708,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Ultra B5 AWD",
+      "lengthText": "4708 mm",
+      "lengthMm": 4708,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Ultra T8 AWD plug-in Hybrid",
+      "lengthText": "4708 mm",
+      "lengthMm": 4708,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

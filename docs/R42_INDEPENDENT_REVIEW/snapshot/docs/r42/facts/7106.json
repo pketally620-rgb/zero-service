@@ -1,0 +1,31 @@
+{
+  "brand": "Škoda",
+  "model": "Octavia Combi",
+  "sourceId": "7106",
+  "url": "https://newcar.u-car.com.tw/%C5%A0koda/Octavia%20Combi/7106/spec",
+  "retrievedAt": "2026-09-15T09:51:09.142Z",
+  "pageSha256": "0e4417707462c3bae8744c706bf12ba550a4e7b079dc79e8f1a8de55ac5be15e",
+  "entries": [
+    {
+      "variant": "1.5 TSI e-TEC",
+      "lengthText": "4698 mm",
+      "lengthMm": 4698,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "2.0 TSI 4&#215;4",
+      "lengthText": "4698 mm",
+      "lengthMm": 4698,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "RS",
+      "lengthText": "4709 mm",
+      "lengthMm": 4709,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "brand": "Porsche",
+  "model": "Taycan Cross Turismo",
+  "sourceId": "7225",
+  "url": "https://newcar.u-car.com.tw/Porsche/Taycan%20Cross%20Turismo/7225/spec",
+  "retrievedAt": "2026-09-15T09:51:06.050Z",
+  "pageSha256": "69022edd4c8bd47abc88ecd7860d85b3fa819aa4a98e940f5bb942df9ac764a9",
+  "entries": [
+    {
+      "variant": "4",
+      "lengthText": "4974 mm",
+      "lengthMm": 4974,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "4S",
+      "lengthText": "4974 mm",
+      "lengthMm": 4974,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "Turbo",
+      "lengthText": "4974 mm",
+      "lengthMm": 4974,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "brand": "Hyundai",
+  "model": "Staria",
+  "sourceId": "6859",
+  "url": "https://newcar.u-car.com.tw/Hyundai/Staria/6859/spec",
+  "retrievedAt": "2026-09-15T09:50:21.825Z",
+  "pageSha256": "e2fcb8bce4c91accbdbcd63745adf41e6ebf3a2edb3fcdf4a1f4dcfc2135e6fd",
+  "entries": [
+    {
+      "variant": "GLD-A",
+      "lengthText": "5253 mm",
+      "lengthMm": 5253,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "GLD-B",
+      "lengthText": "5253 mm",
+      "lengthMm": 5253,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "GLD-C",
+      "lengthText": "5253 mm",
+      "lengthMm": 5253,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "CEO-A",
+      "lengthText": "5253 mm",
+      "lengthMm": 5253,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "CEO-B Bose",
+      "lengthText": "5253 mm",
+      "lengthMm": 5253,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

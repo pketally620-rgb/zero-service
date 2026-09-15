@@ -1,0 +1,24 @@
+{
+  "brand": "Audi",
+  "model": "A6 Avant",
+  "sourceId": "7026",
+  "url": "https://newcar.u-car.com.tw/Audi/A6%20Avant/7026/spec",
+  "retrievedAt": "2026-09-15T09:49:54.391Z",
+  "pageSha256": "9a271e100cd6967345d999a9b1156ecdd05e906d9c74fb2e23ae0ec108aace55",
+  "entries": [
+    {
+      "variant": "TFSI 150kW",
+      "lengthText": "4999 mm",
+      "lengthMm": 4999,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "TFSI 200kW quattro S line運動版",
+      "lengthText": "4999 mm",
+      "lengthMm": 4999,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

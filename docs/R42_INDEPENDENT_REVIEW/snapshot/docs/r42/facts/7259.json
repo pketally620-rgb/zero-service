@@ -1,0 +1,17 @@
+{
+  "brand": "Peugeot",
+  "model": "208",
+  "sourceId": "7259",
+  "url": "https://newcar.u-car.com.tw/Peugeot/208/7259/spec",
+  "retrievedAt": "2026-09-15T09:51:00.974Z",
+  "pageSha256": "03bafbfcfd131b5880a364ed71f3ef5c60d16d130207e801ae2914c8926ce93c",
+  "entries": [
+    {
+      "variant": "208",
+      "lengthText": "4,055 mm",
+      "lengthMm": null,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

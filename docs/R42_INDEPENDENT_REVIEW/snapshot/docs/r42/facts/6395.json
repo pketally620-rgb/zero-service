@@ -1,0 +1,17 @@
+{
+  "brand": "BMW",
+  "model": "XM",
+  "sourceId": "6395",
+  "url": "https://newcar.u-car.com.tw/BMW/XM/6395/spec",
+  "retrievedAt": "2026-09-15T09:50:09.202Z",
+  "pageSha256": "743bfa20a9f28f07feecf22bc1e1b9d6dadb90ce4280dfd74fc209e2d14cc4ad",
+  "entries": [
+    {
+      "variant": "XM",
+      "lengthText": "5110 mm",
+      "lengthMm": 5110,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "brand": "Kia",
+  "model": "Picanto",
+  "sourceId": "6893",
+  "url": "https://newcar.u-car.com.tw/Kia/Picanto/6893/spec",
+  "retrievedAt": "2026-09-15T09:50:26.556Z",
+  "pageSha256": "a895cc011a652cb8f61e00ca43bc9bda1e901d15e96b8417d1a05a70ac54ce04",
+  "entries": [
+    {
+      "variant": "Trendy",
+      "lengthText": "3595 mm",
+      "lengthMm": 3595,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "Apex",
+      "lengthText": "3595 mm",
+      "lengthMm": 3595,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

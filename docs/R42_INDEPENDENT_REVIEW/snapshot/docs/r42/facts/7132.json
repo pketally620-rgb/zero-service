@@ -1,0 +1,31 @@
+{
+  "brand": "Audi",
+  "model": "Q2",
+  "sourceId": "7132",
+  "url": "https://newcar.u-car.com.tw/Audi/Q2/7132/spec",
+  "retrievedAt": "2026-09-15T09:49:55.600Z",
+  "pageSha256": "f8010feb88ccb458fd913f0318d08b2a290683a9b80a89c0929864ff840fb526",
+  "entries": [
+    {
+      "variant": "35 TFSI advanced進化版",
+      "lengthText": "4,208 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "35 TFSI S line運動版",
+      "lengthText": "4,208 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "SQ2",
+      "lengthText": "4,212 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

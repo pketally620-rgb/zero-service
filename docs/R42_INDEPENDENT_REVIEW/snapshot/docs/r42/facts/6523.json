@@ -1,0 +1,17 @@
+{
+  "brand": "Audi",
+  "model": "RS Q3 Sportback",
+  "sourceId": "6523",
+  "url": "https://newcar.u-car.com.tw/Audi/RS%20Q3%20Sportback/6523/spec",
+  "retrievedAt": "2026-09-15T09:49:58.903Z",
+  "pageSha256": "92ba018486c1f515d63e14d3b871d5bc8552d00f68a743891368841121e8c311",
+  "entries": [
+    {
+      "variant": "RS Q3 Sportback",
+      "lengthText": "4507 mm",
+      "lengthMm": 4507,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

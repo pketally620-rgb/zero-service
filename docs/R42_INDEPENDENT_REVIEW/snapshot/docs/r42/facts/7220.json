@@ -1,0 +1,24 @@
+{
+  "brand": "Foxtron",
+  "model": "Cavira",
+  "sourceId": "7220",
+  "url": "https://newcar.u-car.com.tw/Foxtron/Cavira/7220/spec",
+  "retrievedAt": "2026-09-15T09:50:18.524Z",
+  "pageSha256": "04a5c695944915fc28048ab85c8864d7b6978c523fba24387ea90995f8d10d4d",
+  "entries": [
+    {
+      "variant": "Emerge長里程單馬達",
+      "lengthText": "4695 mm",
+      "lengthMm": 4695,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Pioneer長里程性能版雙馬達",
+      "lengthText": "4695 mm",
+      "lengthMm": 4695,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

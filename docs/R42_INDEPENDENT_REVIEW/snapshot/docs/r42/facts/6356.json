@@ -1,0 +1,17 @@
+{
+  "brand": "Ferrari",
+  "model": "Purosangue",
+  "sourceId": "6356",
+  "url": "https://newcar.u-car.com.tw/Ferrari/Purosangue/6356/spec",
+  "retrievedAt": "2026-09-15T09:50:16.603Z",
+  "pageSha256": "5a83d82b115769f5082521cc6306ec0a5cea2ff01b6654daae644a6a639207da",
+  "entries": [
+    {
+      "variant": "Purosangue",
+      "lengthText": "4973 mm",
+      "lengthMm": 4973,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

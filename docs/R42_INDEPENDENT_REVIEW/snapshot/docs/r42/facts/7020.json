@@ -1,0 +1,24 @@
+{
+  "brand": "Audi",
+  "model": "A6",
+  "sourceId": "7020",
+  "url": "https://newcar.u-car.com.tw/Audi/A6/7020/spec",
+  "retrievedAt": "2026-09-15T09:49:54.210Z",
+  "pageSha256": "71284279c2db1ec328f401867fc4ca5ac00f397359255e3a68ac7e6af9df5652",
+  "entries": [
+    {
+      "variant": "TFSI 150kW",
+      "lengthText": "4999 mm",
+      "lengthMm": 4999,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "TFSI 200kW quattro S line運動版",
+      "lengthText": "4999 mm",
+      "lengthMm": 4999,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

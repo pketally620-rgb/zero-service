@@ -1,0 +1,24 @@
+{
+  "brand": "Volkswagen",
+  "model": "T-Roc",
+  "sourceId": "7266",
+  "url": "https://newcar.u-car.com.tw/Volkswagen/T-Roc/7266/spec",
+  "retrievedAt": "2026-09-15T09:51:22.048Z",
+  "pageSha256": "2f943af54bbc8c8986787434a9ae20302f4c5e6e5d9129ffd85a0a27863a0903",
+  "entries": [
+    {
+      "variant": "280 eTSI Style Design",
+      "lengthText": "4372 mm",
+      "lengthMm": 4372,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "280 eTSI Style Design極夜曜影版",
+      "lengthText": "4372 mm",
+      "lengthMm": 4372,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

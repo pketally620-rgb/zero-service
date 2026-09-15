@@ -1,0 +1,52 @@
+{
+  "brand": "Porsche",
+  "model": "Cayenne Coupé",
+  "sourceId": "7120",
+  "url": "https://newcar.u-car.com.tw/Porsche/Cayenne%20Coup%C3%A9/7120/spec",
+  "retrievedAt": "2026-09-15T09:52:11.074Z",
+  "pageSha256": "4278e12e7a7c7af6335fe8d20be4f21c4748dae0b3cff5a5a3940738791cdbb1",
+  "entries": [
+    {
+      "variant": "Cayenne",
+      "lengthText": "4930 mm",
+      "lengthMm": 4930,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "E-Hybrid",
+      "lengthText": "4930 mm",
+      "lengthMm": 4930,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "S",
+      "lengthText": "4930 mm",
+      "lengthMm": 4930,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GTS",
+      "lengthText": "4930 mm",
+      "lengthMm": 4930,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Turbo E-Hybrid",
+      "lengthText": "4930 mm",
+      "lengthMm": 4930,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "E-Hybrid With GT Package",
+      "lengthText": "4930 mm",
+      "lengthMm": 4930,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

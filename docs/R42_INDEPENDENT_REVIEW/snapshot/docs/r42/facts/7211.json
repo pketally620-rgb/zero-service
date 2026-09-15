@@ -1,0 +1,52 @@
+{
+  "brand": "CMC",
+  "model": "J Space貨車",
+  "sourceId": "7211",
+  "url": "https://newcar.u-car.com.tw/CMC/J%20Space%E8%B2%A8%E8%BB%8A/7211/spec",
+  "retrievedAt": "2026-09-15T09:50:11.636Z",
+  "pageSha256": "6caa9559da99803e2c85f4d0ac06c28c27f61ce37827ea4183ef5dc00532f414",
+  "entries": [
+    {
+      "variant": "木床CQ21W",
+      "lengthText": "",
+      "lengthMm": null,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "木床CQ23W",
+      "lengthText": "4285 mm",
+      "lengthMm": 4285,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "底盤CQ33T(訂作車)",
+      "lengthText": "4250 mm",
+      "lengthMm": 4250,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "木床CQ33W",
+      "lengthText": "4285 mm",
+      "lengthMm": 4285,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "木床CQ35W",
+      "lengthText": "4285 mm",
+      "lengthMm": 4285,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "木床CQ43W",
+      "lengthText": "4285 mm",
+      "lengthMm": 4285,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    }
+  ]
+}

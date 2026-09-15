@@ -1,0 +1,17 @@
+{
+  "brand": "Ferrari",
+  "model": "296 Speciale",
+  "sourceId": "6988",
+  "url": "https://newcar.u-car.com.tw/Ferrari/296%20Speciale/6988/spec",
+  "retrievedAt": "2026-09-15T09:50:15.301Z",
+  "pageSha256": "1b6d0e86666ad48df44e9d7d2883ecca715f2513fccfa3bff0d509a8d33b05cc",
+  "entries": [
+    {
+      "variant": "296 Speciale",
+      "lengthText": "4625 mm",
+      "lengthMm": 4625,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

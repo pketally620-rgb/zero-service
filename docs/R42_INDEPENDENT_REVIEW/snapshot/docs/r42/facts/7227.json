@@ -1,0 +1,17 @@
+{
+  "brand": "Ferrari",
+  "model": "Amalfi Spider",
+  "sourceId": "7227",
+  "url": "https://newcar.u-car.com.tw/Ferrari/Amalfi%20Spider/7227/spec",
+  "retrievedAt": "2026-09-15T09:50:16.105Z",
+  "pageSha256": "2059de5cef1dcb892da6913f50776760f2b33a241d50957770cf17b0cc96bcd4",
+  "entries": [
+    {
+      "variant": "Amalfi Spider",
+      "lengthText": "4660 mm",
+      "lengthMm": 4660,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

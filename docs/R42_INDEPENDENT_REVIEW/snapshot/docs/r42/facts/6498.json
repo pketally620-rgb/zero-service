@@ -1,0 +1,31 @@
+{
+  "brand": "BMW",
+  "model": "7 Series",
+  "sourceId": "6498",
+  "url": "https://newcar.u-car.com.tw/BMW/7%20Series/6498/spec",
+  "retrievedAt": "2026-09-15T09:50:03.449Z",
+  "pageSha256": "346ab3fdffa462a10bfcff618105ae1b097080560d7d3f09066ce4a95dfbab8e",
+  "entries": [
+    {
+      "variant": "735i Luxury",
+      "lengthText": "5391 mm",
+      "lengthMm": 5391,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "740i Luxury",
+      "lengthText": "5391 mm",
+      "lengthMm": 5391,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "740i Excellence",
+      "lengthText": "5391 mm",
+      "lengthMm": 5391,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

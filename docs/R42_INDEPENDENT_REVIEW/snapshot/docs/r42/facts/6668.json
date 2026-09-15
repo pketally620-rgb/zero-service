@@ -1,0 +1,24 @@
+{
+  "brand": "MG",
+  "model": "MG4",
+  "sourceId": "6668",
+  "url": "https://newcar.u-car.com.tw/MG/MG4/6668/spec",
+  "retrievedAt": "2026-09-15T09:50:54.649Z",
+  "pageSha256": "ba35099e3470c996ad114a8fa780dfa50f2a976e1417af151af30844824ae0ea",
+  "entries": [
+    {
+      "variant": "MG4 旗艦版",
+      "lengthText": "4287 mm",
+      "lengthMm": 4287,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "MG4 Xpower",
+      "lengthText": "4287 mm",
+      "lengthMm": 4287,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

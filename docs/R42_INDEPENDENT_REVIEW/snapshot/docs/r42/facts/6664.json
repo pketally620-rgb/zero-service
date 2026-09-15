@@ -1,0 +1,17 @@
+{
+  "brand": "BMW",
+  "model": "M4 Coupé",
+  "sourceId": "6664",
+  "url": "https://newcar.u-car.com.tw/BMW/M4%20Coup%C3%A9/6664/spec",
+  "retrievedAt": "2026-09-15T09:52:08.144Z",
+  "pageSha256": "b2a4eb1f4904f8f61a49ede2a07a0116c01bd8819769652240bfe1c7a59f2aa5",
+  "entries": [
+    {
+      "variant": "M4 Competition M xDrive",
+      "lengthText": "4801 mm",
+      "lengthMm": 4801,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    }
+  ]
+}

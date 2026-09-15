@@ -1,0 +1,31 @@
+{
+  "brand": "Volvo",
+  "model": "EX90",
+  "sourceId": "7219",
+  "url": "https://newcar.u-car.com.tw/Volvo/EX90/7219/spec",
+  "retrievedAt": "2026-09-15T09:51:25.463Z",
+  "pageSha256": "b6ca82621b478d114a84d8208b672f7db3af1e98939f2d72ae9eb623a35b34c4",
+  "entries": [
+    {
+      "variant": "Plus Single Motor",
+      "lengthText": "5037 mm",
+      "lengthMm": 5037,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Ultra Twin Motor",
+      "lengthText": "5037 mm",
+      "lengthMm": 5037,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Ultra Twin Motor Performance",
+      "lengthText": "5037 mm",
+      "lengthMm": 5037,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

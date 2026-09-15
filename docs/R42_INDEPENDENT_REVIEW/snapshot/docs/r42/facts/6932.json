@@ -1,0 +1,31 @@
+{
+  "brand": "Toyota",
+  "model": "GR Supra",
+  "sourceId": "6932",
+  "url": "https://newcar.u-car.com.tw/Toyota/GR%20Supra/6932/spec",
+  "retrievedAt": "2026-09-15T09:51:16.067Z",
+  "pageSha256": "d884062ac16ebbb33aa242c813c7b5f1cbf08308107b64f8adc36713a2297323",
+  "entries": [
+    {
+      "variant": "3.0T Premium MT",
+      "lengthText": "4379 mm",
+      "lengthMm": 4379,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    },
+    {
+      "variant": "3.0T Premium AT",
+      "lengthText": "4379 mm",
+      "lengthMm": 4379,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    },
+    {
+      "variant": "3.0T Track Edition",
+      "lengthText": "4379 mm",
+      "lengthMm": 4379,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "CLE Cabriolet",
+  "sourceId": "7165",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/CLE%20Cabriolet/7165/spec",
+  "retrievedAt": "2026-09-15T09:50:43.424Z",
+  "pageSha256": "6dc2a7ead5e6584e54826d302b9b42564031e97bba8eae210102cf5b8e00f5e2",
+  "entries": [
+    {
+      "variant": "CLE 200 Cabriolet",
+      "lengthText": "4850 mm",
+      "lengthMm": 4850,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

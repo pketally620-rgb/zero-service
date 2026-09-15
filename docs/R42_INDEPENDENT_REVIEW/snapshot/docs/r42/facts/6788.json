@@ -1,0 +1,24 @@
+{
+  "brand": "Citroën",
+  "model": "Berlingo",
+  "sourceId": "6788",
+  "url": "https://newcar.u-car.com.tw/Citro%C3%ABn/Berlingo/6788/spec",
+  "retrievedAt": "2026-09-15T09:52:08.300Z",
+  "pageSha256": "c876b6469e708e7d6e36d34251d813ec4c01339f69cfe3604fcc9d617ec7c5f5",
+  "entries": [
+    {
+      "variant": "Max XL 7座",
+      "lengthText": "4,753 mm",
+      "lengthMm": null,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "XTR XL 7座",
+      "lengthText": "4,753 mm",
+      "lengthMm": null,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

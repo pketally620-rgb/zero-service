@@ -1,0 +1,24 @@
+{
+  "brand": "Toyota",
+  "model": "Prius PHEV",
+  "sourceId": "6986",
+  "url": "https://newcar.u-car.com.tw/Toyota/Prius%20PHEV/6986/spec",
+  "retrievedAt": "2026-09-15T09:51:17.388Z",
+  "pageSha256": "27f5441430f042f42496c693619b6ff0c9cdbabe275ff2d810efdbf651214808",
+  "entries": [
+    {
+      "variant": "旗艦",
+      "lengthText": "4599 mm",
+      "lengthMm": 4599,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "鉑金",
+      "lengthText": "4599 mm",
+      "lengthMm": 4599,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

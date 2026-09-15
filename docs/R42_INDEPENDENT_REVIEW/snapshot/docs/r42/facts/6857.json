@@ -1,0 +1,45 @@
+{
+  "brand": "Porsche",
+  "model": "718 Boxster",
+  "sourceId": "6857",
+  "url": "https://newcar.u-car.com.tw/Porsche/718%20Boxster/6857/spec",
+  "retrievedAt": "2026-09-15T09:51:01.874Z",
+  "pageSha256": "29b9ed5445db6de1a88e4af5c8610947974b3ad4b9f03f38d99502feb3449857",
+  "entries": [
+    {
+      "variant": "718 Boxster",
+      "lengthText": "4379 mm",
+      "lengthMm": 4379,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    },
+    {
+      "variant": "718 Boxster Style Edition",
+      "lengthText": "4379 mm",
+      "lengthMm": 4379,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    },
+    {
+      "variant": "718 Boxster S",
+      "lengthText": "4379 mm",
+      "lengthMm": 4379,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    },
+    {
+      "variant": "718 Boxster GTS 4.0",
+      "lengthText": "4391 mm",
+      "lengthMm": 4391,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    },
+    {
+      "variant": "718 Spyder RS",
+      "lengthText": "4418 mm",
+      "lengthMm": 4418,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

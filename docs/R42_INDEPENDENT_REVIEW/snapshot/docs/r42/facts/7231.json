@@ -1,0 +1,24 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "EQE SUV",
+  "sourceId": "7231",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/EQE%20SUV/7231/spec",
+  "retrievedAt": "2026-09-15T09:50:45.540Z",
+  "pageSha256": "827a63feecb7e072aecc340009f7800bad8d74349cf7ddf743f2928146080756",
+  "entries": [
+    {
+      "variant": "300",
+      "lengthText": "4863 mm",
+      "lengthMm": 4863,
+      "bodyText": "休旅車/RV",
+      "seatText": null
+    },
+    {
+      "variant": "350 4Matic",
+      "lengthText": "4863 mm",
+      "lengthMm": 4863,
+      "bodyText": "休旅車/RV",
+      "seatText": null
+    }
+  ]
+}

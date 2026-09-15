@@ -1,0 +1,17 @@
+{
+  "brand": "Toyota",
+  "model": "Corolla Sport",
+  "sourceId": "7262",
+  "url": "https://newcar.u-car.com.tw/Toyota/Corolla%20Sport/7262/spec",
+  "retrievedAt": "2026-09-15T09:51:15.383Z",
+  "pageSha256": "ed7e81127e2a5569d300deb63ca1996538d5bb1de7197da3b465e89c547cc7dd",
+  "entries": [
+    {
+      "variant": "The 60th",
+      "lengthText": "4375 mm",
+      "lengthMm": 4375,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

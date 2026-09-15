@@ -1,0 +1,38 @@
+{
+  "brand": "Lexus",
+  "model": "LM",
+  "sourceId": "6983",
+  "url": "https://newcar.u-car.com.tw/Lexus/LM/6983/spec",
+  "retrievedAt": "2026-09-15T09:50:31.879Z",
+  "pageSha256": "344d28479af64205836a8e9619097e7f0173a3c8af353d0fb843b59a6c90735e",
+  "entries": [
+    {
+      "variant": "LM 350h 7人座",
+      "lengthText": "5130 mm",
+      "lengthMm": 5130,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "LM 500h 6人座",
+      "lengthText": "5130 mm",
+      "lengthMm": 5130,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "LM 350h 4人座",
+      "lengthText": "5130 mm",
+      "lengthMm": 5130,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "LM 500h 4人座",
+      "lengthText": "5130 mm",
+      "lengthMm": 5130,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

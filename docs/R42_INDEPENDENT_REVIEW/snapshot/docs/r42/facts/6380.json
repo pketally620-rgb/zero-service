@@ -1,0 +1,38 @@
+{
+  "brand": "Opel",
+  "model": "Astra",
+  "sourceId": "6380",
+  "url": "https://newcar.u-car.com.tw/Opel/Astra/6380/spec",
+  "retrievedAt": "2026-09-15T09:50:58.892Z",
+  "pageSha256": "e8c5f722a8ef07f8f6d7c01951da5f5b674444162c053b7819988e73e7867995",
+  "entries": [
+    {
+      "variant": "Elegance 都會版",
+      "lengthText": "4,374 mm",
+      "lengthMm": null,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "GS 潮流版",
+      "lengthText": "4,374 mm",
+      "lengthMm": null,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "GS 輕奢版",
+      "lengthText": "4,374 mm",
+      "lengthMm": null,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "GS Premium 旗艦版",
+      "lengthText": "4,374 mm",
+      "lengthMm": null,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

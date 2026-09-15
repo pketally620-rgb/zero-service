@@ -1,0 +1,31 @@
+{
+  "brand": "Audi",
+  "model": "Q6 Sportback e-tron",
+  "sourceId": "7248",
+  "url": "https://newcar.u-car.com.tw/Audi/Q6%20Sportback%20e-tron/7248/spec",
+  "retrievedAt": "2026-09-15T09:49:57.373Z",
+  "pageSha256": "15c963d5d0da597b0eaa90a974726911f98e2937ce5e00afb4a86d673826d3b9",
+  "entries": [
+    {
+      "variant": "Q6 Sportback e-tron",
+      "lengthText": "4771 mm",
+      "lengthMm": 4771,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Q6 Sportback e-tron quattro S line運動版",
+      "lengthText": "4771 mm",
+      "lengthMm": 4771,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "SQ6 Sportback e-tron",
+      "lengthText": "4771 mm",
+      "lengthMm": 4771,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

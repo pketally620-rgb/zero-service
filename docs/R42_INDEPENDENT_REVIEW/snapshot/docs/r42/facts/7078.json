@@ -1,0 +1,17 @@
+{
+  "brand": "BMW",
+  "model": "Z4",
+  "sourceId": "7078",
+  "url": "https://newcar.u-car.com.tw/BMW/Z4/7078/spec",
+  "retrievedAt": "2026-09-15T09:50:09.517Z",
+  "pageSha256": "501c6327731bafede71edf3731071d3217f376e3fc02e44f341d02e923cd22ff",
+  "entries": [
+    {
+      "variant": "Z4 M40i",
+      "lengthText": "4324 mm",
+      "lengthMm": 4324,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

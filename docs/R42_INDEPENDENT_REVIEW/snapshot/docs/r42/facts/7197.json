@@ -1,0 +1,45 @@
+{
+  "brand": "Toyota",
+  "model": "Granvia",
+  "sourceId": "7197",
+  "url": "https://newcar.u-car.com.tw/Toyota/Granvia/7197/spec",
+  "retrievedAt": "2026-09-15T09:51:16.502Z",
+  "pageSha256": "f224da14dfa135f732ed0b4587bb7556099e9092095457013ffb532447371455",
+  "entries": [
+    {
+      "variant": "8人座豪華",
+      "lengthText": "5300 mm",
+      "lengthMm": 5300,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "8人座旗艦",
+      "lengthText": "5300 mm",
+      "lengthMm": 5300,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "6人座旗艦",
+      "lengthText": "5300 mm",
+      "lengthMm": 5300,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "9人座旗艦",
+      "lengthText": "5300 mm",
+      "lengthMm": 5300,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "9人座頂級",
+      "lengthText": "5300 mm",
+      "lengthMm": 5300,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

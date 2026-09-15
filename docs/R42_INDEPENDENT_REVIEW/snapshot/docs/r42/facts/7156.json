@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Mercedes-AMG GLC",
+  "sourceId": "7156",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Mercedes-AMG%20GLC/7156/spec",
+  "retrievedAt": "2026-09-15T09:50:50.903Z",
+  "pageSha256": "97ed08a83e98dc62afb0de41310b0677b2dc2b3e3a80e96d085313b8568cd20c",
+  "entries": [
+    {
+      "variant": "GLC 43 4Matic",
+      "lengthText": "4749 mm",
+      "lengthMm": 4749,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

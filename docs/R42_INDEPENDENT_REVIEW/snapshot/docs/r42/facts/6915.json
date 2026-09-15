@@ -1,0 +1,31 @@
+{
+  "brand": "Audi",
+  "model": "Q4 Sportback e-tron",
+  "sourceId": "6915",
+  "url": "https://newcar.u-car.com.tw/Audi/Q4%20Sportback%20e-tron/6915/spec",
+  "retrievedAt": "2026-09-15T09:49:56.480Z",
+  "pageSha256": "eeb34a5e59090cc13eb36fd0c6ae441f03b3b7d1134625a2dea6b04768af54fe",
+  "entries": [
+    {
+      "variant": "45 Advanced進化版",
+      "lengthText": "4588 mm",
+      "lengthMm": 4588,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "45 S line運動版",
+      "lengthText": "4588 mm",
+      "lengthMm": 4588,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "55 quattro S line運動版",
+      "lengthText": "4588 mm",
+      "lengthMm": 4588,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

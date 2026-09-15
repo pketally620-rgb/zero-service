@@ -1,0 +1,31 @@
+{
+  "brand": "Mazda",
+  "model": "CX-90",
+  "sourceId": "7280",
+  "url": "https://newcar.u-car.com.tw/Mazda/CX-90/7280/spec",
+  "retrievedAt": "2026-09-15T09:50:38.384Z",
+  "pageSha256": "ba979ff827d9596cdbe7a10283ee0c4750d105c155a81d1427699a1e4dc52cd5",
+  "entries": [
+    {
+      "variant": "33T AWD Elite Plus",
+      "lengthText": "5100 mm",
+      "lengthMm": 5100,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "33T AWD Premium",
+      "lengthText": "5100 mm",
+      "lengthMm": 5100,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "33T AWD Premium Captain Seat",
+      "lengthText": "5100 mm",
+      "lengthMm": 5100,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

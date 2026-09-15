@@ -1,0 +1,24 @@
+{
+  "brand": "Land Rover",
+  "model": "Range Rover Evoque",
+  "sourceId": "7215",
+  "url": "https://newcar.u-car.com.tw/Land%20Rover/Range%20Rover%20Evoque/7215/spec",
+  "retrievedAt": "2026-09-15T09:50:29.638Z",
+  "pageSha256": "21711ab02dacf62f62fcdd465b0e53803e84399bae5707a2b0c70dfbb2419052",
+  "entries": [
+    {
+      "variant": "P250 S",
+      "lengthText": "4,371 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "P250 Hoxton Edition",
+      "lengthText": "4,371 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "G-Class",
+  "sourceId": "7161",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/G-Class/7161/spec",
+  "retrievedAt": "2026-09-15T09:50:46.189Z",
+  "pageSha256": "d4df81e2ba35b515255c3c2e43cc049f34e5e5a5361d959570dabab3d8706c42",
+  "entries": [
+    {
+      "variant": "G 450d",
+      "lengthText": "",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "G 500",
+      "lengthText": "4863 mm",
+      "lengthMm": 4863,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

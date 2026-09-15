@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Mercedes-AMG E-Class",
+  "sourceId": "7174",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Mercedes-AMG%20E-Class/7174/spec",
+  "retrievedAt": "2026-09-15T09:50:49.971Z",
+  "pageSha256": "b6a5fd3312ee1f069f378f11f40403343135e32cd9f6e67a030a0a2eee7ff449",
+  "entries": [
+    {
+      "variant": "E 53 Hybrid 4Matic+ 星耀版",
+      "lengthText": "4959 mm",
+      "lengthMm": 4959,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

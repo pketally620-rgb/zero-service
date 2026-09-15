@@ -1,0 +1,24 @@
+{
+  "brand": "Alfa Romeo",
+  "model": "Stelvio",
+  "sourceId": "7007",
+  "url": "https://newcar.u-car.com.tw/Alfa%20Romeo/Stelvio/7007/spec",
+  "retrievedAt": "2026-09-15T09:49:51.248Z",
+  "pageSha256": "a062c0eb5c4dcc5b1623543e8eeefdcf3b64912e94a2a59c64cd32f202f5a237",
+  "entries": [
+    {
+      "variant": "Sprint",
+      "lengthText": "4,686 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Intensa",
+      "lengthText": "4,686 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

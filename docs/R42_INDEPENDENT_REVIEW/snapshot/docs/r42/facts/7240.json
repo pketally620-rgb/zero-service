@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Mercedes-AMG GLE Coupé",
+  "sourceId": "7240",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Mercedes-AMG%20GLE%20Coup%C3%A9/7240/spec",
+  "retrievedAt": "2026-09-15T09:52:10.493Z",
+  "pageSha256": "4ccefa9720cd523efad183464a96ae92ef27cc3cc331d41ff3de68f03a30b91c",
+  "entries": [
+    {
+      "variant": "GLE 53 4Matic+ Coupé 星夜版",
+      "lengthText": "4944 mm",
+      "lengthMm": 4944,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

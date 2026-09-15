@@ -1,0 +1,38 @@
+{
+  "brand": "Luxgen",
+  "model": "URX Neo",
+  "sourceId": "6909",
+  "url": "https://newcar.u-car.com.tw/Luxgen/URX%20Neo/6909/spec",
+  "retrievedAt": "2026-09-15T09:50:34.119Z",
+  "pageSha256": "f3061a72af3acf0d5c41b4d48020890bd460695f74ab8ebbee195426a09612e8",
+  "entries": [
+    {
+      "variant": "5人大生活家版",
+      "lengthText": "4725 mm",
+      "lengthMm": 4725,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "黑⁺特仕版",
+      "lengthText": "4725 mm",
+      "lengthMm": 4725,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "7人樂活版",
+      "lengthText": "4725 mm",
+      "lengthMm": 4725,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "7人大生活家版",
+      "lengthText": "4725 mm",
+      "lengthMm": 4725,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

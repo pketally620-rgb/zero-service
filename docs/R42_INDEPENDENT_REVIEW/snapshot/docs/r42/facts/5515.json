@@ -1,0 +1,24 @@
+{
+  "brand": "Rolls-Royce",
+  "model": "Phantom Series II",
+  "sourceId": "5515",
+  "url": "https://newcar.u-car.com.tw/Rolls-Royce/Phantom%20Series%20II/5515/spec",
+  "retrievedAt": "2026-09-15T09:51:07.115Z",
+  "pageSha256": "cba40d58c32b4f0bd6d6900a778a514fc6bd44c1a1f0b0ce190e6bea815537fe",
+  "entries": [
+    {
+      "variant": "Phantom",
+      "lengthText": "5762 mm",
+      "lengthMm": 5762,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Phantom Extended",
+      "lengthText": "5982 mm",
+      "lengthMm": 5982,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

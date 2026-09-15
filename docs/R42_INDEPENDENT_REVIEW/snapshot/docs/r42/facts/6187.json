@@ -1,0 +1,17 @@
+{
+  "brand": "Mahindra",
+  "model": "KUV100",
+  "sourceId": "6187",
+  "url": "https://newcar.u-car.com.tw/Mahindra/KUV100/6187/spec",
+  "retrievedAt": "2026-09-15T09:50:34.326Z",
+  "pageSha256": "0da94b9cdfbbdff98d4c6b11edf32311bc5002510cea644ed3193b488389866a",
+  "entries": [
+    {
+      "variant": "KUV100",
+      "lengthText": "3700 mm",
+      "lengthMm": 3700,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

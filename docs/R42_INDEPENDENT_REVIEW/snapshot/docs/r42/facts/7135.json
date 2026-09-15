@@ -1,0 +1,45 @@
+{
+  "brand": "Land Rover",
+  "model": "Range Rover",
+  "sourceId": "7135",
+  "url": "https://newcar.u-car.com.tw/Land%20Rover/Range%20Rover/7135/spec",
+  "retrievedAt": "2026-09-15T09:50:29.223Z",
+  "pageSha256": "225a16bf384ce2b40d6f6db381fbfd2e56dc3f8e6253feba4a509d6f06a9a106",
+  "entries": [
+    {
+      "variant": "P400 SE SWB",
+      "lengthText": "5,052 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "P400 HSE 7-Seat LWB",
+      "lengthText": "5,252 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "P400 Autobiography",
+      "lengthText": "5,252 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "P615 SV SWB",
+      "lengthText": "5,058 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "P615 SV LWB",
+      "lengthText": "5,258 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

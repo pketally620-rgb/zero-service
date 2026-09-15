@@ -1,0 +1,17 @@
+{
+  "brand": "Lamborghini",
+  "model": "Revuelto",
+  "sourceId": "6393",
+  "url": "https://newcar.u-car.com.tw/Lamborghini/Revuelto/6393/spec",
+  "retrievedAt": "2026-09-15T09:50:27.548Z",
+  "pageSha256": "33963aa57c6cfca1a98a342e893ab58b5eb7d4b32d8ae5fb510a613a2c0136f4",
+  "entries": [
+    {
+      "variant": "Revuelto",
+      "lengthText": "4947 mm",
+      "lengthMm": 4947,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

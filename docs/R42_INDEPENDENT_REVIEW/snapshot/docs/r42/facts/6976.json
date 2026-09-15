@@ -1,0 +1,31 @@
+{
+  "brand": "BMW",
+  "model": "1 Series",
+  "sourceId": "6976",
+  "url": "https://newcar.u-car.com.tw/BMW/1%20Series/6976/spec",
+  "retrievedAt": "2026-09-15T09:50:00.726Z",
+  "pageSha256": "a69b913de014d8b48f5bba62262d69b13c7c844f0d23db1cb4b2957840f1fdb2",
+  "entries": [
+    {
+      "variant": "120 Sport",
+      "lengthText": "4361 mm",
+      "lengthMm": 4361,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "120 M Sport",
+      "lengthText": "4361 mm",
+      "lengthMm": 4361,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "M135 xDrive",
+      "lengthText": "4361 mm",
+      "lengthMm": 4361,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

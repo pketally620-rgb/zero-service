@@ -1,0 +1,24 @@
+{
+  "brand": "Ineos Grenadier",
+  "model": "Grenadier Quartermaster",
+  "sourceId": "7222",
+  "url": "https://newcar.u-car.com.tw/Ineos%20Grenadier/Grenadier%20Quartermaster/7222/spec",
+  "retrievedAt": "2026-09-15T09:50:23.364Z",
+  "pageSha256": "263aa3179f461a54b0bd1e6c5f08d32428899139622b1dff8f5edc25f1a6144b",
+  "entries": [
+    {
+      "variant": "Grenadier Quartermaster柴油車型",
+      "lengthText": "5440 mm",
+      "lengthMm": 5440,
+      "bodyText": "貨卡/pick-up truck",
+      "seatText": null
+    },
+    {
+      "variant": "Grenadier Quartermaster汽油車型",
+      "lengthText": "5440 mm",
+      "lengthMm": 5440,
+      "bodyText": "貨卡/pick-up truck",
+      "seatText": null
+    }
+  ]
+}

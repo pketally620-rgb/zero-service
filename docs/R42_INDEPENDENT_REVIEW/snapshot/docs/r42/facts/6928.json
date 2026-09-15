@@ -1,0 +1,38 @@
+{
+  "brand": "Ford",
+  "model": "Tourneo Custom",
+  "sourceId": "6928",
+  "url": "https://newcar.u-car.com.tw/Ford/Tourneo%20Custom/6928/spec",
+  "retrievedAt": "2026-09-15T09:50:18.038Z",
+  "pageSha256": "83f5cbbf1632910fedad4a80c5b91f31ef74bda9dcc899b67aa4fb446840daf7",
+  "entries": [
+    {
+      "variant": "Kombi Trend 6座",
+      "lengthText": "5450 mm",
+      "lengthMm": 5450,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "Kombi Trend 9座",
+      "lengthText": "5450 mm",
+      "lengthMm": 5450,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "Kombi Limited 8座",
+      "lengthText": "5450 mm",
+      "lengthMm": 5450,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "Bus Titanium Pro 8座",
+      "lengthText": "5450 mm",
+      "lengthMm": 5450,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

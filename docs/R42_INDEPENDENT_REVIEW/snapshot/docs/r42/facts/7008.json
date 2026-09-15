@@ -1,0 +1,31 @@
+{
+  "brand": "Hyundai",
+  "model": "Staria Van",
+  "sourceId": "7008",
+  "url": "https://newcar.u-car.com.tw/Hyundai/Staria%20Van/7008/spec",
+  "retrievedAt": "2026-09-15T09:50:22.043Z",
+  "pageSha256": "ef59942bdfed9938f79d5b79e924646adde79b03c4a2e27e8600cea9d9d26cbd",
+  "entries": [
+    {
+      "variant": "Van",
+      "lengthText": "5253 mm",
+      "lengthMm": 5253,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "Camper豪華款",
+      "lengthText": "5253 mm",
+      "lengthMm": 5253,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "Camper旗艦款",
+      "lengthText": "5253 mm",
+      "lengthMm": 5253,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

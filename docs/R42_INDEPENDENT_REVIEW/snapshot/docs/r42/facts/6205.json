@@ -1,0 +1,24 @@
+{
+  "brand": "Morgan",
+  "model": "Plus Six",
+  "sourceId": "6205",
+  "url": "https://newcar.u-car.com.tw/Morgan/Plus%20Six/6205/spec",
+  "retrievedAt": "2026-09-15T09:50:57.775Z",
+  "pageSha256": "72fc8caab91c6ad9c5ab60a868aedc3e53608d7d169ee2f41d00108dfeaa3b93",
+  "entries": [
+    {
+      "variant": "Plus Six",
+      "lengthText": "3890 mm",
+      "lengthMm": 3890,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    },
+    {
+      "variant": "Plus Six Touring",
+      "lengthText": "3890 mm",
+      "lengthMm": 3890,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

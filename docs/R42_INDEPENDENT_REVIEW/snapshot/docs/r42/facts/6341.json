@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Mercedes-AMG GT 4-Door Coupé",
+  "sourceId": "6341",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Mercedes-AMG%20GT%204-Door%20Coup%C3%A9/6341/spec",
+  "retrievedAt": "2026-09-15T09:52:10.860Z",
+  "pageSha256": "acf7ba0f9e8a03af031111730d862ff34153c5d01035ee56cc3e35420007c81c",
+  "entries": [
+    {
+      "variant": "GT 43 4Matic+",
+      "lengthText": "5054 mm",
+      "lengthMm": 5054,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "brand": "Peugeot",
+  "model": "2008",
+  "sourceId": "6575",
+  "url": "https://newcar.u-car.com.tw/Peugeot/2008/6575/spec",
+  "retrievedAt": "2026-09-15T09:51:00.417Z",
+  "pageSha256": "9761736ff9104905aef0024aa28c4520a9f6b2f94211033f517b97e8480e0c4f",
+  "entries": [
+    {
+      "variant": "GT Pack",
+      "lengthText": "4,300 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GT Pack Cielo",
+      "lengthText": "4,300 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

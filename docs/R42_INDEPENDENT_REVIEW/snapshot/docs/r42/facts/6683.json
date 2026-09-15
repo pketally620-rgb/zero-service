@@ -1,0 +1,17 @@
+{
+  "brand": "Suzuki",
+  "model": "Swift",
+  "sourceId": "6683",
+  "url": "https://newcar.u-car.com.tw/Suzuki/Swift/6683/spec",
+  "retrievedAt": "2026-09-15T09:51:12.640Z",
+  "pageSha256": "f7647cd59b15872caf81cbeae1a12b5111b68e46a2fda219dfcf80660f836e3b",
+  "entries": [
+    {
+      "variant": "Swift",
+      "lengthText": "3860 mm",
+      "lengthMm": 3860,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

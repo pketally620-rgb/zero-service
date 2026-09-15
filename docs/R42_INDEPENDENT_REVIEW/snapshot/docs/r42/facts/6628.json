@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "EQS SUV",
+  "sourceId": "6628",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/EQS%20SUV/6628/spec",
+  "retrievedAt": "2026-09-15T09:50:46.011Z",
+  "pageSha256": "faacd195005ce102033e00fbd18c302d75949174203b20c7d3de8495dc8ff8bf",
+  "entries": [
+    {
+      "variant": "450 4Matic",
+      "lengthText": "5136 mm",
+      "lengthMm": 5136,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

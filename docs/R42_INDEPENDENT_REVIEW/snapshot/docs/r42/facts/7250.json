@@ -1,0 +1,38 @@
+{
+  "brand": "Audi",
+  "model": "Q5 Sportback",
+  "sourceId": "7250",
+  "url": "https://newcar.u-car.com.tw/Audi/Q5%20Sportback/7250/spec",
+  "retrievedAt": "2026-09-15T09:49:56.924Z",
+  "pageSha256": "4e084b6d25322de95842047e9cbbfdb177e37a1f1c20fd562d41bb3c6754222c",
+  "entries": [
+    {
+      "variant": "TFSI 150 kW advanced進化版",
+      "lengthText": "4717 mm",
+      "lengthMm": 4717,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "TFSI quattro 150 kW advanced進化版",
+      "lengthText": "4717 mm",
+      "lengthMm": 4717,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "TFSI quattro 150 kW S line運動版",
+      "lengthText": "4717 mm",
+      "lengthMm": 4717,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "SQ5 Sportback",
+      "lengthText": "4717 mm",
+      "lengthMm": 4717,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

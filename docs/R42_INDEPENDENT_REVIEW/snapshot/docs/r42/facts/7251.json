@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Mercedes-AMG SL",
+  "sourceId": "7251",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Mercedes-AMG%20SL/7251/spec",
+  "retrievedAt": "2026-09-15T09:50:52.298Z",
+  "pageSha256": "dff471a544447fae9e1afaefd17a0c893246ab293555b79804e201f335bb4174",
+  "entries": [
+    {
+      "variant": "SL 43",
+      "lengthText": "4700 mm",
+      "lengthMm": 4700,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

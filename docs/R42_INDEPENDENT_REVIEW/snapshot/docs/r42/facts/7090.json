@@ -1,0 +1,17 @@
+{
+  "brand": "Ferrari",
+  "model": "12Cilindri Spider",
+  "sourceId": "7090",
+  "url": "https://newcar.u-car.com.tw/Ferrari/12Cilindri%20Spider/7090/spec",
+  "retrievedAt": "2026-09-15T09:50:14.345Z",
+  "pageSha256": "fbcc3be91499e0e80891e18cbc6625bbb76d3dfbd169452de93293c6ba9b7856",
+  "entries": [
+    {
+      "variant": "12Cilindri Spider",
+      "lengthText": "4733 mm",
+      "lengthMm": 4733,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

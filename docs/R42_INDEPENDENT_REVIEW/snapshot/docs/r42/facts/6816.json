@@ -1,0 +1,38 @@
+{
+  "brand": "BMW",
+  "model": "3 Series",
+  "sourceId": "6816",
+  "url": "https://newcar.u-car.com.tw/BMW/3%20Series/6816/spec",
+  "retrievedAt": "2026-09-15T09:50:01.784Z",
+  "pageSha256": "d5cecfd4051d22c8c9101afa507fb9816ecb7fe117b3ced4c00024f4b08496ef",
+  "entries": [
+    {
+      "variant": "318i Sport",
+      "lengthText": "4713 mm",
+      "lengthMm": 4713,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "320i M Sport",
+      "lengthText": "4713 mm",
+      "lengthMm": 4713,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "330i M Sport",
+      "lengthText": "4713 mm",
+      "lengthMm": 4713,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "M340i xDrive",
+      "lengthText": "4714 mm",
+      "lengthMm": 4714,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

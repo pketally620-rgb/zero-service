@@ -1,0 +1,24 @@
+{
+  "brand": "BMW",
+  "model": "2 Series Coupé",
+  "sourceId": "7285",
+  "url": "https://newcar.u-car.com.tw/BMW/2%20Series%20Coup%C3%A9/7285/spec",
+  "retrievedAt": "2026-09-15T09:52:07.215Z",
+  "pageSha256": "f306ef0ab4f756b02a8d9468f294c985d5b8881aa8292222162940210d00a599",
+  "entries": [
+    {
+      "variant": "220i M Sport Apex極致版",
+      "lengthText": "4537 mm",
+      "lengthMm": 4537,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    },
+    {
+      "variant": "M240i xDrive",
+      "lengthText": "4548 mm",
+      "lengthMm": 4548,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "brand": "Volkswagen",
+  "model": "Polo",
+  "sourceId": "7062",
+  "url": "https://newcar.u-car.com.tw/Volkswagen/Polo/7062/spec",
+  "retrievedAt": "2026-09-15T09:51:20.772Z",
+  "pageSha256": "240cde67db0e8562ca739a0347588c9ed39d54db9ebb6ced6adb5d07c438d5c0",
+  "entries": [
+    {
+      "variant": "230 TSI Life",
+      "lengthText": "4074 mm",
+      "lengthMm": 4074,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "230 TSI Tech",
+      "lengthText": "4074 mm",
+      "lengthMm": 4074,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "230 TSI Style",
+      "lengthText": "4074 mm",
+      "lengthMm": 4074,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "GTI",
+      "lengthText": "4074 mm",
+      "lengthMm": 4074,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

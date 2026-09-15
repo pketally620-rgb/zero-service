@@ -1,0 +1,24 @@
+{
+  "brand": "Volvo",
+  "model": "EX40",
+  "sourceId": "7129",
+  "url": "https://newcar.u-car.com.tw/Volvo/EX40/7129/spec",
+  "retrievedAt": "2026-09-15T09:51:25.124Z",
+  "pageSha256": "609389be4bb4ce1e5c9e13bda56d8e7b9a3d11d09bf883050144e351e47c2e09",
+  "entries": [
+    {
+      "variant": "Plus Single Motor",
+      "lengthText": "4440 mm",
+      "lengthMm": 4440,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Ultra Twin Motor",
+      "lengthText": "4440 mm",
+      "lengthMm": 4440,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

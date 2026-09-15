@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Mercedes-AMG C-Class Estate",
+  "sourceId": "7154",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Mercedes-AMG%20C-Class%20Estate/7154/spec",
+  "retrievedAt": "2026-09-15T09:50:49.404Z",
+  "pageSha256": "06b765fbb5c250707869bbcb99ad275e597ad20783a7696cf22158a0cbd72f54",
+  "entries": [
+    {
+      "variant": "C 43 4Matic Estate 星耀版",
+      "lengthText": "4791 mm",
+      "lengthMm": 4791,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

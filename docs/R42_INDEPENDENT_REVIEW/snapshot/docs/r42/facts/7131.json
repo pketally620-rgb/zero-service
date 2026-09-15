@@ -1,0 +1,24 @@
+{
+  "brand": "Volvo",
+  "model": "XC40",
+  "sourceId": "7131",
+  "url": "https://newcar.u-car.com.tw/Volvo/XC40/7131/spec",
+  "retrievedAt": "2026-09-15T09:51:25.910Z",
+  "pageSha256": "bbf9527852096da9e44443a72abd15122e468711d34fbca04e0c2dc5abd60684",
+  "entries": [
+    {
+      "variant": "Plus B3",
+      "lengthText": "4440 mm",
+      "lengthMm": 4440,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Ultra B4",
+      "lengthText": "4440 mm",
+      "lengthMm": 4440,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "brand": "Jaguar",
+  "model": "F-Pace",
+  "sourceId": "6251",
+  "url": "https://newcar.u-car.com.tw/Jaguar/F-Pace/6251/spec",
+  "retrievedAt": "2026-09-15T09:50:24.307Z",
+  "pageSha256": "8d07ad01a6f262a41800bf3fdf11df638d516f87221fbecf094921a210ff698e",
+  "entries": [
+    {
+      "variant": "P250 S",
+      "lengthText": "4747 mm",
+      "lengthMm": 4747,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "P250 R-Dynamic S",
+      "lengthText": "4747 mm",
+      "lengthMm": 4747,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "SVR",
+      "lengthText": "4762 mm",
+      "lengthMm": 4762,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

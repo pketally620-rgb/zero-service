@@ -1,0 +1,66 @@
+{
+  "brand": "Kia",
+  "model": "K2500",
+  "sourceId": "6684",
+  "url": "https://newcar.u-car.com.tw/Kia/K2500/6684/spec",
+  "retrievedAt": "2026-09-15T09:50:26.270Z",
+  "pageSha256": "9382757b856929ca922e41ef314ae91c083caa19421372bd23a6e26b0f577807",
+  "entries": [
+    {
+      "variant": "2WD單廂手排",
+      "lengthText": "5125 mm",
+      "lengthMm": 5125,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "2WD大單廂手排",
+      "lengthText": "5125 mm",
+      "lengthMm": 5125,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "2WD單廂自排",
+      "lengthText": "5125 mm",
+      "lengthMm": 5125,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "2WD大單廂自排",
+      "lengthText": "5125 mm",
+      "lengthMm": 5125,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "4WD單廂手排",
+      "lengthText": "5125 mm",
+      "lengthMm": 5125,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "2WD雙廂手排",
+      "lengthText": "5125 mm",
+      "lengthMm": 5125,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "2WD雙廂自排",
+      "lengthText": "5125 mm",
+      "lengthMm": 5125,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "4WD雙廂手排",
+      "lengthText": "5125 mm",
+      "lengthMm": 5125,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    }
+  ]
+}

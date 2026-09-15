@@ -1,0 +1,31 @@
+{
+  "brand": "Hyundai",
+  "model": "Mufasa",
+  "sourceId": "7091",
+  "url": "https://newcar.u-car.com.tw/Hyundai/Mufasa/7091/spec",
+  "retrievedAt": "2026-09-15T09:50:20.918Z",
+  "pageSha256": "f1c2e2d7a7b0d4703862bf0548fc533638b08b0b6ffc16ed928def33a367b85f",
+  "entries": [
+    {
+      "variant": "GLA",
+      "lengthText": "4465 mm",
+      "lengthMm": 4465,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GLB",
+      "lengthText": "4465 mm",
+      "lengthMm": 4465,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GLC",
+      "lengthText": "4465 mm",
+      "lengthMm": 4465,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

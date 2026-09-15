@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "EQS",
+  "sourceId": "6627",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/EQS/6627/spec",
+  "retrievedAt": "2026-09-15T09:50:45.668Z",
+  "pageSha256": "292747421e6c1c6596b3e650a8ddd9e99804c823d65df4bd12f9a815a7e73b68",
+  "entries": [
+    {
+      "variant": "EQS 450+",
+      "lengthText": "5223 mm",
+      "lengthMm": 5223,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

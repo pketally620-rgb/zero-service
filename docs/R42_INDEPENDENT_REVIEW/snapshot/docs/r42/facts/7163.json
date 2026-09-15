@@ -1,0 +1,24 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "CLE Coupé",
+  "sourceId": "7163",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/CLE%20Coup%C3%A9/7163/spec",
+  "retrievedAt": "2026-09-15T09:52:09.358Z",
+  "pageSha256": "289ea2c2cbb3d279fee59cae6f6f6579d9185ed4975b48359a75692b6d192b3d",
+  "entries": [
+    {
+      "variant": "CLE 200 Coupé",
+      "lengthText": "4850 mm",
+      "lengthMm": 4850,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    },
+    {
+      "variant": "CLE 300 4Matic Coupé",
+      "lengthText": "4850 mm",
+      "lengthMm": 4850,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    }
+  ]
+}

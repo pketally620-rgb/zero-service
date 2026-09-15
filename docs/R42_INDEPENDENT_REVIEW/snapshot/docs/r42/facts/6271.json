@@ -1,0 +1,38 @@
+{
+  "brand": "Toyota",
+  "model": "Town Ace",
+  "sourceId": "6271",
+  "url": "https://newcar.u-car.com.tw/Toyota/Town%20Ace/6271/spec",
+  "retrievedAt": "2026-09-15T09:51:18.128Z",
+  "pageSha256": "279b1e22de31f5d681547751c3d896ce29d7d9a87c442883d36de3d9cb9b2a55",
+  "entries": [
+    {
+      "variant": "鐵床手排",
+      "lengthText": "4275 mm",
+      "lengthMm": 4275,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "木床手排",
+      "lengthText": "4310 mm",
+      "lengthMm": 4310,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "木床自排",
+      "lengthText": "4310 mm",
+      "lengthMm": 4310,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "木床自排TSS",
+      "lengthText": "4310 mm",
+      "lengthMm": 4310,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    }
+  ]
+}

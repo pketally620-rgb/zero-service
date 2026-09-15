@@ -1,0 +1,24 @@
+{
+  "brand": "Audi",
+  "model": "Q3 Sportback",
+  "sourceId": "7186",
+  "url": "https://newcar.u-car.com.tw/Audi/Q3%20Sportback/7186/spec",
+  "retrievedAt": "2026-09-15T09:49:56.034Z",
+  "pageSha256": "d94ed9e73a1347c8229685651c3fdda0501fb3f1b0a8d34153ac92530866b9f2",
+  "entries": [
+    {
+      "variant": "TFSI 110 kW advanced進化版",
+      "lengthText": "4531 mm",
+      "lengthMm": 4531,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "TFSI quattro 150 kW S line運動版",
+      "lengthText": "4531 mm",
+      "lengthMm": 4531,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "brand": "BMW",
+  "model": "i5 Touring",
+  "sourceId": "6968",
+  "url": "https://newcar.u-car.com.tw/BMW/i5%20Touring/6968/spec",
+  "retrievedAt": "2026-09-15T09:50:04.204Z",
+  "pageSha256": "9e0b6d1aa6d63e9ecb98e1a09f374440e31f63a7338cc8743b8d2c3b34f3f074",
+  "entries": [
+    {
+      "variant": "eDrive40 M Sport",
+      "lengthText": "5060 mm",
+      "lengthMm": 5060,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "M60 xDrive",
+      "lengthText": "5060 mm",
+      "lengthMm": 5060,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

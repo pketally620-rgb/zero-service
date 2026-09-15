@@ -1,0 +1,17 @@
+{
+  "brand": "DFSK",
+  "model": "A380 WINMAX",
+  "sourceId": "6706",
+  "url": "https://newcar.u-car.com.tw/DFSK/A380%20WINMAX/6706/spec",
+  "retrievedAt": "2026-09-15T09:50:13.154Z",
+  "pageSha256": "0c511133290c5d8a1dc95410aa629ca1f2290b0c61d9a4266e7a7c893b7adf30",
+  "entries": [
+    {
+      "variant": "A380 WINMAX",
+      "lengthText": "4610 mm",
+      "lengthMm": 4610,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    }
+  ]
+}

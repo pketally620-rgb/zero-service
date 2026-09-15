@@ -1,0 +1,17 @@
+{
+  "brand": "Hyundai",
+  "model": "Ioniq 5 N",
+  "sourceId": "6834",
+  "url": "https://newcar.u-car.com.tw/Hyundai/Ioniq%205%20N/6834/spec",
+  "retrievedAt": "2026-09-15T09:50:20.597Z",
+  "pageSha256": "f9bebdc8481b329e964f589bdeda0ad8852af78368341cba8aecf137347dfb9b",
+  "entries": [
+    {
+      "variant": "Ioniq 5 N",
+      "lengthText": "4715 mm",
+      "lengthMm": 4715,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "brand": "Audi",
+  "model": "Q6 e-tron",
+  "sourceId": "7247",
+  "url": "https://newcar.u-car.com.tw/Audi/Q6%20e-tron/7247/spec",
+  "retrievedAt": "2026-09-15T09:49:57.151Z",
+  "pageSha256": "4f1651b2fc1daacc65b9f6ca92fa3850833919373d0158d9cf32c38b97faf863",
+  "entries": [
+    {
+      "variant": "Q6 e-tron",
+      "lengthText": "4771 mm",
+      "lengthMm": 4771,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Q6 e-tron quattro S line運動版",
+      "lengthText": "4771 mm",
+      "lengthMm": 4771,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "SQ6 e-tron",
+      "lengthText": "4771 mm",
+      "lengthMm": 4771,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

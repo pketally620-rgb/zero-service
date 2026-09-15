@@ -1,0 +1,17 @@
+{
+  "brand": "Ferrari",
+  "model": "12Cilindri",
+  "sourceId": "6761",
+  "url": "https://newcar.u-car.com.tw/Ferrari/12Cilindri/6761/spec",
+  "retrievedAt": "2026-09-15T09:50:13.910Z",
+  "pageSha256": "f6b436de7a3dfa9ea60f7a16070454da5efe9b81a1e2fc1e6d668e53736ff3a8",
+  "entries": [
+    {
+      "variant": "12Cilindri",
+      "lengthText": "4733 mm",
+      "lengthMm": 4733,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

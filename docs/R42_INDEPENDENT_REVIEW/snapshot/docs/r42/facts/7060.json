@@ -1,0 +1,24 @@
+{
+  "brand": "BMW",
+  "model": "X2",
+  "sourceId": "7060",
+  "url": "https://newcar.u-car.com.tw/BMW/X2/7060/spec",
+  "retrievedAt": "2026-09-15T09:50:07.669Z",
+  "pageSha256": "3dd2ec974d4bb15b54be0b8e1e00ce4d705636549d5f260f19c4a6296ec02966",
+  "entries": [
+    {
+      "variant": "sDrive20i M Sport",
+      "lengthText": "4554 mm",
+      "lengthMm": 4554,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "M35i xDrive",
+      "lengthText": "4567 mm",
+      "lengthMm": 4567,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

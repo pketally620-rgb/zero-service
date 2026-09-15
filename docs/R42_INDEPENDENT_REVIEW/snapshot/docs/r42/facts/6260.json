@@ -1,0 +1,24 @@
+{
+  "brand": "Subaru",
+  "model": "BRZ",
+  "sourceId": "6260",
+  "url": "https://newcar.u-car.com.tw/Subaru/BRZ/6260/spec",
+  "retrievedAt": "2026-09-15T09:51:10.247Z",
+  "pageSha256": "6fd3ecf7115f36835b462e15172d35cc10183aebd13612b7aac6340560ba4288",
+  "entries": [
+    {
+      "variant": "2.4 MT Brembo",
+      "lengthText": "4265 mm",
+      "lengthMm": 4265,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    },
+    {
+      "variant": "2.4 AT Brembo",
+      "lengthText": "4265 mm",
+      "lengthMm": 4265,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

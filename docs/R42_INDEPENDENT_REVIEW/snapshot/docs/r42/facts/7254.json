@@ -1,0 +1,24 @@
+{
+  "brand": "BMW",
+  "model": "iX3",
+  "sourceId": "7254",
+  "url": "https://newcar.u-car.com.tw/BMW/iX3/7254/spec",
+  "retrievedAt": "2026-09-15T09:50:05.464Z",
+  "pageSha256": "26a037c699358595392c937fd7bd4dd6be8e0085a8887a1bfb9b47aa9f370a4d",
+  "entries": [
+    {
+      "variant": "40 M Sport",
+      "lengthText": "4782 mm",
+      "lengthMm": 4782,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "50 xDrive M Sport",
+      "lengthText": "4782 mm",
+      "lengthMm": 4782,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

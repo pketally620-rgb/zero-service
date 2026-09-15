@@ -1,0 +1,24 @@
+{
+  "brand": "Lotus",
+  "model": "Emira",
+  "sourceId": "7277",
+  "url": "https://newcar.u-car.com.tw/Lotus/Emira/7277/spec",
+  "retrievedAt": "2026-09-15T09:50:33.235Z",
+  "pageSha256": "932f2c20038f90e979d0b5e633ccdaa2beb004891d0a262da4baa15ff36f8619",
+  "entries": [
+    {
+      "variant": "Emira Turbo SE",
+      "lengthText": "4412 mm",
+      "lengthMm": 4412,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    },
+    {
+      "variant": "Emira V6 SE",
+      "lengthText": "4412 mm",
+      "lengthMm": 4412,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

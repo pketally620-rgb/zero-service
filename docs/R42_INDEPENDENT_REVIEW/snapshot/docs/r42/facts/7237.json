@@ -1,0 +1,24 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "GLE",
+  "sourceId": "7237",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/GLE/7237/spec",
+  "retrievedAt": "2026-09-15T09:50:47.789Z",
+  "pageSha256": "d77e47bfce4063345b4f31add33e3d18480e0565fa0ec393dc61ac2b71ce0cbf",
+  "entries": [
+    {
+      "variant": "GLE 300 d 4Matic 星耀版",
+      "lengthText": "4924 mm",
+      "lengthMm": 4924,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GLE 450 4Matic 星耀版",
+      "lengthText": "4924 mm",
+      "lengthMm": 4924,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

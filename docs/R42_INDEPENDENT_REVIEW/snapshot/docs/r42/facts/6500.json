@@ -1,0 +1,24 @@
+{
+  "brand": "Jaguar",
+  "model": "I-Pace",
+  "sourceId": "6500",
+  "url": "https://newcar.u-car.com.tw/Jaguar/I-Pace/6500/spec",
+  "retrievedAt": "2026-09-15T09:50:24.834Z",
+  "pageSha256": "0a1790448906a3e83a15af49b625f3237630de34dbd858fa71dcca33bbf5aa1a",
+  "entries": [
+    {
+      "variant": "EV400 R-Dynamic S跑魂版",
+      "lengthText": "4,682 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "EV400 R-Dynamic S黑魂進階版",
+      "lengthText": "4,682 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

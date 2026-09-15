@@ -1,0 +1,31 @@
+{
+  "brand": "Volvo",
+  "model": "XC90",
+  "sourceId": "6995",
+  "url": "https://newcar.u-car.com.tw/Volvo/XC90/6995/spec",
+  "retrievedAt": "2026-09-15T09:51:26.362Z",
+  "pageSha256": "565a1c966ce1e096524719e465b0955332a0f5b42a86e57dc15feb08de71dfec",
+  "entries": [
+    {
+      "variant": "B5 AWD Plus",
+      "lengthText": "4953 mm",
+      "lengthMm": 4953,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "B5 AWD Ultra",
+      "lengthText": "4953 mm",
+      "lengthMm": 4953,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "T8 AWD Plug in Hybrid Ultra",
+      "lengthText": "4953 mm",
+      "lengthMm": 4953,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

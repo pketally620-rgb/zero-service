@@ -1,0 +1,38 @@
+{
+  "brand": "Mazda",
+  "model": "CX-30",
+  "sourceId": "7286",
+  "url": "https://newcar.u-car.com.tw/Mazda/CX-30/7286/spec",
+  "retrievedAt": "2026-09-15T09:50:37.769Z",
+  "pageSha256": "31f8e69dee4e38c292e73c85aab1e452ec0d4bb08641f87367f71df8c32d37ec",
+  "entries": [
+    {
+      "variant": "20S Ace Edition",
+      "lengthText": "4395 mm",
+      "lengthMm": 4395,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "20S Premium",
+      "lengthText": "4395 mm",
+      "lengthMm": 4395,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "20S Signature",
+      "lengthText": "4395 mm",
+      "lengthMm": 4395,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "20S Air Edition",
+      "lengthText": "4395 mm",
+      "lengthMm": 4395,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

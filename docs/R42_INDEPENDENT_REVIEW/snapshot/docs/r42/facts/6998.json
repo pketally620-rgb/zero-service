@@ -1,0 +1,17 @@
+{
+  "brand": "McLaren",
+  "model": "Artura Coupe",
+  "sourceId": "6998",
+  "url": "https://newcar.u-car.com.tw/McLaren/Artura%20Coupe/6998/spec",
+  "retrievedAt": "2026-09-15T09:50:40.397Z",
+  "pageSha256": "9d523075e155ece7af1f1e9adc7594a8670f81d88282711328548ddb777f7d67",
+  "entries": [
+    {
+      "variant": "Artura Coupe",
+      "lengthText": "4539 mm",
+      "lengthMm": 4539,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

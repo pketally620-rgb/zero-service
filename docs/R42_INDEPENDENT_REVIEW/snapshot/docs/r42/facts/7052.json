@@ -1,0 +1,17 @@
+{
+  "brand": "Volkswagen Commercial Vehicles",
+  "model": "Crafter",
+  "sourceId": "7052",
+  "url": "https://newcar.u-car.com.tw/Volkswagen%20Commercial%20Vehicles/Crafter/7052/spec",
+  "retrievedAt": "2026-09-15T09:51:23.582Z",
+  "pageSha256": "e13cc2777d3dfb5dcb03e9f3e2ae153060b682e7dc0b338f1cca39198ce3c283",
+  "entries": [
+    {
+      "variant": "Crafter Van長軸高頂9座客車",
+      "lengthText": "6836 mm",
+      "lengthMm": 6836,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    }
+  ]
+}

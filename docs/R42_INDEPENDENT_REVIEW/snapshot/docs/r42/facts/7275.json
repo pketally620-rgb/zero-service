@@ -1,0 +1,24 @@
+{
+  "brand": "Škoda",
+  "model": "Scala",
+  "sourceId": "7275",
+  "url": "https://newcar.u-car.com.tw/%C5%A0koda/Scala/7275/spec",
+  "retrievedAt": "2026-09-15T09:51:09.318Z",
+  "pageSha256": "f705fefc23ec5aa531e9cb08533b389623dd68a2a7ddbd23472d19eb58702d19",
+  "entries": [
+    {
+      "variant": "豪華動能版 TSI",
+      "lengthText": "4362 mm",
+      "lengthMm": 4362,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "豪華菁英版TSI",
+      "lengthText": "4362 mm",
+      "lengthMm": 4362,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

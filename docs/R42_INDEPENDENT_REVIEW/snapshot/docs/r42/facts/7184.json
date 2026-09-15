@@ -1,0 +1,38 @@
+{
+  "brand": "Kia",
+  "model": "Sportage",
+  "sourceId": "7184",
+  "url": "https://newcar.u-car.com.tw/Kia/Sportage/7184/spec",
+  "retrievedAt": "2026-09-15T09:50:27.056Z",
+  "pageSha256": "bef88c241a7b9b74e23927aedb11666bc2963a60867d8ee1f0e3b6d5a1f0d0fe",
+  "entries": [
+    {
+      "variant": "Turbo-Hybrid Trendy",
+      "lengthText": "",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Turbo-Hybrid Apex",
+      "lengthText": "",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Turbo-Hybrid Signature",
+      "lengthText": "",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "X-Line 4WD",
+      "lengthText": "",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

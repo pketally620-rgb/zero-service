@@ -1,0 +1,24 @@
+{
+  "brand": "CMC",
+  "model": "P350 Hybrid",
+  "sourceId": "6820",
+  "url": "https://newcar.u-car.com.tw/CMC/P350%20Hybrid/6820/spec",
+  "retrievedAt": "2026-09-15T09:50:12.123Z",
+  "pageSha256": "f683a9d5a81505c648e44334141ab050e60f19f7fa01c3e6c844ef209401c0a7",
+  "entries": [
+    {
+      "variant": "底盤車(UK22T)",
+      "lengthText": "5097 mm",
+      "lengthMm": 5097,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "標準貨床車(UK22W)",
+      "lengthText": "5225 mm",
+      "lengthMm": 5225,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    }
+  ]
+}

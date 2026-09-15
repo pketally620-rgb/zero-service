@@ -1,0 +1,24 @@
+{
+  "brand": "Opel",
+  "model": "Combo",
+  "sourceId": "6961",
+  "url": "https://newcar.u-car.com.tw/Opel/Combo/6961/spec",
+  "retrievedAt": "2026-09-15T09:50:59.190Z",
+  "pageSha256": "334812a51e9245669de0bf08dd003c97397cb4b6ed258996d39cb7043afb1f31",
+  "entries": [
+    {
+      "variant": "Life",
+      "lengthText": "4760 mm",
+      "lengthMm": 4760,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "Life Premium",
+      "lengthText": "4760 mm",
+      "lengthMm": 4760,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

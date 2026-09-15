@@ -1,0 +1,31 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "C-Class",
+  "sourceId": "7151",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/C-Class/7151/spec",
+  "retrievedAt": "2026-09-15T09:50:41.858Z",
+  "pageSha256": "c6b23edd654315f011c58a9c982385742ab59a75c82aa7014d4f958754b5aa6d",
+  "entries": [
+    {
+      "variant": "C 180 星耀版",
+      "lengthText": "4751 mm",
+      "lengthMm": 4751,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "C 200 星耀版",
+      "lengthText": "4751 mm",
+      "lengthMm": 4751,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "C 300 星耀版",
+      "lengthText": "4793 mm",
+      "lengthMm": 4793,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

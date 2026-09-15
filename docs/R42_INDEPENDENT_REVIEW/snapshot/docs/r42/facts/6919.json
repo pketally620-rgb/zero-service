@@ -1,0 +1,24 @@
+{
+  "brand": "Volkswagen",
+  "model": "Golf Variant",
+  "sourceId": "6919",
+  "url": "https://newcar.u-car.com.tw/Volkswagen/Golf%20Variant/6919/spec",
+  "retrievedAt": "2026-09-15T09:51:19.919Z",
+  "pageSha256": "39d34f85740348318dc864eacc2782d3c963ff64c9f20e986d7c83a4f3facf54",
+  "entries": [
+    {
+      "variant": "280 eTSI Style",
+      "lengthText": "4638 mm",
+      "lengthMm": 4638,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "280 e-TSI R-Line",
+      "lengthText": "4638 mm",
+      "lengthMm": 4638,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Lamborghini",
+  "model": "Urus",
+  "sourceId": "7118",
+  "url": "https://newcar.u-car.com.tw/Lamborghini/Urus/7118/spec",
+  "retrievedAt": "2026-09-15T09:50:28.005Z",
+  "pageSha256": "7be94f6eb0a0b1ea9810d0fb8bbba04042bcd6ef5287508e5bc61e1115174f4a",
+  "entries": [
+    {
+      "variant": "Urus SE",
+      "lengthText": "5123 mm",
+      "lengthMm": 5123,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

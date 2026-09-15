@@ -1,0 +1,31 @@
+{
+  "brand": "Peugeot",
+  "model": "3008",
+  "sourceId": "6962",
+  "url": "https://newcar.u-car.com.tw/Peugeot/3008/6962/spec",
+  "retrievedAt": "2026-09-15T09:51:00.921Z",
+  "pageSha256": "6784d019305cf5cf9ce63bbf08249c1f49055e13e29cf6ce0639fb50b463f4bc",
+  "entries": [
+    {
+      "variant": "Allure",
+      "lengthText": "4,542 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GT Cielo",
+      "lengthText": "4,542 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GT Nappa Cielo",
+      "lengthText": "4,542 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

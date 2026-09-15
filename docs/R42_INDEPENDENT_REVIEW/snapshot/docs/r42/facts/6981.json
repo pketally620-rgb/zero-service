@@ -1,0 +1,17 @@
+{
+  "brand": "MG",
+  "model": "G50 Plus",
+  "sourceId": "6981",
+  "url": "https://newcar.u-car.com.tw/MG/G50%20Plus/6981/spec",
+  "retrievedAt": "2026-09-15T09:50:54.131Z",
+  "pageSha256": "1dbef5a4546d6a88981eaf828ddcef91ec8915631e684b004ba924244eb523cf",
+  "entries": [
+    {
+      "variant": "旗艦版",
+      "lengthText": "4825 mm",
+      "lengthMm": 4825,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

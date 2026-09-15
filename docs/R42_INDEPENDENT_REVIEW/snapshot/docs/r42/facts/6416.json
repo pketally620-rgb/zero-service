@@ -1,0 +1,45 @@
+{
+  "brand": "Porsche",
+  "model": "718 Cayman",
+  "sourceId": "6416",
+  "url": "https://newcar.u-car.com.tw/Porsche/718%20Cayman/6416/spec",
+  "retrievedAt": "2026-09-15T09:51:02.118Z",
+  "pageSha256": "4ef81a15193873ac288df34b932901a6ac428473eadd1c32ebae612e676bf157",
+  "entries": [
+    {
+      "variant": "718 Cayman",
+      "lengthText": "4379 mm",
+      "lengthMm": 4379,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    },
+    {
+      "variant": "718 Cayman Style Edition",
+      "lengthText": "4379 mm",
+      "lengthMm": 4379,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    },
+    {
+      "variant": "718 Cayman S",
+      "lengthText": "4379 mm",
+      "lengthMm": 4379,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    },
+    {
+      "variant": "718 Cayman GTS 4.0",
+      "lengthText": "4393 mm",
+      "lengthMm": 4393,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    },
+    {
+      "variant": "718 Cayman GT4 RS",
+      "lengthText": "4456 mm",
+      "lengthMm": 4456,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    }
+  ]
+}

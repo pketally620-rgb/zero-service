@@ -1,0 +1,45 @@
+{
+  "brand": "Hyundai",
+  "model": "Custin",
+  "sourceId": "7236",
+  "url": "https://newcar.u-car.com.tw/Hyundai/Custin/7236/spec",
+  "retrievedAt": "2026-09-15T09:50:20.042Z",
+  "pageSha256": "59ef4dc10dd77dc08b724d75be929687e4b380852ae998e32458bb349096c0ae",
+  "entries": [
+    {
+      "variant": "GLT-A",
+      "lengthText": "4950 mm",
+      "lengthMm": 4950,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "GLT-B",
+      "lengthText": "4950 mm",
+      "lengthMm": 4950,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "GLT-C",
+      "lengthText": "4950 mm",
+      "lengthMm": 4950,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "GLT-D",
+      "lengthText": "4950 mm",
+      "lengthMm": 4950,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "Royal",
+      "lengthText": "4950 mm",
+      "lengthMm": 4950,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

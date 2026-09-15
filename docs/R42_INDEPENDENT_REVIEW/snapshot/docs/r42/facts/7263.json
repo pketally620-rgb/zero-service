@@ -1,0 +1,38 @@
+{
+  "brand": "Nissan",
+  "model": "Kicks",
+  "sourceId": "7263",
+  "url": "https://newcar.u-car.com.tw/Nissan/Kicks/7263/spec",
+  "retrievedAt": "2026-09-15T09:50:58.242Z",
+  "pageSha256": "33bcb36619ee96d1c7147bfcc59e74145dd3a4b4fb19254bcd50eb5b06752dc0",
+  "entries": [
+    {
+      "variant": "初綻版",
+      "lengthText": "4328 mm",
+      "lengthMm": 4328,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "初綻Air",
+      "lengthText": "4328 mm",
+      "lengthMm": 4328,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "盛綻Air",
+      "lengthText": "4328 mm",
+      "lengthMm": 4328,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "極綻版",
+      "lengthText": "4328 mm",
+      "lengthMm": 4328,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "brand": "BMW",
+  "model": "i5",
+  "sourceId": "6967",
+  "url": "https://newcar.u-car.com.tw/BMW/i5/6967/spec",
+  "retrievedAt": "2026-09-15T09:50:03.966Z",
+  "pageSha256": "600bd9ea312acc84e6b0d60a0779ec730b9ead2fcf82f44594eba099700d0f97",
+  "entries": [
+    {
+      "variant": "eDrive40 M Sport",
+      "lengthText": "5060 mm",
+      "lengthMm": 5060,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "M60 xDrive",
+      "lengthText": "5060 mm",
+      "lengthMm": 5060,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

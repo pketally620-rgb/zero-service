@@ -1,0 +1,24 @@
+{
+  "brand": "Toyota",
+  "model": "Land Cruiser",
+  "sourceId": "7167",
+  "url": "https://newcar.u-car.com.tw/Toyota/Land%20Cruiser/7167/spec",
+  "retrievedAt": "2026-09-15T09:51:17.195Z",
+  "pageSha256": "6abf41e554d941d85b8763b44a86a50d1c13ffb0479632bbc5fde05a94b5088f",
+  "entries": [
+    {
+      "variant": "越野探索版",
+      "lengthText": "4925 mm",
+      "lengthMm": 4925,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "越野極境版",
+      "lengthText": "4925 mm",
+      "lengthMm": 4925,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

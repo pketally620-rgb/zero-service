@@ -1,0 +1,24 @@
+{
+  "brand": "BMW",
+  "model": "2 Series Gran Coupé",
+  "sourceId": "7139",
+  "url": "https://newcar.u-car.com.tw/BMW/2%20Series%20Gran%20Coup%C3%A9/7139/spec",
+  "retrievedAt": "2026-09-15T09:52:07.270Z",
+  "pageSha256": "7218e2c5ff042f975a945d83cad2ed156c74a0f330331ce98c66c414514d1027",
+  "entries": [
+    {
+      "variant": "220 M Racing Edition",
+      "lengthText": "4546 mm",
+      "lengthMm": 4546,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "M235 xDrive Racing Edition",
+      "lengthText": "4546 mm",
+      "lengthMm": 4546,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

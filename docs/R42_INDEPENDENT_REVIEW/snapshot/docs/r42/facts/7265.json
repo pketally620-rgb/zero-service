@@ -1,0 +1,24 @@
+{
+  "brand": "MG",
+  "model": "ZS",
+  "sourceId": "7265",
+  "url": "https://newcar.u-car.com.tw/MG/ZS/7265/spec",
+  "retrievedAt": "2026-09-15T09:50:54.961Z",
+  "pageSha256": "2d18a18b9eb9b149855e13eea7ddbcbee0aa179507891a8100ae9b8d252bd4c0",
+  "entries": [
+    {
+      "variant": "1.5L玩家版",
+      "lengthText": "4323 mm",
+      "lengthMm": 4323,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "1.5L玩美版",
+      "lengthText": "4323 mm",
+      "lengthMm": 4323,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

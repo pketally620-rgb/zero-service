@@ -1,0 +1,38 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "S-Class",
+  "sourceId": "7218",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/S-Class/7218/spec",
+  "retrievedAt": "2026-09-15T09:50:53.683Z",
+  "pageSha256": "ca7e3667a4b1fbb5e8c564187eb460ae18d0d1baaae4d26482324fdcf9e5843e",
+  "entries": [
+    {
+      "variant": "S 350 d",
+      "lengthText": "5203 mm",
+      "lengthMm": 5203,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "S 450 4Matic L",
+      "lengthText": "5313 mm",
+      "lengthMm": 5313,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "S 450 4Matic L Exclusive",
+      "lengthText": "5313 mm",
+      "lengthMm": 5313,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "S 580 4Matic L Exclusive",
+      "lengthText": "5313 mm",
+      "lengthMm": 5313,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

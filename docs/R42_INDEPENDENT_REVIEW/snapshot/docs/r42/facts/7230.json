@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "EQE",
+  "sourceId": "7230",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/EQE/7230/spec",
+  "retrievedAt": "2026-09-15T09:50:45.244Z",
+  "pageSha256": "d096a05d66d8329202887c50416a2aa7e9bd43e6b197b298812bcccdd16bfd05",
+  "entries": [
+    {
+      "variant": "EQE 350+",
+      "lengthText": "4964 mm",
+      "lengthMm": 4964,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

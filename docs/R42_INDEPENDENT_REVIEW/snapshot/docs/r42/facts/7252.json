@@ -1,0 +1,24 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Mercedes-AMG GT",
+  "sourceId": "7252",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Mercedes-AMG%20GT/7252/spec",
+  "retrievedAt": "2026-09-15T09:50:51.830Z",
+  "pageSha256": "d2a45f4c9ee104d2a16b94957b1971963c4d6a0d3ed40caa506fe53c325547e4",
+  "entries": [
+    {
+      "variant": "GT 43 Coup&#233;",
+      "lengthText": "4728 mm",
+      "lengthMm": 4728,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    },
+    {
+      "variant": "GT 63 S E Performance Coup&#233;",
+      "lengthText": "4728 mm",
+      "lengthMm": 4728,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "McLaren",
+  "model": "GTS",
+  "sourceId": "7000",
+  "url": "https://newcar.u-car.com.tw/McLaren/GTS/7000/spec",
+  "retrievedAt": "2026-09-15T09:50:40.885Z",
+  "pageSha256": "38edde66d622b655ca35863980acb1cb6190d226e3a35865df49ef02f7cc235d",
+  "entries": [
+    {
+      "variant": "GTS",
+      "lengthText": "4683 mm",
+      "lengthMm": 4683,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

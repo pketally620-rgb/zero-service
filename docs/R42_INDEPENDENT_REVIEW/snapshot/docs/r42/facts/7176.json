@@ -1,0 +1,17 @@
+{
+  "brand": "Subaru",
+  "model": "Solterra",
+  "sourceId": "7176",
+  "url": "https://newcar.u-car.com.tw/Subaru/Solterra/7176/spec",
+  "retrievedAt": "2026-09-15T09:51:11.130Z",
+  "pageSha256": "021f833a358b137d46610a007f32090b2f8f6b0cd3ede1a9dfbbe87f417c9427",
+  "entries": [
+    {
+      "variant": "Solterra XT",
+      "lengthText": "4,690 mm",
+      "lengthMm": null,
+      "bodyText": "休旅車/RV",
+      "seatText": null
+    }
+  ]
+}

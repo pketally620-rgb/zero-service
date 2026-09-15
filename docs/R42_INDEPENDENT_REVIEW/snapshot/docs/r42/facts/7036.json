@@ -1,0 +1,24 @@
+{
+  "brand": "Tesla",
+  "model": "Model 3",
+  "sourceId": "7036",
+  "url": "https://newcar.u-car.com.tw/Tesla/Model%203/7036/spec",
+  "retrievedAt": "2026-09-15T09:51:13.356Z",
+  "pageSha256": "dde6d24b262a834d417ca30e3f5d9946f0041044a9e744aae994f504f1b68119",
+  "entries": [
+    {
+      "variant": "Model 3 Long Rage RWD",
+      "lengthText": "4720 mm",
+      "lengthMm": 4720,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Model 3 Performance",
+      "lengthText": "4720 mm",
+      "lengthMm": 4720,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

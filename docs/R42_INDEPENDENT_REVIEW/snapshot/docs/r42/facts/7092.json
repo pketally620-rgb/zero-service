@@ -1,0 +1,17 @@
+{
+  "brand": "Aston Martin",
+  "model": "DB12",
+  "sourceId": "7092",
+  "url": "https://newcar.u-car.com.tw/Aston%20Martin/DB12/7092/spec",
+  "retrievedAt": "2026-09-15T09:49:51.744Z",
+  "pageSha256": "c9e9c965f297bf7cda1db27e9ba9abcbe73281bbaffc5041bb2ee142b0da93c1",
+  "entries": [
+    {
+      "variant": "DB12 S",
+      "lengthText": "4725 mm",
+      "lengthMm": 4725,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

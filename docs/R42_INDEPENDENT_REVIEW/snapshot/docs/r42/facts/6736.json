@@ -1,0 +1,17 @@
+{
+  "brand": "BMW",
+  "model": "M3 Touring",
+  "sourceId": "6736",
+  "url": "https://newcar.u-car.com.tw/BMW/M3%20Touring/6736/spec",
+  "retrievedAt": "2026-09-15T09:50:06.074Z",
+  "pageSha256": "05290c5d400b7ca4e60bd48e4c936fa9d495a73299f32a8f14d9341c091fe857",
+  "entries": [
+    {
+      "variant": "M3 Competition Touring M xDrive",
+      "lengthText": "4801 mm",
+      "lengthMm": 4801,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

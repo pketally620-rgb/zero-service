@@ -1,0 +1,31 @@
+{
+  "brand": "Alfa Romeo",
+  "model": "Giulia",
+  "sourceId": "7006",
+  "url": "https://newcar.u-car.com.tw/Alfa%20Romeo/Giulia/7006/spec",
+  "retrievedAt": "2026-09-15T09:49:50.316Z",
+  "pageSha256": "0e0f0c1ddedd726c2d9344db3226b33811d8429e2e9dc8781e3a64212e8514f2",
+  "entries": [
+    {
+      "variant": "Sprint",
+      "lengthText": "4,650 mm",
+      "lengthMm": null,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Intensa",
+      "lengthText": "4,650 mm",
+      "lengthMm": null,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Quadrifoglio",
+      "lengthText": "4,639 mm",
+      "lengthMm": null,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

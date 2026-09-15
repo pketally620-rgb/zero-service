@@ -1,0 +1,17 @@
+{
+  "brand": "Suzuki",
+  "model": "Jimny",
+  "sourceId": "7234",
+  "url": "https://newcar.u-car.com.tw/Suzuki/Jimny/7234/spec",
+  "retrievedAt": "2026-09-15T09:51:12.397Z",
+  "pageSha256": "b4a76dfc9b3c86cc05cfa2f977d87b4f7c4725c080dca9b107f8ac57c1255841",
+  "entries": [
+    {
+      "variant": "Jimny",
+      "lengthText": "3645 mm",
+      "lengthMm": 3645,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

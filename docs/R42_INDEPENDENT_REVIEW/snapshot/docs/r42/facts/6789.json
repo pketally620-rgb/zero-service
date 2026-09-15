@@ -1,0 +1,17 @@
+{
+  "brand": "Citroën",
+  "model": "Berlingo Van",
+  "sourceId": "6789",
+  "url": "https://newcar.u-car.com.tw/Citro%C3%ABn/Berlingo%20Van/6789/spec",
+  "retrievedAt": "2026-09-15T09:52:08.633Z",
+  "pageSha256": "ee8b9070f01d890fd2a21bb8c92397eb21045b1899d7748270bb6d237a45d2b9",
+  "entries": [
+    {
+      "variant": "Van XL 科技版",
+      "lengthText": "4,753 mm",
+      "lengthMm": null,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    }
+  ]
+}

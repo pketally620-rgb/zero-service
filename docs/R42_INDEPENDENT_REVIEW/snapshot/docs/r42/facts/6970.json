@@ -1,0 +1,31 @@
+{
+  "brand": "Subaru",
+  "model": "Forester",
+  "sourceId": "6970",
+  "url": "https://newcar.u-car.com.tw/Subaru/Forester/6970/spec",
+  "retrievedAt": "2026-09-15T09:51:10.701Z",
+  "pageSha256": "2e297ab3a3973df55fb80e735c63a7d86e483004dc2280748b56f7e075f21d23",
+  "entries": [
+    {
+      "variant": "2.5 i-L EyeSight",
+      "lengthText": "4,655 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "2.5 i-S EyeSight",
+      "lengthText": "4,655 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "2.5 i-S EyeSight e-Boxer Hybrid",
+      "lengthText": "4,655 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

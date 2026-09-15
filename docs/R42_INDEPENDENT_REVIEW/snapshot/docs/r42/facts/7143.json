@@ -1,0 +1,59 @@
+{
+  "brand": "Toyota",
+  "model": "RAV4",
+  "sourceId": "7143",
+  "url": "https://newcar.u-car.com.tw/Toyota/RAV4/7143/spec",
+  "retrievedAt": "2026-09-15T09:51:17.678Z",
+  "pageSha256": "78f26e0dbf365d9b4184d77b6772bb93d75141145880c563d498970c05360139",
+  "entries": [
+    {
+      "variant": "豪華",
+      "lengthText": "4600 mm",
+      "lengthMm": 4600,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "尊爵",
+      "lengthText": "4600 mm",
+      "lengthMm": 4600,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "尊爵+",
+      "lengthText": "4600 mm",
+      "lengthMm": 4600,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "旗艦",
+      "lengthText": "4600 mm",
+      "lengthMm": 4600,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Adventure 4WD",
+      "lengthText": "4620 mm",
+      "lengthMm": 4620,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GR Sport 4WD",
+      "lengthText": "4645 mm",
+      "lengthMm": 4645,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "PHEV",
+      "lengthText": "4600 mm",
+      "lengthMm": 4600,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

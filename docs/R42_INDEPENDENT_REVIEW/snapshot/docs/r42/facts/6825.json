@@ -1,0 +1,80 @@
+{
+  "brand": "Mitsubishi",
+  "model": "Outlander",
+  "sourceId": "6825",
+  "url": "https://newcar.u-car.com.tw/Mitsubishi/Outlander/6825/spec",
+  "retrievedAt": "2026-09-15T09:50:56.974Z",
+  "pageSha256": "4d6e3000c1f855a8af61ae1004d6a93d2b8329373c954ab1087718ae3aeaa3e3",
+  "entries": [
+    {
+      "variant": "2WD 典藏型",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "4WD 精威型",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "2WD 安全型",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "4WD 躍動型",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "2WD 精爵型",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "2WD 精勁型",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "4WD 精銳型",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "2WD 尊貴型",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "S-AWC旗艦型",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "2WD 尊貴型7人座",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Subaru",
+  "model": "Outback",
+  "sourceId": "6204",
+  "url": "https://newcar.u-car.com.tw/Subaru/Outback/6204/spec",
+  "retrievedAt": "2026-09-15T09:51:10.908Z",
+  "pageSha256": "454fe6a81263428910429677180e7a46cf6c836776e1c44b2e9a981516c73bb7",
+  "entries": [
+    {
+      "variant": "2.5 i-T EyeSight",
+      "lengthText": "4870 mm",
+      "lengthMm": 4870,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

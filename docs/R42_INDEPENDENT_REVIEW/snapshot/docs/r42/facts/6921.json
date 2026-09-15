@@ -1,0 +1,17 @@
+{
+  "brand": "Volkswagen",
+  "model": "Golf R Variant",
+  "sourceId": "6921",
+  "url": "https://newcar.u-car.com.tw/Volkswagen/Golf%20R%20Variant/6921/spec",
+  "retrievedAt": "2026-09-15T09:51:19.764Z",
+  "pageSha256": "1ca395a8e193b249cf107374bf0a07f28a8c1170995e848a17a5fbe3439a47fa",
+  "entries": [
+    {
+      "variant": "Golf R Variant",
+      "lengthText": "4651 mm",
+      "lengthMm": 4651,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

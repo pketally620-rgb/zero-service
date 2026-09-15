@@ -1,0 +1,38 @@
+{
+  "brand": "Mahindra",
+  "model": "Pikup",
+  "sourceId": "6180",
+  "url": "https://newcar.u-car.com.tw/Mahindra/Pikup/6180/spec",
+  "retrievedAt": "2026-09-15T09:50:35.166Z",
+  "pageSha256": "f43595d182486118072187ef17b9c4fa6bfca0b0a3366409b3503e8d03e90127",
+  "entries": [
+    {
+      "variant": "單廂2WD",
+      "lengthText": "5175 mm",
+      "lengthMm": 5175,
+      "bodyText": "貨卡/pick-up truck",
+      "seatText": null
+    },
+    {
+      "variant": "單廂4WD",
+      "lengthText": "5175 mm",
+      "lengthMm": 5175,
+      "bodyText": "貨卡/pick-up truck",
+      "seatText": null
+    },
+    {
+      "variant": "雙廂2WD",
+      "lengthText": "5175 mm",
+      "lengthMm": 5175,
+      "bodyText": "貨卡/pick-up truck",
+      "seatText": null
+    },
+    {
+      "variant": "雙廂4WD",
+      "lengthText": "5175 mm",
+      "lengthMm": 5175,
+      "bodyText": "貨卡/pick-up truck",
+      "seatText": null
+    }
+  ]
+}

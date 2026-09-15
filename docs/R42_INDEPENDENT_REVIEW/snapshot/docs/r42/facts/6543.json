@@ -1,0 +1,24 @@
+{
+  "brand": "Caterham",
+  "model": "Caterham 7",
+  "sourceId": "6543",
+  "url": "https://newcar.u-car.com.tw/Caterham/Caterham%207/6543/spec",
+  "retrievedAt": "2026-09-15T09:50:09.732Z",
+  "pageSha256": "451f2f96545593ad864cd9dcc2b2486b96159915cc3d509662ea437d0cfecbad",
+  "entries": [
+    {
+      "variant": "Seven 170",
+      "lengthText": "3100 mm",
+      "lengthMm": 3100,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    },
+    {
+      "variant": "Seven 340",
+      "lengthText": "3100 mm",
+      "lengthMm": 3100,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

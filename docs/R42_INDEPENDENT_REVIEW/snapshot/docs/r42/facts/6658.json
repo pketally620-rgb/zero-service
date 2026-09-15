@@ -1,0 +1,17 @@
+{
+  "brand": "Maserati",
+  "model": "Grecale Folgore",
+  "sourceId": "6658",
+  "url": "https://newcar.u-car.com.tw/Maserati/Grecale%20Folgore/6658/spec",
+  "retrievedAt": "2026-09-15T09:50:36.843Z",
+  "pageSha256": "a652f53088f2c5c2ab60f55ce6c1fcec2bbbfb5134b6660909fc0192911cd7b4",
+  "entries": [
+    {
+      "variant": "Grecale Folgore",
+      "lengthText": "4865 mm",
+      "lengthMm": 4865,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

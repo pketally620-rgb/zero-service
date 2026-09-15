@@ -1,0 +1,31 @@
+{
+  "brand": "Kia",
+  "model": "Sorento",
+  "sourceId": "7207",
+  "url": "https://newcar.u-car.com.tw/Kia/Sorento/7207/spec",
+  "retrievedAt": "2026-09-15T09:50:26.723Z",
+  "pageSha256": "7a11a77c6de789d25e242c0233edc65cdcbdb7f1430b3824712bd9c1edb04e9d",
+  "entries": [
+    {
+      "variant": "Turbo-Hybrid Trendy 7人座",
+      "lengthText": "4815 mm",
+      "lengthMm": 4815,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Turbo-Hybrid Apex 7人座",
+      "lengthText": "4815 mm",
+      "lengthMm": 4815,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Turbo-Hybrid Signature 7人座",
+      "lengthText": "4815 mm",
+      "lengthMm": 4815,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "brand": "BMW",
+  "model": "X3",
+  "sourceId": "7115",
+  "url": "https://newcar.u-car.com.tw/BMW/X3/7115/spec",
+  "retrievedAt": "2026-09-15T09:50:08.013Z",
+  "pageSha256": "46ffa158d2e3f2efb6ddaeb65ecbef860afe695970d9e64bf546842f06983a55",
+  "entries": [
+    {
+      "variant": "20 xDrive xLine",
+      "lengthText": "4755 mm",
+      "lengthMm": 4755,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "20 xDrive M Sport",
+      "lengthText": "4755 mm",
+      "lengthMm": 4755,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "M50 xDrive Pure Edition",
+      "lengthText": "4755 mm",
+      "lengthMm": 4755,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "M50 xDrive",
+      "lengthText": "4755 mm",
+      "lengthMm": 4755,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

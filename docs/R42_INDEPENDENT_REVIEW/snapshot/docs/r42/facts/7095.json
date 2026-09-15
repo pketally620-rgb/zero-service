@@ -1,0 +1,17 @@
+{
+  "brand": "Aston Martin",
+  "model": "Vanquish",
+  "sourceId": "7095",
+  "url": "https://newcar.u-car.com.tw/Aston%20Martin/Vanquish/7095/spec",
+  "retrievedAt": "2026-09-15T09:49:52.412Z",
+  "pageSha256": "b65274edfb5ccc8c1a43c0aeef94dc42d61841a125e7b98187d98af0d2c1fccf",
+  "entries": [
+    {
+      "variant": "Vanquish",
+      "lengthText": "4850 mm",
+      "lengthMm": 4850,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

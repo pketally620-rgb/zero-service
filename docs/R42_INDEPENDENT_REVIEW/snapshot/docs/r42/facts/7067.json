@@ -1,0 +1,24 @@
+{
+  "brand": "Bentley",
+  "model": "Bentayga",
+  "sourceId": "7067",
+  "url": "https://newcar.u-car.com.tw/Bentley/Bentayga/7067/spec",
+  "retrievedAt": "2026-09-15T09:49:59.408Z",
+  "pageSha256": "e69aa6cffc041982b6972c3d2be042152ffe58963b4b5cc5a6c6d14b4a515fc6",
+  "entries": [
+    {
+      "variant": "Bentayag V8",
+      "lengthText": "5144 mm",
+      "lengthMm": 5144,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Bentayga Speed",
+      "lengthText": "5144 mm",
+      "lengthMm": 5144,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

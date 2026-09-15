@@ -1,0 +1,45 @@
+{
+  "brand": "Hyundai",
+  "model": "Santa Fe",
+  "sourceId": "7181",
+  "url": "https://newcar.u-car.com.tw/Hyundai/Santa%20Fe/7181/spec",
+  "retrievedAt": "2026-09-15T09:50:21.584Z",
+  "pageSha256": "cfb302186b24595c1d748ae6d7f09d92803b8f27e373c6319c48d789bf325cfc",
+  "entries": [
+    {
+      "variant": "GLTH-A",
+      "lengthText": "4830 mm",
+      "lengthMm": 4830,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GLTH-B",
+      "lengthText": "4830 mm",
+      "lengthMm": 4830,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GLTH-C",
+      "lengthText": "4830 mm",
+      "lengthMm": 4830,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GLTH-C Premium",
+      "lengthText": "4830 mm",
+      "lengthMm": 4830,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GLTH-Calligraphy",
+      "lengthText": "4830 mm",
+      "lengthMm": 4830,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

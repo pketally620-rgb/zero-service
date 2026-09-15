@@ -1,0 +1,80 @@
+{
+  "brand": "Lexus",
+  "model": "RX",
+  "sourceId": "6764",
+  "url": "https://newcar.u-car.com.tw/Lexus/RX/6764/spec",
+  "retrievedAt": "2026-09-15T09:50:32.549Z",
+  "pageSha256": "4f95b464c41a24055ce57fec81697018ada5433f56aa4ffdf4657094c5782893",
+  "entries": [
+    {
+      "variant": "RX 350豪華版",
+      "lengthText": "4890 mm",
+      "lengthMm": 4890,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "RX 350h豪華版",
+      "lengthText": "4890 mm",
+      "lengthMm": 4890,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "RX 350頂級版",
+      "lengthText": "4890 mm",
+      "lengthMm": 4890,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "RX 350h頂級版",
+      "lengthText": "4890 mm",
+      "lengthMm": 4890,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "RX 350旗艦版",
+      "lengthText": "4890 mm",
+      "lengthMm": 4890,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "RX 350 F Sport版",
+      "lengthText": "4890 mm",
+      "lengthMm": 4890,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "RX 350h旗艦版",
+      "lengthText": "4890 mm",
+      "lengthMm": 4890,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "RX 450h+豪華版",
+      "lengthText": "4890 mm",
+      "lengthMm": 4890,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "RX 450h+旗艦版",
+      "lengthText": "4890 mm",
+      "lengthMm": 4890,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "RX 500h F Sport Performance版",
+      "lengthText": "4890 mm",
+      "lengthMm": 4890,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

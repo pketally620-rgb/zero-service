@@ -1,0 +1,17 @@
+{
+  "brand": "Škoda",
+  "model": "Karoq",
+  "sourceId": "7276",
+  "url": "https://newcar.u-car.com.tw/%C5%A0koda/Karoq/7276/spec",
+  "retrievedAt": "2026-09-15T09:51:08.412Z",
+  "pageSha256": "45b243b54a161016f1378cc4ce00b2338f43caa643458e03a6ee2deaa6622a4c",
+  "entries": [
+    {
+      "variant": "Sport",
+      "lengthText": "4384 mm",
+      "lengthMm": 4384,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

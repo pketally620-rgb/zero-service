@@ -1,0 +1,31 @@
+{
+  "brand": "Jaguar",
+  "model": "F-Type",
+  "sourceId": "6514",
+  "url": "https://newcar.u-car.com.tw/Jaguar/F-Type/6514/spec",
+  "retrievedAt": "2026-09-15T09:50:24.679Z",
+  "pageSha256": "d3b09a2bf7015adabd13e5ab84277cbc766d0164cc0d18bd4d7bc5e929d5e8d5",
+  "entries": [
+    {
+      "variant": "P300 R-Dynamic",
+      "lengthText": "4,470 mm",
+      "lengthMm": null,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    },
+    {
+      "variant": "R 75 Coup&#233;",
+      "lengthText": "4,470 mm",
+      "lengthMm": null,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    },
+    {
+      "variant": "R 75 Convertible",
+      "lengthText": "4,470 mm",
+      "lengthMm": null,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "brand": "Volkswagen",
+  "model": "Tiguan",
+  "sourceId": "7087",
+  "url": "https://newcar.u-car.com.tw/Volkswagen/Tiguan/7087/spec",
+  "retrievedAt": "2026-09-15T09:51:21.371Z",
+  "pageSha256": "f64911565f9d0fa5c4516207e37f81c0a38fcde2a942eff7721e625cb604eb9a",
+  "entries": [
+    {
+      "variant": "208 eTSI Elegance",
+      "lengthText": "4539 mm",
+      "lengthMm": 4539,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "280 eTSI Elegance Premium",
+      "lengthText": "4539 mm",
+      "lengthMm": 4539,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "330 TSI Elegance Premium",
+      "lengthText": "4539 mm",
+      "lengthMm": 4539,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "430 TSI R-Line Performance",
+      "lengthText": "4539 mm",
+      "lengthMm": 4539,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

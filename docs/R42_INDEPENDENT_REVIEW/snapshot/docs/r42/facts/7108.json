@@ -1,0 +1,31 @@
+{
+  "brand": "Škoda",
+  "model": "Superb",
+  "sourceId": "7108",
+  "url": "https://newcar.u-car.com.tw/%C5%A0koda/Superb/7108/spec",
+  "retrievedAt": "2026-09-15T09:51:09.580Z",
+  "pageSha256": "7daf37e34ea713417d24f3dfe60af1135b5a0aa1f1f20c0ab9dd7215503837af",
+  "entries": [
+    {
+      "variant": "1.5 TSI e-TEC",
+      "lengthText": "4912 mm",
+      "lengthMm": 4912,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "2.0 TSI Sportline",
+      "lengthText": "4912 mm",
+      "lengthMm": 4912,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "2.0 TSI 4&#215;4 L&K",
+      "lengthText": "4912 mm",
+      "lengthMm": 4912,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

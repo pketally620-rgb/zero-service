@@ -1,0 +1,24 @@
+{
+  "brand": "Suzuki",
+  "model": "e Vitara",
+  "sourceId": "7081",
+  "url": "https://newcar.u-car.com.tw/Suzuki/e%20Vitara/7081/spec",
+  "retrievedAt": "2026-09-15T09:51:12.149Z",
+  "pageSha256": "547f4ba6f2a6427d4466250980b440c8e6cc43237bf68a0e23e7d3e28d15f77f",
+  "entries": [
+    {
+      "variant": "2WD",
+      "lengthText": "4275 mm",
+      "lengthMm": 4275,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Allgrip-e",
+      "lengthText": "4275 mm",
+      "lengthMm": 4275,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

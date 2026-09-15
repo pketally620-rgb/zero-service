@@ -1,0 +1,17 @@
+{
+  "brand": "Opel",
+  "model": "Mokka",
+  "sourceId": "6293",
+  "url": "https://newcar.u-car.com.tw/Opel/Mokka/6293/spec",
+  "retrievedAt": "2026-09-15T09:50:59.630Z",
+  "pageSha256": "4775b97173ce57c388c77a01274f831093f72868887137bbb7263f15682d686b",
+  "entries": [
+    {
+      "variant": "Elegance",
+      "lengthText": "4151 mm",
+      "lengthMm": 4151,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

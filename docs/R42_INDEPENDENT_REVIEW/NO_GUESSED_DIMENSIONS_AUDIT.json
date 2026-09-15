@@ -1,0 +1,16 @@
+{
+  "result": "PASS_TRACEABILITY",
+  "records": 422,
+  "variants": 855,
+  "unbackedDimensions": 0,
+  "unresolvedVariants": 72,
+  "unresolvedVariantOverlap": 0,
+  "methods": {
+    "raw-mm-normalization": 843,
+    "historical-source-note": 4,
+    "manufacturer-correction": 5,
+    "separate-official-variant": 3
+  },
+  "candidateHashesUnchanged": true,
+  "scope": "Existing evidence only; no re-scrape, dataset rebuild or new vehicle values."
+}

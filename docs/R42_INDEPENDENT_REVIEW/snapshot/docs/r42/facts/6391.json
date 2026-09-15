@@ -1,0 +1,24 @@
+{
+  "brand": "Lexus",
+  "model": "LC",
+  "sourceId": "6391",
+  "url": "https://newcar.u-car.com.tw/Lexus/LC/6391/spec",
+  "retrievedAt": "2026-09-15T09:50:31.421Z",
+  "pageSha256": "6c3861e64ceff2c2ee76a4f8cbb4b4f261ac0539853b5aedbb6d509b439a550c",
+  "entries": [
+    {
+      "variant": "LC 500",
+      "lengthText": "4770 mm",
+      "lengthMm": 4770,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    },
+    {
+      "variant": "LC 500h",
+      "lengthText": "4770 mm",
+      "lengthMm": 4770,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    }
+  ]
+}

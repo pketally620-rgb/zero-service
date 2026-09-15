@@ -1,0 +1,17 @@
+{
+  "brand": "BMW",
+  "model": "X6 M",
+  "sourceId": "6436",
+  "url": "https://newcar.u-car.com.tw/BMW/X6%20M/6436/spec",
+  "retrievedAt": "2026-09-15T09:50:08.694Z",
+  "pageSha256": "3c36ff212c9730103dcd213e26289a6c8a99e96b79f310a270e58f69c7ee7027",
+  "entries": [
+    {
+      "variant": "X6 M Competition",
+      "lengthText": "4948 mm",
+      "lengthMm": 4948,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

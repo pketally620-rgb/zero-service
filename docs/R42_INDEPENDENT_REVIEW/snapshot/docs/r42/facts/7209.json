@@ -1,0 +1,38 @@
+{
+  "brand": "Volkswagen",
+  "model": "Golf",
+  "sourceId": "7209",
+  "url": "https://newcar.u-car.com.tw/Volkswagen/Golf/7209/spec",
+  "retrievedAt": "2026-09-15T09:51:19.310Z",
+  "pageSha256": "3d2869d023a087eb8acba9fa23554635d9619bf9a9d34203f594fc41270c4dac",
+  "entries": [
+    {
+      "variant": "280 eTSI Life Premium",
+      "lengthText": "4289 mm",
+      "lengthMm": 4289,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "280 eTSI Style",
+      "lengthText": "4289 mm",
+      "lengthMm": 4289,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "280 eTSI R-Line",
+      "lengthText": "4289 mm",
+      "lengthMm": 4289,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "GTI",
+      "lengthText": "4289 mm",
+      "lengthMm": 4289,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "brand": "Porsche",
+  "model": "Macan",
+  "sourceId": "6626",
+  "url": "https://newcar.u-car.com.tw/Porsche/Macan/6626/spec",
+  "retrievedAt": "2026-09-15T09:51:04.963Z",
+  "pageSha256": "c001c7ebd945c9e3b0dd97bb7a04e4fe62fdd264f142de945b861dd7f6430f73",
+  "entries": [
+    {
+      "variant": "Macan",
+      "lengthText": "4726 mm",
+      "lengthMm": 4726,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Macan T",
+      "lengthText": "4726 mm",
+      "lengthMm": 4726,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Macan S",
+      "lengthText": "4726 mm",
+      "lengthMm": 4726,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Macan GTS",
+      "lengthText": "4726 mm",
+      "lengthMm": 4726,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

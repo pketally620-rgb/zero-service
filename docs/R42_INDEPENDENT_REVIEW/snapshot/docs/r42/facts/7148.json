@@ -1,0 +1,17 @@
+{
+  "brand": "BMW",
+  "model": "4 Series Convertible",
+  "sourceId": "7148",
+  "url": "https://newcar.u-car.com.tw/BMW/4%20Series%20Convertible/7148/spec",
+  "retrievedAt": "2026-09-15T09:50:02.250Z",
+  "pageSha256": "37b3366b424db877097aaeff8d4686cd8b15de3abd2c39f3b810e31ee15bd6c2",
+  "entries": [
+    {
+      "variant": "430i xDrive M Sport",
+      "lengthText": "4768 mm",
+      "lengthMm": 4768,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

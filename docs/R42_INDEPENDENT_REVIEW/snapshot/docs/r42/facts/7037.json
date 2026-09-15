@@ -1,0 +1,17 @@
+{
+  "brand": "Kia",
+  "model": "Ceed Sportswagon",
+  "sourceId": "7037",
+  "url": "https://newcar.u-car.com.tw/Kia/Ceed%20Sportswagon/7037/spec",
+  "retrievedAt": "2026-09-15T09:50:25.558Z",
+  "pageSha256": "b385d1542f0f479afd474face4347c46f7206de2641d9e263cb998b3479a1f6e",
+  "entries": [
+    {
+      "variant": "Apex Mild Hybrid",
+      "lengthText": "4600 mm",
+      "lengthMm": 4600,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

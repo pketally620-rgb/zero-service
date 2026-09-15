@@ -1,0 +1,17 @@
+{
+  "brand": "Morgan",
+  "model": "Plus Four",
+  "sourceId": "6198",
+  "url": "https://newcar.u-car.com.tw/Morgan/Plus%20Four/6198/spec",
+  "retrievedAt": "2026-09-15T09:50:57.515Z",
+  "pageSha256": "0de1d069665812dd211c4ae69dd40e7e60ba8f34a76a8b78c090861b2bf4a25c",
+  "entries": [
+    {
+      "variant": "Plus Four自排",
+      "lengthText": "4010 mm",
+      "lengthMm": 4010,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

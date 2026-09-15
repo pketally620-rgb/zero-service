@@ -1,0 +1,38 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "V-Class",
+  "sourceId": "7253",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/V-Class/7253/spec",
+  "retrievedAt": "2026-09-15T09:50:53.898Z",
+  "pageSha256": "3a39e5e0d1825f82dde344064cc0b4b9abcae0cf40bbd14e091572570c335112",
+  "entries": [
+    {
+      "variant": "Vito Tourer 摘星版",
+      "lengthText": "5370 mm",
+      "lengthMm": 5370,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "V 220 d Avantgarde 星耀版",
+      "lengthText": "4895 mm",
+      "lengthMm": 4895,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "V 250 d Avantgarde 星耀版",
+      "lengthText": "5140 mm",
+      "lengthMm": 5140,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "V 250 d Exclusive 星耀版",
+      "lengthText": "5140 mm",
+      "lengthMm": 5140,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

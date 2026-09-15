@@ -1,0 +1,24 @@
+{
+  "brand": "Nissan",
+  "model": "Ariya",
+  "sourceId": "6692",
+  "url": "https://newcar.u-car.com.tw/Nissan/Ariya/6692/spec",
+  "retrievedAt": "2026-09-15T09:50:57.955Z",
+  "pageSha256": "fc59070777aabcf0f6f0aa6495035613261454d086da7998aa1729e077e34099",
+  "entries": [
+    {
+      "variant": "標準版",
+      "lengthText": "4595 mm",
+      "lengthMm": 4595,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "增程版",
+      "lengthText": "4595 mm",
+      "lengthMm": 4595,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

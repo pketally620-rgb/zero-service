@@ -1,0 +1,24 @@
+{
+  "brand": "Porsche",
+  "model": "911 Turbo",
+  "sourceId": "6420",
+  "url": "https://newcar.u-car.com.tw/Porsche/911%20Turbo/6420/spec",
+  "retrievedAt": "2026-09-15T09:51:03.263Z",
+  "pageSha256": "821af4269037d2986ad369a54fbabc36f63bc41a7aad36a9991049e38a25eeb1",
+  "entries": [
+    {
+      "variant": "911 Turbo",
+      "lengthText": "4535 mm",
+      "lengthMm": 4535,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    },
+    {
+      "variant": "911 Turbo S",
+      "lengthText": "4535 mm",
+      "lengthMm": 4535,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "brand": "CMC",
+  "model": "J Space廂型車",
+  "sourceId": "7208",
+  "url": "https://newcar.u-car.com.tw/CMC/J%20Space%E5%BB%82%E5%9E%8B%E8%BB%8A/7208/spec",
+  "retrievedAt": "2026-09-15T09:50:11.778Z",
+  "pageSha256": "a53365655f1ba58ad57081c0646b6c9ef55efdf5a6330620345ea76834666075",
+  "entries": [
+    {
+      "variant": "2人標準型CQ232",
+      "lengthText": "4165 mm",
+      "lengthMm": 4165,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "5人標準型CQ235",
+      "lengthText": "4165 mm",
+      "lengthMm": 4165,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "2人精緻型CQ322(訂作車)",
+      "lengthText": "4165 mm",
+      "lengthMm": 4165,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "5人精緻型CQ325",
+      "lengthText": "4165 mm",
+      "lengthMm": 4165,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "5人豪華型CQ335",
+      "lengthText": "4165 mm",
+      "lengthMm": 4165,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "5人Cossi版CQ375/CQ3C5",
+      "lengthText": "4165 mm",
+      "lengthMm": 4165,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "5人探險型CQ435(訂作車)",
+      "lengthText": "4165 mm",
+      "lengthMm": 4165,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "5人豪華型客車CQ333(訂作車)",
+      "lengthText": "4165 mm",
+      "lengthMm": 4165,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "8人尊貴型客車CQ338",
+      "lengthText": "4165 mm",
+      "lengthMm": 4165,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "5人Cossi版客車CQ373/CQ3C3(訂作車)",
+      "lengthText": "4165 mm",
+      "lengthMm": 4165,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "8人Cossi版客車CQ378",
+      "lengthText": "4165 mm",
+      "lengthMm": 4165,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

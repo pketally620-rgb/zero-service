@@ -1,0 +1,24 @@
+{
+  "brand": "Maserati",
+  "model": "GranTurismo",
+  "sourceId": "6458",
+  "url": "https://newcar.u-car.com.tw/Maserati/GranTurismo/6458/spec",
+  "retrievedAt": "2026-09-15T09:50:35.757Z",
+  "pageSha256": "eb1820e074d9363897d528ee61c71857b9b32741d1b25bd62670780e0e09537b",
+  "entries": [
+    {
+      "variant": "GranTurismo Modena",
+      "lengthText": "4959 mm",
+      "lengthMm": 4959,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    },
+    {
+      "variant": "GranTurismo Trofeo",
+      "lengthText": "4966 mm",
+      "lengthMm": 4966,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

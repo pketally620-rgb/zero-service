@@ -1,0 +1,17 @@
+{
+  "brand": "Volkswagen",
+  "model": "Touran",
+  "sourceId": "6809",
+  "url": "https://newcar.u-car.com.tw/Volkswagen/Touran/6809/spec",
+  "retrievedAt": "2026-09-15T09:51:21.504Z",
+  "pageSha256": "28882da0a38564089d7d59026b86e31ddac564450ac052171cef038d3b41b991",
+  "entries": [
+    {
+      "variant": "280 TSI Life",
+      "lengthText": "4527 mm",
+      "lengthMm": 4527,
+      "bodyText": "休旅車/RV",
+      "seatText": null
+    }
+  ]
+}

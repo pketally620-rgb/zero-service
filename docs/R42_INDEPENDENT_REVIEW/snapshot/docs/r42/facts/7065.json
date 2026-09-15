@@ -1,0 +1,31 @@
+{
+  "brand": "Bentley",
+  "model": "Continental GTC",
+  "sourceId": "7065",
+  "url": "https://newcar.u-car.com.tw/Bentley/Continental%20GTC/7065/spec",
+  "retrievedAt": "2026-09-15T09:50:00.266Z",
+  "pageSha256": "5fdd27382f921fb05a2cedef6be0ab4eb6cc54fd1cef4a888306c81673fb6dfc",
+  "entries": [
+    {
+      "variant": "Continental GTC",
+      "lengthText": "4895 mm",
+      "lengthMm": 4895,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    },
+    {
+      "variant": "Continental GTC Speed",
+      "lengthText": "4895 mm",
+      "lengthMm": 4895,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    },
+    {
+      "variant": "Continental GTC Mulliner",
+      "lengthText": "4895 mm",
+      "lengthMm": 4895,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

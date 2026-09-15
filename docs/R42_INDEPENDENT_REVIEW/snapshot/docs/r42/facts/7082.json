@@ -1,0 +1,31 @@
+{
+  "brand": "Mitsubishi",
+  "model": "XForce",
+  "sourceId": "7082",
+  "url": "https://newcar.u-car.com.tw/Mitsubishi/XForce/7082/spec",
+  "retrievedAt": "2026-09-15T09:50:57.271Z",
+  "pageSha256": "b4cc3d7f83961a758b2eef94981209f3b1a50ff61fc7a09bf9737f2c09e76b3a",
+  "entries": [
+    {
+      "variant": "樂享版",
+      "lengthText": "4390 mm",
+      "lengthMm": 4390,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "酷享版",
+      "lengthText": "4390 mm",
+      "lengthMm": 4390,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "狂享版",
+      "lengthText": "4390 mm",
+      "lengthMm": 4390,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

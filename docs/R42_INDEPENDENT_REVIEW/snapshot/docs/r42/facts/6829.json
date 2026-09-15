@@ -1,0 +1,31 @@
+{
+  "brand": "MG",
+  "model": "HS",
+  "sourceId": "6829",
+  "url": "https://newcar.u-car.com.tw/MG/HS/6829/spec",
+  "retrievedAt": "2026-09-15T09:50:54.507Z",
+  "pageSha256": "2efbeec81197643cf8b12b14b8a232858721c9d0fd88fa397a04fb2d3561ae7a",
+  "entries": [
+    {
+      "variant": "HS 1.5T旗艦版",
+      "lengthText": "4610 mm",
+      "lengthMm": 4610,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "HS 2.0T AWD旗艦版",
+      "lengthText": "4610 mm",
+      "lengthMm": 4610,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "HS PHEV馭電版",
+      "lengthText": "4610 mm",
+      "lengthMm": 4610,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

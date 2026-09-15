@@ -1,0 +1,38 @@
+{
+  "brand": "Infiniti",
+  "model": "QX60",
+  "sourceId": "7127",
+  "url": "https://newcar.u-car.com.tw/Infiniti/QX60/7127/spec",
+  "retrievedAt": "2026-09-15T09:50:23.829Z",
+  "pageSha256": "cd8e10bdcab346a8e8289fd547247b1e0bf8b706d4d7f0b5816a8ee92d41ca2b",
+  "entries": [
+    {
+      "variant": "3.5風尚款",
+      "lengthText": "5047 mm",
+      "lengthMm": 5047,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "2.0風尚款",
+      "lengthText": "5047 mm",
+      "lengthMm": 5047,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "2.0旗艦款",
+      "lengthText": "5047 mm",
+      "lengthMm": 5047,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "3.5旗艦款",
+      "lengthText": "5047 mm",
+      "lengthMm": 5047,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

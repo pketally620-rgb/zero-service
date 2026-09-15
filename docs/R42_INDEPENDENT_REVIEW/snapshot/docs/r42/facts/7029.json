@@ -1,0 +1,17 @@
+{
+  "brand": "Volkswagen Commercial Vehicles",
+  "model": "Caddy Cargo",
+  "sourceId": "7029",
+  "url": "https://newcar.u-car.com.tw/Volkswagen%20Commercial%20Vehicles/Caddy%20Cargo/7029/spec",
+  "retrievedAt": "2026-09-15T09:51:22.588Z",
+  "pageSha256": "3a8d9550ad2d29fb801198063fcf74b130d9bd9433d3a6cec629ed0a8072bf96",
+  "entries": [
+    {
+      "variant": "短軸自排",
+      "lengthText": "4500 mm",
+      "lengthMm": 4500,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "E-Class Estate",
+  "sourceId": "7173",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/E-Class%20Estate/7173/spec",
+  "retrievedAt": "2026-09-15T09:50:44.358Z",
+  "pageSha256": "20ae9357591473e63178b63ba4ce8115656cba3e85a7c8c52a68a9f4513e2c65",
+  "entries": [
+    {
+      "variant": "E200 Estate 星耀版",
+      "lengthText": "4950 mm",
+      "lengthMm": 4950,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

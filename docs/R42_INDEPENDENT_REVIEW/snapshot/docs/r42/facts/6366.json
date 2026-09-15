@@ -1,0 +1,17 @@
+{
+  "brand": "Subaru",
+  "model": "Crosstrek",
+  "sourceId": "6366",
+  "url": "https://newcar.u-car.com.tw/Subaru/Crosstrek/6366/spec",
+  "retrievedAt": "2026-09-15T09:51:10.479Z",
+  "pageSha256": "6c8cb064e9ebb63e8e1dd53c85034781689ca65fc22c58ebcec03274e5b8b40c",
+  "entries": [
+    {
+      "variant": "2.0 i-S EyeSight",
+      "lengthText": "4,480 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

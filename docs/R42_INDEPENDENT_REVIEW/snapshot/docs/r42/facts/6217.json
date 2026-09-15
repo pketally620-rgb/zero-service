@@ -1,0 +1,17 @@
+{
+  "brand": "Maserati",
+  "model": "MC20",
+  "sourceId": "6217",
+  "url": "https://newcar.u-car.com.tw/Maserati/MC20/6217/spec",
+  "retrievedAt": "2026-09-15T09:50:36.939Z",
+  "pageSha256": "335e9fd9ed43cbc61eb8f28ae658597d0dc374c8a19e0ec32b64b3214b8f875e",
+  "entries": [
+    {
+      "variant": "MC20",
+      "lengthText": "4669 mm",
+      "lengthMm": 4669,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

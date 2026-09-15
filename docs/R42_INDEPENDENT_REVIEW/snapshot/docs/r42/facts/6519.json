@@ -1,0 +1,24 @@
+{
+  "brand": "Audi",
+  "model": "A7 Sportback",
+  "sourceId": "6519",
+  "url": "https://newcar.u-car.com.tw/Audi/A7%20Sportback/6519/spec",
+  "retrievedAt": "2026-09-15T09:49:55.146Z",
+  "pageSha256": "48ffb9141895d70453c28233b8366e09dfae6489f3a23b41a8cbb434be6ffe73",
+  "entries": [
+    {
+      "variant": "A7 Sportback 45 TFSI quattro享馭版",
+      "lengthText": "5021 mm",
+      "lengthMm": 5021,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "A7 Sportback 55 TFSI quattro運動版",
+      "lengthText": "5021 mm",
+      "lengthMm": 5021,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "CLA Shooting Brake with EQ technology",
+  "sourceId": "7202",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/CLA%20Shooting%20Brake%20with%20EQ%20technology/7202/spec",
+  "retrievedAt": "2026-09-15T09:50:42.954Z",
+  "pageSha256": "6e7e35b5ac46fc46044fa13c70d03ef8d7d47543cd7fe96eb2978f82b6421948",
+  "entries": [
+    {
+      "variant": "CLA 200 Shooting Brake with EQ technology",
+      "lengthText": "4723 mm",
+      "lengthMm": 4723,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "CLA 250+ Shooting Brake with EQ technology",
+      "lengthText": "4731 mm",
+      "lengthMm": 4731,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

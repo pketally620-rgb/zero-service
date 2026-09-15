@@ -1,0 +1,17 @@
+{
+  "brand": "Maserati",
+  "model": "GranCabrio Folgore",
+  "sourceId": "6987",
+  "url": "https://newcar.u-car.com.tw/Maserati/GranCabrio%20Folgore/6987/spec",
+  "retrievedAt": "2026-09-15T09:50:35.647Z",
+  "pageSha256": "d701e3fbfb609821fbac2f891cf17eefdc1a515f5a03d21ab2a1259d6c93d0e6",
+  "entries": [
+    {
+      "variant": "GranCabrio Folgore",
+      "lengthText": "4966 mm",
+      "lengthMm": 4966,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

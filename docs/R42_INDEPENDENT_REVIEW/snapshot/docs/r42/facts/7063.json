@@ -1,0 +1,31 @@
+{
+  "brand": "Ford",
+  "model": "Territory",
+  "sourceId": "7063",
+  "url": "https://newcar.u-car.com.tw/Ford/Territory/7063/spec",
+  "retrievedAt": "2026-09-15T09:50:17.577Z",
+  "pageSha256": "404619cc89e5d6f8a2d1ffcce7a1a7a56cdb946fd90e7f04274387c1ce183b3a",
+  "entries": [
+    {
+      "variant": "1.5T EcoBoost 渦輪闊境版",
+      "lengthText": "4685 mm",
+      "lengthMm": 4685,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "1.5T Per4mance Hybrid 原生版",
+      "lengthText": "4685 mm",
+      "lengthMm": 4685,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "1.5T Per4mance Hybrid 驚豔版",
+      "lengthText": "4685 mm",
+      "lengthMm": 4685,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

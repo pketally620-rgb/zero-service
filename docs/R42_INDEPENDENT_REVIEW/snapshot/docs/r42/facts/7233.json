@@ -1,0 +1,38 @@
+{
+  "brand": "Nissan",
+  "model": "X-Trail",
+  "sourceId": "7233",
+  "url": "https://newcar.u-car.com.tw/Nissan/X-Trail/7233/spec",
+  "retrievedAt": "2026-09-15T09:50:58.734Z",
+  "pageSha256": "ff0baed318c2d34cd222aa32ada2f8038061e97a2e7fd8fcaa5f1ddbf862a721",
+  "entries": [
+    {
+      "variant": "純粋版",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "精粋版",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "極粋版",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "e-Power",
+      "lengthText": "4680 mm",
+      "lengthMm": 4680,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

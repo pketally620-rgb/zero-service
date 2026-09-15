@@ -1,0 +1,17 @@
+{
+  "brand": "Audi",
+  "model": "RS 3 Sportback",
+  "sourceId": "6979",
+  "url": "https://newcar.u-car.com.tw/Audi/RS%203%20Sportback/6979/spec",
+  "retrievedAt": "2026-09-15T09:49:58.433Z",
+  "pageSha256": "a5133b2f9758c6c37958dcfb603d3c13a06de36d1a090759c27de4338cfa0f0b",
+  "entries": [
+    {
+      "variant": "RS 3 Sportback",
+      "lengthText": "4381 mm",
+      "lengthMm": 4381,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

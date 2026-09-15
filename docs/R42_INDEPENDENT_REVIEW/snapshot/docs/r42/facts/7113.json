@@ -1,0 +1,24 @@
+{
+  "brand": "Mazda",
+  "model": "MX-5",
+  "sourceId": "7113",
+  "url": "https://newcar.u-car.com.tw/Mazda/MX-5/7113/spec",
+  "retrievedAt": "2026-09-15T09:50:39.386Z",
+  "pageSha256": "712c525d8e31b0d1bf336c51b1d5110d02a2c20a6b4264cc8f0634fe8b2628d5",
+  "entries": [
+    {
+      "variant": "MX-5",
+      "lengthText": "3915 mm",
+      "lengthMm": 3915,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    },
+    {
+      "variant": "MX-5 RS",
+      "lengthText": "3915 mm",
+      "lengthMm": 3915,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "brand": "Lexus",
+  "model": "RZ",
+  "sourceId": "7071",
+  "url": "https://newcar.u-car.com.tw/Lexus/RZ/7071/spec",
+  "retrievedAt": "2026-09-15T09:50:32.789Z",
+  "pageSha256": "152c18ed1c311d39f0e81cf58e00e9bf875ddfbc7db9ef74558d952ab029e83f",
+  "entries": [
+    {
+      "variant": "RZ 500e豪華",
+      "lengthText": "4805 mm",
+      "lengthMm": 4805,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "RZ 500e旗艦",
+      "lengthText": "4805 mm",
+      "lengthMm": 4805,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "RZ 550e F Sport",
+      "lengthText": "4805 mm",
+      "lengthMm": 4805,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

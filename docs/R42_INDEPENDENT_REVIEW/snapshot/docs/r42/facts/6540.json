@@ -1,0 +1,17 @@
+{
+  "brand": "Maserati",
+  "model": "MC20 Cielo",
+  "sourceId": "6540",
+  "url": "https://newcar.u-car.com.tw/Maserati/MC20%20Cielo/6540/spec",
+  "retrievedAt": "2026-09-15T09:50:37.321Z",
+  "pageSha256": "36b224358c6c5b3b37064a7d62f7b86b1e3f4479e8e1160eba3981ccdc09b9e1",
+  "entries": [
+    {
+      "variant": "MC20 Cielo",
+      "lengthText": "4669 mm",
+      "lengthMm": 4669,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

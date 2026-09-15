@@ -1,0 +1,17 @@
+{
+  "brand": "Toyota",
+  "model": "Urban Cruiser",
+  "sourceId": "7083",
+  "url": "https://newcar.u-car.com.tw/Toyota/Urban%20Cruiser/7083/spec",
+  "retrievedAt": "2026-09-15T09:51:18.595Z",
+  "pageSha256": "dd5a5328c57c81e5e6bbe9e71c029a6cdcafbfa0f0646f6ade717ce305fb608b",
+  "entries": [
+    {
+      "variant": "Urban Cruiser",
+      "lengthText": "4285 mm",
+      "lengthMm": 4285,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

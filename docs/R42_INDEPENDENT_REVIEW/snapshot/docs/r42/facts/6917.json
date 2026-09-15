@@ -1,0 +1,24 @@
+{
+  "brand": "Hyundai",
+  "model": "Ioniq 5",
+  "sourceId": "6917",
+  "url": "https://newcar.u-car.com.tw/Hyundai/Ioniq%205/6917/spec",
+  "retrievedAt": "2026-09-15T09:50:20.482Z",
+  "pageSha256": "2782a51d0b7269ad97b62fa27448d15efa933770b5e0439dcf580ead8b87224b",
+  "entries": [
+    {
+      "variant": "EV520",
+      "lengthText": "4655 mm",
+      "lengthMm": 4655,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "EV650",
+      "lengthText": "4655 mm",
+      "lengthMm": 4655,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

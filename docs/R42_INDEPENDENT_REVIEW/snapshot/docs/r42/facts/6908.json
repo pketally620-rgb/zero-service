@@ -1,0 +1,24 @@
+{
+  "brand": "Luxgen",
+  "model": "U6 Neo",
+  "sourceId": "6908",
+  "url": "https://newcar.u-car.com.tw/Luxgen/U6%20Neo/6908/spec",
+  "retrievedAt": "2026-09-15T09:50:33.741Z",
+  "pageSha256": "d154a68a1e78efaa4dd5fb8c304a305ac93a50b282ff462ac7291da958a6bf27",
+  "entries": [
+    {
+      "variant": "環景勁化版",
+      "lengthText": "4630 mm",
+      "lengthMm": 4630,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "黑⁺特仕版",
+      "lengthText": "4630 mm",
+      "lengthMm": 4630,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

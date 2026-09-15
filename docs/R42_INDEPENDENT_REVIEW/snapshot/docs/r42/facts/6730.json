@@ -1,0 +1,24 @@
+{
+  "brand": "Maserati",
+  "model": "GranCabrio",
+  "sourceId": "6730",
+  "url": "https://newcar.u-car.com.tw/Maserati/GranCabrio/6730/spec",
+  "retrievedAt": "2026-09-15T09:50:34.850Z",
+  "pageSha256": "a5f4073dc3af461895911ad7bcf6a5195b17382d264b65a97a6e70a80bcd08b3",
+  "entries": [
+    {
+      "variant": "GranCabrio",
+      "lengthText": "4959 mm",
+      "lengthMm": 4959,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    },
+    {
+      "variant": "GranCabrio Trofeo",
+      "lengthText": "4966 mm",
+      "lengthMm": 4966,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "brand": "Hyundai",
+  "model": "Tucson L",
+  "sourceId": "7206",
+  "url": "https://newcar.u-car.com.tw/Hyundai/Tucson%20L/7206/spec",
+  "retrievedAt": "2026-09-15T09:50:22.270Z",
+  "pageSha256": "c8678a67dc802ef21a002bbfa5a69543d05ab74fb7ef22152d1ace8ee0372501",
+  "entries": [
+    {
+      "variant": "GLT-A",
+      "lengthText": "4630 mm",
+      "lengthMm": 4630,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GLT-B",
+      "lengthText": "4630 mm",
+      "lengthMm": 4630,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Premium-A 客車版",
+      "lengthText": "4630 mm",
+      "lengthMm": 4630,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Premium-B 客車版",
+      "lengthText": "4630 mm",
+      "lengthMm": 4630,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Premium-C 客車版",
+      "lengthText": "4630 mm",
+      "lengthMm": 4630,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

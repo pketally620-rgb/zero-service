@@ -1,0 +1,38 @@
+{
+  "brand": "CMC",
+  "model": "Veryca A190貨車",
+  "sourceId": "6802",
+  "url": "https://newcar.u-car.com.tw/CMC/Veryca%20A190%E8%B2%A8%E8%BB%8A/6802/spec",
+  "retrievedAt": "2026-09-15T09:50:12.374Z",
+  "pageSha256": "a8356604102b94bd7a474a8f5c493bbf03bf50230bd1b35e84566ada272e9091",
+  "entries": [
+    {
+      "variant": "C421R鐵床(5MT)",
+      "lengthText": "4190 mm",
+      "lengthMm": 4190,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "C421F鐵板(5MT)",
+      "lengthText": "4160 mm",
+      "lengthMm": 4160,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "C421W木床(5MT)",
+      "lengthText": "4190 mm",
+      "lengthMm": 4190,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "4WD C442W木床(5MT)",
+      "lengthText": "4190 mm",
+      "lengthMm": 4190,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Mercedes-AMG A-Class",
+  "sourceId": "7190",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Mercedes-AMG%20A-Class/7190/spec",
+  "retrievedAt": "2026-09-15T09:50:48.892Z",
+  "pageSha256": "a9b3ac065b9ca1aa4e23cbfa709b3a9d151b5588609308f02a1e4fc35f29c578",
+  "entries": [
+    {
+      "variant": "A 35 4Matic 摘星版",
+      "lengthText": "4447 mm",
+      "lengthMm": 4447,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "A 45 S 4Matic+ 進化版",
+      "lengthText": "4453 mm",
+      "lengthMm": 4453,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

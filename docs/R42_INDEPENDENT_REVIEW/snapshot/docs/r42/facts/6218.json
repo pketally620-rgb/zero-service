@@ -1,0 +1,17 @@
+{
+  "brand": "Ferrari",
+  "model": "296 GTB",
+  "sourceId": "6218",
+  "url": "https://newcar.u-car.com.tw/Ferrari/296%20GTB/6218/spec",
+  "retrievedAt": "2026-09-15T09:50:14.770Z",
+  "pageSha256": "77fa341fb0fe3a2effec442faf58237e1ad92cbd59f503403db428e7a25c0cd4",
+  "entries": [
+    {
+      "variant": "296 GTB",
+      "lengthText": "4565 mm",
+      "lengthMm": 4565,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

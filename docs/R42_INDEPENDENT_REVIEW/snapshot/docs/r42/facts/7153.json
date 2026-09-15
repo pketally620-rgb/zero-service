@@ -1,0 +1,24 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "C-Class Estate",
+  "sourceId": "7153",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/C-Class%20Estate/7153/spec",
+  "retrievedAt": "2026-09-15T09:50:42.375Z",
+  "pageSha256": "8220eb5bf0d4feff552a5a90408c47c0b7fac9bc6bdf9de491005a340f69ca7c",
+  "entries": [
+    {
+      "variant": "C 200 Estate 星耀版",
+      "lengthText": "4793 mm",
+      "lengthMm": 4793,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "C 300 Estate 星耀版",
+      "lengthText": "4793 mm",
+      "lengthMm": 4793,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

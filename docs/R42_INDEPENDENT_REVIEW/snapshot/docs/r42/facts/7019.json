@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Mercedes-Maybach SL",
+  "sourceId": "7019",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Mercedes-Maybach%20SL/7019/spec",
+  "retrievedAt": "2026-09-15T09:50:53.465Z",
+  "pageSha256": "3b764d8c55ae93171c4de7c734eba8068b8b316d6cc810f2dd8533bb336ac66a",
+  "entries": [
+    {
+      "variant": "SL 680 Monogram Series",
+      "lengthText": "4697 mm",
+      "lengthMm": 4697,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "brand": "Lexus",
+  "model": "LBX",
+  "sourceId": "6982",
+  "url": "https://newcar.u-car.com.tw/Lexus/LBX/6982/spec",
+  "retrievedAt": "2026-09-15T09:50:31.096Z",
+  "pageSha256": "1640a956a909ece5d2edc5091f54d88952d8cab6615478a72340c366aff0114e",
+  "entries": [
+    {
+      "variant": "Active",
+      "lengthText": "4190 mm",
+      "lengthMm": 4190,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Active+",
+      "lengthText": "4190 mm",
+      "lengthMm": 4190,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Cool",
+      "lengthText": "4190 mm",
+      "lengthMm": 4190,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Relax",
+      "lengthText": "4190 mm",
+      "lengthMm": 4190,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Relax+",
+      "lengthText": "4190 mm",
+      "lengthMm": 4190,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "brand": "BMW",
+  "model": "i4",
+  "sourceId": "7059",
+  "url": "https://newcar.u-car.com.tw/BMW/i4/7059/spec",
+  "retrievedAt": "2026-09-15T09:50:03.728Z",
+  "pageSha256": "ce056a672d7643bdc3fd31c2e0c2a771993321c6707b13ec18c9d86af8e45e27",
+  "entries": [
+    {
+      "variant": "eDrive40",
+      "lengthText": "4783 mm",
+      "lengthMm": 4783,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "M60 xDrive",
+      "lengthText": "4783 mm",
+      "lengthMm": 4783,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

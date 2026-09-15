@@ -1,0 +1,17 @@
+{
+  "brand": "Ferrari",
+  "model": "Amalfi",
+  "sourceId": "7100",
+  "url": "https://newcar.u-car.com.tw/Ferrari/Amalfi/7100/spec",
+  "retrievedAt": "2026-09-15T09:50:16.052Z",
+  "pageSha256": "0caa44beacb225e171e0f7f8cf63b158fc63d922d1ff44bb51055526367e8f34",
+  "entries": [
+    {
+      "variant": "Amalfi",
+      "lengthText": "4660 mm",
+      "lengthMm": 4660,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

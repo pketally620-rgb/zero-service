@@ -1,0 +1,24 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "GLC Coupé",
+  "sourceId": "7283",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/GLC%20Coup%C3%A9/7283/spec",
+  "retrievedAt": "2026-09-15T09:52:09.589Z",
+  "pageSha256": "2cb2fb0553e0981bb8b5bb6e47db210ed755061c25bb3639a0aac8b7b9d2a361",
+  "entries": [
+    {
+      "variant": "GLC 200 4Matic Coupé 星耀版",
+      "lengthText": "4764 mm",
+      "lengthMm": 4764,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GLC 300 4Matic Coupé 星耀版",
+      "lengthText": "4769 mm",
+      "lengthMm": 4769,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

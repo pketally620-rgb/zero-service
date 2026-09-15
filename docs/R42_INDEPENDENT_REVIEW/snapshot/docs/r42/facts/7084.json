@@ -1,0 +1,31 @@
+{
+  "brand": "Lexus",
+  "model": "IS",
+  "sourceId": "7084",
+  "url": "https://newcar.u-car.com.tw/Lexus/IS/7084/spec",
+  "retrievedAt": "2026-09-15T09:50:30.987Z",
+  "pageSha256": "abe7f7a16351378a4b01c581c81cbdd699997b36207aa2f04a93e4523ea9b6bd",
+  "entries": [
+    {
+      "variant": "IS 300h豪華版",
+      "lengthText": "4720 mm",
+      "lengthMm": 4720,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "IS 300h旗艦版",
+      "lengthText": "4720 mm",
+      "lengthMm": 4720,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "IS 300h F Sport版",
+      "lengthText": "4720 mm",
+      "lengthMm": 4720,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

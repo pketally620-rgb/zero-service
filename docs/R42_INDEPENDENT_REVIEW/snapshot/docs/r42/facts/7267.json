@@ -1,0 +1,45 @@
+{
+  "brand": "BMW",
+  "model": "3 Series Touring",
+  "sourceId": "7267",
+  "url": "https://newcar.u-car.com.tw/BMW/3%20Series%20Touring/7267/spec",
+  "retrievedAt": "2026-09-15T09:50:01.963Z",
+  "pageSha256": "6d3249b9131119dae85fb2263b4f6803555755735b9590b35779382faf342de0",
+  "entries": [
+    {
+      "variant": "318i Sport",
+      "lengthText": "4713 mm",
+      "lengthMm": 4713,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "318i M Sport",
+      "lengthText": "4713 mm",
+      "lengthMm": 4713,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "320i M Racing Edition",
+      "lengthText": "4713 mm",
+      "lengthMm": 4713,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "330i M Sport",
+      "lengthText": "4713 mm",
+      "lengthMm": 4713,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "M340i xDrive",
+      "lengthText": "4714 mm",
+      "lengthMm": 4714,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

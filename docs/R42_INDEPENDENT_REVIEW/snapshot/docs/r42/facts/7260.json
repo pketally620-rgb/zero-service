@@ -1,0 +1,17 @@
+{
+  "brand": "Suzuki",
+  "model": "SX4 S-Cross",
+  "sourceId": "7260",
+  "url": "https://newcar.u-car.com.tw/Suzuki/SX4%20S-Cross/7260/spec",
+  "retrievedAt": "2026-09-15T09:51:12.904Z",
+  "pageSha256": "8d690ed00988fa9f8cdb08c4d751b9cc93c2247703aaac87dd364bf0d2f123f1",
+  "entries": [
+    {
+      "variant": "2WD",
+      "lengthText": "4305 mm",
+      "lengthMm": 4305,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

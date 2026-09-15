@@ -1,0 +1,59 @@
+{
+  "brand": "Porsche",
+  "model": "911",
+  "sourceId": "6902",
+  "url": "https://newcar.u-car.com.tw/Porsche/911/6902/spec",
+  "retrievedAt": "2026-09-15T09:51:02.379Z",
+  "pageSha256": "dce0cda729dcb67d40d3ad88ae7aabda361234ec1891ecb79576cd77e7044584",
+  "entries": [
+    {
+      "variant": "Carrera",
+      "lengthText": "4542 mm",
+      "lengthMm": 4542,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    },
+    {
+      "variant": "Carrera T",
+      "lengthText": "4542 mm",
+      "lengthMm": 4542,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    },
+    {
+      "variant": "Carrera S",
+      "lengthText": "4542 mm",
+      "lengthMm": 4542,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    },
+    {
+      "variant": "Carrera GTS",
+      "lengthText": "4553 mm",
+      "lengthMm": 4553,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    },
+    {
+      "variant": "Carrera 4 GTS",
+      "lengthText": "4553 mm",
+      "lengthMm": 4553,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    },
+    {
+      "variant": "911 Dakar",
+      "lengthText": "4530 mm",
+      "lengthMm": 4530,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    },
+    {
+      "variant": "911 S/T",
+      "lengthText": "4573 mm",
+      "lengthMm": 4573,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

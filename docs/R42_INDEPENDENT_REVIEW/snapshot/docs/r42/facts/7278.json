@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Mercedes-Maybach S-Class",
+  "sourceId": "7278",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Mercedes-Maybach%20S-Class/7278/spec",
+  "retrievedAt": "2026-09-15T09:50:53.245Z",
+  "pageSha256": "e224c236dc71c9ca523b116eb09643eacb0605451284f13a4c84f48ecb1cf634",
+  "entries": [
+    {
+      "variant": "S 580",
+      "lengthText": "5484 mm",
+      "lengthMm": 5484,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "BMW",
+  "model": "M5",
+  "sourceId": "6924",
+  "url": "https://newcar.u-car.com.tw/BMW/M5/6924/spec",
+  "retrievedAt": "2026-09-15T09:50:07.075Z",
+  "pageSha256": "769f543c6934624c8a54c4e7b567db4d491b14b2bed2cbb21e72a0895e20d309",
+  "entries": [
+    {
+      "variant": "M5",
+      "lengthText": "5096 mm",
+      "lengthMm": 5096,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "brand": "Citroën",
+  "model": "Berlingo短軸",
+  "sourceId": "6787",
+  "url": "https://newcar.u-car.com.tw/Citro%C3%ABn/Berlingo%E7%9F%AD%E8%BB%B8/6787/spec",
+  "retrievedAt": "2026-09-15T09:52:08.879Z",
+  "pageSha256": "e697cab73c49d062d30603f771f9a97fb0c0db7f8af8b335cd2b460be525f4c1",
+  "entries": [
+    {
+      "variant": "Max M 5座",
+      "lengthText": "4,403 mm",
+      "lengthMm": null,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "Max M 5座 Modutop",
+      "lengthText": "4,403 mm",
+      "lengthMm": null,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "XTR M 5座 Modutop",
+      "lengthText": "4,403 mm",
+      "lengthMm": null,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Mercedes-Maybach GLS",
+  "sourceId": "6480",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Mercedes-Maybach%20GLS/6480/spec",
+  "retrievedAt": "2026-09-15T09:50:52.819Z",
+  "pageSha256": "1f3bdcda15a3cdef39e8449292457f2374b75f4add7cf34135b7f3c158e7fee8",
+  "entries": [
+    {
+      "variant": "GLS 600 4Matic",
+      "lengthText": "5208 mm",
+      "lengthMm": 5208,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

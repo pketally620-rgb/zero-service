@@ -1,0 +1,24 @@
+{
+  "brand": "Mini",
+  "model": "Mini Cabrio",
+  "sourceId": "7217",
+  "url": "https://newcar.u-car.com.tw/Mini/Mini%20Cabrio/7217/spec",
+  "retrievedAt": "2026-09-15T09:50:55.565Z",
+  "pageSha256": "e5ea06e21f4056fca4c19f08d6b12711c77007094f9518892fa2783d9638277e",
+  "entries": [
+    {
+      "variant": "Cooper S",
+      "lengthText": "3879 mm",
+      "lengthMm": 3879,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    },
+    {
+      "variant": "John Cooper Works",
+      "lengthText": "3879 mm",
+      "lengthMm": 3879,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

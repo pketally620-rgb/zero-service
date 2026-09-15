@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "B-Class",
+  "sourceId": "6939",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/B-Class/6939/spec",
+  "retrievedAt": "2026-09-15T09:50:41.756Z",
+  "pageSha256": "b2d0f412edfb95995a411ffb5382c9b33e9ec745a4f3cc7c3242c4868b00c3b4",
+  "entries": [
+    {
+      "variant": "B 180 進化版",
+      "lengthText": "4419 mm",
+      "lengthMm": 4419,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

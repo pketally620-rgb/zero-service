@@ -1,0 +1,24 @@
+{
+  "brand": "BMW",
+  "model": "X6",
+  "sourceId": "7171",
+  "url": "https://newcar.u-car.com.tw/BMW/X6/7171/spec",
+  "retrievedAt": "2026-09-15T09:50:08.463Z",
+  "pageSha256": "c47003d4e53e44a347b7b51651a145ef57401aaec448a183343a73a774b2c5d1",
+  "entries": [
+    {
+      "variant": "xDrive40i M Sport鉑金版",
+      "lengthText": "4960 mm",
+      "lengthMm": 4960,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "M60i xDrive",
+      "lengthText": "4960 mm",
+      "lengthMm": 4960,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

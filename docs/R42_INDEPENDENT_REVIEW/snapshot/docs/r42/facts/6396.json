@@ -1,0 +1,31 @@
+{
+  "brand": "Infiniti",
+  "model": "QX50",
+  "sourceId": "6396",
+  "url": "https://newcar.u-car.com.tw/Infiniti/QX50/6396/spec",
+  "retrievedAt": "2026-09-15T09:50:23.265Z",
+  "pageSha256": "17cfb6186d630e3db025ceb5bdac10fa40706a3eebc423b369ae3d4ddc5dc1ab",
+  "entries": [
+    {
+      "variant": "豪華領航",
+      "lengthText": "",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "風尚領航",
+      "lengthText": "4693 mm",
+      "lengthMm": 4693,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "旗艦領航",
+      "lengthText": "4693 mm",
+      "lengthMm": 4693,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

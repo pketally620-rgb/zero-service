@@ -1,0 +1,31 @@
+{
+  "brand": "Kia",
+  "model": "EV6",
+  "sourceId": "6933",
+  "url": "https://newcar.u-car.com.tw/Kia/EV6/6933/spec",
+  "retrievedAt": "2026-09-15T09:50:25.696Z",
+  "pageSha256": "66126d6712f8efa92069781ce4f5a25a4361c5d506919884305177b46f139a33",
+  "entries": [
+    {
+      "variant": "Light標準版",
+      "lengthText": "4695 mm",
+      "lengthMm": 4695,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Air增程版",
+      "lengthText": "4695 mm",
+      "lengthMm": 4695,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GT-Line增程版",
+      "lengthText": "4695 mm",
+      "lengthMm": 4695,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

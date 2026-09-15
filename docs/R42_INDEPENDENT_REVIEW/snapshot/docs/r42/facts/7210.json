@@ -1,0 +1,17 @@
+{
+  "brand": "Volkswagen",
+  "model": "Golf R",
+  "sourceId": "7210",
+  "url": "https://newcar.u-car.com.tw/Volkswagen/Golf%20R/7210/spec",
+  "retrievedAt": "2026-09-15T09:51:19.478Z",
+  "pageSha256": "e55ccaf0402524377fa955feec5e04492ac7e6f73284fcaf489ab6541dc80598",
+  "entries": [
+    {
+      "variant": "Golf R Black Edition",
+      "lengthText": "4296 mm",
+      "lengthMm": 4296,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "brand": "Lexus",
+  "model": "UX",
+  "sourceId": "7128",
+  "url": "https://newcar.u-car.com.tw/Lexus/UX/7128/spec",
+  "retrievedAt": "2026-09-15T09:50:32.997Z",
+  "pageSha256": "07128bc8305f1fa6fe5322bda63add9359df73d6530beff1df1c92e390e5a045",
+  "entries": [
+    {
+      "variant": "UX 300h豪華版",
+      "lengthText": "4495 mm",
+      "lengthMm": 4495,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "UX 300h F Sport Design",
+      "lengthText": "4495 mm",
+      "lengthMm": 4495,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

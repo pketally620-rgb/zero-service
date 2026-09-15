@@ -1,0 +1,24 @@
+{
+  "brand": "Subaru",
+  "model": "WRX Wagon",
+  "sourceId": "6369",
+  "url": "https://newcar.u-car.com.tw/Subaru/WRX%20Wagon/6369/spec",
+  "retrievedAt": "2026-09-15T09:51:11.711Z",
+  "pageSha256": "396237dd6e33dd9fc26fd5ef1417b9b199935c547dbfc0e8a5fb151920937e1a",
+  "entries": [
+    {
+      "variant": "GT-S Wagon 2.4 EyeSight",
+      "lengthText": "4,755 mm",
+      "lengthMm": null,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "tS Wagon 2.4 EyeSight",
+      "lengthText": "4,755 mm",
+      "lengthMm": null,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "brand": "Porsche",
+  "model": "Cayenne",
+  "sourceId": "7119",
+  "url": "https://newcar.u-car.com.tw/Porsche/Cayenne/7119/spec",
+  "retrievedAt": "2026-09-15T09:51:03.890Z",
+  "pageSha256": "08c86c9f7a51058f83a99500845a1d74510cc86cddb4abc20daaccbae3792ad3",
+  "entries": [
+    {
+      "variant": "Cayenne",
+      "lengthText": "4930 mm",
+      "lengthMm": 4930,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "E-Hybrid",
+      "lengthText": "4930 mm",
+      "lengthMm": 4930,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "S",
+      "lengthText": "4930 mm",
+      "lengthMm": 4930,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

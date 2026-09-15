@@ -1,0 +1,24 @@
+{
+  "brand": "Volkswagen Commercial Vehicles",
+  "model": "California",
+  "sourceId": "6571",
+  "url": "https://newcar.u-car.com.tw/Volkswagen%20Commercial%20Vehicles/California/6571/spec",
+  "retrievedAt": "2026-09-15T09:51:23.108Z",
+  "pageSha256": "b5bf3723162c238881cb7426b98cb91603e36205f6994529528645494ed46286",
+  "entries": [
+    {
+      "variant": "Beach Style",
+      "lengthText": "4904 mm",
+      "lengthMm": 4904,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "Ocean 4Motion",
+      "lengthText": "4904 mm",
+      "lengthMm": 4904,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

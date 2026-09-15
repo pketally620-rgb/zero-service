@@ -1,0 +1,38 @@
+{
+  "brand": "Honda",
+  "model": "CR-V",
+  "sourceId": "7214",
+  "url": "https://newcar.u-car.com.tw/Honda/CR-V/7214/spec",
+  "retrievedAt": "2026-09-15T09:50:19.059Z",
+  "pageSha256": "0c7558d39b029e3d5a178dc2a8cc1404b07e26e6d397735bac58cd0609bc0b9b",
+  "entries": [
+    {
+      "variant": "VTi-S",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "S",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "e:HEV S",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "e:HEV Prestige",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

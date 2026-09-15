@@ -1,0 +1,24 @@
+{
+  "brand": "Ford",
+  "model": "Tourneo Connect",
+  "sourceId": "6869",
+  "url": "https://newcar.u-car.com.tw/Ford/Tourneo%20Connect/6869/spec",
+  "retrievedAt": "2026-09-15T09:50:17.610Z",
+  "pageSha256": "59e3fcca770ffb74420f8aabe3b4a1b292ec28852c81d7e906c9735dcb2c6111",
+  "entries": [
+    {
+      "variant": "Trend",
+      "lengthText": "4868 mm",
+      "lengthMm": 4868,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "Active",
+      "lengthText": "4868 mm",
+      "lengthMm": 4868,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

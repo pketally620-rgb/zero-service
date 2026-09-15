@@ -1,0 +1,31 @@
+{
+  "brand": "Porsche",
+  "model": "Cayenne Coupé Electric",
+  "sourceId": "7189",
+  "url": "https://newcar.u-car.com.tw/Porsche/Cayenne%20Coup%C3%A9%20Electric/7189/spec",
+  "retrievedAt": "2026-09-15T09:52:11.346Z",
+  "pageSha256": "11e2531d5b54e66bfcb4fd9b6e97577b384eb0812eb27aedfeb4d5db6f099c73",
+  "entries": [
+    {
+      "variant": "Cayenne Coupé Electric",
+      "lengthText": "4985 mm",
+      "lengthMm": 4985,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "S",
+      "lengthText": "4991 mm",
+      "lengthMm": 4991,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Turbo",
+      "lengthText": "4985 mm",
+      "lengthMm": 4985,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

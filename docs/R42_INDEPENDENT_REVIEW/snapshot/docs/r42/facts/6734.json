@@ -1,0 +1,59 @@
+{
+  "brand": "Luxgen",
+  "model": "n⁷",
+  "sourceId": "6734",
+  "url": "https://newcar.u-car.com.tw/Luxgen/n%E2%81%B7/6734/spec",
+  "retrievedAt": "2026-09-15T09:50:33.620Z",
+  "pageSha256": "6c0e49ca14534111dcdab91f17b892f01c9134266e5497bb273ca190789d15f0",
+  "entries": [
+    {
+      "variant": "5人純粹版",
+      "lengthText": "4695 mm",
+      "lengthMm": 4695,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "LR 5人粹鍊版",
+      "lengthText": "4695 mm",
+      "lengthMm": 4695,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "LR 5人粹鍊+版",
+      "lengthText": "4695 mm",
+      "lengthMm": 4695,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "5人亮點版",
+      "lengthText": "4695 mm",
+      "lengthMm": 4695,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "7人亮點版",
+      "lengthText": "4695 mm",
+      "lengthMm": 4695,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "LR 5 人亮點版",
+      "lengthText": "4695 mm",
+      "lengthMm": 4695,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "LR 7 人亮點版",
+      "lengthText": "4695 mm",
+      "lengthMm": 4695,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

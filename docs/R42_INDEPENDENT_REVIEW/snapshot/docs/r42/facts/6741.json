@@ -1,0 +1,31 @@
+{
+  "brand": "Toyota",
+  "model": "Yaris Cross",
+  "sourceId": "6741",
+  "url": "https://newcar.u-car.com.tw/Toyota/Yaris%20Cross/6741/spec",
+  "retrievedAt": "2026-09-15T09:51:19.045Z",
+  "pageSha256": "fd8156dd6bc7ea13538aaa083a3641b63596bac1e19977f95b31a331b8cd42a0",
+  "entries": [
+    {
+      "variant": "享樂版",
+      "lengthText": "4310 mm",
+      "lengthMm": 4310,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "酷動版",
+      "lengthText": "4310 mm",
+      "lengthMm": 4310,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "潮玩版",
+      "lengthText": "4310 mm",
+      "lengthMm": 4310,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

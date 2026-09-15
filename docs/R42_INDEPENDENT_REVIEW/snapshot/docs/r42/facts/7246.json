@@ -1,0 +1,38 @@
+{
+  "brand": "Audi",
+  "model": "A8",
+  "sourceId": "7246",
+  "url": "https://newcar.u-car.com.tw/Audi/A8/7246/spec",
+  "retrievedAt": "2026-09-15T09:49:55.317Z",
+  "pageSha256": "2c81573481c7965715efcb14ece475e234701a832c7677b1b0a551006b1daabc",
+  "entries": [
+    {
+      "variant": "A8 55 TFSI quattro 享馭版",
+      "lengthText": "5190 mm",
+      "lengthMm": 5190,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "A8 55 TFSI quattro S line Black",
+      "lengthText": "5190 mm",
+      "lengthMm": 5190,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "A8 L 55 TFSI quattro享馭版",
+      "lengthText": "5320 mm",
+      "lengthMm": 5320,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "A8 L 55 TFSI quattro S line Black",
+      "lengthText": "5320 mm",
+      "lengthMm": 5320,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "brand": "Audi",
+  "model": "A6 Sportback e-tron",
+  "sourceId": "7244",
+  "url": "https://newcar.u-car.com.tw/Audi/A6%20Sportback%20e-tron/7244/spec",
+  "retrievedAt": "2026-09-15T09:49:54.851Z",
+  "pageSha256": "595a63c30873bb7380f5e860c5dc3cbe594d1922f993937c5942910520a17b79",
+  "entries": [
+    {
+      "variant": "Sportback e-tron",
+      "lengthText": "4928 mm",
+      "lengthMm": 4928,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Sportback e-tron performance",
+      "lengthText": "4928 mm",
+      "lengthMm": 4928,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "S6 Sportback e-tron",
+      "lengthText": "4928 mm",
+      "lengthMm": 4928,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

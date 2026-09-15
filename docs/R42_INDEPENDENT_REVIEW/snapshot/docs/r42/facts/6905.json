@@ -1,0 +1,24 @@
+{
+  "brand": "Porsche",
+  "model": "911 GT3",
+  "sourceId": "6905",
+  "url": "https://newcar.u-car.com.tw/Porsche/911%20GT3/6905/spec",
+  "retrievedAt": "2026-09-15T09:51:02.821Z",
+  "pageSha256": "6956632e3c8f71267c0458addac539a000458c021dd1596519f34518994f5e63",
+  "entries": [
+    {
+      "variant": "GT3",
+      "lengthText": "4570 mm",
+      "lengthMm": 4570,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    },
+    {
+      "variant": "GT3 With Touring Package",
+      "lengthText": "4570 mm",
+      "lengthMm": 4570,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

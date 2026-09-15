@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "GLE Coupé",
+  "sourceId": "7239",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/GLE%20Coup%C3%A9/7239/spec",
+  "retrievedAt": "2026-09-15T09:52:09.851Z",
+  "pageSha256": "9c006c31214639262df60d70c480be32c838e5ed8cbff57de109c1c8e489f533",
+  "entries": [
+    {
+      "variant": "GLE 300 d 4Matic Coupé 星耀版",
+      "lengthText": "4941 mm",
+      "lengthMm": 4941,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "GLB",
+  "sourceId": "6990",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/GLB/6990/spec",
+  "retrievedAt": "2026-09-15T09:50:46.911Z",
+  "pageSha256": "aa1693a46b5b3ba6a8ba5e1b4c4669197613fcedee1587406fbca455821a9412",
+  "entries": [
+    {
+      "variant": "GLB 180 摘星版",
+      "lengthText": "4649 mm",
+      "lengthMm": 4649,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GLB 200 摘星版 七人座",
+      "lengthText": "4649 mm",
+      "lengthMm": 4649,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "brand": "Peugeot",
+  "model": "408",
+  "sourceId": "6843",
+  "url": "https://newcar.u-car.com.tw/Peugeot/408/6843/spec",
+  "retrievedAt": "2026-09-15T09:51:01.423Z",
+  "pageSha256": "3fd9941f2a070357a634b390034ecc2b54f49e2c91b2482601290ec581d2aa8d",
+  "entries": [
+    {
+      "variant": "Allure",
+      "lengthText": "4,687 mm",
+      "lengthMm": null,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "GT Premium",
+      "lengthText": "4,687 mm",
+      "lengthMm": null,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "GT Premium Focal",
+      "lengthText": "4,687 mm",
+      "lengthMm": null,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "GT Premium Focal Cielo",
+      "lengthText": "4,687 mm",
+      "lengthMm": null,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "GT Rapide",
+      "lengthText": "4,687 mm",
+      "lengthMm": null,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

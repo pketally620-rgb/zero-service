@@ -1,0 +1,31 @@
+{
+  "brand": "Mazda",
+  "model": "Mazda3 五門",
+  "sourceId": "7125",
+  "url": "https://newcar.u-car.com.tw/Mazda/Mazda3%20%E4%BA%94%E9%96%80/7125/spec",
+  "retrievedAt": "2026-09-15T09:50:38.895Z",
+  "pageSha256": "88ef1aec4d5598581f3f2489b875ab05556c0113669bd7a31a2fdcb9ed17467a",
+  "entries": [
+    {
+      "variant": "20S Ace Edition",
+      "lengthText": "4460 mm",
+      "lengthMm": 4460,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "20S Homura",
+      "lengthText": "4460 mm",
+      "lengthMm": 4460,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "20S Signature",
+      "lengthText": "4460 mm",
+      "lengthMm": 4460,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

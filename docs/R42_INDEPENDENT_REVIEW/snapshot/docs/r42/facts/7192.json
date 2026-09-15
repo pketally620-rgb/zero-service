@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Mercedes-AMG GLA",
+  "sourceId": "7192",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Mercedes-AMG%20GLA/7192/spec",
+  "retrievedAt": "2026-09-15T09:50:50.442Z",
+  "pageSha256": "78e548b1e81b8062ef0bd163abdb7c58e2d4a877a9a946d93cbeb098a0d41231",
+  "entries": [
+    {
+      "variant": "GLA 35 4Matic 摘星版",
+      "lengthText": "4436 mm",
+      "lengthMm": 4436,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

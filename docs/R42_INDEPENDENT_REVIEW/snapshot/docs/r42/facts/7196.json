@@ -1,0 +1,24 @@
+{
+  "brand": "Toyota",
+  "model": "Hiace",
+  "sourceId": "7196",
+  "url": "https://newcar.u-car.com.tw/Toyota/Hiace/7196/spec",
+  "retrievedAt": "2026-09-15T09:51:16.726Z",
+  "pageSha256": "5a2a2395d901a9c939fd7a5e2b4c6965280ff6e7ed8d56bc1408cc99aa8e796b",
+  "entries": [
+    {
+      "variant": "豪華 上掀式",
+      "lengthText": "5265 mm",
+      "lengthMm": 5265,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "豪華 對開式",
+      "lengthText": "5265 mm",
+      "lengthMm": 5265,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

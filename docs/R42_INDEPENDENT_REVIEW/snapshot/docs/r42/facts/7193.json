@@ -1,0 +1,17 @@
+{
+  "brand": "Ferrari",
+  "model": "849 Testarossa",
+  "sourceId": "7193",
+  "url": "https://newcar.u-car.com.tw/Ferrari/849%20Testarossa/7193/spec",
+  "retrievedAt": "2026-09-15T09:50:15.394Z",
+  "pageSha256": "b01b95b9752711ff63e4ba818314a1627145c531ca52e7038b4754d45fcd2df6",
+  "entries": [
+    {
+      "variant": "849 Testarossa",
+      "lengthText": "4718 mm",
+      "lengthMm": 4718,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

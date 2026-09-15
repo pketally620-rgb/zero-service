@@ -1,0 +1,17 @@
+{
+  "brand": "McLaren",
+  "model": "750S Coupe",
+  "sourceId": "6996",
+  "url": "https://newcar.u-car.com.tw/McLaren/750S%20Coupe/6996/spec",
+  "retrievedAt": "2026-09-15T09:50:39.895Z",
+  "pageSha256": "47bc2ad4daadfde95c22e4969c24b5c7f2031f1a13631f36c4706e825229c676",
+  "entries": [
+    {
+      "variant": "750S Coupe",
+      "lengthText": "4569 mm",
+      "lengthMm": 4569,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

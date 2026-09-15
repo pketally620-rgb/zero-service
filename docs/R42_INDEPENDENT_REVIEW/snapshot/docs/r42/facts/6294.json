@@ -1,0 +1,17 @@
+{
+  "brand": "Opel",
+  "model": "Mokka Electric",
+  "sourceId": "6294",
+  "url": "https://newcar.u-car.com.tw/Opel/Mokka%20Electric/6294/spec",
+  "retrievedAt": "2026-09-15T09:50:59.862Z",
+  "pageSha256": "e4872717b1108928dba362c8beb882952455dc8f32f0dc6987cc6d513ccee203",
+  "entries": [
+    {
+      "variant": "Mokka Electric",
+      "lengthText": "4151 mm",
+      "lengthMm": 4151,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

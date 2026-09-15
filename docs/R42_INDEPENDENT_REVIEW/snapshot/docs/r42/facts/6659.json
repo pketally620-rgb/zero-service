@@ -1,0 +1,17 @@
+{
+  "brand": "Maserati",
+  "model": "GranTurismo Folgore",
+  "sourceId": "6659",
+  "url": "https://newcar.u-car.com.tw/Maserati/GranTurismo%20Folgore/6659/spec",
+  "retrievedAt": "2026-09-15T09:50:36.473Z",
+  "pageSha256": "c56b1813427b4b541d4c99ff53dad9d5b72fc4d2caf277f5f9a0f7deda9383d1",
+  "entries": [
+    {
+      "variant": "GranTurismo Folgore",
+      "lengthText": "4959 mm",
+      "lengthMm": 4959,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

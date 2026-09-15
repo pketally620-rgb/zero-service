@@ -1,0 +1,24 @@
+{
+  "brand": "BMW",
+  "model": "i7",
+  "sourceId": "6645",
+  "url": "https://newcar.u-car.com.tw/BMW/i7/6645/spec",
+  "retrievedAt": "2026-09-15T09:50:04.416Z",
+  "pageSha256": "28eabcdba7674b831c49724a509858a9285807b65dc4ee25e28afabf5a035f36",
+  "entries": [
+    {
+      "variant": "eDrive50 Excellence",
+      "lengthText": "5391 mm",
+      "lengthMm": 5391,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "M70 xDrive",
+      "lengthText": "5391 mm",
+      "lengthMm": 5391,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

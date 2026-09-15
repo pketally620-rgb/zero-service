@@ -1,0 +1,24 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "EQB",
+  "sourceId": "6945",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/EQB/6945/spec",
+  "retrievedAt": "2026-09-15T09:50:45.092Z",
+  "pageSha256": "7ea0721153517489abf2f0919b3fa2d65afa9e378ad2d1efcdbf7f35a924d050",
+  "entries": [
+    {
+      "variant": "EQB 250＋",
+      "lengthText": "4687 mm",
+      "lengthMm": 4687,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "EQB 300 4Matic",
+      "lengthText": "4687 mm",
+      "lengthMm": 4687,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

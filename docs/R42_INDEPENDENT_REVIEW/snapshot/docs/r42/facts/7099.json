@@ -1,0 +1,17 @@
+{
+  "brand": "Aston Martin",
+  "model": "Vantage Roadster",
+  "sourceId": "7099",
+  "url": "https://newcar.u-car.com.tw/Aston%20Martin/Vantage%20Roadster/7099/spec",
+  "retrievedAt": "2026-09-15T09:49:52.863Z",
+  "pageSha256": "821a92c38180a7b4f485134e56f95e432179cfa7752c020d5523fb90fb5ab15d",
+  "entries": [
+    {
+      "variant": "Vantage S Roadster",
+      "lengthText": "4495 mm",
+      "lengthMm": 4495,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

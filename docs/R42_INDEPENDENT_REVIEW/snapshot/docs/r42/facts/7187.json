@@ -1,0 +1,24 @@
+{
+  "brand": "Citroën",
+  "model": "C5 Aircross",
+  "sourceId": "7187",
+  "url": "https://newcar.u-car.com.tw/Citro%C3%ABn/C5%20Aircross/7187/spec",
+  "retrievedAt": "2026-09-15T09:52:09.134Z",
+  "pageSha256": "d4f3229a7f3c9752e8b1ef44904c17ddc415730474e5c51581bf5f6df7896984",
+  "entries": [
+    {
+      "variant": "Plus",
+      "lengthText": "4652 mm",
+      "lengthMm": 4652,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Max",
+      "lengthText": "4652 mm",
+      "lengthMm": 4652,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

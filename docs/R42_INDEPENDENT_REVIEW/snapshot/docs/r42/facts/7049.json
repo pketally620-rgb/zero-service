@@ -1,0 +1,24 @@
+{
+  "brand": "BMW",
+  "model": "X1",
+  "sourceId": "7049",
+  "url": "https://newcar.u-car.com.tw/BMW/X1/7049/spec",
+  "retrievedAt": "2026-09-15T09:50:07.517Z",
+  "pageSha256": "ce6691364c02ad3bb78b1d658b00048271fce159722e1a1b3b9078c05718a6ed",
+  "entries": [
+    {
+      "variant": "sDrive18i M Sport",
+      "lengthText": "4500 mm",
+      "lengthMm": 4500,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "sDrive20i M Sport",
+      "lengthText": "4500 mm",
+      "lengthMm": 4500,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

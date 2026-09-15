@@ -1,0 +1,17 @@
+{
+  "brand": "Suzuki",
+  "model": "Vitara",
+  "sourceId": "7261",
+  "url": "https://newcar.u-car.com.tw/Suzuki/Vitara/7261/spec",
+  "retrievedAt": "2026-09-15T09:51:13.068Z",
+  "pageSha256": "8a364b57d07b0842358921e92167e5d4b1c6e64696d75efb77a654e022306207",
+  "entries": [
+    {
+      "variant": "S Allgrip",
+      "lengthText": "4170 mm",
+      "lengthMm": 4170,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

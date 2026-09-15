@@ -1,0 +1,24 @@
+{
+  "brand": "Volvo",
+  "model": "EC40",
+  "sourceId": "7130",
+  "url": "https://newcar.u-car.com.tw/Volvo/EC40/7130/spec",
+  "retrievedAt": "2026-09-15T09:51:24.691Z",
+  "pageSha256": "22be7218184712cdfb44929ebf89f2b9fe948f5617f576f561a11a1ade04e359",
+  "entries": [
+    {
+      "variant": "Plus Single motor",
+      "lengthText": "4440 mm",
+      "lengthMm": 4440,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Ultra Twin Motor",
+      "lengthText": "4440 mm",
+      "lengthMm": 4440,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

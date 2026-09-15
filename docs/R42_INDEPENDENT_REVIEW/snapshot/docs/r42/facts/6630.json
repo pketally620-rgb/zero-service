@@ -1,0 +1,31 @@
+{
+  "brand": "BMW",
+  "model": "2 Series Active Tourer",
+  "sourceId": "6630",
+  "url": "https://newcar.u-car.com.tw/BMW/2%20Series%20Active%20Tourer/6630/spec",
+  "retrievedAt": "2026-09-15T09:50:00.899Z",
+  "pageSha256": "57ee2af05df235667e963a092592c04c0289860792ee4bf16960cab9f9ca5e2d",
+  "entries": [
+    {
+      "variant": "218i Luxury限量版",
+      "lengthText": "4386 mm",
+      "lengthMm": 4386,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "220i",
+      "lengthText": "4386 mm",
+      "lengthMm": 4386,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "220i Luxury",
+      "lengthText": "4386 mm",
+      "lengthMm": 4386,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

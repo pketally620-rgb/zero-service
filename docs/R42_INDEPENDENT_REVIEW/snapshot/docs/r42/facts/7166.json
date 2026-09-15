@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Mercedes-AMG CLE Cabriolet",
+  "sourceId": "7166",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Mercedes-AMG%20CLE%20Cabriolet/7166/spec",
+  "retrievedAt": "2026-09-15T09:50:49.467Z",
+  "pageSha256": "c7d1dfb1dd83eca363d5d9630f52ee6439cc3494905bde4b5cd0ea66af9b7da7",
+  "entries": [
+    {
+      "variant": "CLE 53 4Matic+ Cabriolet",
+      "lengthText": "4853 mm",
+      "lengthMm": 4853,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

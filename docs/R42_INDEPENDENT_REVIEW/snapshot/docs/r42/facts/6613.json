@@ -1,0 +1,31 @@
+{
+  "brand": "Mini",
+  "model": "Countryman",
+  "sourceId": "6613",
+  "url": "https://newcar.u-car.com.tw/Mini/Countryman/6613/spec",
+  "retrievedAt": "2026-09-15T09:50:55.103Z",
+  "pageSha256": "a6e6fdc949de7b6ebe5b7b2212d86deafa8921b7251227349487bf75137d99cd",
+  "entries": [
+    {
+      "variant": "Countryman C",
+      "lengthText": "4443 mm",
+      "lengthMm": 4443,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Countryman S ALL4",
+      "lengthText": "4443 mm",
+      "lengthMm": 4443,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "John Cooper Works Countryman ALL4",
+      "lengthText": "4447 mm",
+      "lengthMm": 4447,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

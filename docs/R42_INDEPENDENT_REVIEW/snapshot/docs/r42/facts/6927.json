@@ -1,0 +1,38 @@
+{
+  "brand": "Toyota",
+  "model": "Town Ace Van",
+  "sourceId": "6927",
+  "url": "https://newcar.u-car.com.tw/Toyota/Town%20Ace%20Van/6927/spec",
+  "retrievedAt": "2026-09-15T09:51:18.427Z",
+  "pageSha256": "447f7cd41ce4aacd6fdb160eb5a2e3a7d88090e5dc6daeee8fa74a2413099da9",
+  "entries": [
+    {
+      "variant": "2人座手排",
+      "lengthText": "4045 mm",
+      "lengthMm": 4045,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "5人座手排",
+      "lengthText": "4045 mm",
+      "lengthMm": 4045,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "5人座自排",
+      "lengthText": "4045 mm",
+      "lengthMm": 4045,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "5人座自排TSS",
+      "lengthText": "4045 mm",
+      "lengthMm": 4045,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

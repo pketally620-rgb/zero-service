@@ -1,0 +1,31 @@
+{
+  "brand": "Mini",
+  "model": "Mini Cooper 3-Door",
+  "sourceId": "6897",
+  "url": "https://newcar.u-car.com.tw/Mini/Mini%20Cooper%203-Door/6897/spec",
+  "retrievedAt": "2026-09-15T09:50:55.906Z",
+  "pageSha256": "2f98454c4c5b8d56661dc949f9eac511ec9912ff8cae51faa7ba3674d44bb6d0",
+  "entries": [
+    {
+      "variant": "Cooper C",
+      "lengthText": "3876 mm",
+      "lengthMm": 3876,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "Cooper S",
+      "lengthText": "3876 mm",
+      "lengthMm": 3876,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "John Cooper Works",
+      "lengthText": "3876 mm",
+      "lengthMm": 3876,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Mercedes-AMG GLE",
+  "sourceId": "7238",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Mercedes-AMG%20GLE/7238/spec",
+  "retrievedAt": "2026-09-15T09:50:51.339Z",
+  "pageSha256": "790cfaac813b5c6922faaa50112cf76c3ef87a5b39f4484e6814ecec4deaf8d3",
+  "entries": [
+    {
+      "variant": "GLE 53 4Matic+ 星夜版",
+      "lengthText": "4934 mm",
+      "lengthMm": 4934,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

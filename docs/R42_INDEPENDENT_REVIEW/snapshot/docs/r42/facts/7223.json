@@ -1,0 +1,24 @@
+{
+  "brand": "Toyota",
+  "model": "GR Yaris",
+  "sourceId": "7223",
+  "url": "https://newcar.u-car.com.tw/Toyota/GR%20Yaris/7223/spec",
+  "retrievedAt": "2026-09-15T09:51:16.292Z",
+  "pageSha256": "f2a8cad13ca34056c2df0dc9ba3e4b42a6cba76c545f40f821932cbaa251a3ea",
+  "entries": [
+    {
+      "variant": "GR Yaris MT",
+      "lengthText": "3995 mm",
+      "lengthMm": 3995,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    },
+    {
+      "variant": "GR Yaris AT",
+      "lengthText": "3995 mm",
+      "lengthMm": 3995,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    }
+  ]
+}

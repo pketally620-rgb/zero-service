@@ -1,0 +1,17 @@
+{
+  "brand": "BMW",
+  "model": "M5 Touring",
+  "sourceId": "6922",
+  "url": "https://newcar.u-car.com.tw/BMW/M5%20Touring/6922/spec",
+  "retrievedAt": "2026-09-15T09:50:07.231Z",
+  "pageSha256": "11fdc203b91903865a26a443246fc4874f433c7c8ecf75c22bf4277724aeab12",
+  "entries": [
+    {
+      "variant": "M5 Touring",
+      "lengthText": "5096 mm",
+      "lengthMm": 5096,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

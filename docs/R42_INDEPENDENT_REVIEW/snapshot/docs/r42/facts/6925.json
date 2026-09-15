@@ -1,0 +1,24 @@
+{
+  "brand": "Ford",
+  "model": "Ranger",
+  "sourceId": "6925",
+  "url": "https://newcar.u-car.com.tw/Ford/Ranger/6925/spec",
+  "retrievedAt": "2026-09-15T09:50:17.142Z",
+  "pageSha256": "b8f7176891e910b14c40afbd8189f30e787ecb5c40d817c784144bea91c2488a",
+  "entries": [
+    {
+      "variant": "Wildtrak FRS Edition",
+      "lengthText": "5370 mm",
+      "lengthMm": 5370,
+      "bodyText": "貨卡/pick-up truck",
+      "seatText": null
+    },
+    {
+      "variant": "Raptor",
+      "lengthText": "5381 mm",
+      "lengthMm": 5381,
+      "bodyText": "貨卡/pick-up truck",
+      "seatText": null
+    }
+  ]
+}

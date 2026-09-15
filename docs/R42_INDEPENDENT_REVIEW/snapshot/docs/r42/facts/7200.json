@@ -1,0 +1,17 @@
+{
+  "brand": "Alfa Romeo",
+  "model": "Junior Ibrida",
+  "sourceId": "7200",
+  "url": "https://newcar.u-car.com.tw/Alfa%20Romeo/Junior%20Ibrida/7200/spec",
+  "retrievedAt": "2026-09-15T09:49:50.804Z",
+  "pageSha256": "48d1b33ad3904b503702280160fd9c46776ead4a5c50d41f13ae44942b2f30d5",
+  "entries": [
+    {
+      "variant": "Ibrida",
+      "lengthText": "4,173 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

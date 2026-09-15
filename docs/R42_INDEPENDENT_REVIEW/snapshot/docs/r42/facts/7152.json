@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Mercedes-AMG C-Class",
+  "sourceId": "7152",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Mercedes-AMG%20C-Class/7152/spec",
+  "retrievedAt": "2026-09-15T09:50:48.924Z",
+  "pageSha256": "e851e8d2c60d038b36d187832d6d82e5ccdb2504fcbbe7683c3ddabb51224309",
+  "entries": [
+    {
+      "variant": "C 43 4Matic 星耀版",
+      "lengthText": "4791 mm",
+      "lengthMm": 4791,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

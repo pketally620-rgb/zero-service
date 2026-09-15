@@ -1,0 +1,24 @@
+{
+  "brand": "Land Rover",
+  "model": "Defender 90",
+  "sourceId": "7111",
+  "url": "https://newcar.u-car.com.tw/Land%20Rover/Defender%2090/7111/spec",
+  "retrievedAt": "2026-09-15T09:50:28.529Z",
+  "pageSha256": "cbf15c76c7f4c9a5c227704480d2e25af821e0370099b1b887a42588da9e1674",
+  "entries": [
+    {
+      "variant": "D250 S",
+      "lengthText": "4,583 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "D250 X-Dynamic SE",
+      "lengthText": "4,583 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

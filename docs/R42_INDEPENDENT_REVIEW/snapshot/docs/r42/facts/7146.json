@@ -1,0 +1,31 @@
+{
+  "brand": "BMW",
+  "model": "4 Series Coupé",
+  "sourceId": "7146",
+  "url": "https://newcar.u-car.com.tw/BMW/4%20Series%20Coup%C3%A9/7146/spec",
+  "retrievedAt": "2026-09-15T09:52:07.663Z",
+  "pageSha256": "4c92765bbb7281e41e360bf453aebca0b4d816437d5edef971dc73d6e0cf1ec5",
+  "entries": [
+    {
+      "variant": "420i M Racing Edition",
+      "lengthText": "4768 mm",
+      "lengthMm": 4768,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    },
+    {
+      "variant": "430i M Racing Edition",
+      "lengthText": "4768 mm",
+      "lengthMm": 4768,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    },
+    {
+      "variant": "M440i xDrive",
+      "lengthText": "4770 mm",
+      "lengthMm": 4770,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    }
+  ]
+}

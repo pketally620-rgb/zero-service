@@ -1,0 +1,24 @@
+{
+  "brand": "Toyota",
+  "model": "Vios",
+  "sourceId": "6696",
+  "url": "https://newcar.u-car.com.tw/Toyota/Vios/6696/spec",
+  "retrievedAt": "2026-09-15T09:51:18.858Z",
+  "pageSha256": "58080254e75ca304b972d00929e46498a891f04fdfbb214c9e166df36738888e",
+  "entries": [
+    {
+      "variant": "經典",
+      "lengthText": "4425 mm",
+      "lengthMm": 4425,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "豪華",
+      "lengthText": "4425 mm",
+      "lengthMm": 4425,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

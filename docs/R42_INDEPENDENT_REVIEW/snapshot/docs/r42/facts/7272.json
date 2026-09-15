@@ -1,0 +1,24 @@
+{
+  "brand": "Hyundai",
+  "model": "Palisade",
+  "sourceId": "7272",
+  "url": "https://newcar.u-car.com.tw/Hyundai/Palisade/7272/spec",
+  "retrievedAt": "2026-09-15T09:50:21.053Z",
+  "pageSha256": "47dad7cc8bd8388ebdbb9e301a3cff524c59d86dd05af34b639ffa29fa4d0bb8",
+  "entries": [
+    {
+      "variant": "旗艦",
+      "lengthText": "5060 mm",
+      "lengthMm": 5060,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Calligraphy",
+      "lengthText": "5060 mm",
+      "lengthMm": 5060,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

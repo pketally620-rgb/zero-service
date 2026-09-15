@@ -1,0 +1,24 @@
+{
+  "brand": "Audi",
+  "model": "Q3",
+  "sourceId": "7185",
+  "url": "https://newcar.u-car.com.tw/Audi/Q3/7185/spec",
+  "retrievedAt": "2026-09-15T09:49:55.803Z",
+  "pageSha256": "35ca8a67729b9507f210d7b05108db12057552f784c948410c95ea08c604bd2f",
+  "entries": [
+    {
+      "variant": "TFSI 110 kW advanced進化版",
+      "lengthText": "4531 mm",
+      "lengthMm": 4531,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "TFSI quattro 150 kW S line運動版",
+      "lengthText": "4531 mm",
+      "lengthMm": 4531,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

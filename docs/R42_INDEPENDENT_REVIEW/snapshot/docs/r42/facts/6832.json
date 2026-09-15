@@ -1,0 +1,24 @@
+{
+  "brand": "Rolls-Royce",
+  "model": "Cullinan Series II",
+  "sourceId": "6832",
+  "url": "https://newcar.u-car.com.tw/Rolls-Royce/Cullinan%20Series%20II/6832/spec",
+  "retrievedAt": "2026-09-15T09:51:06.305Z",
+  "pageSha256": "35cc78b31fcc34b95e00796700f0ab23f95de9dad0d075a65963d6f04dd2de60",
+  "entries": [
+    {
+      "variant": "Cullinan Series II",
+      "lengthText": "5355 mm",
+      "lengthMm": 5355,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "Black Badge Cullinan Series II",
+      "lengthText": "5355 mm",
+      "lengthMm": 5355,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

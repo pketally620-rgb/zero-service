@@ -1,0 +1,24 @@
+{
+  "brand": "BMW",
+  "model": "M2",
+  "sourceId": "6850",
+  "url": "https://newcar.u-car.com.tw/BMW/M2/6850/spec",
+  "retrievedAt": "2026-09-15T09:50:05.606Z",
+  "pageSha256": "3829c549bcfd6104c20193dd6d36163f81f7e62f4d4d7eea23075ae464ec0d51",
+  "entries": [
+    {
+      "variant": "M2自排",
+      "lengthText": "4580 mm",
+      "lengthMm": 4580,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    },
+    {
+      "variant": "M2手排",
+      "lengthText": "4580 mm",
+      "lengthMm": 4580,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    }
+  ]
+}

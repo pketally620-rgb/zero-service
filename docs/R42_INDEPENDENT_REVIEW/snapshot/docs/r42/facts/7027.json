@@ -1,0 +1,24 @@
+{
+  "brand": "Audi",
+  "model": "A1 Sportback",
+  "sourceId": "7027",
+  "url": "https://newcar.u-car.com.tw/Audi/A1%20Sportback/7027/spec",
+  "retrievedAt": "2026-09-15T09:49:53.233Z",
+  "pageSha256": "9622169d39874214462f9b77454e7f46536e5b1536c3379c3153fe56ab480ae2",
+  "entries": [
+    {
+      "variant": "30 TFSI",
+      "lengthText": "4029 mm",
+      "lengthMm": 4029,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "30 TFSI S line",
+      "lengthText": "4029 mm",
+      "lengthMm": 4029,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

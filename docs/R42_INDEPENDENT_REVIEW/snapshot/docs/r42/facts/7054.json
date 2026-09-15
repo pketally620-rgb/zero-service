@@ -1,0 +1,24 @@
+{
+  "brand": "Volkswagen Commercial Vehicles",
+  "model": "ID.Buzz LWB",
+  "sourceId": "7054",
+  "url": "https://newcar.u-car.com.tw/Volkswagen%20Commercial%20Vehicles/ID.Buzz%20LWB/7054/spec",
+  "retrievedAt": "2026-09-15T09:51:24.070Z",
+  "pageSha256": "81b551c8a0a68973e7614e614a9898fa6e1ec6c19e620ecc5e9643ad66b8f3c7",
+  "entries": [
+    {
+      "variant": "Pro S",
+      "lengthText": "4962 mm",
+      "lengthMm": 4962,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "GTX",
+      "lengthText": "4962 mm",
+      "lengthMm": 4962,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "brand": "Audi",
+  "model": "Q7",
+  "sourceId": "7055",
+  "url": "https://newcar.u-car.com.tw/Audi/Q7/7055/spec",
+  "retrievedAt": "2026-09-15T09:49:57.621Z",
+  "pageSha256": "4536c189eca6d58ec3f8648e1bb2ec44a07f6a1f134efc9c7794be03aaccf40a",
+  "entries": [
+    {
+      "variant": "45 TFSI quattro享馭版",
+      "lengthText": "5072 mm",
+      "lengthMm": 5072,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "45 TDI quattro享馭版",
+      "lengthText": "5072 mm",
+      "lengthMm": 5072,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "55 TFSI quattro S line運動版",
+      "lengthText": "5072 mm",
+      "lengthMm": 5072,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "SQ7",
+      "lengthText": "5072 mm",
+      "lengthMm": 5072,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

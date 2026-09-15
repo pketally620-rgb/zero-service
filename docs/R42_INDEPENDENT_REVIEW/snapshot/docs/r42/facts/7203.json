@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "CLA Shooting Brake",
+  "sourceId": "7203",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/CLA%20Shooting%20Brake/7203/spec",
+  "retrievedAt": "2026-09-15T09:50:42.925Z",
+  "pageSha256": "68456807d542346a77905bc84763bd23502dcfc29740bc1a31e6b6799fa746c6",
+  "entries": [
+    {
+      "variant": "CLA 180 Shooting Brake",
+      "lengthText": "4731 mm",
+      "lengthMm": 4731,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "brand": "CMC",
+  "model": "ET35",
+  "sourceId": "7030",
+  "url": "https://newcar.u-car.com.tw/CMC/ET35/7030/spec",
+  "retrievedAt": "2026-09-15T09:50:11.301Z",
+  "pageSha256": "fa8f929442bb25f6446cd0754f6a13ef23421b58e1921e1952d9b65e2ed0d25f",
+  "entries": [
+    {
+      "variant": "底盤車VR34T",
+      "lengthText": "5155 mm",
+      "lengthMm": 5155,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "底盤車VR38T",
+      "lengthText": "5155 mm",
+      "lengthMm": 5155,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "木床車VR34W",
+      "lengthText": "5275 mm",
+      "lengthMm": 5275,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "木床車VR38W",
+      "lengthText": "5275 mm",
+      "lengthMm": 5275,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    }
+  ]
+}

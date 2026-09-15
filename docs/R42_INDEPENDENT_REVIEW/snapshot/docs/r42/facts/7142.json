@@ -1,0 +1,17 @@
+{
+  "brand": "Kia",
+  "model": "Stonic",
+  "sourceId": "7142",
+  "url": "https://newcar.u-car.com.tw/Kia/Stonic/7142/spec",
+  "retrievedAt": "2026-09-15T09:50:27.210Z",
+  "pageSha256": "4df67f94a9b8394b739becd5718f023b927692a9d771420b1768d7780032fa34",
+  "entries": [
+    {
+      "variant": "Signature",
+      "lengthText": "4165 mm",
+      "lengthMm": 4165,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

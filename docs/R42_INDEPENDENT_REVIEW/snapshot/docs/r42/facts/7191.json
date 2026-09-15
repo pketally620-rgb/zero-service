@@ -1,0 +1,24 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "GLA",
+  "sourceId": "7191",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/GLA/7191/spec",
+  "retrievedAt": "2026-09-15T09:50:46.449Z",
+  "pageSha256": "2f7622f3fe7d37a828e83c5310cba19ada38d90cf67d18e1e6ca52d838a62c63",
+  "entries": [
+    {
+      "variant": "GLA 180 摘星版",
+      "lengthText": "4436 mm",
+      "lengthMm": 4436,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GLA 200 摘星版",
+      "lengthText": "4436 mm",
+      "lengthMm": 4436,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

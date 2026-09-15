@@ -1,0 +1,17 @@
+{
+  "brand": "Ferrari",
+  "model": "296 GTS",
+  "sourceId": "6299",
+  "url": "https://newcar.u-car.com.tw/Ferrari/296%20GTS/6299/spec",
+  "retrievedAt": "2026-09-15T09:50:14.848Z",
+  "pageSha256": "f25e0bbd303c54ce1ec48f36932eb34359bc0924ebe944fc5292b79d4eda46ee",
+  "entries": [
+    {
+      "variant": "296 GTS",
+      "lengthText": "4565 mm",
+      "lengthMm": 4565,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

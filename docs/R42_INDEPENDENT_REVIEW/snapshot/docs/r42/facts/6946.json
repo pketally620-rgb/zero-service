@@ -1,0 +1,38 @@
+{
+  "brand": "Honda",
+  "model": "HR-V",
+  "sourceId": "6946",
+  "url": "https://newcar.u-car.com.tw/Honda/HR-V/6946/spec",
+  "retrievedAt": "2026-09-15T09:50:19.546Z",
+  "pageSha256": "e4c98b3ebfcaa3a558808b3857822e499e26a9e9ad907413ce6f9d7a6ad9157c",
+  "entries": [
+    {
+      "variant": "S",
+      "lengthText": "4330 mm",
+      "lengthMm": 4330,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "e:HEV S",
+      "lengthText": "4330 mm",
+      "lengthMm": 4330,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "e:HEV Prestige",
+      "lengthText": "4330 mm",
+      "lengthMm": 4330,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "e:HEV Prestige Super Edition",
+      "lengthText": "4330 mm",
+      "lengthMm": 4330,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "brand": "Hyundai",
+  "model": "Porter II",
+  "sourceId": "6831",
+  "url": "https://newcar.u-car.com.tw/Hyundai/Porter%20II/6831/spec",
+  "retrievedAt": "2026-09-15T09:50:21.363Z",
+  "pageSha256": "c88b1963f14a92d677d5cfb5d834cb01b7ad966290419e207dc5705ce8bb1680",
+  "entries": [
+    {
+      "variant": "標準鐵床 6速手排",
+      "lengthText": "5170 mm",
+      "lengthMm": 5170,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "標準鐵床 5速手自排",
+      "lengthText": "5170 mm",
+      "lengthMm": 5170,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "豪華鐵床 5速手自排",
+      "lengthText": "5170 mm",
+      "lengthMm": 5170,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "雙廂鐵床 6速手排",
+      "lengthText": "5135 mm",
+      "lengthMm": 5135,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    },
+    {
+      "variant": "雙廂鐵床 5速手自排",
+      "lengthText": "5135 mm",
+      "lengthMm": 5135,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    }
+  ]
+}

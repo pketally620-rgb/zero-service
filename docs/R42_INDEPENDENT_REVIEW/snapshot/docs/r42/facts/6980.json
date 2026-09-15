@@ -1,0 +1,17 @@
+{
+  "brand": "Audi",
+  "model": "RS 3 Sedan",
+  "sourceId": "6980",
+  "url": "https://newcar.u-car.com.tw/Audi/RS%203%20Sedan/6980/spec",
+  "retrievedAt": "2026-09-15T09:49:58.124Z",
+  "pageSha256": "f5ad489a524e452c9a4df3610aa259de440875cb5d31c32202e07a88f767c6f7",
+  "entries": [
+    {
+      "variant": "RS 3 Sedan",
+      "lengthText": "4533 mm",
+      "lengthMm": 4533,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

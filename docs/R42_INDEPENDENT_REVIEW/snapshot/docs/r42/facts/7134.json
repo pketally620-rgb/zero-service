@@ -1,0 +1,38 @@
+{
+  "brand": "Land Rover",
+  "model": "Range Rover Sport",
+  "sourceId": "7134",
+  "url": "https://newcar.u-car.com.tw/Land%20Rover/Range%20Rover%20Sport/7134/spec",
+  "retrievedAt": "2026-09-15T09:50:30.012Z",
+  "pageSha256": "df79617955616dd75e307d02c31cf4d69a7875ec267c08a282195e4371765859",
+  "entries": [
+    {
+      "variant": "D300 S",
+      "lengthText": "4,946 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "P400 S",
+      "lengthText": "4,946 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "P400 Dynamic SE",
+      "lengthText": "4,946 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "P635 SV Carbon",
+      "lengthText": "4,970 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

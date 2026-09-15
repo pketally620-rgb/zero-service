@@ -1,0 +1,38 @@
+{
+  "brand": "Audi",
+  "model": "A5 Avant",
+  "sourceId": "7243",
+  "url": "https://newcar.u-car.com.tw/Audi/A5%20Avant/7243/spec",
+  "retrievedAt": "2026-09-15T09:49:53.934Z",
+  "pageSha256": "6edb435af28e607e6aeba876c1e139a729f5d2d10a2068dc56998735b270708b",
+  "entries": [
+    {
+      "variant": "TFSI 110 kW advanced進化版",
+      "lengthText": "4829 mm",
+      "lengthMm": 4829,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "TFSI 110 kW S line運動版",
+      "lengthText": "4829 mm",
+      "lengthMm": 4829,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "TFSI 150 kW S line運動版",
+      "lengthText": "4829 mm",
+      "lengthMm": 4829,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    },
+    {
+      "variant": "S5 Avant",
+      "lengthText": "4829 mm",
+      "lengthMm": 4829,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "brand": "Mazda",
+  "model": "Mazda3 四門",
+  "sourceId": "7126",
+  "url": "https://newcar.u-car.com.tw/Mazda/Mazda3%20%E5%9B%9B%E9%96%80/7126/spec",
+  "retrievedAt": "2026-09-15T09:50:39.231Z",
+  "pageSha256": "fbcd7d00f85f0f34c49579d2041a1676982b394c96ee04c6f60b5271ce6e1269",
+  "entries": [
+    {
+      "variant": "20S Ace Edition",
+      "lengthText": "4660 mm",
+      "lengthMm": 4660,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "20S Premium",
+      "lengthText": "4660 mm",
+      "lengthMm": 4660,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "20S Signature",
+      "lengthText": "4660 mm",
+      "lengthMm": 4660,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "brand": "Honda",
+  "model": "Fit",
+  "sourceId": "6307",
+  "url": "https://newcar.u-car.com.tw/Honda/Fit/6307/spec",
+  "retrievedAt": "2026-09-15T09:50:19.147Z",
+  "pageSha256": "8268f63ec3871d7f63514bfc598d13aee3267cac9d32168c6a3a56c9028987e9",
+  "entries": [
+    {
+      "variant": "Home汽油版",
+      "lengthText": "4054 mm",
+      "lengthMm": 4054,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "e:HEV油電版",
+      "lengthText": "4054 mm",
+      "lengthMm": 4054,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

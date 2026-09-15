@@ -1,0 +1,24 @@
+{
+  "brand": "Infiniti",
+  "model": "QX55",
+  "sourceId": "6315",
+  "url": "https://newcar.u-car.com.tw/Infiniti/QX55/6315/spec",
+  "retrievedAt": "2026-09-15T09:50:23.750Z",
+  "pageSha256": "a4f4ba92f598102d0c5537ecf68e97cf4259f3406a389ad4ed4c152ebc89d414",
+  "entries": [
+    {
+      "variant": "風尚款",
+      "lengthText": "4732 mm",
+      "lengthMm": 4732,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "旗艦款",
+      "lengthText": "4732 mm",
+      "lengthMm": 4732,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

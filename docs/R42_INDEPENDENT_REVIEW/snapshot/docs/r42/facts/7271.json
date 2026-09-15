@@ -1,0 +1,24 @@
+{
+  "brand": "Toyota",
+  "model": "GR 86",
+  "sourceId": "7271",
+  "url": "https://newcar.u-car.com.tw/Toyota/GR%2086/7271/spec",
+  "retrievedAt": "2026-09-15T09:51:15.823Z",
+  "pageSha256": "824fd081d4ac036b99e0244b8da8ad0f625dfd0a3ad563b21d513cabe6f408c1",
+  "entries": [
+    {
+      "variant": "6MT Brembo",
+      "lengthText": "4265 mm",
+      "lengthMm": 4265,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    },
+    {
+      "variant": "6AT Brembo",
+      "lengthText": "4265 mm",
+      "lengthMm": 4265,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

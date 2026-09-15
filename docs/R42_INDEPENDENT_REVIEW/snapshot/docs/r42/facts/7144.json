@@ -1,0 +1,24 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "CLA",
+  "sourceId": "7144",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/CLA/7144/spec",
+  "retrievedAt": "2026-09-15T09:50:42.380Z",
+  "pageSha256": "c6c46621b0ecde4688eb318b59b93381647f72ddca0a9f2f82d6a730d51b7977",
+  "entries": [
+    {
+      "variant": "CLA 180",
+      "lengthText": "4723 mm",
+      "lengthMm": 4723,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "CLA 220",
+      "lengthText": "4731 mm",
+      "lengthMm": 4731,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

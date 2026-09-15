@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "A-Class Sedan",
+  "sourceId": "6937",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/A-Class%20Sedan/6937/spec",
+  "retrievedAt": "2026-09-15T09:50:41.386Z",
+  "pageSha256": "384117c69e8dc62b70dff12c5e2296cf54f7a3f656c078d8d13745cde49491b0",
+  "entries": [
+    {
+      "variant": "A 180 Sedan 進化版",
+      "lengthText": "4558 mm",
+      "lengthMm": 4558,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

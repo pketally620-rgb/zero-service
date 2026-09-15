@@ -1,0 +1,24 @@
+{
+  "brand": "Lexus",
+  "model": "ES",
+  "sourceId": "7178",
+  "url": "https://newcar.u-car.com.tw/Lexus/ES/7178/spec",
+  "retrievedAt": "2026-09-15T09:50:30.541Z",
+  "pageSha256": "cf0bad802cd1361e595e1ea3e58d96cac2471b9c137d68d5c6366372c608b98a",
+  "entries": [
+    {
+      "variant": "ES 300h豪華版",
+      "lengthText": "5140 mm",
+      "lengthMm": 5140,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "ES 300h頂級版",
+      "lengthText": "5140 mm",
+      "lengthMm": 5140,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

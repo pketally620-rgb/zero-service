@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Mercedes-Maybach EQS SUV",
+  "sourceId": "6661",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Mercedes-Maybach%20EQS%20SUV/6661/spec",
+  "retrievedAt": "2026-09-15T09:50:52.853Z",
+  "pageSha256": "02df30dc3119404e4741508c47f21af6cc692d6050c0a382814313d59ef146e3",
+  "entries": [
+    {
+      "variant": "EQS 680 SUV",
+      "lengthText": "5125 mm",
+      "lengthMm": 5125,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

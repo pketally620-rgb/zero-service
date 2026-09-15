@@ -1,0 +1,17 @@
+{
+  "brand": "Aston Martin",
+  "model": "DBX",
+  "sourceId": "7094",
+  "url": "https://newcar.u-car.com.tw/Aston%20Martin/DBX/7094/spec",
+  "retrievedAt": "2026-09-15T09:49:51.772Z",
+  "pageSha256": "9282c873904aff6283452cf12dbb193ff82546ba80a9c6e6c7cfc2778ca6621e",
+  "entries": [
+    {
+      "variant": "DBX S",
+      "lengthText": "5039 mm",
+      "lengthMm": 5039,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

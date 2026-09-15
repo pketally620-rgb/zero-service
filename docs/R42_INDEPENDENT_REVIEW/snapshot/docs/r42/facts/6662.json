@@ -1,0 +1,38 @@
+{
+  "brand": "Hyundai",
+  "model": "Venue",
+  "sourceId": "6662",
+  "url": "https://newcar.u-car.com.tw/Hyundai/Venue/6662/spec",
+  "retrievedAt": "2026-09-15T09:50:22.523Z",
+  "pageSha256": "56c317c765ccc47ac9ff0549ad363e280c815e0d8be81b9a715ef77810778ac7",
+  "entries": [
+    {
+      "variant": "GLA",
+      "lengthText": "4040 mm",
+      "lengthMm": 4040,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GLB",
+      "lengthText": "4040 mm",
+      "lengthMm": 4040,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GLB雙色",
+      "lengthText": "4040 mm",
+      "lengthMm": 4040,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GLC",
+      "lengthText": "4040 mm",
+      "lengthMm": 4040,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

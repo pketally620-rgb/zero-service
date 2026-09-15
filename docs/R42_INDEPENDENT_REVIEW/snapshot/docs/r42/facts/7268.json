@@ -1,0 +1,31 @@
+{
+  "brand": "Toyota",
+  "model": "Camry",
+  "sourceId": "7268",
+  "url": "https://newcar.u-car.com.tw/Toyota/Camry/7268/spec",
+  "retrievedAt": "2026-09-15T09:51:14.668Z",
+  "pageSha256": "37f97565f61abca819513ccd5d71345c50c3c60095fae8da20fe09ce796eac1b",
+  "entries": [
+    {
+      "variant": "汽油旗艦",
+      "lengthText": "4920 mm",
+      "lengthMm": 4920,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Hybrid尊爵",
+      "lengthText": "4920 mm",
+      "lengthMm": 4920,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Hybrid旗艦",
+      "lengthText": "4920 mm",
+      "lengthMm": 4920,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

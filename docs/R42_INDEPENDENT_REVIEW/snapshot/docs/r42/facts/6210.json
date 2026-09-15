@@ -1,0 +1,17 @@
+{
+  "brand": "DFSK",
+  "model": "金穩發",
+  "sourceId": "6210",
+  "url": "https://newcar.u-car.com.tw/DFSK/%E9%87%91%E7%A9%A9%E7%99%BC/6210/spec",
+  "retrievedAt": "2026-09-15T09:50:13.616Z",
+  "pageSha256": "5228ff62eaa8db17d3d7c692def1ce7fdccafedbc2e88e776c4a399bd0ea0cd9",
+  "entries": [
+    {
+      "variant": "金穩發 S2.5t",
+      "lengthText": "4740 mm",
+      "lengthMm": 4740,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    }
+  ]
+}

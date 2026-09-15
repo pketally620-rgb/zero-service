@@ -1,0 +1,17 @@
+{
+  "brand": "Bentley",
+  "model": "Bentayga EWB",
+  "sourceId": "7068",
+  "url": "https://newcar.u-car.com.tw/Bentley/Bentayga%20EWB/7068/spec",
+  "retrievedAt": "2026-09-15T09:49:59.679Z",
+  "pageSha256": "a9cb5c1ce58a67d35a4e04ea126851f75e1b3cfb908fea2bad3cc5607d64b4b9",
+  "entries": [
+    {
+      "variant": "Bentayga EWB",
+      "lengthText": "5305 mm",
+      "lengthMm": 5305,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "brand": "Bentley",
+  "model": "Continental GT",
+  "sourceId": "7064",
+  "url": "https://newcar.u-car.com.tw/Bentley/Continental%20GT/7064/spec",
+  "retrievedAt": "2026-09-15T09:49:59.914Z",
+  "pageSha256": "fd3dc814882ffb2f15d295f8ed55d405d8c1fbc08abdc2d6b8a13b0fac618f3a",
+  "entries": [
+    {
+      "variant": "Continental GT",
+      "lengthText": "4895 mm",
+      "lengthMm": 4895,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    },
+    {
+      "variant": "Continental GT Speed",
+      "lengthText": "4895 mm",
+      "lengthMm": 4895,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    },
+    {
+      "variant": "Continental GT Mulliner",
+      "lengthText": "4895 mm",
+      "lengthMm": 4895,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    }
+  ]
+}

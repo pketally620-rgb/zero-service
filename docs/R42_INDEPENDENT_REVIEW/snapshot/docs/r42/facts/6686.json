@@ -1,0 +1,17 @@
+{
+  "brand": "Volkswagen Commercial Vehicles",
+  "model": "Grand California",
+  "sourceId": "6686",
+  "url": "https://newcar.u-car.com.tw/Volkswagen%20Commercial%20Vehicles/Grand%20California/6686/spec",
+  "retrievedAt": "2026-09-15T09:51:24.204Z",
+  "pageSha256": "8cc9fe5e83c3378fc40af041c3af3b8cb70da410d535c5470311633c4da6de99",
+  "entries": [
+    {
+      "variant": "Grand California 680",
+      "lengthText": "6836 mm",
+      "lengthMm": 6836,
+      "bodyText": "Commercial/商用車",
+      "seatText": null
+    }
+  ]
+}

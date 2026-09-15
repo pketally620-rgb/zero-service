@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "A-Class",
+  "sourceId": "7188",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/A-Class/7188/spec",
+  "retrievedAt": "2026-09-15T09:50:41.247Z",
+  "pageSha256": "ea2da20d2b52e07b3514a522853a968198b14350adaec39dd8d8d3f15fb6763d",
+  "entries": [
+    {
+      "variant": "A 180 摘星版",
+      "lengthText": "4442 mm",
+      "lengthMm": 4442,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

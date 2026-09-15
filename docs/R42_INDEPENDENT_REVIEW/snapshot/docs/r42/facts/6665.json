@@ -1,0 +1,17 @@
+{
+  "brand": "BMW",
+  "model": "M4 Convertible",
+  "sourceId": "6665",
+  "url": "https://newcar.u-car.com.tw/BMW/M4%20Convertible/6665/spec",
+  "retrievedAt": "2026-09-15T09:50:06.586Z",
+  "pageSha256": "3ae20dd9dd648b6163ce459470f7f9a6a421285c82dd6ee3611771adbc3bd580",
+  "entries": [
+    {
+      "variant": "Competition Convertible M xDrive",
+      "lengthText": "4801 mm",
+      "lengthMm": 4801,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

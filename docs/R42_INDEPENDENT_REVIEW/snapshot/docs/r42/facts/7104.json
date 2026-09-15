@@ -1,0 +1,31 @@
+{
+  "brand": "Škoda",
+  "model": "Kodiaq",
+  "sourceId": "7104",
+  "url": "https://newcar.u-car.com.tw/%C5%A0koda/Kodiaq/7104/spec",
+  "retrievedAt": "2026-09-15T09:51:08.673Z",
+  "pageSha256": "2eb2a3b5ec12f2f028de6562680c14e13eb6b712dd573bce4ba61366a04dc896",
+  "entries": [
+    {
+      "variant": "1.5 TSI e-TEC",
+      "lengthText": "4758 mm",
+      "lengthMm": 4758,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "2.0 TSI 4&#215;4",
+      "lengthText": "4758 mm",
+      "lengthMm": 4758,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "RS 4&#215;4",
+      "lengthText": "4761 mm",
+      "lengthMm": 4761,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

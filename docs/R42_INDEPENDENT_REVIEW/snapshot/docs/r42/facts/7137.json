@@ -1,0 +1,31 @@
+{
+  "brand": "Nissan",
+  "model": "Sentra",
+  "sourceId": "7137",
+  "url": "https://newcar.u-car.com.tw/Nissan/Sentra/7137/spec",
+  "retrievedAt": "2026-09-15T09:50:58.464Z",
+  "pageSha256": "c19e93da67688a246a9ebd57401b0f3086f991efdf6bce7d91a60d4825ef1c01",
+  "entries": [
+    {
+      "variant": "初綻版",
+      "lengthText": "",
+      "lengthMm": null,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "盛綻版",
+      "lengthText": "",
+      "lengthMm": null,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "極綻版",
+      "lengthText": "",
+      "lengthMm": null,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

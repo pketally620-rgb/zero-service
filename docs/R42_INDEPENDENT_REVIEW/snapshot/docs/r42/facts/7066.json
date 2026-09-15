@@ -1,0 +1,31 @@
+{
+  "brand": "Bentley",
+  "model": "Flying Spur",
+  "sourceId": "7066",
+  "url": "https://newcar.u-car.com.tw/Bentley/Flying%20Spur/7066/spec",
+  "retrievedAt": "2026-09-15T09:50:00.415Z",
+  "pageSha256": "3dd25ff2848860d61c1e60bf761069eea18bb0785327d085a23340d9773a1bd4",
+  "entries": [
+    {
+      "variant": "Flying Spur",
+      "lengthText": "5316 mm",
+      "lengthMm": 5316,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Flying Spur Speed",
+      "lengthText": "5316 mm",
+      "lengthMm": 5316,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Flying Spur Mulliner",
+      "lengthText": "5316 mm",
+      "lengthMm": 5316,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

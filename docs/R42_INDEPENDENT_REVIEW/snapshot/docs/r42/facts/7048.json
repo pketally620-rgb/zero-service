@@ -1,0 +1,31 @@
+{
+  "brand": "Hyundai",
+  "model": "Inster",
+  "sourceId": "7048",
+  "url": "https://newcar.u-car.com.tw/Hyundai/Inster/7048/spec",
+  "retrievedAt": "2026-09-15T09:50:20.114Z",
+  "pageSha256": "5832e6d790bd0767915f669b52144cb552a89ce81fa0d48620dd72010ceda51c",
+  "entries": [
+    {
+      "variant": "EV400-A",
+      "lengthText": "3825 mm",
+      "lengthMm": 3825,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "EV400-B",
+      "lengthText": "3825 mm",
+      "lengthMm": 3825,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "EV450",
+      "lengthText": "3825 mm",
+      "lengthMm": 3825,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

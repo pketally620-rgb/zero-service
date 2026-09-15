@@ -1,0 +1,17 @@
+{
+  "brand": "Pagani",
+  "model": "Huayra",
+  "sourceId": "6183",
+  "url": "https://newcar.u-car.com.tw/Pagani/Huayra/6183/spec",
+  "retrievedAt": "2026-09-15T09:51:00.101Z",
+  "pageSha256": "f2d28ce51ecc26a268ae90ca6a361d8433e018f8bfc770bce9e45d3af03473c8",
+  "entries": [
+    {
+      "variant": "Huayra",
+      "lengthText": "4605 mm",
+      "lengthMm": 4605,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "brand": "Toyota",
+  "model": "Alphard",
+  "sourceId": "6844",
+  "url": "https://newcar.u-car.com.tw/Toyota/Alphard/6844/spec",
+  "retrievedAt": "2026-09-15T09:51:14.228Z",
+  "pageSha256": "d475e3b8463b994efd7efbaeb6b5e9fb8bb5c255b5f020bd9ec19eddd5aebb2c",
+  "entries": [
+    {
+      "variant": "HEV",
+      "lengthText": "5010 mm",
+      "lengthMm": 5010,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "PHEV",
+      "lengthText": "5010 mm",
+      "lengthMm": 5010,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

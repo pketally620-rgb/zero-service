@@ -1,0 +1,17 @@
+{
+  "brand": "Toyota",
+  "model": "bZ4X",
+  "sourceId": "7034",
+  "url": "https://newcar.u-car.com.tw/Toyota/bZ4X/7034/spec",
+  "retrievedAt": "2026-09-15T09:51:14.403Z",
+  "pageSha256": "7075fd6910ecf01f8b418be291902e8a133f7e012ff1739915b0417e0c968cbc",
+  "entries": [
+    {
+      "variant": "bZ4X",
+      "lengthText": "4690 mm",
+      "lengthMm": 4690,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Ferrari",
+  "model": "Luce",
+  "sourceId": "7270",
+  "url": "https://newcar.u-car.com.tw/Ferrari/Luce/7270/spec",
+  "retrievedAt": "2026-09-15T09:50:16.644Z",
+  "pageSha256": "028b9af9ff15af8f87920b349b105de72672ec7312efeea53be4e165bf46202f",
+  "entries": [
+    {
+      "variant": "Luce",
+      "lengthText": "5026 mm",
+      "lengthMm": 5026,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "brand": "Tesla",
+  "model": "Model S",
+  "sourceId": "6947",
+  "url": "https://newcar.u-car.com.tw/Tesla/Model%20S/6947/spec",
+  "retrievedAt": "2026-09-15T09:51:13.511Z",
+  "pageSha256": "36839e90020ab6c5b7ebf35f199e05c28d65fe142cbb4a12ee293cf2bee053dd",
+  "entries": [
+    {
+      "variant": "Model S",
+      "lengthText": "5021 mm",
+      "lengthMm": 5021,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Model S Plaid",
+      "lengthText": "5046 mm",
+      "lengthMm": 5046,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

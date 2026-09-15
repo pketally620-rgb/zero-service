@@ -1,0 +1,17 @@
+{
+  "brand": "McLaren",
+  "model": "Artura Spider",
+  "sourceId": "6999",
+  "url": "https://newcar.u-car.com.tw/McLaren/Artura%20Spider/6999/spec",
+  "retrievedAt": "2026-09-15T09:50:40.761Z",
+  "pageSha256": "66760c602e67d5f160f0f38aff02777f03475f481f1bb5c0556bc6db02d0ad95",
+  "entries": [
+    {
+      "variant": "Artura Spider",
+      "lengthText": "4539 mm",
+      "lengthMm": 4539,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

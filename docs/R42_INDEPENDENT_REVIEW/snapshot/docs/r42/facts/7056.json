@@ -1,0 +1,24 @@
+{
+  "brand": "Audi",
+  "model": "Q8",
+  "sourceId": "7056",
+  "url": "https://newcar.u-car.com.tw/Audi/Q8/7056/spec",
+  "retrievedAt": "2026-09-15T09:49:57.824Z",
+  "pageSha256": "dfdacd762dbff14456ce577d9309b5325757d4bb52ee8b2a2e991b0ebf47c4d7",
+  "entries": [
+    {
+      "variant": "55 TFSI quattro S line運動版",
+      "lengthText": "4992 mm",
+      "lengthMm": 4992,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "55 TFSI quattro S line Black Edition",
+      "lengthText": "4992 mm",
+      "lengthMm": 4992,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

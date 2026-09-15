@@ -1,0 +1,24 @@
+{
+  "brand": "Mitsubishi",
+  "model": "Colt Plus",
+  "sourceId": "6768",
+  "url": "https://newcar.u-car.com.tw/Mitsubishi/Colt%20Plus/6768/spec",
+  "retrievedAt": "2026-09-15T09:50:56.345Z",
+  "pageSha256": "f96a52ab3b2f774e08bb16a04fdcceff9f2c3600d353e3ae583ad1265a8a3bef",
+  "entries": [
+    {
+      "variant": "享樂型",
+      "lengthText": "4390 mm",
+      "lengthMm": 4390,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    },
+    {
+      "variant": "輕鬆型",
+      "lengthText": "4390 mm",
+      "lengthMm": 4390,
+      "bodyText": "掀背/Hatchback",
+      "seatText": null
+    }
+  ]
+}

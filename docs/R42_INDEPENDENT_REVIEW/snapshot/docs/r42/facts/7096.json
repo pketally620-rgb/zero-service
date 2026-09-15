@@ -1,0 +1,17 @@
+{
+  "brand": "Aston Martin",
+  "model": "Vanquish Volante",
+  "sourceId": "7096",
+  "url": "https://newcar.u-car.com.tw/Aston%20Martin/Vanquish%20Volante/7096/spec",
+  "retrievedAt": "2026-09-15T09:49:52.258Z",
+  "pageSha256": "19f883219376d51f253415645ec9c27a534dfe36f3111600666e9c53834a64f1",
+  "entries": [
+    {
+      "variant": "Vanquish Volante",
+      "lengthText": "4850 mm",
+      "lengthMm": 4850,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

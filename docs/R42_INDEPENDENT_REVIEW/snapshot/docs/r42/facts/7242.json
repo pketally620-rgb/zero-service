@@ -1,0 +1,38 @@
+{
+  "brand": "Audi",
+  "model": "A5",
+  "sourceId": "7242",
+  "url": "https://newcar.u-car.com.tw/Audi/A5/7242/spec",
+  "retrievedAt": "2026-09-15T09:49:53.749Z",
+  "pageSha256": "f2b150f55097baad5bc649c2b3951f332d0ce01788f84d104efd0b0831e4df8e",
+  "entries": [
+    {
+      "variant": "TFSI 110 kW advanced進化版",
+      "lengthText": "4829 mm",
+      "lengthMm": 4829,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "TFSI 110 kW S line運動版",
+      "lengthText": "4829 mm",
+      "lengthMm": 4829,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "TFSI 150 kW S line運動版",
+      "lengthText": "4829 mm",
+      "lengthMm": 4829,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "S5",
+      "lengthText": "4829 mm",
+      "lengthMm": 4829,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

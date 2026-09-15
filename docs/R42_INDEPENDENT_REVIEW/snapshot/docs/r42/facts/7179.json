@@ -1,0 +1,24 @@
+{
+  "brand": "Lexus",
+  "model": "ES Electric",
+  "sourceId": "7179",
+  "url": "https://newcar.u-car.com.tw/Lexus/ES%20Electric/7179/spec",
+  "retrievedAt": "2026-09-15T09:50:30.622Z",
+  "pageSha256": "692b03c3aa6015c0662335d8b197f55621917ae1299dd007fd8d3ac2745bc77f",
+  "entries": [
+    {
+      "variant": "ES 500e頂級版",
+      "lengthText": "5140 mm",
+      "lengthMm": 5140,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "ES 500e旗艦版",
+      "lengthText": "5140 mm",
+      "lengthMm": 5140,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

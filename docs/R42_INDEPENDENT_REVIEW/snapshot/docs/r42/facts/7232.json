@@ -1,0 +1,31 @@
+{
+  "brand": "Ford",
+  "model": "Mustang",
+  "sourceId": "7232",
+  "url": "https://newcar.u-car.com.tw/Ford/Mustang/7232/spec",
+  "retrievedAt": "2026-09-15T09:50:17.130Z",
+  "pageSha256": "50d46351cfd8786bea8014928ad3a73291cc95a53ce30accd4fa8909e2496400",
+  "entries": [
+    {
+      "variant": "EcoBoost Premium",
+      "lengthText": "4811 mm",
+      "lengthMm": 4811,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    },
+    {
+      "variant": "GT Premium",
+      "lengthText": "4811 mm",
+      "lengthMm": 4811,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    },
+    {
+      "variant": "Dark Horse Premium",
+      "lengthText": "4823 mm",
+      "lengthMm": 4823,
+      "bodyText": "轎跑車/Coupes",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "brand": "Land Rover",
+  "model": "Defender 110",
+  "sourceId": "7110",
+  "url": "https://newcar.u-car.com.tw/Land%20Rover/Defender%20110/7110/spec",
+  "retrievedAt": "2026-09-15T09:50:28.187Z",
+  "pageSha256": "081f83b7545adf793ac33604f1cc4bef2e3c03d1191ccc08475a7c1b5fa9e7b4",
+  "entries": [
+    {
+      "variant": "D250 S",
+      "lengthText": "5,018 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "D250 X-Dynamic SE",
+      "lengthText": "5,018 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "D350 X-Dynamic HSE",
+      "lengthText": "5,018 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "P635 OCTA Black",
+      "lengthText": "5,003 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

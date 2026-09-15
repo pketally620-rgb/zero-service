@@ -1,0 +1,17 @@
+{
+  "brand": "Jaguar",
+  "model": "E-Pace",
+  "sourceId": "6550",
+  "url": "https://newcar.u-car.com.tw/Jaguar/E-Pace/6550/spec",
+  "retrievedAt": "2026-09-15T09:50:24.226Z",
+  "pageSha256": "f7af2eab70f4b335ec9ed5ee5f540cab109915490481ce0039959ba8f501fdb4",
+  "entries": [
+    {
+      "variant": "P250 R-Dynamic S",
+      "lengthText": "4,395 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

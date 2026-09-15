@@ -1,0 +1,17 @@
+{
+  "brand": "Lamborghini",
+  "model": "Temerario",
+  "sourceId": "6837",
+  "url": "https://newcar.u-car.com.tw/Lamborghini/Temerario/6837/spec",
+  "retrievedAt": "2026-09-15T09:50:27.701Z",
+  "pageSha256": "2a305996ea7ecea4f85fa04ee201d3cecb6e432c78ee18e79204d48b111df7eb",
+  "entries": [
+    {
+      "variant": "Temerario",
+      "lengthText": "4706 mm",
+      "lengthMm": 4706,
+      "bodyText": "跑車/Sports Car",
+      "seatText": null
+    }
+  ]
+}

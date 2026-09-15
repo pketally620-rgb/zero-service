@@ -1,0 +1,24 @@
+{
+  "brand": "Kia",
+  "model": "EV9",
+  "sourceId": "6670",
+  "url": "https://newcar.u-car.com.tw/Kia/EV9/6670/spec",
+  "retrievedAt": "2026-09-15T09:50:26.011Z",
+  "pageSha256": "56f4d6bb31975e9d366683deff11c948f30b6984eeba06ddf7983616b4129a3a",
+  "entries": [
+    {
+      "variant": "Earth RWD",
+      "lengthText": "5010 mm",
+      "lengthMm": 5010,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GT-Line AWD",
+      "lengthText": "5015 mm",
+      "lengthMm": 5015,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

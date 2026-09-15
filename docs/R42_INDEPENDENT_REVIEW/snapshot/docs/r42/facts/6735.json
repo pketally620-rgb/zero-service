@@ -1,0 +1,17 @@
+{
+  "brand": "BMW",
+  "model": "M3",
+  "sourceId": "6735",
+  "url": "https://newcar.u-car.com.tw/BMW/M3/6735/spec",
+  "retrievedAt": "2026-09-15T09:50:05.953Z",
+  "pageSha256": "1cc5f95f845819bdb356077ba98f6aa78c234c10131c002783025ea9ff739d50",
+  "entries": [
+    {
+      "variant": "M3 Competition M xDrive",
+      "lengthText": "4794 mm",
+      "lengthMm": 4794,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

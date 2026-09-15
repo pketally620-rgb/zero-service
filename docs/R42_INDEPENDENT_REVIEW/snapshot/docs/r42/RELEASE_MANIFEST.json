@@ -1,0 +1,16 @@
+{
+  "baseline": "ee14e23274c17cd7a4fe61496a51697b589d84dc",
+  "parentOverlay": "59d4b29c5b747b29ec573e477ed6114e3fc2c442b07c5b1984b4907ed597d5f4",
+  "files": {
+    "website/data/vehicle-master-r42.json": "cdd87eb8b4ee46658b93e0c59aec03ead17a4599a6107086fd666f61ef548234",
+    "website/vehicle-master.mjs": "bcfb17678f5fbb8ede8cd1cd46220dc86c61b14fa9cbcbd6ac84e8a0a1ddb7c2",
+    "website/public/app.mjs": "5d0ef690cef8565327ca8e3ca162c338f45e4412a4c737900270683fc5948c8a",
+    "website/public/index.html": "043d68bc1abc81546b42e6ca12d9c24489dbfd6aa64fcee659cb5972d5f65db5",
+    "website/tests/vehicle-master.test.mjs": "8dfba50d52393055e09a957cb74cd0294c1bb097c8706fcb1fdcbcd46c14e675",
+    "docs/r42/build.mjs": "b58c8fe5ee28d5ab8791cce47ce185cba1164683bee93222acf41e3d67c1e6f8",
+    "docs/r42/primary-checks.json": "fa198ad5362140b268fbe077b1b38029fc1b40d6c2b311ce416115f3c7e7b717",
+    "docs/r42/historical.json": "dc64b174d67ecb5099d51d70f2f0dffbc191a39ad24392bf21a8cd15d0e56a3a",
+    "docs/r42/exceptions.json": "54d7fd418fb7702acc8859d66c8b46b7ad59f2ee246cb30d5dab4cdd40a6726a"
+  },
+  "overlaySha256": "7a6ec2ad81c7e8dbd705349326bd233eef053deec55d6c882ac0ae5d00bf18ce"
+}

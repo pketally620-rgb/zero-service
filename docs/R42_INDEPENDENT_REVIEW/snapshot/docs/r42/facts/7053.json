@@ -1,0 +1,24 @@
+{
+  "brand": "Volkswagen Commercial Vehicles",
+  "model": "Amarok",
+  "sourceId": "7053",
+  "url": "https://newcar.u-car.com.tw/Volkswagen%20Commercial%20Vehicles/Amarok/7053/spec",
+  "retrievedAt": "2026-09-15T09:51:22.295Z",
+  "pageSha256": "29b2e4b1d2df6b65d5ac88da48a574840bb88b429bec427b6979209360f05203",
+  "entries": [
+    {
+      "variant": "Style",
+      "lengthText": "5,362 mm",
+      "lengthMm": null,
+      "bodyText": "貨卡/pick-up truck",
+      "seatText": null
+    },
+    {
+      "variant": "PanAmericana",
+      "lengthText": "5,362 mm",
+      "lengthMm": null,
+      "bodyText": "貨卡/pick-up truck",
+      "seatText": null
+    }
+  ]
+}

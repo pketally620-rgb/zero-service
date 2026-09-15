@@ -1,0 +1,24 @@
+{
+  "brand": "BMW",
+  "model": "5 Series",
+  "sourceId": "7073",
+  "url": "https://newcar.u-car.com.tw/BMW/5%20Series/7073/spec",
+  "retrievedAt": "2026-09-15T09:50:02.999Z",
+  "pageSha256": "51f89183cbc8fba101603e3732d55dbdc238313e47f5a7e5bbd5075704b1beb5",
+  "entries": [
+    {
+      "variant": "520i M Sport",
+      "lengthText": "5060 mm",
+      "lengthMm": 5060,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "530i M Sport",
+      "lengthText": "5060 mm",
+      "lengthMm": 5060,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "brand": "BMW",
+  "model": "4 Series Gran Coupé",
+  "sourceId": "7147",
+  "url": "https://newcar.u-car.com.tw/BMW/4%20Series%20Gran%20Coup%C3%A9/7147/spec",
+  "retrievedAt": "2026-09-15T09:52:07.779Z",
+  "pageSha256": "7ce02a526a3a7632f515feb7f39eb9742b68d80f267f010fed2863554a2363b1",
+  "entries": [
+    {
+      "variant": "420i M Racing Edition",
+      "lengthText": "4783 mm",
+      "lengthMm": 4783,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "430i M Racing Edition",
+      "lengthText": "4783 mm",
+      "lengthMm": 4783,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

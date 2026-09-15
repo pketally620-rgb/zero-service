@@ -1,0 +1,24 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "GLC",
+  "sourceId": "7282",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/GLC/7282/spec",
+  "retrievedAt": "2026-09-15T09:50:47.357Z",
+  "pageSha256": "c4da6a2738d9ec32053c71a8653db5f026ae067e889fae4fda5d852b1d5fa790",
+  "entries": [
+    {
+      "variant": "GLC 200 4Matic 星耀版",
+      "lengthText": "4716 mm",
+      "lengthMm": 4716,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "GLC 300 4Matic 星耀版",
+      "lengthText": "4721 mm",
+      "lengthMm": 4721,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

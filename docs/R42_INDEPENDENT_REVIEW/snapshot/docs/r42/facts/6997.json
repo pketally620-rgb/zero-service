@@ -1,0 +1,17 @@
+{
+  "brand": "McLaren",
+  "model": "750S Spider",
+  "sourceId": "6997",
+  "url": "https://newcar.u-car.com.tw/McLaren/750S%20Spider/6997/spec",
+  "retrievedAt": "2026-09-15T09:50:40.280Z",
+  "pageSha256": "c22d9585261214016c494c9a006440fd06cc83235b0a1f3a35f31c7aff1a30eb",
+  "entries": [
+    {
+      "variant": "750S Spider",
+      "lengthText": "4569 mm",
+      "lengthMm": 4569,
+      "bodyText": "敞篷車/Convertibles",
+      "seatText": null
+    }
+  ]
+}

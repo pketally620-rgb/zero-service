@@ -1,0 +1,45 @@
+{
+  "brand": "Porsche",
+  "model": "Panamera",
+  "sourceId": "6693",
+  "url": "https://newcar.u-car.com.tw/Porsche/Panamera/6693/spec",
+  "retrievedAt": "2026-09-15T09:51:05.518Z",
+  "pageSha256": "0a3240a0eb4abf43079feda2ff2d2304b3e49d90c56b9425486e99b35abf584a",
+  "entries": [
+    {
+      "variant": "Panamera",
+      "lengthText": "5052 mm",
+      "lengthMm": 5052,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "4",
+      "lengthText": "5052 mm",
+      "lengthMm": 5052,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "4S E-Hybrid",
+      "lengthText": "5052 mm",
+      "lengthMm": 5052,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "GTS",
+      "lengthText": "5052 mm",
+      "lengthMm": 5052,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    },
+    {
+      "variant": "Turbo E-Hybrid",
+      "lengthText": "5054 mm",
+      "lengthMm": 5054,
+      "bodyText": "轎車/Sedan",
+      "seatText": null
+    }
+  ]
+}

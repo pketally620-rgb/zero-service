@@ -1,0 +1,17 @@
+{
+  "brand": "BMW",
+  "model": "iX2",
+  "sourceId": "7257",
+  "url": "https://newcar.u-car.com.tw/BMW/iX2/7257/spec",
+  "retrievedAt": "2026-09-15T09:50:05.149Z",
+  "pageSha256": "e2a40e6f56880d0d4456d6faf4890000e035f146a530fc79110ca6caf7a59ca5",
+  "entries": [
+    {
+      "variant": "xDrive30 M Sport",
+      "lengthText": "4554 mm",
+      "lengthMm": 4554,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

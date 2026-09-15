@@ -1,0 +1,24 @@
+{
+  "brand": "CMC",
+  "model": "Zinger Pick Up",
+  "sourceId": "6821",
+  "url": "https://newcar.u-car.com.tw/CMC/Zinger%20Pick%20Up/6821/spec",
+  "retrievedAt": "2026-09-15T09:50:12.832Z",
+  "pageSha256": "29a57cf4c467003c42a836725ca62e5b72e2c7ec87895a446ba7ccf32956212a",
+  "entries": [
+    {
+      "variant": "三開型",
+      "lengthText": "4749 mm",
+      "lengthMm": 4749,
+      "bodyText": "貨卡/pick-up truck",
+      "seatText": null
+    },
+    {
+      "variant": "晶鑽型",
+      "lengthText": "4660 mm",
+      "lengthMm": 4660,
+      "bodyText": "貨卡/pick-up truck",
+      "seatText": null
+    }
+  ]
+}

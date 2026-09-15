@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Mercedes-AMG G-Class",
+  "sourceId": "7226",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Mercedes-AMG%20G-Class/7226/spec",
+  "retrievedAt": "2026-09-15T09:50:50.336Z",
+  "pageSha256": "eefcbfd727eba8a077b7bdc69885877f37fe664b1f365cba93782c56742802e8",
+  "entries": [
+    {
+      "variant": "G 63",
+      "lengthText": "4865 mm",
+      "lengthMm": 4865,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

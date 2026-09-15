@@ -1,0 +1,31 @@
+{
+  "brand": "Volkswagen Commercial Vehicles",
+  "model": "Multivan",
+  "sourceId": "7069",
+  "url": "https://newcar.u-car.com.tw/Volkswagen%20Commercial%20Vehicles/Multivan/7069/spec",
+  "retrievedAt": "2026-09-15T09:51:24.580Z",
+  "pageSha256": "b01cb06b94024e25f74acbaf0cac873e2b1a5fcd4aa342a63f90784a240a3824",
+  "entries": [
+    {
+      "variant": "Life",
+      "lengthText": "4973 mm",
+      "lengthMm": 4973,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "TDI",
+      "lengthText": "5173 mm",
+      "lengthMm": 5173,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "Style",
+      "lengthText": "5173 mm",
+      "lengthMm": 5173,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

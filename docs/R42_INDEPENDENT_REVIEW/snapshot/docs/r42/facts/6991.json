@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Mercedes-AMG GLB",
+  "sourceId": "6991",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Mercedes-AMG%20GLB/6991/spec",
+  "retrievedAt": "2026-09-15T09:50:50.757Z",
+  "pageSha256": "64307219c7e47c238cc72f6d18ca724d903bd634364f9e057538b1c3f5c3b759",
+  "entries": [
+    {
+      "variant": "GLB 35 4Matic 進化版",
+      "lengthText": "4650 mm",
+      "lengthMm": 4650,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "brand": "Kia",
+  "model": "Carnival",
+  "sourceId": "7015",
+  "url": "https://newcar.u-car.com.tw/Kia/Carnival/7015/spec",
+  "retrievedAt": "2026-09-15T09:50:25.269Z",
+  "pageSha256": "3ba917a59a3ede8ac92a21cb3f0d8c27fa077e7157f2e3aec420b024c44326c8",
+  "entries": [
+    {
+      "variant": "Trendy",
+      "lengthText": "5155 mm",
+      "lengthMm": 5155,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "Apex",
+      "lengthText": "5155 mm",
+      "lengthMm": 5155,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "Signature",
+      "lengthText": "5155 mm",
+      "lengthMm": 5155,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}

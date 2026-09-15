@@ -1,0 +1,17 @@
+{
+  "brand": "Audi",
+  "model": "RS Q8",
+  "sourceId": "7279",
+  "url": "https://newcar.u-car.com.tw/Audi/RS%20Q8/7279/spec",
+  "retrievedAt": "2026-09-15T09:49:59.156Z",
+  "pageSha256": "78680cbd597ee9349043f8ad72ec7778ad677200118d352ddd878606c15074ce",
+  "entries": [
+    {
+      "variant": "RS Q8 performance",
+      "lengthText": "5022 mm",
+      "lengthMm": 5022,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

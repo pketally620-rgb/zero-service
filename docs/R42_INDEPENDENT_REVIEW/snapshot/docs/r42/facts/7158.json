@@ -1,0 +1,24 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Mercedes-AMG GLC Coupé",
+  "sourceId": "7158",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Mercedes-AMG%20GLC%20Coup%C3%A9/7158/spec",
+  "retrievedAt": "2026-09-15T09:52:10.331Z",
+  "pageSha256": "03b26f5cb6e93a3bccac712adbdd405677a9d2a0a08dbe74aade64c53cd97069",
+  "entries": [
+    {
+      "variant": "43 4Matic Coupé",
+      "lengthText": "4792 mm",
+      "lengthMm": 4792,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    },
+    {
+      "variant": "63 S E Performance Coupé",
+      "lengthText": "4792 mm",
+      "lengthMm": 4792,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

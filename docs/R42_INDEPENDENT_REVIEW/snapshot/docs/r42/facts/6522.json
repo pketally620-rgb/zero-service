@@ -1,0 +1,17 @@
+{
+  "brand": "Audi",
+  "model": "RS Q3",
+  "sourceId": "6522",
+  "url": "https://newcar.u-car.com.tw/Audi/RS%20Q3/6522/spec",
+  "retrievedAt": "2026-09-15T09:49:58.700Z",
+  "pageSha256": "1a214f4eb47f04808ac7e0a5d8d783565ef8b88598a1ffd77c99a6e4d1731842",
+  "entries": [
+    {
+      "variant": "RS Q3",
+      "lengthText": "4566 mm",
+      "lengthMm": 4566,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

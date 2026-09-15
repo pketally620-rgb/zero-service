@@ -1,0 +1,17 @@
+{
+  "brand": "Alfa Romeo",
+  "model": "Junior Elettrica",
+  "sourceId": "7201",
+  "url": "https://newcar.u-car.com.tw/Alfa%20Romeo/Junior%20Elettrica/7201/spec",
+  "retrievedAt": "2026-09-15T09:49:50.751Z",
+  "pageSha256": "685d91ba8ff37167c1d778e2e624b1886d2ae2e2df3f06b18225b7c0fcb9fd1e",
+  "entries": [
+    {
+      "variant": "Elettrica 280 Veloce",
+      "lengthText": "4,173 mm",
+      "lengthMm": null,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "BMW",
+  "model": "5 Series Touring",
+  "sourceId": "7074",
+  "url": "https://newcar.u-car.com.tw/BMW/5%20Series%20Touring/7074/spec",
+  "retrievedAt": "2026-09-15T09:50:03.259Z",
+  "pageSha256": "d9a1e2bbc3ea3083b272bbd441f20ad544fa20b48f4c212b51eba250f984789b",
+  "entries": [
+    {
+      "variant": "520i Touring M Sport",
+      "lengthText": "5060 mm",
+      "lengthMm": 5060,
+      "bodyText": "旅行車/Wagons",
+      "seatText": null
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "brand": "Mercedes-Benz",
+  "model": "Electric G-Class",
+  "sourceId": "7162",
+  "url": "https://newcar.u-car.com.tw/Mercedes-Benz/Electric%20G-Class/7162/spec",
+  "retrievedAt": "2026-09-15T09:50:44.644Z",
+  "pageSha256": "81da8aa674605f91d6117da7373cf204211050c1835c745f7eb0692450d0ef6e",
+  "entries": [
+    {
+      "variant": "G580 with EQ Technology",
+      "lengthText": "4728 mm",
+      "lengthMm": 4728,
+      "bodyText": "運動休旅車/SUV",
+      "seatText": null
+    }
+  ]
+}

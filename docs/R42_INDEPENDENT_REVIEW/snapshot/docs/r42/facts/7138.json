@@ -1,0 +1,31 @@
+{
+  "brand": "Volkswagen Commercial Vehicles",
+  "model": "Caravelle",
+  "sourceId": "7138",
+  "url": "https://newcar.u-car.com.tw/Volkswagen%20Commercial%20Vehicles/Caravelle/7138/spec",
+  "retrievedAt": "2026-09-15T09:51:23.240Z",
+  "pageSha256": "73df8c6fb093e9a8ea0c044190d3a897a2565ff588dbdb7cd653c09fec787c31",
+  "entries": [
+    {
+      "variant": "Life 150",
+      "lengthText": "5450 mm",
+      "lengthMm": 5450,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "Life 170",
+      "lengthText": "5450 mm",
+      "lengthMm": 5450,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    },
+    {
+      "variant": "Life 4Motion",
+      "lengthText": "5450 mm",
+      "lengthMm": 5450,
+      "bodyText": "廂型車/Van",
+      "seatText": null
+    }
+  ]
+}
