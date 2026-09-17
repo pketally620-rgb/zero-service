@@ -28,3 +28,9 @@ export function bookingWording(booking) {
     lineAction:'前往 LINE 完成確認', lineNote:'前往 LINE 後，確認已帶入的預約資料再送出，等待 ZERO 人員確認。'
   };
 }
+
+export function openSlotSelection(slots,date='') {
+ const open=slots.filter(s=>s.status==='OPEN').slice().sort((a,b)=>(a.date+' '+a.time).localeCompare(b.date+' '+b.time));
+ const dates=[...new Set(open.map(s=>s.date))];
+ return {dates,date:dates.includes(date)?date:'',times:open.filter(s=>s.date===date)};
+}

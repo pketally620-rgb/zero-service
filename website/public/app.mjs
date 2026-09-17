@@ -1,4 +1,4 @@
-import { brandsFor, modelsFor, lineHandoffUrl, LINE_PROFILE_URL, bookingWording } from './ux.mjs';
+import { brandsFor, modelsFor, lineHandoffUrl, LINE_PROFILE_URL, bookingWording, openSlotSelection } from './ux.mjs';
 const $=s=>document.querySelector(s);
 const money=n=>new Intl.NumberFormat('zh-TW',{style:'currency',currency:'TWD',maximumFractionDigits:0}).format(n);
 const stateNames={OPEN:'可申請',PENDING:'等待 ZERO 人員確認',CONFIRMED:'預約已確認',CANCELLED:'已結束',CLOSED:'暫停開放'};
@@ -37,7 +37,34 @@ async function renderPrice(){
   $('#rule').textContent='自動分類：'+catalog.tierLabels[q.autoTier]+(catalog.vehicles.find(x=>x.id===vehicleId).ownerOverrideTier?' → ZERO 核定分類：'+catalog.tierLabels[q.tier]:'');
 }
 
-function renderSlots(){$('#vehicleRequired').hidden=!!$('#vehicle').value;const box=$('#slots');box.replaceChildren();if(!catalog.slots.length)box.textContent='目前尚無開放時段，請透過官方 LINE 聯繫 ZERO。';for(const slot of catalog.slots){const b=document.createElement('button');b.className='slot';b.disabled=slot.status!=='OPEN'||!$('#vehicle').value||!$('#service').value;const title=document.createElement('b');title.textContent=`${slot.date.slice(5).replace('-','/')} ${slot.time}`;const status=document.createElement('small');status.textContent=stateNames[slot.status];b.append(title,status);b.onclick=action(async()=>{if(!$('#vehicle').value)throw Error('請先選擇品牌與車款。');if(currentBooking && currentBooking.status!=='CANCELLED'&&!currentBooking.endedAt)throw Error('已有處理中的需求，請在下方摘要中更改時段或結束這筆需求。');currentBooking=await api('/api/bookings',{slotId:slot.id,vehicleId:$('#vehicle').value,serviceId:$('#service').value});await refresh();renderBooking();});box.append(b);}}
+
+// Presentation only: no slot generation or availability mutation.
+function slotPicker(box, slots, onSelect, disabled=false, initialDate='') {
+ let selectedDate=initialDate, selectedId='';
+ box.classList.add('date-time-picker');
+ function draw(){
+  const view=openSlotSelection(slots,selectedDate);selectedDate=view.date;box.replaceChildren();
+  if(!view.dates.length){box.textContent='目前尚無開放時段，請透過官方 LINE 聯繫 ZERO。';return;}
+  const label=document.createElement('p');label.textContent='1 選擇日期';box.append(label);
+  const dates=document.createElement('div');dates.className='date-choices';dates.setAttribute('aria-label','可預約日期');
+  for(const date of view.dates){const button=document.createElement('button');button.type='button';button.className='btn';button.textContent=date.replaceAll('-','/');button.setAttribute('aria-pressed',String(date===selectedDate));button.onclick=()=>{selectedDate=date;selectedId='';onSelect(null,date);draw();};dates.append(button);}box.append(dates);
+  const caption=document.createElement('p');caption.textContent=selectedDate?'2 選擇時間（'+selectedDate.replaceAll('-','/')+'）':'選擇日期後，顯示當日可預約時間。';box.append(caption);
+  const times=document.createElement('div');times.className='time-choices';times.setAttribute('aria-label','當日可預約時間');
+  for(const slot of view.times){const button=document.createElement('button');button.type='button';button.className='btn';button.textContent=slot.time;button.disabled=disabled;button.setAttribute('aria-pressed',String(slot.id===selectedId));button.onclick=()=>{selectedId=slot.id;draw();onSelect(slot,selectedDate);};times.append(button);}box.append(times);
+ }
+ draw();
+}
+let bookingDate='';
+
+function renderSlots(){
+ $('#vehicleRequired').hidden=!!$('#vehicle').value;
+ slotPicker($('#slots'),catalog.slots,(slot,date)=>{bookingDate=date;if(!slot)return;action(async()=>{
+  if(currentBooking&&currentBooking.status!=='CANCELLED'&&!currentBooking.endedAt)throw Error('已有處理中的需求，請在下方摘要中更改時段或結束這筆需求。');
+  try{currentBooking=await api('/api/bookings',{slotId:slot.id,vehicleId:$('#vehicle').value,serviceId:$('#service').value});}
+  finally{await refresh();}
+  renderBooking();
+ })();},!$('#vehicle').value||!$('#service').value,bookingDate);
+}
 function summaryText(b){const slot=catalog.slots.find(s=>s.id===b.slotId)||{date:b.slotDate,time:b.slotTime};return `【ZERO 示範資料・請勿送出】\n編號：${b.id}\n服務：${b.serviceName}\n車款：${b.vehicleName}\n分類：${catalog.tierLabels[b.quote.tier]}\n送出時基準價：${b.quote.type==='amount'?money(b.quote.amount):'現場評估'}\n時段：${slot.date} ${slot.time}\n狀態：${bookingWording(b).status}\n${bookingWording(b).detail}`;}
 function renderBooking(){const b=currentBooking,copyText=bookingWording(b),box=$('#summary');box.innerHTML='<h3>你的預約摘要</h3>';const status=document.createElement('span');status.className='status';status.textContent=copyText.status;const ta=document.createElement('textarea');ta.rows=9;ta.readOnly=true;ta.setAttribute('aria-label','LINE 預約摘要');ta.value=summaryText(b);const detail=document.createElement('p');detail.className='small muted';detail.textContent=copyText.detail;box.append(status,detail,ta);const note=document.createElement('p');note.className='small muted';note.textContent=b.status==='CANCELLED'?'如需安排其他時間，請重新選擇時段。':'金額保留送出時的基準價。'+copyText.lineNote;box.append(note);
 if(b.status!=='CANCELLED'){
@@ -58,7 +85,7 @@ if(b.status!=='CANCELLED'){
   };
   fallback.append(copy,feedback);box.append(fallback);
 }
-if(b.status==='CANCELLED'||b.endedAt)return;const actionNote=document.createElement('p');actionNote.className='small muted';actionNote.textContent=copyText.actionNote;box.append(actionNote);const label=document.createElement('label');label.textContent=copyText.slotLabel;const changeSelect=document.createElement('select');changeSelect.id='changeSlot';options(changeSelect,catalog.slots.filter(s=>s.status==='OPEN'),s=>`${s.date} ${s.time}`);label.append(changeSelect);box.append(label);const change=document.createElement('button');change.className='btn';change.textContent=copyText.change;change.disabled=!changeSelect.options.length;change.onclick=action(async()=>{currentBooking=await api(`/api/bookings/${b.id}/change`,{slotId:changeSelect.value,capability:b.capability});await refresh();renderBooking();});const cancel=document.createElement('button');cancel.className='btn';cancel.textContent=copyText.cancel;cancel.onclick=action(async()=>{currentBooking=await api(`/api/bookings/${b.id}/cancel`,{capability:b.capability});await refresh();renderBooking();});const end=document.createElement('div');end.className='actions';end.append(change,cancel);box.append(end);}
+if(b.status==='CANCELLED'||b.endedAt)return;const actionNote=document.createElement('p');actionNote.className='small muted';actionNote.textContent=copyText.actionNote;box.append(actionNote);const reschedule=document.createElement('details');reschedule.className='reschedule';const heading=document.createElement('summary');heading.textContent='更改預約時間';reschedule.append(heading);box.append(reschedule);const picker=document.createElement('div');reschedule.append(picker);let changeSlotId='';const change=document.createElement('button');change.className='btn';change.textContent='送出改期申請';change.disabled=true;slotPicker(picker,catalog.slots,slot=>{changeSlotId=slot?.id||'';change.disabled=!changeSlotId;});change.onclick=action(async()=>{try{currentBooking=await api('/api/bookings/'+b.id+'/change',{slotId:changeSlotId,capability:b.capability});}finally{await refresh();renderBooking();}});const cancel=document.createElement('button');cancel.className='btn';cancel.textContent=copyText.cancel;cancel.onclick=action(async()=>{currentBooking=await api(`/api/bookings/${b.id}/cancel`,{capability:b.capability});await refresh();renderBooking();});const end=document.createElement('div');end.className='actions';reschedule.append(change);end.append(cancel);box.append(end);}
 function renderContent(){
  const c=catalog.content;for(const a of document.querySelectorAll('a')){if(a.href.includes('lin.ee/'))a.href=c.links.line;}
  const featured=document.querySelector('.case-copy .btn');featured.hidden=!c.featured.enabled;featured.textContent=c.featured.title;featured.href=c.featured.url;
