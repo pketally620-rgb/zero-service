@@ -1,3 +1,5 @@
+import {productionText} from './launch-mode.mjs';
+import {isIP} from 'node:net';
 import {requestBooking} from './booking-entry.mjs';
 import {saveService,serviceEnabled} from './service-management.mjs';
 import http from 'node:http';
@@ -14,8 +16,11 @@ export async function passwordHash(password){const salt=randomBytes(16).toString
 async function verify(password,encoded){const [salt,key]=encoded.split(':');const value=await scrypt(password,salt,64,{N:32768,r:8,p:1,maxmem:64*1024*1024});return timingSafeEqual(value,Buffer.from(key,'hex'));}
 const publicFiles={'/':'index.html','/index.html':'index.html','/app.mjs':'app.mjs','/ux.mjs':'ux.mjs','/style.css':'style.css','/admin':'admin.html','/admin.mjs':'admin.mjs','/admin.css':'admin.css','/review.html':'review.html','/review.mjs':'review.mjs','/review.css':'review.css'};
 const publicBooking=({ownerHash,assisted,...b})=>b;
-export function createCandidate({database,origin='http://127.0.0.1:4180',now=()=>Date.now(),fixtures=false}={}){
-  const parsed=new URL(origin);if(!['http:','https:'].includes(parsed.protocol)||!['127.0.0.1','localhost'].includes(parsed.hostname))throw Error('Candidate is restricted to loopback');
+export function createCandidate({database,origin='http://127.0.0.1:4180',now=()=>Date.now(),fixtures=false,trustedLocalProxy=false}={}){
+  const parsed=new URL(origin),production=origin==='https://zerocraft.tw';
+  if(parsed.origin!==origin||(!production&&(!['http:','https:'].includes(parsed.protocol)||!['127.0.0.1','localhost'].includes(parsed.hostname))))throw Error('Unsupported origin');
+  if(production!==trustedLocalProxy)throw Error('Canonical production requires explicit trusted local proxy');
+  if(production&&fixtures)throw Error('Production cannot initialize fixtures');
   const store=openStore(database,{fixtures}),db=store.db;
   retain(store,now());const retentionTimer=setInterval(()=>{try{retain(store,now());}catch{console.error("Retention failed; Engineering review required.");}},3600000);retentionTimer.unref();
   const fail=(status,message)=>{throw Object.assign(new Error(message),{status});};
@@ -27,6 +32,12 @@ export function createCandidate({database,origin='http://127.0.0.1:4180',now=()=
     for(const [k,v] of Object.entries({'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer','X-Frame-Options':'SAMEORIGIN','Permissions-Policy':'camera=(), microphone=(), geolocation=()','Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; frame-ancestors 'self'; base-uri 'none'; form-action 'self'; object-src 'none'"}))res.setHeader(k,v);
     const send=(status,data)=>{res.writeHead(status,{'Content-Type':'application/json; charset=utf-8'});res.end(JSON.stringify(data));};
     try{
+      let clientIP=req.socket.remoteAddress;
+      if(production){
+        const forwarded=req.headers['x-forwarded-for'];
+        if(req.socket.remoteAddress!=='127.0.0.1'||req.headers.forwarded!==undefined||req.headers['x-forwarded-host']!==parsed.host||req.headers['x-forwarded-proto']!=='https'||typeof forwarded!=='string'||!isIP(forwarded))fail(403,'無法接受此代理連線。');
+        clientIP=forwarded;
+      }
       if(req.headers.host!==parsed.host)fail(403,'無法接受此連線。');
       if(!['GET','POST'].includes(req.method))fail(405,'不支援此操作。');
       const path=new URL(req.url,origin).pathname;
@@ -46,7 +57,7 @@ export function createCandidate({database,origin='http://127.0.0.1:4180',now=()=
       if(req.method==='GET'&&path==='/api/session'){if(!customer)customer=issue(res,'customer');return send(200,{csrf:customer.csrf});}
       if(req.method==='GET'&&path==='/api/admin/session'){owner();return send(200,{csrf:admin.csrf});}
       if(req.method==='POST'&&path==='/api/admin/login'){
-        limit('login:'+req.socket.remoteAddress,8,900000);requireValue(typeof body.password==='string'&&body.password.length<=256);
+        limit('login:'+clientIP,8,900000);requireValue(typeof body.password==='string'&&body.password.length<=256);
         const saved=db.prepare("SELECT value FROM settings WHERE key='admin-password'").get();
         if(!saved)fail(503,'管理帳號尚未設定。');
         if(!await verify(body.password,saved.value))fail(401,'登入資料不正確。');
@@ -62,7 +73,7 @@ export function createCandidate({database,origin='http://127.0.0.1:4180',now=()=
       if(req.method==='GET'&&path==='/api/bookings/current'){if(!customer)fail(401,'請重新載入頁面。');return send(200,store.read().bookings.filter(x=>x.ownerHash===customer.hash).map(publicBooking));}
       if(req.method==='GET'&&/^\/api\/bookings\/[^/]+$/.test(path)){const b=store.read().bookings.find(x=>x.id===path.split('/').pop());if(!customer||!b||b.ownerHash!==customer.hash)fail(404,'找不到此預約。');return send(200,publicBooking(b));}
       if(req.method==='POST'&&path==='/api/bookings'){
-        limit('request:'+req.socket.remoteAddress,20,3600000);
+        limit('request:'+clientIP,20,3600000);
         const b=store.mutate(s=>{requireValue(!s.bookings.some(x=>x.ownerHash===customer.hash&&x.status!=='CANCELLED'&&!x.endedAt),'已有處理中的需求，請先更改或撤回。');const b=requestBooking(s,{vehicleId:body.vehicleId,serviceId:body.serviceId,slotId:body.slotId,ownerHash:customer.hash},now());return publicBooking(b);});return send(201,b);
       }
       if(req.method==='POST'&&/^\/api\/(manage\/)?bookings\/[^/]+\/(confirm|change|cancel)$/.test(path)){
@@ -88,11 +99,15 @@ export function createCandidate({database,origin='http://127.0.0.1:4180',now=()=
       if(req.method==='POST'&&path==='/api/manage/slot'){
         owner();store.mutate(s=>{requireValue(typeof body.open==='boolean');const existing=s.slots.find(x=>x.id===body.id);if(existing){bookingStore(s).setSlotOpen(body.id,body.open);}else{requireValue(/^\d{4}-\d{2}-\d{2}$/.test(body.date)&&/^([01]\d|2[0-3]):[0-5]\d$/.test(body.time));const t=Date.parse(body.date+'T'+body.time+':00+08:00');requireValue(Number.isFinite(t)&&t>now()&&t<now()+366*86400000,'請選擇一年內的未來時間。');requireValue(!s.slots.some(x=>x.date===body.date&&x.time===body.time),'此時段已存在。');s.slots.push({id:body.date+'-'+body.time,date:body.date,time:body.time,status:body.open?'OPEN':'CLOSED',bookingId:null});s.slots.sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));}},'slot:update');return send(200,{ok:true});
       }
-      if(req.method==='GET'&&Object.hasOwn(publicFiles,path)){const name=publicFiles[path],content=await readFile(new URL('public/'+name,import.meta.url));res.writeHead(200,{'Content-Type':name.endsWith('.mjs')?'text/javascript; charset=utf-8':name.endsWith('.css')?'text/css; charset=utf-8':'text/html; charset=utf-8'});return res.end(content);}
+      if(req.method==='GET'&&Object.hasOwn(publicFiles,path)){const name=publicFiles[path],content=await readFile(new URL('public/'+name,import.meta.url));res.writeHead(200,{'Content-Type':name.endsWith('.mjs')?'text/javascript; charset=utf-8':name.endsWith('.css')?'text/css; charset=utf-8':'text/html; charset=utf-8'});return res.end(production?productionText(name,content.toString('utf8')):content);}
       if(req.method==='GET'&&['/assets/approved-hero.jpg','/assets/approved-craft.jpg'].includes(path)){res.writeHead(200,{'Content-Type':'image/jpeg'});return res.end(await readFile(new URL('../proof'+path,import.meta.url)));}
       fail(404,'找不到此頁面。');
     }catch(e){send(e.status||409,{error:e.status?e.message:'目前無法完成操作，請重新整理後再試。'});}
   });
+  if(production){const listen=server.listen.bind(server);server.listen=(port,host,callback)=>{
+    if(!Number.isInteger(port)||port<1||port>65535||host!=='127.0.0.1')throw Error('Production upstream must bind explicitly to IPv4 loopback');
+    return listen(port,host,callback);
+  };}
   server.requestTimeout=15000;server.headersTimeout=10000;server.on('close',()=>{clearInterval(retentionTimer);store.close();});return {server,store};
 }
 if(process.argv[1]===fileURLToPath(import.meta.url)){

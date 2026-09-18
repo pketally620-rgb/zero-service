@@ -1,0 +1,10 @@
+# Reviewed activation template only; NOT installed or activated by this change.
+https://zerocraft.tw {
+    reverse_proxy 127.0.0.1:4198 {
+        header_up Host zerocraft.tw
+        header_up -Forwarded
+        header_up X-Forwarded-For {remote_host}
+        header_up X-Forwarded-Host zerocraft.tw
+        header_up X-Forwarded-Proto https
+    }
+}
