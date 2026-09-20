@@ -2,6 +2,8 @@ import {productionText} from './launch-mode.mjs';
 import {isIP} from 'node:net';
 import {requestBooking} from './booking-entry.mjs';
 import {saveService,serviceEnabled} from './service-management.mjs';
+import {saveVehicle,vehicleEnabled} from './vehicle-management.mjs';
+import {saveDailySlots} from './slot-management.mjs';
 import http from 'node:http';
 import {retain,pendingReviewAt} from './policy.mjs';
 import {readFile} from 'node:fs/promises';
@@ -67,9 +69,9 @@ export function createCandidate({database,origin='http://127.0.0.1:4180',now=()=
       if(req.method==='POST'&&path==='/api/admin/logout'){owner();db.prepare('DELETE FROM sessions WHERE hash=?').run(admin.hash);res.setHeader('Set-Cookie',cookie('zero_admin','',0));return send(200,{ok:true});}
       if(req.method==='GET'&&path==='/api/catalog'){
         const s=store.read(),taipei=new Date(now()).toLocaleDateString('en-CA',{timeZone:'Asia/Taipei'});
-        return send(200,{vehicles:s.vehicles,services:s.services.filter(serviceEnabled),tierLabels,content:{...s.content,cases:s.content.cases.filter(x=>x.enabled).slice(0,2)},slots:s.slots.filter(x=>x.date>=taipei&&x.status==='OPEN').map(({bookingId,...x})=>x)});
+        return send(200,{vehicles:s.vehicles.filter(vehicleEnabled),services:s.services.filter(serviceEnabled),tierLabels,content:{...s.content,cases:s.content.cases.filter(x=>x.enabled).slice(0,5)},slots:s.slots.filter(x=>x.date>=taipei&&x.status==='OPEN').map(({bookingId,...x})=>x)});
       }
-      if(req.method==='POST'&&['/api/quote','/api/manage/quote'].includes(path)){if(path.startsWith('/api/manage/'))owner();const s=store.read(),v=s.vehicles.find(x=>x.id===body.vehicleId),service=s.services.find(x=>x.id===body.serviceId);requireValue(v&&service&&serviceEnabled(service),'此服務目前未開放，請重新選擇。');return send(200,{...priceFor(service,v),autoTier:classifyVehicle(v,false),note:service.note});}
+      if(req.method==='POST'&&['/api/quote','/api/manage/quote'].includes(path)){if(path.startsWith('/api/manage/'))owner();const s=store.read(),v=s.vehicles.find(x=>x.id===body.vehicleId),service=s.services.find(x=>x.id===body.serviceId);requireValue(v&&vehicleEnabled(v)&&service&&serviceEnabled(service),'此車款或服務目前未開放，請重新選擇。');return send(200,{...priceFor(service,v),autoTier:classifyVehicle(v,false),note:service.note});}
       if(req.method==='GET'&&path==='/api/bookings/current'){if(!customer)fail(401,'請重新載入頁面。');return send(200,store.read().bookings.filter(x=>x.ownerHash===customer.hash).map(publicBooking));}
       if(req.method==='GET'&&/^\/api\/bookings\/[^/]+$/.test(path)){const b=store.read().bookings.find(x=>x.id===path.split('/').pop());if(!customer||!b||b.ownerHash!==customer.hash)fail(404,'找不到此預約。');return send(200,publicBooking(b));}
       if(req.method==='POST'&&path==='/api/bookings'){
@@ -89,12 +91,15 @@ export function createCandidate({database,origin='http://127.0.0.1:4180',now=()=
         const b=store.mutate(s=>requestBooking(s,{vehicleId:body.vehicleId,serviceId:body.serviceId,slotId:body.slotId,ownerHash:'assisted:'+randomBytes(32).toString('hex'),assisted:{channel:body.channel,reference:body.reference.trim()}},now()),'booking:assisted:create');return send(201,publicBooking(b));
       }
       if(req.method==='GET'&&path==='/api/manage'){owner();const s=store.read();return send(200,{...s,bookings:s.bookings.map(b=>({...publicBooking(b),...(b.assisted?{assisted:b.assisted}:{}),pendingReviewAt:b.status==='PENDING'?pendingReviewAt(b.pendingSince||b.createdAt):null})),audit:db.prepare('SELECT * FROM audit ORDER BY id DESC LIMIT 30').all()});}
-      if(req.method==='POST'&&path==='/api/manage/content'){owner();const c=validateContent(body.content);store.mutate(s=>{if(body.revision!==s.revision)fail(409,'資料已更新，請重新載入再儲存。');s.content=c;},'content:update');return send(200,{ok:true});}
+      if(req.method==='POST'&&path==='/api/manage/content'){owner();const c=validateContent(body.content);const saved=store.mutate(s=>{if(body.revision!==s.revision)fail(409,'資料已更新，請重新載入再儲存。');s.content=c;return {content:structuredClone(s.content),revision:s.revision+1};},'content:update');return send(200,{ok:true,...saved});}
       if(req.method==='POST'&&path==='/api/manage/service'){
         owner();const service=store.mutate(s=>{if(body.revision!==undefined&&body.revision!==s.revision)fail(409,'資料已更新，請重新載入再儲存。');return saveService(s,body);},body.id?'service:update:'+body.id:'service:create');return send(body.id?200:201,{ok:true,service});
       }
       if(req.method==='POST'&&path==='/api/manage/vehicle'){
-        owner();store.mutate(s=>{const v=s.vehicles.find(x=>x.id===body.id);requireValue(v&&text(body.brand,50)&&text(body.model,60)&&Number.isInteger(body.lengthMm)&&body.lengthMm>=2000&&body.lengthMm<=8000&&['passenger','mpv','van'].includes(body.kind)&&(!body.override||Object.hasOwn(tierLabels,body.override)));Object.assign(v,{brand:body.brand.trim(),model:body.model.trim(),lengthMm:body.lengthMm,kind:body.kind,ownerOverrideTier:body.override||undefined});},'vehicle:update');return send(200,{ok:true});
+        owner();const vehicle=store.mutate(s=>saveVehicle(s,body),body.id?'vehicle:update:'+body.id:'vehicle:create');return send(body.id?200:201,{ok:true,vehicle});
+      }
+      if(req.method==='POST'&&path==='/api/manage/slots/day'){
+        owner();const result=store.mutate(s=>saveDailySlots(s,body,now()),'slots:day:'+body.date);return send(200,{ok:true,...result});
       }
       if(req.method==='POST'&&path==='/api/manage/slot'){
         owner();store.mutate(s=>{requireValue(typeof body.open==='boolean');const existing=s.slots.find(x=>x.id===body.id);if(existing){bookingStore(s).setSlotOpen(body.id,body.open);}else{requireValue(/^\d{4}-\d{2}-\d{2}$/.test(body.date)&&/^([01]\d|2[0-3]):[0-5]\d$/.test(body.time));const t=Date.parse(body.date+'T'+body.time+':00+08:00');requireValue(Number.isFinite(t)&&t>now()&&t<now()+366*86400000,'請選擇一年內的未來時間。');requireValue(!s.slots.some(x=>x.date===body.date&&x.time===body.time),'此時段已存在。');s.slots.push({id:body.date+'-'+body.time,date:body.date,time:body.time,status:body.open?'OPEN':'CLOSED',bookingId:null});s.slots.sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));}},'slot:update');return send(200,{ok:true});
