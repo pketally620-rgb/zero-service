@@ -29,21 +29,22 @@ test('Owner UAT Batch 2: daily slots, vehicle lifecycle, case order and restart 
   await start();
   customer.csrf=(await request(customer,'/api/session')).data.csrf;
   const login=await request(owner,'/api/admin/login',{password:'Batch2-test-password-371!'});assert.equal(login.status,200);owner.csrf=login.data.csrf;
+  async function saveDay(date,openTimes){const revision=(await request(owner,'/api/manage')).data.revision;return request(owner,'/api/manage/slots/day',{date,openTimes,revision});}
 
   // UAT-03: one date, multi-select half-hour times and one save.
-  let result=await request(owner,'/api/manage/slots/day',{date:day,openTimes:['09:00','09:30','10:00']});
+  let result=await saveDay(day,['09:00','09:30','10:00']);
   assert.equal(result.status,200);assert.deepEqual(result.data.openTimes,['09:00','09:30','10:00']);
   let catalog=(await request(customer,'/api/catalog')).data;
   assert.deepEqual(catalog.slots.filter(slot=>slot.date===day).map(slot=>slot.time),['09:00','09:30','10:00']);
-  result=await request(owner,'/api/manage/slots/day',{date:day,openTimes:['09:00','10:00']});
+  result=await saveDay(day,['09:00','10:00']);
   assert.equal(result.status,200);
   catalog=(await request(customer,'/api/catalog')).data;
   assert.deepEqual(catalog.slots.filter(slot=>slot.date===day).map(slot=>slot.time),['09:00','10:00']);
-  assert.equal((await request(owner,'/api/manage/slots/day',{date:day,openTimes:['09:15']})).status,400);
+  assert.equal((await saveDay(day,['09:15'])).status,400);
 
   // An occupied slot remains protected when the day's editable selections change.
   const booking=(await request(customer,'/api/bookings',{slotId:`${day}-10:00`,vehicleId:'tesla-model-y',serviceId:'wash'})).data;
-  result=await request(owner,'/api/manage/slots/day',{date:day,openTimes:[]});
+  result=await saveDay(day,[]);
   assert.equal(result.status,200);assert.deepEqual(result.data.protectedSlots,[{id:`${day}-10:00`,time:'10:00',status:'PENDING'}]);
   const state=(await request(owner,'/api/manage')).data;
   assert.equal(state.slots.find(slot=>slot.id===`${day}-09:00`).status,'CLOSED');
@@ -53,7 +54,7 @@ test('Owner UAT Batch 2: daily slots, vehicle lifecycle, case order and restart 
   // UAT-04: explicit add, disable, eligibility removal, preserved history, restore.
   const created=(await request(owner,'/api/manage/vehicle',{brand:'Test Brand',model:'Owner Model',lengthMm:4510,kind:'passenger',override:'',enabled:true}));
   assert.equal(created.status,201);const vehicle=created.data.vehicle;
-  await request(owner,'/api/manage/slots/day',{date:'2026-09-23',openTimes:['09:00','09:30']});
+  await saveDay('2026-09-23',['09:00','09:30']);
   const historical=(await request(owner,'/api/manage/bookings',{channel:'line',reference:'Batch 2',slotId:'2026-09-23-09:00',vehicleId:vehicle.id,serviceId:'wash'})).data;
   assert.equal(historical.vehicleName,'Test Brand Owner Model');
   assert.equal((await request(owner,'/api/manage/vehicle',{...vehicle,override:'',enabled:false})).status,200);

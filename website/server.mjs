@@ -16,7 +16,7 @@ import {requireValue,text,validateContent} from './validation.mjs';
 const scrypt=promisify(scryptCallback),hash=v=>createHash('sha256').update(v).digest('hex');
 export async function passwordHash(password){const salt=randomBytes(16).toString('hex');return salt+':'+(await scrypt(password,salt,64,{N:32768,r:8,p:1,maxmem:64*1024*1024})).toString('hex');}
 async function verify(password,encoded){const [salt,key]=encoded.split(':');const value=await scrypt(password,salt,64,{N:32768,r:8,p:1,maxmem:64*1024*1024});return timingSafeEqual(value,Buffer.from(key,'hex'));}
-const publicFiles={'/':'index.html','/index.html':'index.html','/app.mjs':'app.mjs','/ux.mjs':'ux.mjs','/style.css':'style.css','/admin':'admin.html','/admin.mjs':'admin.mjs','/admin.css':'admin.css','/review.html':'review.html','/review.mjs':'review.mjs','/review.css':'review.css'};
+const publicFiles={'/':'index.html','/index.html':'index.html','/app.mjs':'app.mjs','/ux.mjs':'ux.mjs','/style.css':'style.css','/admin':'admin.html','/admin.mjs':'admin.mjs','/slot-state.mjs':'slot-state.mjs','/admin.css':'admin.css','/review.html':'review.html','/review.mjs':'review.mjs','/review.css':'review.css'};
 const publicBooking=({ownerHash,assisted,...b})=>b;
 export function createCandidate({database,origin='http://127.0.0.1:4180',now=()=>Date.now(),fixtures=false,trustedLocalProxy=false}={}){
   const parsed=new URL(origin),production=origin==='https://zerocraft.tw';
@@ -99,7 +99,7 @@ export function createCandidate({database,origin='http://127.0.0.1:4180',now=()=
         owner();const vehicle=store.mutate(s=>saveVehicle(s,body),body.id?'vehicle:update:'+body.id:'vehicle:create');return send(body.id?200:201,{ok:true,vehicle});
       }
       if(req.method==='POST'&&path==='/api/manage/slots/day'){
-        owner();const result=store.mutate(s=>saveDailySlots(s,body,now()),'slots:day:'+body.date);return send(200,{ok:true,...result});
+        owner();const result=store.mutate(s=>{if(body.revision!==s.revision)fail(409,'資料已更新，已保留正式狀態；請重新確認後再儲存。');return saveDailySlots(s,body,now());},'slots:day:'+body.date);return send(200,{ok:true,...result});
       }
       if(req.method==='POST'&&path==='/api/manage/slot'){
         owner();store.mutate(s=>{requireValue(typeof body.open==='boolean');const existing=s.slots.find(x=>x.id===body.id);if(existing){bookingStore(s).setSlotOpen(body.id,body.open);}else{requireValue(/^\d{4}-\d{2}-\d{2}$/.test(body.date)&&/^([01]\d|2[0-3]):[0-5]\d$/.test(body.time));const t=Date.parse(body.date+'T'+body.time+':00+08:00');requireValue(Number.isFinite(t)&&t>now()&&t<now()+366*86400000,'請選擇一年內的未來時間。');requireValue(!s.slots.some(x=>x.date===body.date&&x.time===body.time),'此時段已存在。');s.slots.push({id:body.date+'-'+body.time,date:body.date,time:body.time,status:body.open?'OPEN':'CLOSED',bookingId:null});s.slots.sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));}},'slot:update');return send(200,{ok:true});

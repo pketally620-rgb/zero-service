@@ -21,5 +21,6 @@ export function saveDailySlots(state,{date,openTimes},now){
   state.slots.push({id:date+'-'+time,date,time,status:'OPEN',bookingId:null});
  }
  state.slots.sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));
- return {date,openTimes:[...selected].sort(),protectedSlots};
+ const persistedOpenTimes=state.slots.filter(slot=>slot.date===date&&slot.status==='OPEN'&&!slot.bookingId&&instant(slot.date,slot.time)>now).map(slot=>slot.time).sort();
+ return {date,openTimes:persistedOpenTimes,protectedSlots};
 }

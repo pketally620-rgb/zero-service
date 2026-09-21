@@ -1,12 +1,13 @@
-const $=s=>document.querySelector(s);let csrf,data,draft,slotDate='',slotSelection=new Set(),vehicleBrand='',vehicleSearch='';
+import {slotDayState,slotCue} from './slot-state.mjs';
+const $=s=>document.querySelector(s);let csrf,data,draft,slotDate='',slotDraftDate='',slotSelection=new Set(),vehicleBrand='',vehicleSearch='';
 const names={OPEN:'可申請',PENDING:'等待確認',CONFIRMED:'已確認',CANCELLED:'已結束',CLOSED:'暫停開放'},tiers={mid:'中型車',large:'大型車',special:'特殊型車',business:'商務型車'};
-async function api(path,body){const r=await fetch(path,body===undefined?{}:{method:'POST',headers:{'Content-Type':'application/json','X-CSRF-Token':csrf||''},body:JSON.stringify(body)});const d=await r.json();if(!r.ok){if(r.status===401){$('#workspace').hidden=true;$('#login').hidden=false;data=null;draft=null;for(const id of ['bookingRows','manualBooking','slotDayEditor','slotHistory','newService','serviceRows','vehicleFilter','newVehicle','vehicleRows','caseRows','linkFields'])$('#'+id).replaceChildren();}throw Error(d.error);}return d;}
+async function api(path,body){const r=await fetch(path,body===undefined?{}:{method:'POST',headers:{'Content-Type':'application/json','X-CSRF-Token':csrf||''},body:JSON.stringify(body)});const d=await r.json();if(!r.ok){if(r.status===401){$('#workspace').hidden=true;$('#login').hidden=false;data=null;draft=null;for(const id of ['bookingRows','manualBooking','slotDayEditor','slotHistory','newService','serviceRows','vehicleFilter','newVehicle','vehicleRows','caseRows','linkFields'])$('#'+id).replaceChildren();}const error=Error(d.error);error.status=r.status;throw error;}return d;}
 const act=fn=>async e=>{e?.preventDefault();try{await fn(e);}catch(err){$('#message').textContent=err.message;}};
 const el=(tag,text,cls)=>{const n=document.createElement(tag);if(text)n.textContent=text;if(cls)n.className=cls;return n;};
 function field(parent,label,value,{type='text',options,max=300}={}){const l=el('label',label),n=el(options?'select':'input');if(options)for(const [v,t] of options)n.append(new Option(t,v));else{n.type=type;n.maxLength=max;}if(type==='checkbox')n.checked=!!value;else n.value=value??'';l.append(n);parent.append(l);return n;}
 function button(parent,label,fn,cls='btn'){const b=el('button',label,cls);b.type='button';b.onclick=act(fn);parent.append(b);return b;}
 async function save(path,body){await api(path,body);await load();$('#message').textContent='已儲存。';}
-async function load(){data=await api('/api/manage');draft=structuredClone(data.content);$('#login').hidden=true;$('#workspace').hidden=false;render();}
+async function load({resetSlotDraft=false}={}){data=await api('/api/manage');draft=structuredClone(data.content);if(resetSlotDraft)slotDraftDate='';$('#login').hidden=true;$('#workspace').hidden=false;render();}
 function render(){
  renderManualBooking();
  const bookings=$('#bookingRows');bookings.replaceChildren();if(!data.bookings.length)bookings.textContent='目前沒有預約需求。';
@@ -28,17 +29,22 @@ const taipeiDate=(offset=0)=>new Date(Date.now()+offset).toLocaleDateString('en-
 const slotGridTimes=()=>{const rows=[];for(let hour=9;hour<18;hour++)for(const minute of ['00','30'])if(hour!==12)rows.push(String(hour).padStart(2,'0')+':'+minute);return rows;};
 function renderDailySlots(){
  const date=$('#slotDate'),editor=$('#slotDayEditor'),history=$('#slotHistory'),today=taipeiDate(),max=taipeiDate(365*86400000);
- date.min=today;date.max=max;if(!slotDate||slotDate<today)slotDate=today;date.value=slotDate;date.onchange=()=>{slotDate=date.value;renderDailySlots();};
- const rows=data.slots.filter(slot=>slot.date===slotDate),byTime=new Map(rows.map(slot=>[slot.time,slot]));slotSelection=new Set(rows.filter(slot=>slot.status==='OPEN'&&!slot.bookingId&&Date.parse(slot.date+'T'+slot.time+':00+08:00')>Date.now()).map(slot=>slot.time));
- editor.replaceChildren();const grid=el('div',null,'slot-grid');grid.setAttribute('aria-label',slotDate+' 可預約開始時間');
+ date.min=today;date.max=max;if(!slotDate||slotDate<today)slotDate=today;date.value=slotDate;date.onchange=()=>{slotDate=date.value;slotDraftDate='';renderDailySlots();};
+ const rows=data.slots.filter(slot=>slot.date===slotDate),byTime=new Map(rows.map(slot=>[slot.time,slot])),persisted=slotDayState(data.slots,slotDate,[],Date.now()).persisted;
+ if(slotDraftDate!==slotDate){slotSelection=new Set(persisted);slotDraftDate=slotDate;}
+ const view=slotDayState(data.slots,slotDate,slotSelection,Date.now());slotSelection=new Set(view.proposed);
+ editor.replaceChildren();const legend=el('div',null,'slot-legend');legend.setAttribute('aria-label','時段狀態圖例');for(const [symbol,label,kind] of [['✓','開啟','open'],['○','關閉','closed'],['🔒','已鎖定（有預約，不可更改）','locked']])legend.append(el('span',symbol+' '+label,'slot-legend-item '+kind));editor.append(legend);
+ const summaries=el('div',null,'slot-summaries'),formal=el('section',null,'slot-summary persisted');formal.append(el('h3',`正式已儲存開放時段（${view.persisted.length}）`),el('p',view.persisted.length?view.persisted.join('、'):'此日期目前沒有正式開放時段。'));summaries.append(formal);
+ const proposed=el('section',null,'slot-summary draft'+(view.dirty?' unsaved':''));if(view.dirty)proposed.append(el('h3','尚有未儲存變更'),el('p',`儲存後預計開放（${view.proposed.length}）：${view.proposed.length?view.proposed.join('、'):'無'}`));else proposed.append(el('h3','目前沒有未儲存變更'),el('p','畫面選擇與正式已儲存狀態一致。'));summaries.append(proposed);editor.append(summaries);
+ const grid=el('div',null,'slot-grid');grid.setAttribute('aria-label',slotDate+' 可預約開始時間');
  for(const time of slotGridTimes()){
-  const slot=byTime.get(time),occupied=!!(slot&&(slot.bookingId||!['OPEN','CLOSED'].includes(slot.status))),past=Date.parse(slotDate+'T'+time+':00+08:00')<=Date.now(),b=el('button',time,'slot-choice');b.type='button';b.disabled=occupied||past;b.setAttribute('aria-pressed',String(slotSelection.has(time)));if(occupied){b.classList.add('occupied');b.textContent=time+' · '+names[slot.status];}if(past)b.classList.add('past');b.onclick=()=>{slotSelection.has(time)?slotSelection.delete(time):slotSelection.add(time);b.setAttribute('aria-pressed',String(slotSelection.has(time)));};grid.append(b);
+  const slot=byTime.get(time),past=Date.parse(slotDate+'T'+time+':00+08:00')<=Date.now(),cue=slotCue(slot,slotSelection.has(time),past),b=el('button',`${cue.symbol} ${time} · ${cue.kind==='locked'?(names[slot.status]||cue.label):cue.label}`,'slot-choice '+cue.kind);b.type='button';b.disabled=cue.kind==='locked'||cue.kind==='past';b.setAttribute('aria-pressed',String(slotSelection.has(time)));b.setAttribute('aria-label',`${time} ${cue.label}`);b.onclick=()=>{slotSelection.has(time)?slotSelection.delete(time):slotSelection.add(time);renderDailySlots();};grid.append(b);
  }
  editor.append(grid);const locked=rows.filter(slot=>slot.bookingId||!['OPEN','CLOSED'].includes(slot.status));if(locked.length)editor.append(el('p','已占用時段已鎖定：'+locked.map(slot=>slot.time+' '+names[slot.status]).join('、'),'muted'));
  const irregular=rows.filter(slot=>!slotGridTimes().includes(slot.time));if(irregular.length)editor.append(el('p','既有非半點時段保留：'+irregular.map(slot=>slot.time+' '+names[slot.status]).join('、'),'muted'));
  history.replaceChildren();const hidden=data.slots.filter(slot=>slot.status==='CLOSED'||slot.date<today);if(!hidden.length)history.textContent='目前沒有過去或暫停開放時段。';else for(const slot of hidden){const row=el('div',`${slot.date} ${slot.time} · ${names[slot.status]}`,'admin-row');history.append(row);}
 }
-$('#saveSlotDay').onclick=act(async()=>{if(!slotDate)throw Error('請先選擇日期。');await save('/api/manage/slots/day',{date:slotDate,openTimes:[...slotSelection].sort()});});
+$('#saveSlotDay').onclick=act(async()=>{if(!slotDate)throw Error('請先選擇日期。');const button=$('#saveSlotDay');button.disabled=true;try{const result=await api('/api/manage/slots/day',{date:slotDate,openTimes:[...slotSelection].sort(),revision:data.revision});await load({resetSlotDraft:true});$('#message').textContent=result.protectedSlots.length?'已儲存並重新載入正式狀態；有預約的時段仍保持鎖定。':'已儲存並重新載入正式狀態。';}catch(error){if(error.status===409){await load({resetSlotDraft:true});throw Error('資料已在其他操作中更新；已重新載入正式狀態，請重新確認。');}throw error;}finally{button.disabled=false;}});
 
 function vehicleEditor(vehicle){
  const form=el('form',null,'vehicle-editor'),brand=field(form,'品牌',vehicle?.brand||''),model=field(form,'車款',vehicle?.model||''),length=field(form,'車長（mm）',vehicle?.lengthMm||'',{type:'number'}),kind=field(form,'類別',vehicle?.kind||'passenger',{options:[['passenger','乘用車'],['mpv','MPV'],['van','商用廂型車']]}),override=field(form,'ZERO 指定分類',vehicle?.ownerOverrideTier||'',{options:[['','依自動規則'],...Object.entries(tiers)]});
